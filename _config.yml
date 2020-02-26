@@ -7,7 +7,7 @@ url: "" # the base hostname & protocol for your site, e.g. https://example.githu
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
-    - text: About Me
+    - text: About/Contact Me
       url: /about
     - text: Blog
       url: /blog
@@ -15,12 +15,12 @@ urls:
     #   url: /gallery
     # - text: Shop
     #   url : /shop
-    - text: Contact Me
-      url : /contact
-    - text: Styleguide
-      url: /styleguide
-    - text: Get Started
-      url: /get-started
+    # - text: Contact Me
+    #   url : /contact
+    # - text: Styleguide
+    #   url: /styleguide
+    # - text: Get Started
+    #   url: /get-started
 
 # Edit these details
 
@@ -129,9 +129,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# google analytics
-google_analytics: UA-46783401-10
-
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
@@ -151,12 +148,12 @@ per_page: 4
 paginate_path: "/blog/page/:num/"
 
 # minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: ['development']
 
 # Archives
 # jekyll-archives:
@@ -167,8 +164,8 @@ paginate_path: "/blog/page/:num/"
 #     category: '/category/:name/'
 
 # Shop
-collections:
- - products
+# collections:
+#  - products
 
 # Gallery
 defaults:

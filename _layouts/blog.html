@@ -39,20 +39,20 @@ layout: default
           {% if paginator.total_pages > 1 %}
             <ul class="pagination pagination-sm">
               {% if paginator.previous_page %}
-                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+                <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;&nbsp;</a></li>
               {% else %}
-                <li class="disabled"><span aria-hidden="true">&laquo;</span></li>
+                <li class="disabled"><span aria-hidden="true">&laquo;&nbsp;</span></li>
               {% endif %}
 
               <li><a href="/">First</a></li>
 
               {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
-                  <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a></li>
+                  <li class="active"><a>{{ page }}(current)&nbsp;</a></li>
                 {% elsif page == 1 %}
-                  <li><a href="/">{{ page }}</a></li>
+                  <li><a href="/">{{ page }}&nbsp;</a></li>
                 {% else %}
-                  <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                  <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}&nbsp;</a></li>
                 {% endif %}
               {% endfor %}
 
