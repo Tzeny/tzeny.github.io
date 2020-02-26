@@ -1,5 +1,5 @@
-title: devlopr
-subtitle: A Jekyll Theme Built for Developers
+title: Tzeny's blog
+subtitle: Engineering and travellingz
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a Jekyll Theme Built For Developers
 
@@ -11,10 +11,10 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
+    # - text: Gallery
+    #   url: /gallery
+    # - text: Shop
+    #   url : /shop
     - text: Contact Me
       url : /contact
     - text: Styleguide
@@ -25,69 +25,104 @@ urls:
 # Edit these details
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hello, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
-author_email: "johndoe@gmail.com"
-author_location: India
-author_website_url: "http://johndoe.com"
+author: Andrei Tenescu
+author_bio: |
+  The saddle of a bike, the top of a mountain or the cockpit of a kayak are some of the places you might find me on this weekend.
+
+  This world has much to offer, and I am fond of exploring it, either by travelling or reading. I am always on the lookout for parking spaces for my beautiful van/home Rusty.
+
+  This blog presents some of my projects, adventures and mishaps.
+author_email: "teny96@gmail.com"
+author_location: Romania
+author_website_url: "http://tzeny.com"
 
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
+            - company_name: Mindfully Technologies
+              company_logo: xvision.png
               company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+              designation: CoFounder 
+              description: Fullstack developer, jr. data scientist; worked on the artificial intelligence algorithms, backend, testing and CI/CD pipeline
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
+            - company_name: BitDefender - July 2017 - April 2018
+              company_logo: bitdefender.png
               company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+              designation: Jr. Malware Researcher
+              description: Studied malware samples(Windows and Android) to determine functionality and impact; worked on internal Python projects
               visibility: true
 
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: upt.png
+                college_name: Politehnica University of Timișoara
+                college_url: https://www.upt.ro/Universitatea-Politehnica-Timisoara_en.html
+                college_degree: Master's Degree
+                description: Software Engineering - 2019 - 2021 (expected)
+                visibility: true
+              - college_logo: eeml.png
+                college_name: Eastern European Machine Learning Summer School
+                college_url: https://www.eeml.eu/
+                college_degree: Eastern European Machine Learning Summer School Graduate - 2019
+                description: Deep Learning and Reinforcement Learning
+                visibility: true
+              - college_logo: upt.png
+                college_name: Politehnica University of Timișoara
+                college_url: https://www.upt.ro/Universitatea-Politehnica-Timisoara_en.html
+                college_degree: Bachelor's Degree - 2015 - 2019
+                description: Majored in Computer Science
+                visibility: true
+              - college_logo: coursera.png
+                college_name: Coursera
+                college_url: https://www.coursera.org/account/accomplishments/certificate/GNYEWLKBYXT9
+                college_degree: Stanford Machine Learning MOOC Graduate - 2018
+                description: Mathematical fundamentals and use cases of ML(including Neural Networks)
+                visibility: true
+              - college_logo: intel.png
+                college_name: Myriad Labs organized by Intel (Movidius)
+                college_url: https://www.movidius.com/
+                college_degree: Myriad Labs Graduate - 2018
+                description: Computer vision and AI using embedded systems
+                visibility: true
+              - college_logo: bitdefender.png
+                college_name: BitDefender
+                college_url: https://www.movidius.com/
+                college_degree: "'Code: Analysis, Bugs and Security' Course Graduate - 2017"
+                description: Exploits, web vulnerabilities, symbolic execution, fuzzing
                 visibility: true
 
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: xvision_project.jpg
+                project_title: XVision
+                project_description: Automated X-Ray analysis tool that generates diagnosis and heatmaps (to indicate afflicted areas on the x-ray) using convolutional neural networks
+                project_url: https://xvision.app
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: rusty.jpg
+                project_title: Rusty
+                project_description: Van to campervan conversion that involves everything from 3D modeling and carpentry to electrical engineering and embedded development 
+                project_url: https://tzeny.com
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  johndoe
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: Tzeny25
+github_username:  Tzeny
+facebook_username: tenescu.andrei
+linkedin_username: tenescu-andrei-0ba631122
+# behance_username: johndoe
+instagram_username: tzeny15
+# medium_username: johndoe
+# telegram_username: johndoe
+# dribbble_username: johndoe
+flickr_username: 186474581@N04
 
 #for comments using disqus
-disqus_shortname: sujay-kundu
+# disqus_shortname: sujay-kundu
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+# wakatime_username: sujaykundu777
 
 # mailchimp embedded form url (newsletter):
-mailchimp_form_url:
+# mailchimp_form_url:
 
 # formspree (contact form)
-formspree_email: johndoe@gmail.com
+formspree_email: teny96@gmail.com
 
 # syntax highlighter
 markdown: kramdown

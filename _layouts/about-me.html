@@ -57,6 +57,11 @@ layout: default
                         <i class="fab fa-telegram-plane"></i>
                     </a>
                     {% endif %}
+                    {% if site.flickr_username %}
+                    <a class="social-link" href="https://www.flickr.com/photos/{{ site.flickr_username }}">
+                        <i class="fab fa-flickr"></i>
+                    </a>
+                    {% endif %}
                 </p>
 
                 {% if site.author_location %}
@@ -102,15 +107,15 @@ layout: default
 
             {% if site.show_author_project_details == true %}
             <div id="author_projects" class="card">
-                <h1 class="card-title">Projects</h1>
+                <h1 class="card-title">Most Important Projects</h1>
                 <br />
                 {% for project in site.author_project_details %}
                 {% if project.visibility == true %}
-                <div class="row" id="project-card">
-                        <div class="col-md-6">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{project.project_thumbnail}}" class="project-img" />
+                <div class="row">
+                        <div class="col-md-3">
+                            <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{project.project_thumbnail}}" class="project-img" />
                         </div>
-                        <div class="col-md-4 center">
+                        <div class="col-md-6">
                             <h4 class="experience-title"> {{ project.project_title }}</h4>
                             <h6 class="experience-info"> {{ project.project_info}}</h6>
                             <p class="experience-desc"> {{ project.project_description }} </p>
@@ -130,8 +135,8 @@ layout: default
                 {% for exp in site.author_work_experiences %}
                 {% if exp.visibility == true %}
                 <div class="row">
-                        <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ exp.company_logo }}" class="company-logo" />
+                        <div class="col-md-3">
+                            <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{ exp.company_logo }}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{ exp.designation }}</h4>
@@ -154,8 +159,8 @@ layout: default
                 {% for detail in site.author_education_details %}
                 {% if detail.visibility == true %}
                 <div class="row">
-                        <div class="col-md-2">
-                            <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ detail.college_logo}}" class="company-logo" />
+                        <div class="col-md-3">
+                            <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{ detail.college_logo}}" class="company-logo" />
                         </div>
                         <div class="col-md-6">
                             <h4 class="experience-title"> {{detail.college_degree }}</h4>
