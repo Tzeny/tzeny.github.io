@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=225
 permalink: /2017/11/17/virtualbox-portforward-ssh/
-image: /wp-content/uploads/2017/11/final-360x210.jpg
+thumbnail: 2017/11/final-360x210.jpg
 categories:
   - engineering
 tags:

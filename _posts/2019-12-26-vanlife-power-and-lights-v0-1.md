@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: https://tzeny.com/?p=910
 permalink: /2019/12/26/vanlife-power-and-lights-v0-1/
-image: /wp-content/uploads/2019/12/Sketch.jpg
+thumbnail: 2019/12/Sketch.jpg
 categories:
   - engineering
   - hardware

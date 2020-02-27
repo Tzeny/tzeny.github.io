@@ -6,7 +6,7 @@ author: teny96@gmail.com
 layout: post
 guid: https://tzeny.com/?p=782
 permalink: /2019/11/24/itec2019-style-transfer-rover/
-image: /wp-content/uploads/2019/11/top8.jpeg
+thumbnail: 2019/11/top8.jpeg
 categories:
   - artificialintelligence
   - engineering

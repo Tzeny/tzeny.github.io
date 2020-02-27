@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=247
 permalink: /2017/12/03/building-proxmox-server/
-image: /wp-content/uploads/2017/12/IMG_20171118_172650-360x210.jpg
+thumbnail: 2017/12/IMG_20171118_172650-360x210.jpg
 categories:
   - engineering
 tags:

@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=303
 permalink: /2018/05/16/clock-vision-face-recognition-clocking-system/
-image: /wp-content/uploads/2018/05/32267096_1532091176901185_2366736973932003328_n-360x210.jpg
+thumbnail: 2018/05/32267096_1532091176901185_2366736973932003328_n-360x210.jpg
 categories:
   - engineering
 tags:

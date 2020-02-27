@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=195
 permalink: /2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/
-image: /wp-content/uploads/2017/09/partition_8-360x210.jpg
+thumbnail: 2017/09/partition_8-360x210.jpg
 categories:
   - software
 tags:

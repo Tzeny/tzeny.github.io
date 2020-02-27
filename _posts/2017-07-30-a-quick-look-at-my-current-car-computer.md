@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://timisoarath.ro/?p=29
 permalink: /2017/07/30/a-quick-look-at-my-current-car-computer/
-image: /wp-content/uploads/2017/07/IMG_20170730_214102.jpg
+thumbnail: 2017/07/IMG_20170730_214102.jpg
 categories:
   - hardware
 tags:

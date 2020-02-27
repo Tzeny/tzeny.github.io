@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=76
 permalink: /2017/08/03/installing-raspbian-enabling-ssh/
-image: /wp-content/uploads/2017/08/IMG_20170803_133231-360x210.jpg
+thumbnail: 2017/08/IMG_20170803_133231-360x210.jpg
 categories:
   - software
 tags:

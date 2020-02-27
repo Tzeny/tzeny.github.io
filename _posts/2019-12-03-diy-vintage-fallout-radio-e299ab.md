@@ -7,7 +7,7 @@ excerpt: Learn how to build your very own vintage Fallout style radio.
 layout: post
 guid: https://tzeny.com/?p=835
 permalink: '/2019/12/03/diy-vintage-fallout-radio-%e2%99%ab/'
-image: /wp-content/uploads/2019/12/radio_live.jpg
+thumbnail: 2019/12/radio_live.jpg
 categories:
   - engineering
   - hardware

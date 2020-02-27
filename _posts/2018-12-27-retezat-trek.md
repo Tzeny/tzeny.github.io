@@ -7,7 +7,7 @@ excerpt: A short trek to the Custura Peak in the Retezat Mountains
 layout: post
 guid: http://192.168.0.110:8000/?p=372
 permalink: /2018/12/27/retezat-trek/
-image: /wp-content/uploads/2018/12/2018-09-22_14-16-52_030-360x210.jpg
+thumbnail: 2018/12/2018-09-22_14-16-52_030-360x210.jpg
 categories:
   - sports
 tags:

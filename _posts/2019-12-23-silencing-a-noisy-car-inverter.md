@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: https://tzeny.com/?p=893
 permalink: /2019/12/23/silencing-a-noisy-car-inverter/
-image: /wp-content/uploads/2019/12/body9.jpg
+thumbnail: 2019/12/body9.jpg
 categories:
   - engineering
   - hardware

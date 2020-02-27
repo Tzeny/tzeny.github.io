@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=145
 permalink: /2017/09/15/building-a-cheap-nas/
-image: /wp-content/uploads/2017/09/IMG_20170914_221530-360x210.jpg
+thumbnail: 2017/09/IMG_20170914_221530-360x210.jpg
 categories:
   - engineering
 tags:

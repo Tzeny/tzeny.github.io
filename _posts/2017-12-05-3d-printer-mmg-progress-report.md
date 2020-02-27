@@ -8,7 +8,7 @@ guid: http://192.168.0.110:8000/?p=269
 permalink: /2017/12/05/3d-printer-mmg-progress-report/
 post_grid_post_settings:
   - 'a:14:{s:9:"post_skin";s:4:"flat";s:19:"custom_thumb_source";s:89:"https://tzeny.com/wp-content/plugins/post-grid/assets/frontend/css/images/placeholder.png";s:16:"thumb_custom_url";s:0:"";s:17:"font_awesome_icon";s:0:"";s:23:"font_awesome_icon_color";s:0:"";s:22:"font_awesome_icon_size";s:0:"";s:17:"custom_youtube_id";s:0:"";s:15:"custom_vimeo_id";s:0:"";s:21:"custom_dailymotion_id";s:0:"";s:14:"custom_mp3_url";s:0:"";s:20:"custom_soundcloud_id";s:0:"";s:16:"custom_video_MP4";s:0:"";s:16:"custom_video_OGV";s:0:"";s:17:"custom_video_WEBM";s:0:"";}'
-image: /wp-content/uploads/2017/12/IMG_20171203_135218-360x210.jpg
+thumbnail: 2017/12/IMG_20171203_135218-360x210.jpg
 categories:
   - hardware
 tags:

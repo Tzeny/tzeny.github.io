@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=423
 permalink: /2018/12/27/christmas-trip-to-switzerland-and-liechtenstein/
-image: /wp-content/uploads/2018/12/IMG_20181224_173851-360x210.jpg
+thumbnail: 2018/12/IMG_20181224_173851-360x210.jpg
 categories:
   - travelling
 tags:

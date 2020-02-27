@@ -6,7 +6,7 @@ author: teny96@gmail.com
 layout: post
 guid: https://tzeny.com/?p=825
 permalink: /2019/11/28/nightfall-isaac-asimov/
-image: /wp-content/uploads/2019/11/220px-Nightfall_cover.jpg
+thumbnail: 2019/11/220px-Nightfall_cover.jpg
 categories:
   - miscellaneous
 ---

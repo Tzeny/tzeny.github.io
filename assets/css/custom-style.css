@@ -7,3 +7,6 @@ blockquote {
     background: whitesmoke;
     border: 1px solid;
 }
+.btn a{
+    color: white !important;
+}

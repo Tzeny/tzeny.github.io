@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=86
 permalink: /2017/08/03/making-your-own-vpn/
-image: /wp-content/uploads/2017/08/with-vpn-360x210.jpg
+thumbnail: 2017/08/with-vpn-360x210.jpg
 categories:
   - software
 tags:

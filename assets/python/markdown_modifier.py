@@ -32,6 +32,9 @@ def modify_file_content(file_content):
             new_line = new_line.replace('artificial intelligence', 'artificialintelligence').replace('3d design','3ddesign')
             print(f'Found Category, lowering case to {new_line}')
 
+        if 'image: /wp-content/uploads/' in new_line:
+            new_line = f'thumbnail: {new_line.replace("image: /wp-content/uploads/", "")}'
+
         new_line += '\n'
         new_file_lines.append(new_line)
 

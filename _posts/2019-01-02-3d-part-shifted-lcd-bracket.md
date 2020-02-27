@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=513
 permalink: /2019/01/02/3d-part-shifted-lcd-bracket/
-image: /wp-content/uploads/2019/01/IMG_20190101_120545-360x210.jpg
+thumbnail: 2019/01/IMG_20190101_120545-360x210.jpg
 categories:
   - 3ddesign
 tags:

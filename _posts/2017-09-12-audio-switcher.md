@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=131
 permalink: /2017/09/12/audio-switcher/
-image: /wp-content/uploads/2017/09/final-360x210.jpg
+thumbnail: 2017/09/final-360x210.jpg
 categories:
   - hardware
 tags:

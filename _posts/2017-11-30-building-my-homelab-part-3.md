@@ -6,7 +6,7 @@ author: Tzeny
 layout: post
 guid: http://192.168.0.110:8000/?p=236
 permalink: /2017/11/30/building-my-homelab-part-3/
-image: /wp-content/uploads/2017/11/Front-360x210.jpg
+thumbnail: 2017/11/Front-360x210.jpg
 categories:
   - engineering
 tags:
