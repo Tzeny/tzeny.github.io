@@ -1,9 +1,9 @@
 -
-  title: Mountains
-  directory: mountains
-  preview:
-    filename: 1.jpg
-    original: 1-thumbnail.jpg
-    sizes:
-    - 1-thumbnail.jpg
-    thumbnail: 1-thumbnail.jpg
+  title: "2019 - Year in Review"
+  directory: 2019review
+  picture_path: assets/img/posts/2020/01/Screenshot_2019-11-24-12-27-32-831_com.android.chrome.jpg
+  # preview:
+  #   filename: IMG_20190101_120524
+  #   original: assets/img/posts/2020/01/IMG_20190101_120524.jpg
+  #   sizes: [assets/img/posts/2020/01/IMG_20190101_120524.jpg]
+  #   thumbnail: assets/img/posts/2020/01/IMG_20190101_120524-225x300.jpg
