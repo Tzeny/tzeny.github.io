@@ -1,7 +1,7 @@
 title: Tzeny's blog
 subtitle: Engineering and travellingz
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a Jekyll Theme Built For Developers
+  A small corner of the internet dedicated to tutorials, resources and galleries written by me
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
