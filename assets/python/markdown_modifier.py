@@ -16,6 +16,15 @@ def modify_file_content(file_content):
 
     new_file_lines = []
     for line in file_content.split('\n'):
+        if 'permalink' in line:
+            continue
+
+        if 'date: ' in line:
+            print(f'Appending base line')
+            new_file_lines.append('base: Blog\n')
+            new_file_lines.append('base_url: /blog\n')
+            continue
+
         new_line = line
         img_src_regex_match = re.match(img_src_regex, new_line)
         if img_src_regex_match:
@@ -41,7 +50,7 @@ def modify_file_content(file_content):
     return new_file_lines
 
 input_folder = r"/home/tzeny/Other/Projects/Websites/static_blog/_posts"
-output_folder = r"/home/tzeny/Other/Projects/Websites/static_blog/tzeny.github.io/_posts"
+output_folder = r"/home/tzeny/Other/Projects/Websites/static_blog/tzeny.github.io/_posts/blog"
 
 files = [f for f in glob.glob(input_folder + "**/*.md", recursive=True)]
 
