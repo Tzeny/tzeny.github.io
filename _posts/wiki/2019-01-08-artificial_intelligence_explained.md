@@ -6,12 +6,12 @@ base_url: /wiki
 hidden: true
 ---
 
-I'll start with a description of what Artificial Intelligence, Machine Learning and Deep Learning are I stole from Medium[1] and Nvidia[2].
+I'll start with a description of what Artificial Intelligence, Machine Learning and Deep Learning are I stole from Medium1 and Nvidia2.
 
 Artificial Intelligence
 -----------------------
 
-First coined in 1956 by John McCarthy, <b>AI</b> involves machines that can perform tasks that are characteristic of human intelligence. While this is rather general, it includes things like planning, understanding language, recognizing objects and sounds, learning, and problem solving.
+First coined in 1956 by John McCarthy, AI involves machines that can perform tasks that are characteristic of human intelligence. While this is rather general, it includes things like planning, understanding language, recognizing objects and sounds, learning, and problem solving.
 
 {% include figure_caption.html url="/assets/img/wiki/AI_classification.png" description="AI, ML and DL as subgroups" %}
 
@@ -22,7 +22,7 @@ Machine Learning
 
 A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.
 
-At its core, <b>machine learning</b> is simply a way of achieving AI. Arthur Samuel coined the phrase not too long after AI, in 1959, defining it as, “the ability to learn without being explicitly programmed.” You see, you can get AI without using machine learning, but this would require building millions of lines of codes with complex rules and decision-trees.
+At its core, machine learning is simply a way of achieving AI. Arthur Samuel coined the phrase not too long after AI, in 1959, defining it as, “the ability to learn without being explicitly programmed.” You see, you can get AI without using machine learning, but this would require building millions of lines of codes with complex rules and decision-trees.
 
 To give an example, machine learning has been used to make drastic improvements to computer vision (the ability of a machine to recognize an object in an image or video). You gather hundreds of thousands or even millions of pictures and then have humans tag them. For example, the humans might tag pictures that have a cat in them versus those that do not. Then, the algorithm tries to build a model that can accurately tag a picture as containing a cat or not as well as a human. Once the accuracy level is high enough, the machine has now “learned” what a cat looks like.
 
@@ -42,7 +42,7 @@ Deep Learning
 
 {% include figure_caption.html url="/assets/img/wiki/Deep_learning_scale.png" description="ML algorithms performance / dataset size" %}
 
-<b>Deep learning</b> is one of many approaches to machine learning. Other approaches include decision tree learning, inductive logic programming, clustering, reinforcement learning, and Bayesian networks, among others. Deep learning was inspired by the structure and function of the brain, namely the interconnecting of many neurons. Artificial Neural Networks (ANNs) are algorithms that mimic the biological structure of the brain.
+Deep learning is one of many approaches to machine learning. Other approaches include decision tree learning, inductive logic programming, clustering, reinforcement learning, and Bayesian networks, among others. Deep learning was inspired by the structure and function of the brain, namely the interconnecting of many neurons. Artificial Neural Networks (ANNs) are algorithms that mimic the biological structure of the brain.
 
 Unlike a biological brain where any neuron can connect to any other neuron within a certain physical distance, these artificial neural networks have discrete layers, connections, and directions of data propagation.
 
@@ -59,10 +59,10 @@ We also have more and more computing power at our disposal, making the training 
 Resources
 ---------
 
--   Articles: [Artificial_Intelligence_Articles](/Artificial_Intelligence_Articles "wikilink")
+-   Articles:[Artificial_Intelligence_Articles]({% post_url /wiki/2018-06-04-artificial_intelligence_articles%})
 
-<references />
 
-[1] <https://medium.com/iotforall/the-difference-between-artificial-intelligence-machine-learning-and-deep-learning-3aa67bff5991>
 
-[2] <https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/>
+1. [https://medium.com/iotforall/the-difference-between-artificial-intelligence-machine-learning-and-deep-learning-3aa67bff5991](https://medium.com/iotforall/the-difference-between-artificial-intelligence-machine-learning-and-deep-learning-3aa67bff5991)
+
+2. [https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/](https://blogs.nvidia.com/blog/2016/07/29/whats-difference-artificial-intelligence-machine-learning-deep-learning-ai/)

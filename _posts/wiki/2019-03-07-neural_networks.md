@@ -53,13 +53,13 @@ We'll initialize our weights from a Gaussian distribution with μ=0 and standard
 
 ### One hot encoding
 
-One hot encoding transforms categorical features to a format that works better with classification and regression algorithms.[1]
+One hot encoding transforms categorical features to a format that works better with classification and regression algorithms.1
 
 Imagine we have 7 samples belonging to 4 categories, OHE will output a 4x1 vector (represented below as a row of the table) for each of them.
 
 {% include figure_caption.html url="/assets/img/wiki/One-hot-encoding.png" description="border|200px" %}
 
-Hyperparameter optimization[2]
+Hyperparameter optimization2
 ------------------------------
 
 In our neural networks we have a number of hyperparameters we can tune (learning rate, batch size, optimizer type etc.). In order to tune this we usually have a master that controls many workers performing experiments (training the network with a certain combination of parameters for a number of epochs) and returning results.
@@ -92,8 +92,9 @@ Try to compute the gradient with respect to the hyperparameters and use it to op
 
 ### Evolutionary optimization
 
+[Evolutionary algorithm](/Evolutionary_algorithm "wikilink")
 
-Evolutionary optimization is a methodology for the global optimization of noisy black-box functions. In hyperparameter optimization, evolutionary optimization uses [evolutionary algorithms](/evolutionary_algorithms "wikilink") to search the space of hyperparameters for a given algorithm.[3] Evolutionary hyperparameter optimization follows a [process](/Evolutionary_algorithm#Implementation "wikilink") inspired by the biological concept of [evolution](/evolution "wikilink"):
+Evolutionary optimization is a methodology for the global optimization of noisy black-box functions. In hyperparameter optimization, evolutionary optimization uses [evolutionary algorithms](/evolutionary_algorithms "wikilink") to search the space of hyperparameters for a given algorithm.3 Evolutionary hyperparameter optimization follows a [process](/Evolutionary_algorithm#Implementation "wikilink") inspired by the biological concept of [evolution](/evolution "wikilink"):
 
 1.  Create an initial population of random solutions (i.e., randomly generate tuples of hyperparameters, typically 100+)
 2.  Evaluate the hyperparameters tuples and acquire their [fitness function](/fitness_function "wikilink") (e.g., 10-fold [cross-validation](/Cross-validation_(statistics) "wikilink") accuracy of the machine learning algorithm with those hyperparameters)
@@ -101,7 +102,7 @@ Evolutionary optimization is a methodology for the global optimization of noisy 
 4.  Replace the worst-performing hyperparameter tuples with new hyperparameter tuples generated through [crossover](/crossover_(genetic_algorithm) "wikilink") and [mutation](/mutation_(genetic_algorithm) "wikilink")
 5.  Repeat steps 2-4 until satisfactory algorithm performance is reached or algorithm performance is no longer improving
 
-Evolutionary optimization has been used in hyperparameter optimization for statistical machine learning algorithms[4], [automated machine learning](/automated_machine_learning "wikilink")[5][6], [deep neural network](/Deep_learning#Deep_neural_networks "wikilink") architecture search[7][8], as well as training of the weights in deep neural networks[9].
+Evolutionary optimization has been used in hyperparameter optimization for statistical machine learning algorithms4, [automated machine learning](/automated_machine_learning "wikilink")56, [deep neural network](/Deep_learning#Deep_neural_networks "wikilink") architecture search78, as well as training of the weights in deep neural networks9.
 
 Activation functions
 --------------------
@@ -138,13 +139,13 @@ softplus(x) = log(1 + exp(x))
 
 ### Softmax
 
-{% include figure_caption.html url="/assets/img/wiki/Softmax.png" description="Multi class clasification with softmax" %} In mathematics, the softmax function, or normalized exponential function, is a generalization of the logistic function that “squashes” a K-dimensional vector z of arbitrary real values to a K-dimensional vector σ(z) of real values, where each entry is in the range (0, 1), and all the entries add up to 1.[10]
+{% include figure_caption.html url="/assets/img/wiki/Softmax.png" description="Multi class clasification with softmax" %} In mathematics, the softmax function, or normalized exponential function, is a generalization of the logistic function that “squashes” a K-dimensional vector z of arbitrary real values to a K-dimensional vector σ(z) of real values, where each entry is in the range (0, 1), and all the entries add up to 1.10
 
 They are used after last layer of a neural network to turn a vector of values into a vector of probabilities in the range\[0,1\] with the total sum of the vector being 1.
 
 $\\sigma(z)_j=\\frac{e^{z_j}}{\\sum_{k=1}^Ke^{z_k}}$
 
-Optimization[11]
+Optimization11
 ----------------
 
 {% include figure_caption.html url="/assets/img/wiki/Optimizers.png" description="Tricks employed by common optimization algorithms" %}
@@ -159,7 +160,7 @@ Cost: $J_{train}(\\theta)=\\frac{1}{2m}\\sum_{i=1}^mh_\\theta(x^{(i)}-y^{(i)})^2
 
 `Repeat{`
 $\\theta_j := \\theta_j - \\alpha \\frac{1}{m}\\sum_{i=1}^mh_\\theta(x^{(i)}-y^{(i)})x_j^{(i)}$`(j=0:n)`
-`}for `<iteration count>
+`}for `
 
 ### Stochastic Gradient Descent
 
@@ -170,13 +171,13 @@ $$J_{train}(\\theta)=\\frac{1}{m}\\sum_{i=1}^mcost(\\theta,(x^{(i)},y^{(i)}))$$
 
 ` Repeat{`
 `   for i=1:m{`
-`     `*θ*<sub>*j*</sub> := *θ*<sub>*j*</sub> − *α**h*<sub>*θ*</sub>(*x*<sup>(*i*)</sup> − *y*<sup>(*i*)</sup>)*x*<sub>*j*</sub><sup>(*i*)</sup>`(j=0:n)`
+`     `*θ**j* := *θ**j* − *α**h**θ*(*x*(*i*) − *y*(*i*))*x**j*(*i*)`(j=0:n)`
 `   }`
-` }for `<iteration count>` - usually 1-10`
+` }for `` - usually 1-10`
 
 ### Convergence
 
-{% include figure_caption.html url="/assets/img/wiki/Stochastig_gradient_descent_convergence.png" description="Stochastic gradient descent cost/nr of iterations top left - expected; top right - larger number of iterations used for average bottom left - algorithm not doing well bottom right - divergence" %} Compute *o**s**t*(*θ*, (*x*<sup>(*i*)</sup>, *y*<sup>(*i*)</sup>)) before each update to θ. Every <number of iterations (usually multiples of 1000)> plot the cost average over the last <number of iterations> iterations
+{% include figure_caption.html url="/assets/img/wiki/Stochastig_gradient_descent_convergence.png" description="Stochastic gradient descent cost/nr of iterations top left - expected; top right - larger number of iterations used for average bottom left - algorithm not doing well bottom right - divergence" %} Compute *o**s**t*(*θ*, (*x*(*i*), *y*(*i*))) before each update to θ. Every  plot the cost average over the last  iterations
 
 ### Mini batch gradient descent
 
@@ -186,7 +187,7 @@ Imagine b(number of examples in batch)=10, m=1000
 `  for i=1,11,21,...991{`
 `    `$\\theta_j := \\theta_j - \\alpha \\frac{1}{m}\\sum_{k=i}^{i+9}h_\\theta(x^{(i)}-y^{(i)})x_j^{(i)}$`(j=0:n)`
 `  }`
-`}for `<iteration count>
+`}for `
 
 ### Online learning
 
@@ -195,32 +196,32 @@ For instance searches on a website, or purchases on a website.
 ` Repeat{`
 `   Get(x,y)`
 `     Update θ`
-`     `*θ*<sub>*j*</sub> := *θ*<sub>*j*</sub> − *α**h*<sub>*θ*</sub>(*x* − *y*)*x*<sub>*j*</sub>`(j=0:n)`
+`     `*θ**j* := *θ**j* − *α**h**θ*(*x* − *y*)*x**j*`(j=0:n)`
 ` }forever`
 
 Powerful as it can adapt to user preference changes in time.
 
 ### Map Reduce and Parallelism
 
-We map the test test set into a number of chunks depending on how many machines/cpu cores we want to use, then we process each chunk in parallel, then add up the result on one of the machines/cpu cores. [border](/File:Map-reduce.png "wikilink")
+We map the test test set into a number of chunks depending on how many machines/cpu cores we want to use, then we process each chunk in parallel, then add up the result on one of the machines/cpu cores.{% include figure_caption.html url="/assets/img/wiki/Map-reduce.png" description="border" %}
 
 ### SGD with momentum
 
 v is a k dimensional vector of the same dimensions as θ; it will be our gradient step
 
-*v*<sup>0</sup> = ∇<sub>*θ*<sup>0</sup></sub> \* *L*(*θ*<sup>0</sup>, *X*, *y*);*θ* − *w**e**i**g**h**t* *m**a**t**r**i**x*, ∇<sub>*θ*</sub> − *g**r**a**d**i**e**n**t* *w*.*r*.*t*.*θ* Calculate gradient at step 0
+*v*0 = ∇*θ*0 \* *L*(*θ*0, *X*, *y*);*θ* − *w**e**i**g**h**t* *m**a**t**r**i**x*, ∇*θ* − *g**r**a**d**i**e**n**t* *w*.*r*.*t*.*θ* Calculate gradient at step 0
 
-*v*<sup>*t*</sup> = *β* \* *v*<sup>*t* − 1</sup> + (1 − *β*)\*∇<sub>*θ*<sup>*t* − 1</sup></sub> \* *L*(*θ*<sup>*t* − 1</sup>, *X*, *y*);*β* − *m**o**m**e**n**t**u**m*Calculate gradient at step t; we use a Weighed Moving Average
+*v**t* = *β* \* *v**t* − 1 + (1 − *β*)\*∇*θ**t* − 1 \* *L*(*θ**t* − 1, *X*, *y*);*β* − *m**o**m**e**n**t**u**m*Calculate gradient at step t; we use a Weighed Moving Average
 
-*θ*<sup>*t*</sup> = *θ*<sup>*t*</sup> − *α* \* *v*<sup>*t*</sup>Take a step
+*θ**t* = *θ**t* − *α* \* *v**t*Take a step
 
 Momentum defines how much of the step is determined by the previous gradient step, and how much by the current gradient. Usually momentum = 0.9
 
-### AdaGrad[12]
+### AdaGrad12
 
 Authors present AdaGrad in the context of projected gradient method – they offer non-standard projection onto parameters space with the goal to optimize certain entity related to regret. Final AdaGrad update rule is given by the following formula:
 
-*G*<sup>*k*</sup> = *G*<sup>*k* − 1</sup> + ∇*J*(*θ*<sup>*k* − 1</sup>)<sup>2</sup>
+*G**k* = *G**k* − 1 + ∇*J*(*θ**k* − 1)2
 
 $\\theta^k = \\theta^{k-1} - \\frac{\\alpha}{\\sqrt{G^{k-1}}}\*\\nabla\*J(\\theta^{k-1})$
 
@@ -232,18 +233,18 @@ G is the historical gradient information. For each parameter we store sum of squ
 
 In any case though learning rate descreases from iteration to iteration – to reach zero at infinity. That is btw considered a problem and solved by authors of AdaDelta algorithm.
 
-### AdaDelta[13]
+### AdaDelta13
 
 Adadelta mixes two ideas though – first one is to scale learning rate based on historical gradient while taking into account only recent time window – not the whole history, like AdaGrad. And the second one is to use component that serves an acceleration term, that accumulates historical updates (similar to momentum).
 
 Adadelta update rule consists of the following steps:
 
--   Compute gradient *g*<sub>*t*</sub> at current time *t*
--   Accumulate gradients: *E*\[*g*<sup>2</sup>\]<sub>*t*</sub> = *ρ* \* *E*\[*g*<sup>2</sup>\]<sub>*t* − 1</sub> + (1 − *ρ*)\**g*<sub>*t*</sub><sup>2</sup>
+-   Compute gradient *g**t* at current time *t*
+-   Accumulate gradients: *E*\[*g*2\]*t* = *ρ* \* *E*\[*g*2\]*t* − 1 + (1 − *ρ*)\**g**t*2
 layout: post
 base: Wiki
 base_url: /wiki
--   Accumulate updates(momentum like): *E*\[*Δ**x*<sup>2</sup>\]<sub>*t*</sub> = *ρ**E*\[*Δ**x*<sup>2</sup>\]<sub>*t* − 1</sub> + (1 − *ρ*)*Δ**x*<sub>*t*</sub><sup>2</sup>
+-   Accumulate updates(momentum like): *E*\[*Δ**x*2\]*t* = *ρ**E*\[*Δ**x*2\]*t* − 1 + (1 − *ρ*)*Δ**x**t*2
 layout: post
 base: Wiki
 base_url: /wiki
@@ -252,9 +253,9 @@ base_url: /wiki
 
 We choose epsilon to be 10−6 – in original AdaDelta paper though epsilon is considered to be a parameter. We don’t go there now to limit hyper-parameter space (but in fact different results are reported for different values of epsilon in original paper)
 
-### RMSProp[14]
+### RMSProp14
 
-*v*<sup>*t*</sup> = ∇<sub>*θ*<sup>*t* − 1</sup></sub> \* *L*(*θ*<sup>*t* − 1</sup>, *X*, *y*)Calculate gradient step
+*v**t* = ∇*θ**t* − 1 \* *L*(*θ**t* − 1, *X*, *y*)Calculate gradient step
 
 $E_t = \\beta \* E_{t-1} + (1-\\beta)\*v_t^2 ; \\beta - momentum:\\ number\\ of\\ steps\\ remembered\\ \\frac{1}{1-\\beta}(\\beta=0.9 => 10\\ steps), E - exponentially\\ weighed\\ moving\\ average\\ of\\ the\\ gradient\\ squared$If my gradient is consistently small it will be a big number; if my gradient is volatile or consistently large it will be a big number
 
@@ -262,11 +263,11 @@ $\\theta_t = \\theta_{t-1} - \\alpha \* \\frac{v_t}{\\sqrt{E_t}}$Take the step
 
 This means that if our gradient is consistently small we'll take bigger jumps, and if it is volatile or too big we'll take smaller jumps
 
-### Adam[15]
+### Adam15
 
-*v*<sup>*t*</sup> = *β*1 \* *v*<sup>*t* − 1</sup> + (1 − *β*1)\*∇<sub>*θ*<sup>*t* − 1</sup></sub> \* *L*(*θ*<sup>*t* − 1</sup>, *X*, *y*),*β*1 − *f**i**r**s**t* *o**r**d**e**r* *m**o**m**e**n**t**u**m*Calculate gradient step with momentum
+*v**t* = *β*1 \* *v**t* − 1 + (1 − *β*1)\*∇*θ**t* − 1 \* *L*(*θ**t* − 1, *X*, *y*),*β*1 − *f**i**r**s**t* *o**r**d**e**r* *m**o**m**e**n**t**u**m*Calculate gradient step with momentum
 
-*E*<sub>*t*</sub> = *β*2 \* *E*<sub>*t* − 1</sub> + (1 − *β*2)\**v*<sub>*t*</sub><sup>2</sup>; *β* − *s**e**c**o**n**d* *o**r**d**e**r* *m**o**m**e**n**t**u**m*, *E* − *e**x**p**o**n**e**n**t**i**a**l**l**y* *w**e**i**g**h**e**d* *m**o**v**i**n**g* *a**v**e**r**a**g**e* *o**f* *t**h**e* *g**r**a**d**i**e**n**t* *s**q**u**a**r**e**d*If my gradient is consistently small it will be a big number; if my gradient is volatile or consistently large it will be a big number
+*E**t* = *β*2 \* *E**t* − 1 + (1 − *β*2)\**v**t*2; *β* − *s**e**c**o**n**d* *o**r**d**e**r* *m**o**m**e**n**t**u**m*, *E* − *e**x**p**o**n**e**n**t**i**a**l**l**y* *w**e**i**g**h**e**d* *m**o**v**i**n**g* *a**v**e**r**a**g**e* *o**f* *t**h**e* *g**r**a**d**i**e**n**t* *s**q**u**a**r**e**d*If my gradient is consistently small it will be a big number; if my gradient is volatile or consistently large it will be a big number
 
 $\\theta_t = \\theta_{t-1} - \\alpha \* \\frac{v_t}{\\sqrt{E_t}}$Take the step
 
@@ -287,9 +288,9 @@ Regularization
 
 {% include figure_caption.html url="/assets/img/wiki/L1vsl2.png" description="L1 vs L2 regularization" %} We have 2 ways to regularize our network, L1 and L2. What these do is add another term to the cost function, which penalizes the network proportional to the values of the weights.
 
-### Batch Normalization [16]
+### Batch Normalization 16
 
-Input: values of *x*(activation of a layer) over a minibatch *B* = {*x*<sub>1...*m*</sub>}
+Input: values of *x*(activation of a layer) over a minibatch *B* = {*x*1...*m*}
 
 Parameters to be learned: *γ*, *β*
 
@@ -307,9 +308,9 @@ $y_i = \\gamma \* \\hat{x_i} + \\beta \\equiv BN_{\\gamma, \\beta}(x_i)$ scale a
 
 The last step of batch normalization is the most important.
 
-We usually use a EWMA of *μ*<sub>*B*</sub> *a**n**d* *σ*<sub>*B*</sub><sup>2</sup> calculated across previous minibatches, with a momentum of 0.1
+We usually use a EWMA of *μ**B* *a**n**d* *σ**B*2 calculated across previous minibatches, with a momentum of 0.1
 
-#### Why it helps? [17]
+#### Why it helps? 17
 
 It reduces the bumpiness of the loss landscape, allowing us to use higher learning rates.
 
@@ -323,7 +324,7 @@ Let's modify f: *r**a**t**i**n**g* = *f*(*θ*, *X*)\**γ* + *β*  *�
 
 Now it is easy for f to give an output in the range \[0,5\]
 
-### Local Response Normalization[18]
+### Local Response Normalization18
 
 {% include figure_caption.html url="/assets/img/wiki/Lrn.gif" description=" Original LRN formula" %} With this answer I would like to summarize contributions of other authors and provide a single place explanation of the LRN (or contrastive normalization) technique for those, who just want to get aware of what it is and how it works.
 
@@ -342,7 +343,7 @@ Actual usage LRN was used more often during the days of early convets like LeNet
 
 Conclusion: Applying LRN along with pooling layer would not hurt the performance of the network as long as hyper-parameter values are reasonable. Despite that, I am not aware of any recent justification for applying LRN/contrast normalization in a neural-network.
 
-#### Keras implementation[19]
+#### Keras implementation19
 
 ``` python
 class LRN(Layer):
@@ -376,7 +377,7 @@ class LRN(Layer):
       return dict(list(base_config.items()) + list(config.items()))
 ```
 
-Embeddings[20]
+Embeddings20
 --------------
 
 How do we build a neural network for text processing? Words that appear very often, like 'the', don't tell us very much, while rare words, like 'retinopathy' might tell us a lot about the text.
@@ -464,52 +465,52 @@ Architectures
 
 {% include figure_caption.html url="/assets/img/wiki/Resnet.png" description="Resnet architecture" %} ResNets use feedforward identity connections
 
-### Wide ResNet [21]
+### Wide ResNet 21
 
 {% include figure_caption.html url="/assets/img/wiki/Wide_Res_Net.png" description="Resnet architecture" %} Wide ResNet uses wider blocks to make the networks easier to train to the same accuracy as the older ones.
 
 ### UNet
 
-{% include figure_caption.html url="/assets/img/wiki/Unet.jpg" description="<File:Unet.jpg>" %}
+{% include figure_caption.html url="/assets/img/wiki/Unet.jpg" description="" %}
 
-[1] <https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science>
+1. [https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science](https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science)
 
-[2] <https://en.wikipedia.org/wiki/Hyperparameter_optimization>
+2. [https://en.wikipedia.org/wiki/Hyperparameter_optimization](https://en.wikipedia.org/wiki/Hyperparameter_optimization)
 
-[3]
+3
 
-[4]
+4
 
-[5]
+5
 
-[6]
+6
 
-[7]
+7
 
-[8]
+8
 
-[9]
+9
 
-[10] <https://en.wikipedia.org/wiki/Softmax_function>
+10. [https://en.wikipedia.org/wiki/Softmax_function](https://en.wikipedia.org/wiki/Softmax_function)
 
-[11] <https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/>
+11. [https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/](https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/)
 
-[12] <http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf>
+12. [http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf](http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf)
 
-[13] <http://arxiv.org/abs/1212.5701>
+13. [http://arxiv.org/abs/1212.5701](http://arxiv.org/abs/1212.5701)
 
-[14] <https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf>
+14. [https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf](https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf)
 
-[15] <http://arxiv.org/abs/1412.6980>
+15. [http://arxiv.org/abs/1412.6980](http://arxiv.org/abs/1412.6980)
 
-[16] <https://arxiv.org/abs/1502.03167>
+16. [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
 
-[17] <https://arxiv.org/abs/1805.11604>
+17. [https://arxiv.org/abs/1805.11604](https://arxiv.org/abs/1805.11604)
 
-[18] <https://stats.stackexchange.com/questions/145768/importance-of-local-response-normalization-in-cnn>
+18. [https://stats.stackexchange.com/questions/145768/importance-of-local-response-normalization-in-cnn](https://stats.stackexchange.com/questions/145768/importance-of-local-response-normalization-in-cnn)
 
-[19] <https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html>
+19. [https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html](https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html)
 
-[20] <https://classroom.udacity.com/courses/ud730/>
+20. [https://classroom.udacity.com/courses/ud730/](https://classroom.udacity.com/courses/ud730/)
 
-[21] <https://arxiv.org/abs/1605.07146>
+21. [https://arxiv.org/abs/1605.07146](https://arxiv.org/abs/1605.07146)

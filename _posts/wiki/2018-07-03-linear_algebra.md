@@ -59,7 +59,7 @@ In 3D space, if we have a rotation transformation, finding its eigenvector = fin
 
 $A\*\\vec{v} = \\lambda\*\\vec{v}$ where A is a transformation, v an eigenvector and lambda its eigenvalue
 
-To solve: $A\*\\vec{v} = (\\lambda\*I)\*\\vec{v} <=> (A  - \\lambda\*I)\*\\vec{v} = \\vec{0} <=> A  - \\lambda\*I = \\vec{0}$
+To solve: $A\*\\vec{v} = (\\lambda\*I)\*\\vec{v}  (A  - \\lambda\*I)\*\\vec{v} = \\vec{0}  A  - \\lambda\*I = \\vec{0}$
 
 #### Eigenbasis
 
@@ -175,7 +175,7 @@ If the determinant is negative, it means the orientation of space has been inver
 
 ### Inverse
 
-*A*<sup>−1</sup> is the transformation that, when applied after *A* gives the identity transformation *I*, that has ones on the main diagonal and zeroes everywhere else. *A*<sup>−1</sup> \* *A* = *I*
+*A*−1 is the transformation that, when applied after *A* gives the identity transformation *I*, that has ones on the main diagonal and zeroes everywhere else. *A*−1 \* *A* = *I*
 
 The inverse only exists if det(*A*) > 0
 
@@ -242,22 +242,22 @@ Matrices
 
 In linear algebra, an orthogonal matrix is a square matrix whose columns and rows are orthogonal unit vectors (i.e., orthonormal vectors), i.e.
 
-*Q*<sup>*T*</sup>*Q* = *Q**Q*<sup>*T*</sup> = *I*,
+*Q**T**Q* = *Q**Q**T* = *I*,
  where *I* is the identity matrix.
 
 This leads to the equivalent characterization: a matrix Q is orthogonal if its transpose is equal to its inverse:
 
-*Q*<sup>*T*</sup> = *Q*<sup>−1</sup>.
+*Q**T* = *Q*−1.
 
 An orthogonal matrix Q is necessarily:
 
--   Invertible (with inverse: 1 = *Q*<sup>−1</sup> = *Q*<sup>*T*</sup>
--   Unitary 1 = *Q*<sup>−1</sup> = *Q*<sup>\*</sup>
--   Normal 1 = *Q*<sup>\*</sup> \* *Q* = *Q* \* *Q*<sup>\*</sup> in the reals.
+-   Invertible (with inverse: 1 = *Q*−1 = *Q**T*
+-   Unitary 1 = *Q*−1 = *Q*\*
+-   Normal 1 = *Q*\* \* *Q* = *Q* \* *Q*\* in the reals.
 
 The determinant of any orthogonal matrix is either +1 or −1. As a linear transformation, an orthogonal matrix preserves the dot product of vectors, and therefore acts as an isometry of Euclidean space, such as a rotation or reflection. In other words, it is a unitary transformation.
 
 Markov chains
 -------------
 
-{% include figure_caption.html url="/assets/img/wiki/Markov_health.jpg" description="Example of a Markov chain" %} Markov chains are expressed as stochastic matrices, with each entry *M*<sub>*i**j*</sub> representing the probability of jumping from state i to state j. The row sum of such a matrix is always 1.
+{% include figure_caption.html url="/assets/img/wiki/Markov_health.jpg" description="Example of a Markov chain" %} Markov chains are expressed as stochastic matrices, with each entry *M**i**j* representing the probability of jumping from state i to state j. The row sum of such a matrix is always 1.

@@ -14,16 +14,16 @@ It is easily installed in python by running:
 python3 -m pip install jupyter
 ```
 
-<h2>
+
 Kernels
 
-</h2>
-A guide for installing your own kernals can be found here: [Installing Jupyter notebook with a virtualenv kernel](/Installing_Jupyter_notebook_with_a_virtualenv_kernel "wikilink")
 
-<h2>
+A guide for installing your own kernals can be found here:[Installing Jupyter notebook with a virtualenv kernel]({% post_url /wiki/2018-06-13-installing_jupyter_notebook_with_a_virtualenv_kernel%})
+
+
 Extensions
 
-</h2>
+
 To control Jupyter extensions, the best thing to do is to install the [nbextensions_configurator](https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator):
 
 ``` bash

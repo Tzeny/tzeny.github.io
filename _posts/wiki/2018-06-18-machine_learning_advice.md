@@ -28,7 +28,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 Pipeline
 --------
 
-When we develop complex machine learning systems we should split our problem into smaller chunks, to have a way of better allocating our resources. For this we can use pipelining. Resources on this page come from AndrewNG's ML course[1].
+When we develop complex machine learning systems we should split our problem into smaller chunks, to have a way of better allocating our resources. For this we can use pipelining. Resources on this page come from AndrewNG's ML course1.
 
 For instance, for a photo OCR algorithm this is what the pipeline might look like.
 
@@ -56,4 +56,4 @@ You can introduce distortions to images, background noise to sound samples etc. 
 
 Your distortions should be consistent to the kind of distortions you expect to see in the test set.
 
-[1] <https://www.coursera.org/learn/machine-learning/>
+1. [https://www.coursera.org/learn/machine-learning/](https://www.coursera.org/learn/machine-learning/)

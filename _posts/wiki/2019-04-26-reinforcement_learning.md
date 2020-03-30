@@ -27,7 +27,7 @@ This RL loop outputs a sequence of state, action and reward. The goal of the age
 
 The cumulative reward at each time step t:
 
-*G*<sub>*t*</sub> = *R*<sub>*t* + 1</sub> + *R*<sub>*t* + 2</sub> + … equivalent to $G_{t}=\\sum_{k=0}^{T} R_{t+k+1}$
+*G**t* = *R**t* + 1 + *R**t* + 2 + … equivalent to $G_{t}=\\sum_{k=0}^{T} R_{t+k+1}$
 
 Rewards are discounted in time (with a factor gamma) to account for the fact that future rewards now are better than rewards in the future.
 
@@ -57,13 +57,13 @@ Monte Carlo When the episode ends (the agent reaches a “terminal state”), th
 
 Then, we start a new game with the added knowledge. The agent makes better decisions with each iteration.
 
-*V*(*S*<sub>*t*</sub>) ← *V*(*S*<sub>*t*</sub>) + *α*\[*G*<sub>*t*</sub>−*V*(*S*<sub>*t*</sub>)\]
+*V*(*S**t*) ← *V*(*S**t*) + *α*\[*G**t*−*V*(*S**t*)\]
 
-*V*(*S*<sub>*t*</sub>) − *m**a**x**i**m**u**m**e**x**p**e**c**t**e**d**f**u**t**u**r**e**r**e**w**a**r**d**s**t**a**r**t**i**n**g**a**t**t**h**e**l**a**s**t**s**t**a**t**e*
+*V*(*S**t*) − *m**a**x**i**m**u**m**e**x**p**e**c**t**e**d**f**u**t**u**r**e**r**e**w**a**r**d**s**t**a**r**t**i**n**g**a**t**t**h**e**l**a**s**t**s**t**a**t**e*
 
 ##### Temporal Difference Learning (learning at each timestep)
 
-*V*(*S*<sub>*t*</sub>) ← *V*(*S*<sub>*t*</sub>) + *α*\[*R*<sub>*t* + 1</sub>+*γ**V*(*S*<sub>*t* + 1</sub>)−*V*(*S*<sub>*t*</sub>)\]
+*V*(*S**t*) ← *V*(*S**t*) + *α*\[*R**t* + 1+*γ**V*(*S**t* + 1)−*V*(*S**t*)\]
 
 TD methods only wait until the next time step to update the value estimates. At time t+1 they immediately form a TD target using the observed reward Rt+1 and the current estimate V(St+1).
 
@@ -88,7 +88,7 @@ The value function is a function that tells us the maximum expected future rewar
 
 The value of each state is the total amount of the reward an agent can expect to accumulate over the future, starting at that state.
 
-*v*<sub>*π*</sub>(*s*)=𝔼<sub>*π*</sub>\[*R*<sub>*t* + 1</sub>+*γ**R*<sub>*t* + 2</sub>+*γ*<sup>2</sup>*R*<sub>*t* + 3</sub>+…|*S*<sub>*t*</sub>=*s*\]
+*v**π*(*s*)=𝔼*π*\[*R**t* + 1+*γ**R**t* + 2+*γ*2*R**t* + 3+…|*S**t*=*s*\]
 
 The agent will use this value function to select which state to choose at each step. The agent takes the state with the biggest value.
 
@@ -124,11 +124,11 @@ We will create a table where we’ll calculate the maximum expected future rewar
 
 {% include figure_caption.html url="/assets/img/wiki/Q_update.png" description="Bellman equation for Q learning" %}
 
-*Q*<sup>*π*</sup>(*s*<sub>*t*</sub>,*a*<sub>*t*</sub>) = *E*\[*R*<sub>*t* + 1</sub>+*γ**R*<sub>*t* + 2</sub>+*γ*<sup>2</sup>*R*<sub>*t* + 3</sub>+…|*s*<sub>*t*</sub>,*a*<sub>*t*</sub>\]
+*Q**π*(*s**t*,*a**t*) = *E*\[*R**t* + 1+*γ**R**t* + 2+*γ*2*R**t* + 3+…|*s**t*,*a**t*\]
 
 We can see this Q function as a reader that scrolls through the Q-table to find the line associated with our state, and the column associated with our action. It returns the Q value from the matching cell. This is the “expected future reward.”
 
-{% include figure_caption.html url="/assets/img/wiki/Q_algorithm_pseudocode.png" description="<File:Q> algorithm pseudocode.png" %}
+{% include figure_caption.html url="/assets/img/wiki/Q_algorithm_pseudocode.png" description=" algorithm pseudocode.png" %}
 
 ### Deep Q Learning
 
@@ -167,15 +167,15 @@ With DDQN, we want to separate the estimator of these two elements, using two ne
 -   one that estimates the state value V(s)
 -   one that estimates the advantage for each action A(s,a)
 
-#### Prioritized experience replay [1]
+#### Prioritized experience replay 1
 
-{% include figure_caption.html url="/assets/img/wiki/Prioritized_experience_replay.png" description="Stochastic prioritization" %} [thumb|Stochastic prioritization bias reduction](/File:Prioritized_experience_bias.png "wikilink") Prioritized Experience Replay (PER) was introduced in 2015 by Tom Schaul. The idea is that some experiences may be more important than others for our training, but might occur less frequently.
+{% include figure_caption.html url="/assets/img/wiki/Prioritized_experience_replay.png" description="Stochastic prioritization" %}{% include figure_caption.html url="/assets/img/wiki/Prioritized_experience_bias.png" description="Stochastic prioritization bias reduction" %} Prioritized Experience Replay (PER) was introduced in 2015 by Tom Schaul. The idea is that some experiences may be more important than others for our training, but might occur less frequently.
 
 Because we sample the batch uniformly (selecting the experiences randomly) these rich experiences that occur rarely have practically no chance to be selected.
 
 We want to take in priority experience where there is a big difference between our prediction and the TD target, since it means that we have a lot to learn about it.
 
-We add to each entry in our replay buffer a probability *p*<sub>*t*</sub> = |*δ*<sub>*t*</sub>| + *ϵ*
+We add to each entry in our replay buffer a probability *p**t* = |*δ**t*| + *ϵ*
 
 But we can’t just do greedy prioritization, because it will lead to always training the same experiences (that have big priority), and thus over-fitting.
 
@@ -191,7 +191,7 @@ Policy based Reinforcement Learning algorithms
 There are 2 types of policies:
 
 -   deterministic: given state s, *π*(*s*)=*a*
--   stochastic: given state s, *π*(*a*|*s*)=*P*(*a*<sub>*t*</sub>|*s*<sub>*t*</sub>) (Partially Observable Markov Decision Process (POMDP))
+-   stochastic: given state s, *π*(*a*|*s*)=*P*(*a**t*|*s**t*) (Partially Observable Markov Decision Process (POMDP))
 
 Stochastic policies are the most common type.
 
@@ -208,7 +208,7 @@ Disadvantages:
 
 ### Objective/Policy Score function
 
-*J*<sub>1</sub>(*θ*)=*E*<sub>*π*</sub>\[*G*<sub>1</sub>=*R*<sub>1</sub>+*γ**R*<sub>2</sub>+*γ*<sup>2</sup>*R*<sub>3</sub>+…\] = *E*<sub>*π*</sub>(*V*(*s*<sub>1</sub>))
+*J*1(*θ*)=*E**π*\[*G*1=*R*1+*γ**R*2+*γ*2*R*3+…\] = *E**π*(*V*(*s*1))
 
 The idea is simple. If I always start in some state s1, what’s the total reward I’ll get from that start state until the end?
 
@@ -220,13 +220,13 @@ $J_{avgv}(\\theta)=E_{\\pi}(V(s))=\\sum d(s) V(s){\\ where \\ }d(s)=\\frac{N(s)}
 
 Third, we can use the average reward per time step. The idea here is that we want to get the most reward per time step.
 
-*J*<sub>*a**v**R*</sub>(*θ*)=*E*<sub>*π*</sub>(*r*)=∑<sub>*s*</sub>*d*(*s*)∑<sub>*a*</sub>*π**θ*(*s*, *a*)*R*<sub>*s*</sub><sup>*a*</sup> (probability that I'm in state s) (probability that I take action a from that state under this policy) (immediate reward)
+*J**a**v**R*(*θ*)=*E**π*(*r*)=∑*s**d*(*s*)∑*a**π**θ*(*s*, *a*)*R**s**a* (probability that I'm in state s) (probability that I take action a from that state under this policy) (immediate reward)
 
 ### Gradient ascent
 
 Our goal is to find the parameter θ that maximizes J(θ).
 
-*J*(*θ*)=*E*<sub>*π*</sub>\[*R*(𝒯)\],  *w**h**e**r**e* 𝒯 = (*s*<sub>*i*</sub>, *a*<sub>*i*</sub>, *r*<sub>*i*</sub>) (expected given policy) (expected future reward)
+*J*(*θ*)=*E**π*\[*R*(𝒯)\],  *w**h**e**r**e* 𝒯 = (*s**i*, *a**i*, *r**i*) (expected given policy) (expected future reward)
 
 Which is the total summation of expected reward given policy.
 
@@ -242,4 +242,4 @@ We’ll using two neural networks:
 
 The Actor Critic model is a better score function than Monte Carlo. Instead of waiting until the end of the episode as we do in Monte Carlo REINFORCE, we make an update at each step (TD Learning).
 
-[1] <https://arxiv.org/abs/1511.05952>
+1. [https://arxiv.org/abs/1511.05952](https://arxiv.org/abs/1511.05952)

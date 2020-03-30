@@ -89,7 +89,7 @@ We should train our model with several different learning rates and then choose 
 Cross Entropy
 -------------
 
-S is the softmax output of the Neural Network for input xi. L is the hot encoded vector corresponding to label yi. *D*(*S*, *L*)= − ∑<sub>*i*</sub>*L*<sub>*i*</sub>*l**o**g*(*S*<sub>*i*</sub>)
+S is the softmax output of the Neural Network for input xi. L is the hot encoded vector corresponding to label yi. *D*(*S*, *L*)= − ∑*i**L**i**l**o**g*(*S**i*)
 
 How to improve a classifier
 ---------------------------
@@ -113,13 +113,13 @@ Learning curve
 
 If the score on the test set keeps getting better we need more training examples. If it plateaus we need to improve our algorithm.
 
-Adjusting the learning rate during training[1]
+Adjusting the learning rate during training1
 ----------------------------------------------
 
 {% include figure_caption.html url="/assets/img/wiki/Learning_rate_optimization.jpeg" description="Comparing Performances of Different Learning Rate Schedules and Adaptive Learning Algorithms" %} We can either use:
 
 -   learning rate schedules - modifying the learning rate in a fixed way at every n steps
--   adaptive learning rate algorithms - such as [AdaGrad](/Neural_Networks#AdaGrad.5B2.5D "wikilink"), [AdaDelta](/Neural_Networks#AdaDelta.5B3.5D "wikilink"), [Adam](/Neural_Networks#Adam.5B4.5D "wikilink")
+-   adaptive learning rate algorithms - such as[AdaGrad]({% post_url /wiki/2019-03-07-neural_networks%}),[AdaDelta]({% post_url /wiki/2019-03-07-neural_networks%}),[Adam]({% post_url /wiki/2019-03-07-neural_networks%})
 
 Adaptive learning rate algorithms should do a better job since they are not problem specific like tuning the learning rate decay manually would be.
 
@@ -132,4 +132,4 @@ If you set it too low, training loss < validation loss; set it higher or train f
 
 If you do not train for enough epochs, training loss < validation loss.
 
-[1] <https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1>
+1. [https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1](https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1)

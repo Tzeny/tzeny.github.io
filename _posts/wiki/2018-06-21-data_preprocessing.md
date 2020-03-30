@@ -6,7 +6,7 @@ base_url: /wiki
 hidden: true
 ---
 
-Data preprocessing is a data mining technique that involves transforming raw data into an understandable format. Real-world data is often incomplete, inconsistent, and/or lacking in certain behaviors or trends, and is likely to contain many errors. Data preprocessing is a proven method of resolving such issues. Data preprocessing prepares raw data for further processing.[1]
+Data preprocessing is a data mining technique that involves transforming raw data into an understandable format. Real-world data is often incomplete, inconsistent, and/or lacking in certain behaviors or trends, and is likely to contain many errors. Data preprocessing is a proven method of resolving such issues. Data preprocessing prepares raw data for further processing.1
 
 Data preprocessing in Python
 ----------------------------
@@ -45,13 +45,13 @@ from keras.datasets import imdb
 max(idx.values())#number of different words
 
 rev_idx = {v+3:k for k,v in idx.items()}
-rev_idx[0] = 'padding_char'
-rev_idx[1] = 'start_char'
-rev_idx[2] = 'oov_char'
-rev_idx[3] = 'unk_char'
+rev_idx0 = 'padding_char'
+rev_idx1 = 'start_char'
+rev_idx2 = 'oov_char'
+rev_idx3 = 'unk_char'
 
 #transform review from indices to words
-example_review = ' '.join([rev_idx[word] for word in X_train[0]])
+example_review = ' '.join([rev_idx[word] for word in X_train0])
 print(example_review)
 
 from keras.preprocessing.sequence import pad_sequences
@@ -108,4 +108,4 @@ train = mms.fit_transform(train)#learn a set of scaling/shifting operations to f
 test = mms.transform(test)#apply the same operations to previously unseen test data
 ```
 
-[1] <https://www.techopedia.com/definition/14650/data-preprocessing>
+1. [https://www.techopedia.com/definition/14650/data-preprocessing](https://www.techopedia.com/definition/14650/data-preprocessing)

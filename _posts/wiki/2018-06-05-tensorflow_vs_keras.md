@@ -19,24 +19,24 @@ Keras is a high-level neural networks API, written in Python and capable of runn
 Comparison
 ----------
 
-For comparison I will use data from some posts written by more informed people than myself[1][2]
+For comparison I will use data from some posts written by more informed people than myself12
 
 Keras is geared towards ease of use, while maintaining the ability to create complex models.
 
 Tensorflow, although harder to learn provides much more control over your model, has a debugger and many more options.
 
-But as we all know that Keras is going to be integrated in TF, it is wiser to build your network using tf.contrib.Keras and insert anything you want in the network using pure TensorFlow [3]. In short,
+But as we all know that Keras is going to be integrated in TF, it is wiser to build your network using tf.contrib.Keras and insert anything you want in the network using pure TensorFlow 3. In short,
 
 `tf.contrib.Keras + tf = All you ever gonna need`
 
-Also, apparently Keras is already integrated into Tensorflow[4]
+Also, apparently Keras is already integrated into Tensorflow4
 
-<references />
 
-[1] <https://medium.com/implodinggradients/tensorflow-or-keras-which-one-should-i-learn-5dd7fa3f9ca0>
 
-[2] <https://www.quora.com/What-is-the-difference-between-keras-and-tensorflow>
+1. [https://medium.com/implodinggradients/tensorflow-or-keras-which-one-should-i-learn-5dd7fa3f9ca0](https://medium.com/implodinggradients/tensorflow-or-keras-which-one-should-i-learn-5dd7fa3f9ca0)
 
-[3]
+2. [https://www.quora.com/What-is-the-difference-between-keras-and-tensorflow](https://www.quora.com/What-is-the-difference-between-keras-and-tensorflow)
 
-[4] <http://www.fast.ai/2017/01/03/keras/>
+3
+
+4. [http://www.fast.ai/2017/01/03/keras/](http://www.fast.ai/2017/01/03/keras/)

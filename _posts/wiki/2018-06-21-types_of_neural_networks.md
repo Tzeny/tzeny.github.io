@@ -38,7 +38,7 @@ Since RNNs suffer from the vanishing gradient problem, that is backpropagating t
 
 #### LSTM - long short term memory
 
-{% include figure_caption.html url="/assets/img/wiki/Lstm-2.jpg" description="A LSTM memory cell with continuous input, output and forget functions" %} [thumb|Peepehole LSTM memory cell](/File:Greff_lstm_diagram.png "wikilink") We have 4 building blocks:
+{% include figure_caption.html url="/assets/img/wiki/Lstm-2.jpg" description="A LSTM memory cell with continuous input, output and forget functions" %}{% include figure_caption.html url="/assets/img/wiki/Greff_lstm_diagram.png" description="Peepehole LSTM memory cell" %} We have 4 building blocks:
 
 -   + : element wise addition
 -   x : element wise multiplication (used as gating, to allow a signal to be controlled by the output of the sigmoid function)
@@ -51,7 +51,7 @@ A memory cell has 3 basic operations:
 -   read
 -   forget
 
-Compact form of the equations for the forward pass of an LSTM unit with a forget gate.[1][2]
+Compact form of the equations for the forward pass of an LSTM unit with a forget gate.12
 
 $$\\begin{align}
 f_t &= \\sigma_g(W_{f} x_t + U_{f} h_{t-1} + b_f) \\\\
@@ -61,9 +61,9 @@ c_t &= f_t \\circ c_{t-1} + i_t \\circ \\sigma_c(W_{c} x_t + U_{c} h_{t-1} + b_c
 h_t &= o_t \\circ f_t(c_t)
 \\end{align}$$
 
-*f*<sub>*t*</sub> above is in our case tanh
+*f**t* above is in our case tanh
 
-*W* are weights used to modify *x*<sub>*t*</sub>
+*W* are weights used to modify *x**t*
 
 *U* is the hidden state to state matrix, known as a transition matrix and similar to a Markov chain
 
@@ -71,17 +71,17 @@ h_t &= o_t \\circ f_t(c_t)
 
 Variables and functions
 
--   *x*<sub>*t*</sub>: input vector
--   *h*<sub>*t*</sub>: hidden layer vector
--   *y*<sub>*t*</sub>: output vector
+-   *x**t*: input vector
+-   *h**t*: hidden layer vector
+-   *y**t*: output vector
 -   *W*, *U* and *b*: parameter matrices and vector
--   *σ*<sub>*h*</sub> and *σ*<sub>*y*</sub>: activation functions
+-   *σ**h* and *σ**y*: activation functions
 
-It’s important to note that LSTMs’ memory cells give different roles to addition and multiplication in the transformation of input. The central plus sign in both diagrams is essentially the secret of LSTMs. Stupidly simple as it may seem, this basic change helps them preserve a constant error when it must be backpropagated at depth. Instead of determining the subsequent cell state by multiplying its current state with new input, they add the two, and that quite literally makes the difference. (The forget gate still relies on multiplication, of course.)[3]
+It’s important to note that LSTMs’ memory cells give different roles to addition and multiplication in the transformation of input. The central plus sign in both diagrams is essentially the secret of LSTMs. Stupidly simple as it may seem, this basic change helps them preserve a constant error when it must be backpropagated at depth. Instead of determining the subsequent cell state by multiplying its current state with new input, they add the two, and that quite literally makes the difference. (The forget gate still relies on multiplication, of course.)3
 
 #### GRU - gated recurrent unit
 
-{% include figure_caption.html url="/assets/img/wiki/Gru-memory-cell.png" description="A GRU memory cell" %} [thumb|A GRU memory cell](/File:Lstm_gru.png "wikilink") Initially, for *t* = 0, the output vector is *h*<sub>0</sub> = 0.
+{% include figure_caption.html url="/assets/img/wiki/Gru-memory-cell.png" description="A GRU memory cell" %}{% include figure_caption.html url="/assets/img/wiki/Lstm_gru.png" description="A GRU memory cell" %} Initially, for *t* = 0, the output vector is *h*0 = 0.
 
 $$\\begin{align}
 z_t &= \\sigma_g(W_{z} x_t + U_{z} h_{t-1} + b_z) \\\\
@@ -140,7 +140,7 @@ Convolutional Neural Networks
 
 {% include figure_caption.html url="/assets/img/wiki/Convolutional+Network.png" description="A small convolutional network" %} In machine learning, a convolutional neural network (CNN, or ConvNet) is a class of deep, feed-forward artificial neural networks, most commonly applied to analyzing visual imagery.
 
-CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics.[4]
+CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics.4
 
 In each layer of the network we take a convolution (let's say a 5x5 convolution), and we run it across the image. Each layer of the image is known as a featuremap. By doing this we generate new feature maps. Next, we subsample those featuremaps and repeat the process. At the final layer we will have a large number of 1x1 feature maps that we feed into our neural network.
 
@@ -205,10 +205,10 @@ output = keras.layers.concatenate([tower_1, tower_2, tower_3], axis = 3)
 
 Since there are so many choices for valid kernels and polling parameters, why choose? The inception model combines multiple kernels/pollings into one feature map.
 
-[1]
+1
 
-[2]
+2
 
-[3] <https://deeplearning4j.org/lstm.html>
+3. [https://deeplearning4j.org/lstm.html](https://deeplearning4j.org/lstm.html)
 
-[4] <https://en.wikipedia.org/wiki/Convolutional_neural_network>
+4. [https://en.wikipedia.org/wiki/Convolutional_neural_network](https://en.wikipedia.org/wiki/Convolutional_neural_network)

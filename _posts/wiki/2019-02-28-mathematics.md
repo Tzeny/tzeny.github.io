@@ -28,37 +28,37 @@ Courses:
 Internal Resources
 ------------------
 
--   [Miscellaneous](/Miscellaneous "wikilink")
-    -   [Averages](/Averages "wikilink")
+-  [Miscellaneous]({% post_url /wiki/2018-07-03-interesting_miscellaneous%})
+    -  [Averages]({% post_url /wiki/2019-02-28-averages%})
 
-<!-- -->
 
--   [Calculus](/Calculus "wikilink")
-    -   [Derivatives](/Calculus#Derivatives "wikilink")
 
-<!-- -->
+-  [Calculus]({% post_url /wiki/2019-01-10-calculus%})
+    -  [Derivatives]({% post_url /wiki/2019-01-10-calculus%})
 
--   [Linear Algebra](/Linear_Algebra "wikilink")
-    -   [Vectors](/Linear_Algebra#Vectors "wikilink")
-        -   [Linear Combinations of Vectors](/Linear_Algebra#Linear_combination_of_vectors "wikilink")
-        -   [Basis](/Linear_Algebra#Basis "wikilink")
-            -   [Changing basis](/Linear_Algebra#Changing_bases "wikilink")
-        -   [Eigenvectors](/Linear_Algebra#Eigenvectors "wikilink")
-            -   [Eigenbasis](/Linear_Algebra#Eigenbasis "wikilink")
-    -   [Linear Transformations](/Linear_Algebra#Linear_transformations "wikilink")
-        -   [Matrix Multiplication as Composition](/Linear_Algebra#Matrix_multiplications_as_compositions "wikilink")
-        -   [Space Orientation](/Linear_Algebra#Space_orientation "wikilink")
-        -   [Column Space](/Linear_Algebra#Column_space "wikilink")
-        -   [Rank](/Linear_Algebra#Rank "wikilink")
-        -   [Null Space / Kernel](/Linear_Algebra#Null_space.2FKernel "wikilink")
-        -   [Determinants](/Linear_Algebra#Determinants "wikilink")
-        -   [Inverse](/Linear_Algebra#Inverse "wikilink")
-        -   [Non Square Matrices](/Linear_Algebra#Non_Square_Matrices "wikilink")
-        -   [Cross Product](/Linear_Algebra#Cross_product "wikilink")
-            -   [2D Space](/Linear_Algebra#2D_space "wikilink")
-            -   [3D Space](/Linear_Algebra#3D_space "wikilink")
-        -   [Dot Product](/Linear_Algebra#Dot_product "wikilink")
-        -   [Duality](/Linear_Algebra#Duality "wikilink")
+
+
+-  [Linear Algebra]({% post_url /wiki/2018-07-03-linear_algebra%})
+    -  [Vectors]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Linear Combinations of Vectors]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Basis]({% post_url /wiki/2018-07-03-linear_algebra%})
+            -  [Changing basis]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Eigenvectors]({% post_url /wiki/2018-07-03-linear_algebra%})
+            -  [Eigenbasis]({% post_url /wiki/2018-07-03-linear_algebra%})
+    -  [Linear Transformations]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Matrix Multiplication as Composition]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Space Orientation]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Column Space]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Rank]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Null Space / Kernel]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Determinants]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Inverse]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Non Square Matrices]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Cross Product]({% post_url /wiki/2018-07-03-linear_algebra%})
+            -  [2D Space]({% post_url /wiki/2018-07-03-linear_algebra%})
+            -  [3D Space]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Dot Product]({% post_url /wiki/2018-07-03-linear_algebra%})
+        -  [Duality]({% post_url /wiki/2018-07-03-linear_algebra%})
 -   Computational Linear Algebra
     -   Introduction of the course; presentation of the problems we are trying to solve - [Course 1: Why are we here?](https://github.com/fastai/numerical-linear-algebra/blob/master/nbs/1.%20Why%20are%20we%20here.ipynb)
     -   The problem of trying to assign a topic to a post; different approaches; how to speed them up - [Course 2: Topic modelling with SVD and NMF](https://github.com/fastai/numerical-linear-algebra/blob/master/nbs/2.%20Topic%20Modeling%20with%20NMF%20and%20SVD.ipynb)
@@ -79,6 +79,6 @@ $\\underset{u}{min} 10\*((u-5)^2+1) => \\underset{u}{min} 10(u-5)^2+10 => u=5$
 EWMA
 ----
 
-Exponentially weighted moving average [thumb|Exponentially weighted moving average](/File:Ewma.png "wikilink") *S*<sub>*t*</sub> = *Y*<sub>1</sub> for *t* = 1
+Exponentially weighted moving average{% include figure_caption.html url="/assets/img/wiki/Ewma.png" description="Exponentially weighted moving average" %} *S**t* = *Y*1 for *t* = 1
 
-*S*<sub>*t*</sub> = *α* \* *Y*<sub>*t*</sub> + (1 − *α*)\**S*<sub>*t* − 1</sub> for *t* > 1
+*S**t* = *α* \* *Y**t* + (1 − *α*)\**S**t* − 1 for *t* > 1

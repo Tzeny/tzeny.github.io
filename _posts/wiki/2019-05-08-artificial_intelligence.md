@@ -25,9 +25,9 @@ Contests:
 
 -   [Kaggle Competitions](https://www.kaggle.com/competitions)
 
-### <span class="mw-customtoggle-articles">Articles</span>
+### Articles
 
-<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-articles">
+
 -   [Deep Learning Performance with AutoAugment](https://ai.googleblog.com/2018/06/improving-deep-learning-performance.html?m=1%7CImproving)
     -   Augmenting computer vision datasets by generating new images based on existing data in the set
 -   [Deep Reinforcement Learning Doesn't Work Yet](https://www.alexirpan.com/2018/02/14/rl-hard.html) - February 14th, 2018
@@ -59,15 +59,15 @@ Contests:
     -   Short presentation of the winners of a reinforcement learning contest (they attempted to generalize from previous knowledge)
 -   [CNNs from different viewpoints](https://medium.com/impactai/cnns-from-different-viewpoints-fab7f52d159c)
     -   Short post describing how to view CNNs as matrix multiplications or dense neural nets; informative
--   [1](https://eng.uber.com/deconstructing-lottery-tickets/)
+-   1(https://eng.uber.com/deconstructing-lottery-tickets/)
     -   Using a binary mask to zero out many of the model's weights leads to better accuracy
--   [2](https://eng.uber.com/coordconv/)
+-   2(https://eng.uber.com/coordconv/)
     -   Introducing coordinates to convolution filters to give CNNs a way to model the coordinate transform task (increased performance in RL, Object detection)
 
-</div>
-### <span class="mw-customtoggle-tutguide">Tutorials and Guides</span>
 
-<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-tutguide">
+### Tutorials and Guides
+
+
 Tutorials:
 
 -   [A Guide to TF Layers: Building a Convolutional Neural Network](https://www.tensorflow.org/tutorials/layers)
@@ -87,10 +87,10 @@ Guides
     -   Amongst other things you can convert Keras models to TF estimators
 -   [Understanding and Coding Inception Module in Keras](https://becominghuman.ai/understanding-and-coding-inception-module-in-keras-eb56e9056b4b)
 
-</div>
-### <span class="mw-customtoggle-papers">Papers</span>
 
-<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-papers">
+### Papers
+
+
 -   [Generative Temporal Models with Spatial Memory for Partially Observed Environments](https://arxiv.org/abs/1804.09401)
     -   [Videos of the agent in action](https://drive.google.com/file/d/1WLiyLRDUIMuOWtJEDIUxrTQCOOykeCE0/view)
     -   Generative Temporal Model with Spatial Memory, an action-conditioned generative model that uses a scalable non-parametric memory to store spatial and visual information; DND memory
@@ -115,7 +115,7 @@ Guides
     -   Wide ResNet architecture
 -   [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](http://arxiv.org/abs/1502.03167)
 -   [How Does Batch Normalization Help Optimization?](https://arxiv.org/pdf/1805.11604.pdf)
-    -   An investigation into why Batch Normalization works. It is also compared to L<smth> losses. Apparently it works because it smoothens the optimization landscape; it doesn't have a large impact on ICS.
+    -   An investigation into why Batch Normalization works. It is also compared to L losses. Apparently it works because it smoothens the optimization landscape; it doesn't have a large impact on ICS.
 -   [Verification Of Non Linear Specifications For Neural Networks](https://arxiv.org/pdf/1902.09592.pdf)
     -   Mathematical tools for proving the robustness of a model against adversarial attacks
 -   [Going deeper with convolutions](https://www.cc.gatech.edu/~hic/CS7616/Papers/Szegedy-et-al-2014.pdf)
@@ -126,10 +126,10 @@ Guides
 -   [Learning Cognitive Models using Neural Networks](https://arxiv.org/abs/1806.08065)
 -   [Going deeper with convolutions](https://arxiv.org/pdf/1409.4842.pdf)
 
-</div>
-### <span class="mw-customtoggle-courbook">Courses and Books</span>
 
-<div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-courbook">
+### Courses and Books
+
+
 Courses:
 
 -   [Coursera Machine Learning](https://www.coursera.org/learn/machine-learning) - taught by AndrewNG
@@ -148,13 +148,13 @@ Books:
 -   [Intelligence: A Modern Approach](https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach%7CArtificial)
 -   [Deep Learning with Python](https://www.manning.com/books/deep-learning-with-python)
 
-</div>
+
 ### Tools
 
--   [Google Colaboratory](/Google_Colaboratory "wikilink") - [go there now](https://colab.research.google.com)
+-  [Google Colaboratory]({% post_url /wiki/2018-10-05-google_colaboratory%}) - [go there now](https://colab.research.google.com)
 -   [ConvNet Drawer](https://github.com/yu4u/convnet-drawer)
 -   [Keras Visualization Toolkit](https://github.com/raghakot/keras-vis)
--   [Tensorboard](/Tensorboard "wikilink")
+-  [Tensorboard]({% post_url /wiki/2018-09-23-tensorboard%})
 
 ### Existing work
 
@@ -165,104 +165,104 @@ Internal Resources
 
 Learning ML
 
--   [Loss and Accuracy](/Loss_and_Accuracy "wikilink")
--   [Debugging ML algorithms](/Debugging_ML_algorithms "wikilink")
-    -   [Bias vs Variance](/Debugging_ML_algorithms#Bias_vs_Variance "wikilink")
-    -   [Precision, Recall and F1 score](/Debugging_ML_algorithms#Precision_and_recall "wikilink")
-    -   [Cross Entropy](/Debugging_ML_algorithms#Cross_Entropy "wikilink")
-    -   [Learning Curve](/Debugging_ML_algorithms#Learning_curve "wikilink")
-    -   [Learning rate and number of epochs](/Debugging_ML_algorithms#Learning_rate_and_number_of_epochs "wikilink")
+-  [Loss and Accuracy]({% post_url /wiki/2019-01-10-loss_and_accuracy%})
+-  [Debugging ML algorithms]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
+    -  [Bias vs Variance]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
+    -  [Precision, Recall and F1 score]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
+    -  [Cross Entropy]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
+    -  [Learning Curve]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
+    -  [Learning rate and number of epochs]({% post_url /wiki/2019-02-15-debugging_ml_algorithms%})
 
-<!-- -->
 
--   [Reinforcement Learning](/Reinforcement_Learning "wikilink")
 
-<!-- -->
+-  [Reinforcement Learning]({% post_url /wiki/2019-04-26-reinforcement_learning%})
 
--   [Neural Networks](/Neural_Networks "wikilink")
-    -   [Basics](/Neural_Networks#Basics "wikilink")
-        -   [Simple Neural Network](/Neural_Networks#Simple_network "wikilink")
-        -   [Data Preprocessing](/Neural_Networks#Data_preprocessing "wikilink")
-        -   [Weight Initialization](/Neural_Networks#Weight_initialization "wikilink")
-        -   [One hot encoding](/Neural_Networks#One_hot_encoding "wikilink")
-        -   [Softmax](/Neural_Networks#Softmax "wikilink")
-    -   [Activation Functions](/Neural_Networks#Activation_functions "wikilink")
-        -   [Step](/Neural_Networks#Step "wikilink")
-        -   [Sigmoid](/Neural_Networks#Sigmoid "wikilink")
-        -   [Tanh](/Neural_Networks#Hyperbolic_Tangent.28tanh.29 "wikilink")
-        -   [ReLU](/Neural_Networks#ReLU.28rectified_linear_unit.29 "wikilink")
-        -   [Softplus](/Neural_Networks#Softplus "wikilink")
-        -   [Softmax](/Neural_Networks#Softmax "wikilink")
-        -   [Optimization](/Neural_Networks#Optimization.5B10.5D "wikilink")
-            -   [(Batch) Gradient Descent](/Neural_Networks#.28Batch.29_Gradient_Descent "wikilink")
-            -   [Stochastic Gradient Descent](/Neural_Networks#Stochastic_Gradient_Descent "wikilink")
-            -   [Convergence](/Neural_Networks#Convergence "wikilink")
-            -   [Online Learning](/Neural_Networks#Online_learning "wikilink")
-            -   [Map Reduce and Parallelism](/Neural_Networks#Neural_Networks#Map_Reduce_and_Parallelism "wikilink")
-            -   [SGD with Momentum](/Neural_Networks#SGD_with_momentum "wikilink")
-            -   [AdaGrad](/Neural_Networks#AdaGrad.5B11.5D "wikilink")
-            -   [AdaDelta](/Neural_Networks#AdaDelta.5B12.5D "wikilink")
-            -   [RMSProp](/Neural_Networks#RMSProp.5B13.5D "wikilink")
-            -   [Adam](/Neural_Networks#Adam.5B14.5D "wikilink")
-            -   [Choosing the Best Optimizer](/Neural_Networks#Choosing_the_best_optimizer "wikilink")
-    -   [Regularization](/Neural_Networks#Regularization "wikilink")
-        -   [Batch Normalization](/Neural_Networks#Batch_Normalization_.5B15.5D "wikilink")
-        -   [Local Response Normalization](/Neural_Networks#Local_Response_Normalization.5B17.5D "wikilink")
-    -   [Embeddings](/Neural_Networks#Embeddings "wikilink")
-        -   [Skip Gram](/Neural_Networks#Skip-gram "wikilink")
-        -   [CBOW](/Neural_Networks#CBOW_.28Continuous_bag_of_words.29 "wikilink")
-    -   [Architectures](/Neural_Networks#Architectures "wikilink")
 
-<!-- -->
 
--   [Types of Neural Networks](/Types_of_Neural_Networks "wikilink")
-    -   [Recurrent Neural Network](/Types_of_Neural_Networks#Recurrent_neural_network "wikilink")
-        -   [LSTM](/Types_of_Neural_Networks#LSTM_-_long_short_term_memory "wikilink")
-        -   [GRU](/Types_of_Neural_Networks#GRU_-_gated_recurrent_unit "wikilink")
-    -   [Convolutional Neural Networks](/Types_of_Neural_Networks#Convolutional_Neural_Networks "wikilink")
-        -   [CNN Visualizations](/CNN_Visualizations "wikilink")
-            -   [Activation Maximization](/CNN_Visualizations#Activation_Maximization "wikilink")
-            -   [Saliency Maps](/CNN_Visualizations#Saliency_Maps "wikilink")
-            -   [Class Activation Maps](/CNN_Visualizations#Class_Activation_Maps "wikilink")
--   [Types of Machine Learning Problems](/Types_of_Machine_Learning_algorithms "wikilink")
-    -   [Supervised Learning](/Types_of_Machine_Learning_algorithms#Supervised_Learning "wikilink")
-        -   [Regression problems](/Types_of_Machine_Learning_algorithms#Regression_problem "wikilink")
-        -   [Classification problems](/Types_of_Machine_Learning_algorithms#Classification_problems "wikilink")
-        -   [Support Vector Machines](/Types_of_Machine_Learning_algorithms#Support_vector_machines "wikilink")
-        -   [Natural Language Processing](/Types_of_Machine_Learning_algorithms#Natural_Language_Processing "wikilink")
-    -   [Unsupervised Learning](/Types_of_Machine_Learning_algorithms#Unsupervised_learning "wikilink")
-        -   [Anomaly Detection](/Types_of_Machine_Learning_algorithms#Anomaly_Detection "wikilink")
-        -   [Clustering](/Types_of_Machine_Learning_algorithms#Clustering "wikilink")
-    -   [Reinforcement Learning](/Types_of_Machine_Learning_algorithms#Reinforcement_learning "wikilink")
+-  [Neural Networks]({% post_url /wiki/2019-03-07-neural_networks%})
+    -  [Basics]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Simple Neural Network]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Data Preprocessing]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Weight Initialization]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [One hot encoding]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Softmax]({% post_url /wiki/2019-03-07-neural_networks%})
+    -  [Activation Functions]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Step]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Sigmoid]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Tanh]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [ReLU]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Softplus]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Softmax]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Optimization]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [(Batch) Gradient Descent]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Stochastic Gradient Descent]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Convergence]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Online Learning]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Map Reduce and Parallelism]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [SGD with Momentum]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [AdaGrad]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [AdaDelta]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [RMSProp]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Adam]({% post_url /wiki/2019-03-07-neural_networks%})
+            -  [Choosing the Best Optimizer]({% post_url /wiki/2019-03-07-neural_networks%})
+    -  [Regularization]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Batch Normalization]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Local Response Normalization]({% post_url /wiki/2019-03-07-neural_networks%})
+    -  [Embeddings]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [Skip Gram]({% post_url /wiki/2019-03-07-neural_networks%})
+        -  [CBOW]({% post_url /wiki/2019-03-07-neural_networks%})
+    -  [Architectures]({% post_url /wiki/2019-03-07-neural_networks%})
 
-<!-- -->
 
--   [Machine Learning Advice](/Machine_Learning_Advice "wikilink")
-    -   [Dataset Management](/Machine_Learning_Advice#Dataset_management "wikilink")
-    -   [Pipeline](/Machine_Learning_Advice#Pipeline "wikilink")
-    -   [Ceiling Analysis](/Machine_Learning_Advice#Ceiling_analysis "wikilink")
-    -   [Increasing Your Dataset Size](/Machine_Learning_Advice#Increasing_your_dataset_size "wikilink")
+
+-  [Types of Neural Networks]({% post_url /wiki/2018-06-21-types_of_neural_networks%})
+    -  [Recurrent Neural Network]({% post_url /wiki/2018-06-21-types_of_neural_networks%})
+        -  [LSTM]({% post_url /wiki/2018-06-21-types_of_neural_networks%})
+        -  [GRU]({% post_url /wiki/2018-06-21-types_of_neural_networks%})
+    -  [Convolutional Neural Networks]({% post_url /wiki/2018-06-21-types_of_neural_networks%})
+        -  [CNN Visualizations]({% post_url /wiki/2019-01-30-cnn_visualizations%})
+            -  [Activation Maximization]({% post_url /wiki/2019-01-30-cnn_visualizations%})
+            -  [Saliency Maps]({% post_url /wiki/2019-01-30-cnn_visualizations%})
+            -  [Class Activation Maps]({% post_url /wiki/2019-01-30-cnn_visualizations%})
+-  [Types of Machine Learning Problems]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+    -  [Supervised Learning]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Regression problems]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Classification problems]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Support Vector Machines]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Natural Language Processing]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+    -  [Unsupervised Learning]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Anomaly Detection]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+        -  [Clustering]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+    -  [Reinforcement Learning]({% post_url /wiki/2019-02-22-types_of_machine_learning_algorithms%})
+
+
+
+-  [Machine Learning Advice]({% post_url /wiki/2018-06-18-machine_learning_advice%})
+    -  [Dataset Management]({% post_url /wiki/2018-06-18-machine_learning_advice%})
+    -  [Pipeline]({% post_url /wiki/2018-06-18-machine_learning_advice%})
+    -  [Ceiling Analysis]({% post_url /wiki/2018-06-18-machine_learning_advice%})
+    -  [Increasing Your Dataset Size]({% post_url /wiki/2018-06-18-machine_learning_advice%})
 
 Tools:
 
--   [Tensorboard](/Tensorboard "wikilink")
+-  [Tensorboard]({% post_url /wiki/2018-09-23-tensorboard%})
 
 Projects
 
--   [Iris classifier](/Iris_classifier "wikilink")
--   [MNIST classifier](/MNIST_classifier "wikilink")
+-  [Iris classifier]({% post_url /wiki/2018-07-01-iris_classifier%})
+-  [MNIST classifier]({% post_url /wiki/2018-07-01-mnist_classifier%})
 
 Discussion:
 
--   [Artificial Intelligence Explained](/Artificial_Intelligence_Explained "wikilink")
+-  [Artificial Intelligence Explained]({% post_url /wiki/2019-01-08-artificial_intelligence_explained%})
 
-<!-- -->
 
--   [Tensorflow vs Keras](/Tensorflow_vs_Keras "wikilink")
+
+-  [Tensorflow vs Keras]({% post_url /wiki/2018-06-05-tensorflow_vs_keras%})
 
 Guides:
 
--   [Installing Tensorflow on ArchLinux](/Installing_Tensorflow_on_ArchLinux "wikilink")
--   [Installing Keras on ArchLinux](/Installing_Keras_on_ArchLinux "wikilink")
--   [Installing Jupyter notebook with a virtualenv kernel](/Installing_Jupyter_notebook_with_a_virtualenv_kernel "wikilink")
+-  [Installing Tensorflow on ArchLinux]({% post_url /wiki/2018-06-05-installing_tensorflow_on_archlinux%})
+-  [Installing Keras on ArchLinux]({% post_url /wiki/2018-06-05-installing_keras_on_archlinux%})
+-  [Installing Jupyter notebook with a virtualenv kernel]({% post_url /wiki/2018-06-13-installing_jupyter_notebook_with_a_virtualenv_kernel%})
 

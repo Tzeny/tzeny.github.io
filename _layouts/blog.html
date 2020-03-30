@@ -44,7 +44,7 @@ layout: default
                 <li class="disabled"><span aria-hidden="true">&laquo;&nbsp;</span></li>
               {% endif %}
 
-              <li><a href="/">First</a></li>
+              <li><a href="/blog">First</a></li>
 
               {% for page in (1..paginator.total_pages) %}
                 {% if page == paginator.page %}
@@ -56,7 +56,7 @@ layout: default
                 {% endif %}
               {% endfor %}
 
-              <li><a href="/page/{{ paginator.total_pages }}/">Last</a></li>
+              <li><a href="/blog/page/{{ paginator.total_pages }}/">Last</a></li>
 
               {% if paginator.next_page %}
                 <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>

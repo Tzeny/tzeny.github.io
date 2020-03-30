@@ -11,13 +11,13 @@ Structured data
 
 {% include figure_caption.html url="/assets/img/wiki/Plots.png" description="Different kinds of plots; the bottom row uses a different dataset than the other rows" %} Visualizing data can help us get insights into it. Depending on the type of data you want to visualize, you may do so in different ways:
 
--   For 1D data, like a temperature measurement or the number of hits on a webpage we use <b>line plots</b>
--   For 2D data, like the weight and height of a person we use <b>scatter plots</b>
--   To see the distribution of your data you can use <b>histograms</b>
--   To see how much of our data falls into a certain category we can use <b>cumulative plots</b> or <b>pie plots</b>
--   To see the spread of our data we can use <b>box plots</b>
--   To see the estimated kernel(probability) density of our variables we can use <b>kernel density estimation plots</b>
--   To represent the relationship between 2 numerical variables we can use a <b>Hexbin plot</b>
+-   For 1D data, like a temperature measurement or the number of hits on a webpage we use line plots
+-   For 2D data, like the weight and height of a person we use scatter plots
+-   To see the distribution of your data you can use histograms
+-   To see how much of our data falls into a certain category we can use cumulative plots or pie plots
+-   To see the spread of our data we can use box plots
+-   To see the estimated kernel(probability) density of our variables we can use kernel density estimation plots
+-   To represent the relationship between 2 numerical variables we can use a Hexbin plot
 
 Unstructured data
 -----------------

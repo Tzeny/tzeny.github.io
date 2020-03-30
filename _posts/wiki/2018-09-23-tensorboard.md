@@ -6,8 +6,9 @@ base_url: /wiki
 hidden: true
 ---
 
+[Category:Tools](/Category:Tools "wikilink")
 
-Tensorboard is a tool for visualizing the output from the training of a model with Keras (view example on how to generate log file on the [Examples](/Examples "wikilink") page) or Tensorflow.
+Tensorboard is a tool for visualizing the output from the training of a model with Keras (view example on how to generate log file on the[Examples]({% post_url /wiki/2018-06-25-examples%}) page) or Tensorflow.
 
 ` tensorboard --logdir ./logs/`
 

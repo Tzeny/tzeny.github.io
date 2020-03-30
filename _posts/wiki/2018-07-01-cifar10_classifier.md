@@ -6,8 +6,9 @@ base_url: /wiki
 hidden: true
 ---
 
+[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%})
 
-This is my attempt at classifying images in the cifar10 dataset. It's based around 3 [inception modules](/Types_of_Neural_Networks#Inception_module "wikilink").
+This is my attempt at classifying images in the cifar10 dataset. It's based around 3[inception modules]({% post_url /wiki/2018-06-21-types_of_neural_networks%}).
 
 Accuracy
 --------
@@ -21,9 +22,10 @@ Accuracy
 | inception-module                                          | 62.82 % (stopped becuase of overfitting) |
 | inception dense drop                                      | 62.89 %                                  |
 | inception inception drop                                  | 74.18 %                                  |
-| inceptionx3 dense drop                                    | <b>77.61 %</b>                           |
+| inceptionx3 dense drop                                    | 77.61 %                           |
 | nceptionx3 dense drop dense drop dense                    | 77.25 %                                  |
 
 Git
 ---
 
+[](https://github.com/Tzeny/udemy-zero-to-deep-learning/blob/master/course/Cifar10.ipynb)

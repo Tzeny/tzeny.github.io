@@ -6,9 +6,9 @@ base_url: /wiki
 hidden: true
 ---
 
-Based on the Coursera Machine Learning course[1]
+Based on the Coursera Machine Learning course1
 
-Some more detailed information: [<https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing>](https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing)
+Some more detailed information: [](https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing)
 
 Supervised Learning
 -------------------
@@ -19,12 +19,12 @@ Supervised Learning
 
 Univariate linear regression:
 
--   Prediction: *h*<sub>*θ*</sub>(*x*)=*θ*<sub>0</sub> + *θ*<sub>1</sub> \* *x*
+-   Prediction: *h**θ*(*x*)=*θ*0 + *θ*1 \* *x*
 -   Cost function: $J(\\theta_0,\\theta_1) = \\sum_{i=1}^m(h_\\theta(x^{(i)})-y^{(i)})^2$
 
 Multivariate linear regression:
 
--   Prediction: *h*<sub>*θ*</sub>(*x*)=*θ*<sub>0</sub> \* *x*<sub>0</sub> + *θ*<sub>1</sub> \* *x*<sub>1</sub> + ... + *θ*<sub>*n*</sub> \* *x*<sub>*n*</sub>
+-   Prediction: *h**θ*(*x*)=*θ*0 \* *x*0 + *θ*1 \* *x*1 + ... + *θ**n* \* *x**n*
 -   Cost function: $J(\\theta_0,\\theta_1) = \\sum_{i=1}^m(h_\\theta(x^{(i)})-y^{(i)})^2$
 
 ### Classification problems
@@ -64,7 +64,7 @@ Cost function: $C\\sum_{i=1}^m\[y^{(i)}cost_1(\\theta^T\*f^{i})+(1-y^{(i)})cost_
 
 Large C -> lower bias, higher variance Small c -> higher bias, lower variance
 
-Large*σ*<sup>2</sup> -> features fi vary more smoothly -> higher bias, lower variance Small*σ*<sup>2</sup> -> features fi vary less smoothly -> lower bias, higher variance
+Large*σ*2 -> features fi vary more smoothly -> higher bias, lower variance Small*σ*2 -> features fi vary less smoothly -> lower bias, higher variance
 
 ### Natural Language Processing
 
@@ -87,9 +87,9 @@ $\\underset{\\theta^{(1)},\\theta^{(2)},... \\theta^{(n_u)}}{min}\\frac{1}{2}\\s
 
 ##### Gradient descent update
 
-*θ*<sub>*k*</sub><sup>(*j*)</sup> := *θ*<sub>*k*</sub><sup>(*j*)</sup> − *α*∑<sub>*i* : *r*(*i*, *j*)=1</sub>(*θ*<sup>(*j*)</sup><sup>*T*</sup> \* *x*<sup>(*i*)</sup> − *y*<sup>(*i*, *j*)</sup>)*x*<sub>*k*</sub><sup>(*i*)</sup>for k=0
+*θ**k*(*j*) := *θ**k*(*j*) − *α*∑*i* : *r*(*i*, *j*)=1(*θ*(*j*)*T* \* *x*(*i*) − *y*(*i*, *j*))*x**k*(*i*)for k=0
 
-*θ*<sub>*k*</sub><sup>(*j*)</sup> := *θ*<sub>*k*</sub><sup>(*j*)</sup> − *α*(∑<sub>*i* : *r*(*i*, *j*)=1</sub>(*θ*<sup>(*j*)</sup><sup>*T*</sup> \* *x*<sup>(*i*)</sup> − *y*<sup>(*i*, *j*)</sup>)*x*<sub>*k*</sub><sup>(*i*)</sup> + *λ**θ*<sub>*k*</sub><sup>(*j*)</sup>)for k != 0
+*θ**k*(*j*) := *θ**k*(*j*) − *α*(∑*i* : *r*(*i*, *j*)=1(*θ*(*j*)*T* \* *x*(*i*) − *y*(*i*, *j*))*x**k*(*i*) + *λ**θ**k*(*j*))for k != 0
 
 #### Collaborative filtering
 
@@ -107,9 +107,9 @@ Given a set of values for x^i we can estimate θ^j and vice versa.
 
 1. Initializa x^1, x^2, ...,x^nm and θ^1, θ^2, ... θ^nu to random small values 2. Minimize J(x^1, x^2, ...,x^nm; θ^1, θ^2, ... θ^nu) using an optimization algorithm:
 
-*x*<sub>*k*</sub><sup>(*i*)</sup> := *x*<sub>*k*</sub><sup>(*i*)</sup> − *α*(∑<sub>*i* : *r*(*i*, *j*)=1</sub>(*θ*<sup>(*j*)</sup><sup>*T*</sup> \* *x*<sup>(*i*)</sup> − *y*<sup>(*i*, *j*)</sup>)*x*<sub>*k*</sub><sup>(*i*)</sup> + *λ**x*<sub>*k*</sub><sup>(*i*)</sup>)
+*x**k*(*i*) := *x**k*(*i*) − *α*(∑*i* : *r*(*i*, *j*)=1(*θ*(*j*)*T* \* *x*(*i*) − *y*(*i*, *j*))*x**k*(*i*) + *λ**x**k*(*i*))
 
-*θ*<sub>*k*</sub><sup>(*j*)</sup> := *θ*<sub>*k*</sub><sup>(*j*)</sup> − *α*(∑<sub>*i* : *r*(*i*, *j*)=1</sub>(*θ*<sup>(*j*)</sup><sup>*T*</sup> \* *x*<sup>(*i*)</sup> − *y*<sup>(*i*, *j*)</sup>)*x*<sub>*k*</sub><sup>(*i*)</sup> + *λ**θ*<sub>*k*</sub><sup>(*j*)</sup>)
+*θ**k*(*j*) := *θ**k*(*j*) − *α*(∑*i* : *r*(*i*, *j*)=1(*θ*(*j*)*T* \* *x*(*i*) − *y*(*i*, *j*))*x**k*(*i*) + *λ**θ**k*(*j*))
 
 For a user with parameters θ and a movie with (learned) features x predict rating θ^T\*x.
 
@@ -174,7 +174,7 @@ $\\mu=\\frac{1}{m}\\sum_{i=1}^mx_j^{(i)}$ $\\Sigma=\\frac{1}{m}\\sum_{i=1}^m(x^{
 |------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Manually create features to capture anomalies where x1x2 might take unusual combinations | Automatically captures correlations between values |
 | Computationally cheaper                                                                  | Computationally more expensive                     |
-| Ok for small training set sizes (m < n)                                               | Must have m > n or Σ is non-invertible          |
+| Ok for small training set sizes (m  n or Σ is non-invertible          |
 
 ### Clustering
 
@@ -201,7 +201,7 @@ A method to reduce N dimensional data to K dimensions (K <= N)
 It tries to find surfaces / vectors on which to project data points such that it minimizes the squared error of projection
 
 To go from K back to N dimensions
-*X*<sub>*a**p**p**r**o**x*<sub>*n* \* 1</sub></sub><sup>(*i*)</sup> = *U*<sub>*r*</sub>*e**d**u**c**e*<sub>*n* \* *k*</sub> \* *z*<sub>*k* \* 1</sub><sup>(*i*)</sup>
+*X**a**p**p**r**o**x**n* \* 1(*i*) = *U**r**e**d**u**c**e**n* \* *k* \* *z**k* \* 1(*i*)
 
 Choosing K: \[U,S,V\] = svd(Sigma)
 
@@ -213,7 +213,7 @@ We should use it only when necessary (data is taking up too much space, algorith
 
 {% include figure_caption.html url="/assets/img/wiki/K-means_convergence.gif" description="border|K-means algorithm converging" %} Is an iterative algorithm that uses a number of centroids: m to try and make sense of the data.
 
-randomly initialize K cluster centroids:*μ*<sub>1</sub>, *μ*<sub>2</sub>...*μ*<sub>*K*</sub> ∈ *R*<sup>*n*</sup>
+randomly initialize K cluster centroids:*μ*1, *μ*2...*μ**K* ∈ *R**n*
 
     repeat for n iterations{
         #cluster assignment step which minimizes J with respect to c^(i), holding μk
@@ -244,4 +244,4 @@ Reinforcement learning
 
 {% include figure_caption.html url="/assets/img/wiki/Reinforcement-learning.jpg" description="Reinforcement learning" %} Here we have an agent and an environment which the agent can interact with. Based on his interactions and our goal, we give him a score. His goal is to optimize that score.
 
-[1] <https://www.coursera.org/learn/machine-learning>
+1. [https://www.coursera.org/learn/machine-learning](https://www.coursera.org/learn/machine-learning)

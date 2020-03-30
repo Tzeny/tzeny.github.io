@@ -9,7 +9,7 @@ hidden: true
 Internal Resources
 ------------------
 
--   [Data Preprocessing](/Data_Preprocessing "wikilink")
--   [Data Visualization](/Data_Visualization "wikilink")
--   [Dataset Augmentation](/Dataset_Augmentation "wikilink")
+-  [Data Preprocessing]({% post_url /wiki/2018-06-21-data_preprocessing%})
+-  [Data Visualization]({% post_url /wiki/2018-06-25-data_visualization%})
+-  [Dataset Augmentation]({% post_url /wiki/2018-06-21-dataset_augmentation%})
 

@@ -6,6 +6,7 @@ base_url: /wiki
 hidden: true
 ---
 
+[Colaboratory](https://colab.research.google.com/) is a Google research project created to help disseminate machine learning education and research. It's a Jupyter notebook environment that requires no setup to use and runs entirely in the cloud. This means that as long as you have a Google account, you can freely train your models on a K80 GPU.
 
 When you log in and connect to the Colaboratory runtime, you will get your own virtual machine with a K80 GPU (not always entirely yours, read below) and a Jupyter notebook environment. You can use it to your heart's content for up to 12 hours. Or until you close your browser window. Be warned, sometimes the runtime can disconnect randomly.
 
@@ -14,11 +15,11 @@ For more information check out the [Google Colaboratory FAQ](https://research.go
 Tips and tricks
 ===============
 
--   Notebook stuck on initializing: click on 'Runtime' tab, click on 'Restart runtime...' [1]
+-   Notebook stuck on initializing: click on 'Runtime' tab, click on 'Restart runtime...' 1
 -   If you start a line in Jupyter Notebook with '!', the line will execute as a command on the virtual machine supporting the runtime. Example:
         !pwd
 
-Getting your own GPU[2]:
+Getting your own GPU2:
 ------------------------
 
 So, if you want to use Google Colaboratory you should be aware that you may end up being not so lucky and share a K80 with somebody else. The main disadvantage of this is that you won't have the full RAM of the GPU available and Tensorflow might throw out of resources exceptions. To see how much ram you have available run this script.
@@ -34,7 +35,7 @@ import os
 import GPUtil as GPU
 GPUs = GPU.getGPUs()
 # XXX: only one GPU on Colab and isn’t guaranteed
-gpu = GPUs[0]
+gpu = GPUs0
 def printm():
  process = psutil.Process(os.getpid())
  print("Gen RAM Free: " + humanize.naturalsize( psutil.virtual_memory().available ), " | Proc size: " + humanize.naturalsize( process.memory_info().rss))
@@ -53,7 +54,7 @@ If you see RAM usage, that means that you are sharing the card with someone. Sin
 
 Then wait 30-60 seconds and reconnect and check with the above script if you got your own GPU.
 
-Making sure you're training on the GPU[3]
+Making sure you're training on the GPU3
 -----------------------------------------
 
 This code trains a sample model on the GPU.
@@ -70,7 +71,7 @@ File transfer to Google Colaboratory
 
 Although the first method described below seems more involved, I think it's the best one as I have had problems with the second method in the past.
 
-Mounting a Google Drive folder inside your Jupyter Noteook[4]
+Mounting a Google Drive folder inside your Jupyter Noteook4
 -------------------------------------------------------------
 
 Mount your Google Drive inside the Notebook.
@@ -84,7 +85,7 @@ os.symlink('/gdrive/My Drive', 'my_drive')
 !ls -l my_drive
 ```
 
-Saving Data[5] using the Google Colaboratory Python library
+Saving Data5 using the Google Colaboratory Python library
 -----------------------------------------------------------
 
 To download data you can also use the files library provided by Google.
@@ -106,7 +107,7 @@ files.download('model.json')
 files.download('model.h5')
 ```
 
-Loading Data[6] using the Google Colaboratory Python library
+Loading Data6 using the Google Colaboratory Python library
 ------------------------------------------------------------
 
 You can also upload your own files using the same library.
@@ -135,14 +136,14 @@ model = loaded_model
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```
 
-[1] <https://stackoverflow.com/questions/49090430/notebook-stuck-on-initializing-when-using-gpu-backend>
+1. [https://stackoverflow.com/questions/49090430/notebook-stuck-on-initializing-when-using-gpu-backend](https://stackoverflow.com/questions/49090430/notebook-stuck-on-initializing-when-using-gpu-backend)
 
-[2] <https://stackoverflow.com/questions/48750199/google-colaboratory-misleading-information-about-its-gpu-only-5-ram-available>
+2. [https://stackoverflow.com/questions/48750199/google-colaboratory-misleading-information-about-its-gpu-only-5-ram-available](https://stackoverflow.com/questions/48750199/google-colaboratory-misleading-information-about-its-gpu-only-5-ram-available)
 
-[3] <https://stackoverflow.com/questions/40690598/can-keras-with-tensorflow-backend-be-forced-to-use-cpu-or-gpu-at-will>
+3. [https://stackoverflow.com/questions/40690598/can-keras-with-tensorflow-backend-be-forced-to-use-cpu-or-gpu-at-will](https://stackoverflow.com/questions/40690598/can-keras-with-tensorflow-backend-be-forced-to-use-cpu-or-gpu-at-will)
 
-[4] <https://github.com/googlecolab/colabtools/issues/276>
+4. [https://github.com/googlecolab/colabtools/issues/276](https://github.com/googlecolab/colabtools/issues/276)
 
-[5] <https://stackoverflow.com/questions/50166987/how-to-download-tensorflow-trained-model-on-google-colab>
+5. [https://stackoverflow.com/questions/50166987/how-to-download-tensorflow-trained-model-on-google-colab](https://stackoverflow.com/questions/50166987/how-to-download-tensorflow-trained-model-on-google-colab)
 
-[6] <https://colab.research.google.com/notebooks/io.ipynb#scrollTo=vz-jH8T_Uk2c>
+6. [https://colab.research.google.com/notebooks/io.ipynb#scrollTo=vz-jH8T_Uk2c](https://colab.research.google.com/notebooks/io.ipynb#scrollTo=vz-jH8T_Uk2c)

@@ -6,10 +6,12 @@ base_url: /wiki
 hidden: true
 ---
 
+[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%}) This is my first Keras application. It attempts to classify the Iris dataset. Based of of an online tutorial1
 
 Git
 ---
 
+[](https://github.com/Tzeny/iris-classifier)
 
 Code
 ----
@@ -44,8 +46,8 @@ train_X, test_X, train_y, test_y = train_test_split(X, y, train_size=0.5, random
 train_y_ohe = one_hot_encode_object_array(train_y)
 test_y_ohe = one_hot_encode_object_array(test_y)
 
-global_scores = []
-global_loss = []
+global_scores = 
+global_loss = 
 
 model = Sequential()
 model.add(Dense(8, input_shape=(4,)))
@@ -63,12 +65,12 @@ for i in range(0,max_epoch):
     scores  = model.evaluate(test_X, test_y_ohe)
 
     print(model.metrics_names)
-    print("%s: %.2f%%" % (model.metrics_names[1], scores[1]*100))
+    print("%s: %.2f%%" % (model.metrics_names1, scores1*100))
 
-    if scores[1]*100 > highest_score:
-        highest_score = scores[1]*100
-    global_scores.append(scores[1]*100)
-    global_loss.append(scores[0]*100)
+    if scores1*100 > highest_score:
+        highest_score = scores1*100
+    global_scores.append(scores1*100)
+    global_loss.append(scores0*100)
 
 print("Best score: " + str(highest_score))
 
@@ -88,18 +90,18 @@ plt.text(0,0,'Max epochs ' + str(max_epoch) + ';' + date, fontsize=6)
 plt.savefig(date+'_score.png', bbox_inches='tight')
 ```
 
-I used code from this article[2] to make the program correctly display accuracy.
+I used code from this article2 to make the program correctly display accuracy.
 
 Using the above code I trained to model for 200 epochs, and plotted on a graph the accuracy and loss obtained by evaluating the model at each epoch.
 
-{% include figure_caption.html url="/assets/img/wiki/2018-06-05-19-00_score.png" description="<File:2018-06-05-19-00> score.png" %}
+{% include figure_caption.html url="/assets/img/wiki/2018-06-05-19-00_score.png" description=" score.png" %}
 
 This is the model:
 
-{% include figure_caption.html url="/assets/img/wiki/2018-06-05-19-00_model.png" description="<File:2018-06-05-19-00_model.png>" %}
+{% include figure_caption.html url="/assets/img/wiki/2018-06-05-19-00_model.png" description="" %}
 
-<references />
 
-[1] <http://blog.fastforwardlabs.com/2016/02/24/hello-world-in-keras-or-scikit-learn-versus.html>
 
-[2] <https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/>
+1. [http://blog.fastforwardlabs.com/2016/02/24/hello-world-in-keras-or-scikit-learn-versus.html](http://blog.fastforwardlabs.com/2016/02/24/hello-world-in-keras-or-scikit-learn-versus.html)
+
+2. [https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/](https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/)

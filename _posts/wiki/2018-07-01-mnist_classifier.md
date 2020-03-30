@@ -6,15 +6,17 @@ base_url: /wiki
 hidden: true
 ---
 
+[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%}) After finishing the[Iris classifier]({% post_url /wiki/2018-07-01-iris_classifier%}), and part of [link title Andrew Ng's ML course](http://www.example.com), in which he talks about creating a Neural Network classifier to classify hand written digits I decided to try and write my own hand written digit classifier using Keras.
 
 Git
 ---
 
+[](https://github.com/Tzeny/mnist-classfier)
 
 Dataset
 -------
 
-To train and test the model I used the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). If you are using Keras you can automatically download and import it[1]:
+To train and test the model I used the [MNIST dataset](http://yann.lecun.com/exdb/mnist/). If you are using Keras you can automatically download and import it1:
 
 ``` python
 from keras.datasets import mnist
@@ -43,19 +45,19 @@ Unfortunately I did not use the same random seed for these experiments so take t
 | 3 conv layer dense drop dense drop dense sgd                                            | 99.11 %, 99.0 %, 99.11 %         |
 | 4 conv layer dense drop dense drop dense sgd                                            | 99.14 %, 98.92 %                 |
 | 4 conv layer dense drop dense drop dense sgd (with activations right after conv layers) | 99.36 %, 99.28 %                 |
-| 4 conv w act dsn dr dsn dr dsn sgd (w batch normalization)                              | <b>99.58 %</b>, 99.39 %, 99.33 % |
+| 4 conv w act dsn dr dsn dr dsn sgd (w batch normalization)                              | 99.58 %, 99.39 %, 99.33 % |
 | 4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization)                           | 99.35 %, 98.94 %                 |
 | 4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l2 regularization)       | 97.34 %, 98.68 %                 |
 | 4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l1 regularization)       | 87.51 %, 79.44 %                 |
 
-Source code for CNN version: [<https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb>](https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb)
+Source code for CNN version: [](https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb)
 
 Preprocessing the dataset
 -------------------------
 
 When you import the dataset, x_train is a 3D matrix of shape (60000,28,28) and x_test is a 3D matrix of shape (10000,28,28). I reshaped them into 2D matrices of shapes (60000, 784) and (10000, 784) respectively.
 
-Next we need to take the labels in the y_train and y_test vectors and map them to binary class matrices. For this we will use the to_categorial function from Keras[2]:
+Next we need to take the labels in the y_train and y_test vectors and map them to binary class matrices. For this we will use the to_categorial function from Keras2:
 
 ``` python
 #dataset:
@@ -168,25 +170,25 @@ print("Saved plot to disk")
 Displaying the result
 ---------------------
 
-In order to display the result I took an online piece of code[3] and modified it to plot training accuracy, test set accuracy, training loss and test loss and then save them to a file.
+In order to display the result I took an online piece of code3 and modified it to plot training accuracy, test set accuracy, training loss and test loss and then save them to a file.
 
-{% include figure_caption.html url="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-12-48_score.png" description="<File:Adam> opt-50 eps-2018-06-09-12-48 score.png" %}
+{% include figure_caption.html url="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-12-48_score.png" description=" opt-50 eps-2018-06-09-12-48 score.png" %}
 
 Model used to get above results
 
-{% include figure_caption.html url="/assets/img/wiki/2018-06-09-12-48_model.png" description="<File:2018-06-09-12-48> model.png" %}
+{% include figure_caption.html url="/assets/img/wiki/2018-06-09-12-48_model.png" description=" model.png" %}
 
 Try other architectures
 -----------------------
 
 The problem with this is that it has started overfitting the test set.
 
-{% include figure_caption.html url="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-13-28_score.png" description="<File:Adam_opt-50_eps-2018-06-09-13-28_score.png>" %}
+{% include figure_caption.html url="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-13-28_score.png" description="" %}
 
-{% include figure_caption.html url="/assets/img/wiki/2018-06-09-13-28_model.png" description="<File:2018-06-09-13-28> model.png" %}
+{% include figure_caption.html url="/assets/img/wiki/2018-06-09-13-28_model.png" description=" model.png" %}
 
-[1] <https://keras.io/datasets/>
+1. [https://keras.io/datasets/](https://keras.io/datasets/)
 
-[2] <https://keras.io/utils/#to_categorical>
+2. [https://keras.io/utils/#to_categorical](https://keras.io/utils/#to_categorical)
 
-[3] <https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/>
+3. [https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/](https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/)

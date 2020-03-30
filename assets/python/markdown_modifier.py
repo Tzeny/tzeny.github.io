@@ -26,14 +26,15 @@ def modify_file_content(file_content):
             continue
 
         new_line = line
-        img_src_regex_match = re.match(img_src_regex, new_line)
-        if img_src_regex_match:
-            src = img_src_regex_match.group(2)
+        # img_src_regex_match = re.match(img_src_regex, new_line)
+        img_src_regex_matches = re.findall(img_src_regex, new_line, flags=re.IGNORECASE|re.MULTILINE)
+        for img_src_regex_match in img_src_regex_matches:
+            src = img_src_regex_match[1]
             src = src.split('/')
             src = ('/'+'/'.join(src[src.index('uploads'):])).replace('/uploads','/assets/img/posts')
 
-            new_line = new_line.replace(img_src_regex_match.group(1), f"![My helpful screenshot]({src})")
-            print(f'Found image tag with src {img_src_regex_match.group(2)}, replacing with {new_line}')
+            new_line = new_line.replace(img_src_regex_match[0], f"![My helpful screenshot]({src})")
+            print(f'Found image tag with src {img_src_regex_match[1]}, replacing with {new_line}')
 
         category_regex_match = re.match(category_regex, new_line)
         if category_regex_match:

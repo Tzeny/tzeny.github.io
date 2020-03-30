@@ -6,12 +6,12 @@ base_url: /wiki
 hidden: true
 ---
 
-Based on this guide[1]
+Based on this guide1
 
 Installing packages
 -------------------
 
-<b>Important note</b>: You should start by installing Bumblebee and making sure it works: ([Arch Linux Wiki Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)
+Important note: You should start by installing Bumblebee and making sure it works: ([Arch Linux Wiki Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)
 
 My package versions:
 
@@ -79,7 +79,7 @@ pip install --upgrade tensorflow-gpu
 Validating our installation
 ---------------------------
 
-Based on this guide[2]
+Based on this guide2
 
 To validate our installation we'll use the following Python file
 
@@ -130,8 +130,8 @@ b'Hello, TensorFlow!'
 (tensorflow)
 ```
 
-<references />
 
-[1] <https://github.com/ddigiorg/AI-TensorFlow/blob/master/install/install-TF_2016-02-27.md>
 
-[2] <https://www.tensorflow.org/install/install_linux#ValidateYourInstallation>
+1. [https://github.com/ddigiorg/AI-TensorFlow/blob/master/install/install-TF_2016-02-27.md](https://github.com/ddigiorg/AI-TensorFlow/blob/master/install/install-TF_2016-02-27.md)
+
+2. [https://www.tensorflow.org/install/install_linux#ValidateYourInstallation](https://www.tensorflow.org/install/install_linux#ValidateYourInstallation)

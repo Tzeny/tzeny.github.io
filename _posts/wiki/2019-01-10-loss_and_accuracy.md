@@ -6,7 +6,7 @@ base_url: /wiki
 hidden: true
 ---
 
-StackOverflow[1]: The lower the loss, the better a model (unless the model has over-fitted to the training data). The loss is calculated on training and validation and its interperation is how well the model is doing for these two sets. Unlike accuracy, loss is not a percentage. It is a summation of the errors made for each example in training or validation sets.
+StackOverflow1: The lower the loss, the better a model (unless the model has over-fitted to the training data). The loss is calculated on training and validation and its interperation is how well the model is doing for these two sets. Unlike accuracy, loss is not a percentage. It is a summation of the errors made for each example in training or validation sets.
 
 In the case of neural networks, the loss is usually negative log-likelihood and residual sum of squares for classification and regression respectively. Then naturally, the main objective in a learning model is to reduce (minimize) the loss function's value with respect to the model's parameters by changing the weight vector values through different optimization methods, such as backpropagation in neural networks.
 
@@ -33,8 +33,8 @@ Measures the probability error in discrete classification tasks in which each cl
 
 *B**C**E*(*y*)= − *y* \* *l**o**g*(*p*)−(1 − *y*)\**l**o**g*(1 − *p*);*y*, *p* ∈ \[0, 1\]
 
-{% include figure_caption.html url="/assets/img/wiki/Bce.png" description="<File:Bce.png>" %}
+{% include figure_caption.html url="/assets/img/wiki/Bce.png" description="" %}
 
-<references />
 
-[1] <https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model#34519264>
+
+1. [https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model#34519264](https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model#34519264)
