@@ -13,7 +13,7 @@ Mathematics in real life is continuous, not so on a computer. Article based on F
 Course page
 -----------
 
-Source: [](https://tzeny.ddns.net:4430/Tzeny/fastai_numerical-linear-algebra/blob/master/nbs/1.%20Why%20are%20we%20here.ipynb)
+Source: [<https://tzeny.ddns.net:4430/Tzeny/fastai_numerical-linear-algebra/blob/master/nbs/1.%20Why%20are%20we%20here.ipynb>](https://tzeny.ddns.net:4430/Tzeny/fastai_numerical-linear-algebra/blob/master/nbs/1.%20Why%20are%20we%20here.ipynb)
 
 Floats
 ------

@@ -8,7 +8,7 @@ categories:
 hidden: true
 ---
 
-[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%})
+
 
 This is my attempt at classifying images in the cifar10 dataset. It's based around 3[inception modules]({% post_url /wiki/2018-06-21-types_of_neural_networks%}).
 
@@ -30,4 +30,4 @@ Accuracy
 Git
 ---
 
-[](https://github.com/Tzeny/udemy-zero-to-deep-learning/blob/master/course/Cifar10.ipynb)
+[<https://github.com/Tzeny/udemy-zero-to-deep-learning/blob/master/course/Cifar10.ipynb>](https://github.com/Tzeny/udemy-zero-to-deep-learning/blob/master/course/Cifar10.ipynb)

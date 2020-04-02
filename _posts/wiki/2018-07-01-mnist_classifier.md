@@ -8,12 +8,12 @@ categories:
 hidden: true
 ---
 
-[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%}) After finishing the[Iris classifier]({% post_url /wiki/2018-07-01-iris_classifier%}), and part of [link title Andrew Ng's ML course](http://www.example.com), in which he talks about creating a Neural Network classifier to classify hand written digits I decided to try and write my own hand written digit classifier using Keras.
+After finishing the[Iris classifier]({% post_url /wiki/2018-07-01-iris_classifier%}), and part of [link title Andrew Ng's ML course](http://www.example.com), in which he talks about creating a Neural Network classifier to classify hand written digits I decided to try and write my own hand written digit classifier using Keras.
 
 Git
 ---
 
-[](https://github.com/Tzeny/mnist-classfier)
+[<https://github.com/Tzeny/mnist-classfier>](https://github.com/Tzeny/mnist-classfier)
 
 Dataset
 -------
@@ -52,7 +52,7 @@ Unfortunately I did not use the same random seed for these experiments so take t
 | 4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l2 regularization)       | 97.34 %, 98.68 %                 |
 | 4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l1 regularization)       | 87.51 %, 79.44 %                 |
 
-Source code for CNN version: [](https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb)
+Source code for CNN version: [<https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb>](https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb)
 
 Preprocessing the dataset
 -------------------------

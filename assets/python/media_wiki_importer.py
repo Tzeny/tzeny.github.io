@@ -21,7 +21,6 @@ def modify_file_content(file_content, file_path):
     global count 
 
     file_content = HTMLEntitiesToUnicode(file_content)
-    img_src_regex = r'((\W|^)\[([^\[\]]*)(\[\d*\])?\]\(([^\ \[\]#]*)[^\)\[\]]*\))'
     
     new_file_lines = []
     for line in file_content.split('\n'):
@@ -32,6 +31,13 @@ def modify_file_content(file_content, file_path):
             continue
 
         if 'permalink' in line or '#drawio' in line:
+            continue
+
+        if '[Category:Projects]' in line:
+            new_line = new_line[new_line.index(')')+2:]
+
+        if '[:Category:Projects]' in line:
+            new_file_lines.append("- [Category: Projects]({{ site.baseurl }}/wiki/categories/wikiprojects)\n")
             continue
 
         if 'date: ' in line:
@@ -47,8 +53,21 @@ def modify_file_content(file_content, file_path):
                 new_file_lines.append('categories:\n  - wikimisc\n')
             continue
 
+        empty_link_regex = r'(\[\]\(([^\)]*)\))'
+        empty_link_matches = re.findall(empty_link_regex, new_line)
+        for empty_link_match in empty_link_matches:
+            new_link = f'[{empty_link_match[1]}]({empty_link_match[1]})'
+            new_file_lines.append(new_line.replace(empty_link_match[0], new_link))
+            print(f'New link found, replacing with {new_link}')
+            continue
+
+        img_src_regex = r'((\W|^)\[([^\[\]]*)(\[\d*\])?\]\(([^\ \[\]#]*)[^\)\[\]]*\))'
         img_src_regex_matches = re.findall(img_src_regex, new_line, flags=re.IGNORECASE|re.MULTILINE)
         for img_src_regex_match in img_src_regex_matches:
+            # don't mess with normal links
+            if 'http' in img_src_regex_match[2]:
+                continue
+
             src = str(img_src_regex_match[4])
             src = src.replace('/File:', '/assets/img/wiki/')
 
@@ -105,8 +124,9 @@ def modify_file_content(file_content, file_path):
         #     new_latex = '$' + latex_regex_match[0].replace("\\","\\") + '$'
         #     new_line = new_line.replace(latex_regex_match[0], new_latex)
 
-        # remove all html tags
-        new_line = re.sub(r'<\/?[^>]*>', '', new_line)
+        # remove all html tags except those in github links
+        if '<http' not in new_line:
+            new_line = re.sub(r'<\/?[^>]*>', '', new_line)
 
         new_line += '\n'
         new_file_lines.append(new_line)

@@ -8,12 +8,12 @@ categories:
 hidden: true
 ---
 
-[Category:Projects]({% post_url /wiki/2018-06-09-category:projects%}) This is my first Keras application. It attempts to classify the Iris dataset. Based of of an online tutorial1
+This is my first Keras application. It attempts to classify the Iris dataset. Based of of an online tutorial1
 
 Git
 ---
 
-[](https://github.com/Tzeny/iris-classifier)
+[<https://github.com/Tzeny/iris-classifier>](https://github.com/Tzeny/iris-classifier)
 
 Code
 ----

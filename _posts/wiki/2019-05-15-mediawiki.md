@@ -33,16 +33,16 @@ Jupyter Notebook to Media Wiki table converter
 
 A small Python script that converts Jupyter Notebook formatted tables to Media Wiki tables.
 
-[](https://github.com/Tzeny/jupyter-to-media-wiki-table)
+[<https://github.com/Tzeny/jupyter-to-media-wiki-table>](https://github.com/Tzeny/jupyter-to-media-wiki-table)
 
 WikiMedia Docker Compose
 ------------------------
 
 Run WikiMedia as a Docker container.
 
-[](https://hub.docker.com/_/mediawiki/)
+[<https://hub.docker.com/_/mediawiki/>](https://hub.docker.com/_/mediawiki/)
 
 Global custom css
 -----------------
 
-[](https://tzeny.ddns.net/index.php/MediaWiki:Common.css)
+[<https://tzeny.ddns.net/index.php/MediaWiki:Common.css>](https://tzeny.ddns.net/index.php/MediaWiki:Common.css)

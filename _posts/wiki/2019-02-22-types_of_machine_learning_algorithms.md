@@ -10,7 +10,7 @@ hidden: true
 
 Based on the Coursera Machine Learning course1
 
-Some more detailed information: [](https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing)
+Some more detailed information: [<https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing>](https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing)
 
 Supervised Learning
 -------------------
