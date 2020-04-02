@@ -1,8 +1,10 @@
 ---
 title: Debugging ML algorithms
-layout: post
+layout: wiki_post
 base: Wiki
 base_url: /wiki
+categories:
+  - wikimisc
 hidden: true
 ---
 

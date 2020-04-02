@@ -1,8 +1,10 @@
 ---
 title: Neural Networks
-layout: post
+layout: wiki_post
 base: Wiki
 base_url: /wiki
+categories:
+  - wikimisc
 hidden: true
 ---
 
@@ -241,13 +243,17 @@ Adadelta update rule consists of the following steps:
 
 -   Compute gradient *g**t* at current time *t*
 -   Accumulate gradients: *E*\[*g*2\]*t* = *ρ* \* *E*\[*g*2\]*t* − 1 + (1 − *ρ*)\**g**t*2
-layout: post
+layout: wiki_post
 base: Wiki
 base_url: /wiki
+categories:
+  - wikimisc
 -   Accumulate updates(momentum like): *E*\[*Δ**x*2\]*t* = *ρ**E*\[*Δ**x*2\]*t* − 1 + (1 − *ρ*)*Δ**x**t*2
-layout: post
+layout: wiki_post
 base: Wiki
 base_url: /wiki
+categories:
+  - wikimisc
 
 ρ is a decay constant (a parameter) and ϵ is there for numerical stability (usually very small number).
 

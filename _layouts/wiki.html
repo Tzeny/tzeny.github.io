@@ -8,26 +8,34 @@ layout: default
  </div>
  <div class="row">
 
-    <div class="col-lg-3">
-
-        <div class="card">
-            <div class="card-header">Categories </div>
-            <div class="card-body text-dark">
-                <p>Work in progress</p>
-            </div>
-        </div>
-    </div>
+    {%- include wiki_sidebar.html -%}
 
     <div class="col-lg-9">
-        <ul>
-            {% for post in site.posts  %}
-                {% if post.path contains 'wiki'%}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {% endif %}
-            {% endfor %}
-            </ul>
+        <div class="card">
+            <div class="card-body text-dark">
+                <!-- <div class="col-md-8 offset-md-2 offset-md-right"> -->
+                    {% assign thepost = site.posts | where:"title","Wiki Main Page" %}
+                    {% for post in thepost %}
+                        {{ post.content }}
+                    {% endfor %}
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">All pages of the wiki</div>
+            <div class="card-body text-dark">
+                <ul>
+                    {% assign sorted_posts = site.posts | sort: 'title'%}
+                    {% for post in sorted_posts %}
+                        {% if post.path contains 'wiki'%}
+                            <li>
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
  </div>
 

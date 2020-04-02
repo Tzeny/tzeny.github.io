@@ -1,9 +1,13 @@
 ---
 title: Tensorboard
-layout: post
+layout: wiki_post
 base: Wiki
 base_url: /wiki
+categories:
+  - wikitools
 hidden: true
+category:
+  - wikitools
 ---
 
 [Category:Tools](/Category:Tools "wikilink")

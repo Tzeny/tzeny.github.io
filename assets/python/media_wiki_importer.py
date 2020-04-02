@@ -17,7 +17,7 @@ def HTMLEntitiesToUnicode(text):
     """Converts HTML entities to unicode.  For example '&amp;' becomes '&'."""
     return html.unescape(text)
 
-def modify_file_content(file_content):
+def modify_file_content(file_content, file_path):
     global count 
 
     file_content = HTMLEntitiesToUnicode(file_content)
@@ -27,14 +27,24 @@ def modify_file_content(file_content):
     for line in file_content.split('\n'):
         new_line = line
 
+        if 'title: Main Page' in line:
+            new_file_lines.append('title: Wiki Main Page\n')
+            continue
+
         if 'permalink' in line or '#drawio' in line:
             continue
 
         if 'date: ' in line:
             print(f'Appending layout line')
-            new_file_lines.append('layout: post\n')
+            new_file_lines.append('layout: wiki_post\n')
             new_file_lines.append('base: Wiki\n')
             new_file_lines.append('base_url: /wiki\n')
+            if 'tensorboard' in file_path:
+                new_file_lines.append('categories:\n  - wikitools\n')
+            elif any([p.lower().replace(' ','_') in file_path for p in ['cifar10_classifier', 'examples', 'iris_classifier', 'Male or Female classifier', 'MNIST classifier', 'Word Embeddings']]):
+                new_file_lines.append('categories:\n  - wikiprojects\n')
+            else:
+                new_file_lines.append('categories:\n  - wikimisc\n')
             continue
 
         img_src_regex_matches = re.findall(img_src_regex, new_line, flags=re.IGNORECASE|re.MULTILINE)
@@ -89,7 +99,11 @@ def modify_file_content(file_content):
             reference_nr = f'<sup>{reference_number_match[1]}</sup>'
             new_line = new_line.replace(reference_number_match[0], reference_nr)
             
-            
+        # latex_regex = r'(\$[^\$]*\$)'
+        # latex_regex_matches = re.findall(latex_regex, new_line)
+        # for latex_regex_match in latex_regex_matches:
+        #     new_latex = '$' + latex_regex_match[0].replace("\\","\\") + '$'
+        #     new_line = new_line.replace(latex_regex_match[0], new_latex)
 
         # remove all html tags
         new_line = re.sub(r'<\/?[^>]*>', '', new_line)
@@ -106,7 +120,7 @@ for f in files:
             print(f'Skipping {f} as it appears to be a file description page')
             continue
         content = content_file.read()
-        new_content = modify_file_content(content)
+        new_content = modify_file_content(content, f)
 
         output_path = output_folder + '/' + f.split('/')[-1]
         with open(output_path, 'w', encoding="utf8") as output_file:

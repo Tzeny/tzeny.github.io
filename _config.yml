@@ -128,6 +128,8 @@ formspree_email: teny96@gmail.com
 
 # syntax highlighter
 markdown: kramdown
+kramdown:
+   math_engine: mathjax
 highlighter: rouge
 permalink: :year/:month/:day/:title/
 

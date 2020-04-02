@@ -125,8 +125,6 @@
     }(document, "script", "dhm"))
   </script> -->
 
-
-
   {% if jekyll.environment == "production" %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script>
@@ -138,5 +136,9 @@
     gtag('config', 'UA-10302687-11');
   </script>
   {% endif %}
+
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
 
 </head>
