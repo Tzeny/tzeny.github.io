@@ -18,40 +18,7 @@ layout: default
 
 </div> <!-- End of row-->
 
-<div class="row">
- <div class="col-md-4">
-    <div class="card">
-        <div class="card-header"> About </div>
-        <div class="card-body">
-            <!-- Your Bio -->
-            <p class="author_bio"> {{ site.author_bio }}</p>
-
-            {%- include github_star_button.html -%}
-        </div>
-    </div>
- </div>
- <div class="col-md-4">
-    <div class="card">
-        <div class="card-header">Categories </div>
-        <div class="card-body text-dark">
-            {%- include blog_categories.html -%}
-        </div>
-    </div>
-   </div>
-    <div class="col-md-4">
-    <div class="card">
-        <div class="card-header">Useful Links </div>
-        <div class="card-body text-dark">
-            {% for i in site.urls %}
-               <li >
-                 <a href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
-              </li>
-           {% endfor %}
-        </div>
-    </div>
-   </div>
-
-</div>
+{%- include bottom_3_cards.html -%}
 
 
 

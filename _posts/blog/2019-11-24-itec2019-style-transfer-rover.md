@@ -19,7 +19,7 @@ tags:
   - raspberry
   - style transfer
 ---
-<a rel="noreferrer noopener" aria-label="iTEC (opens in a new tab)" href="https://itec.ligaac.ro/" target="_blank">iTEC</a> is a contest dedicated to pupils and students with an interest in IT. This was its 13th edition; over 200 participants showed up. It consists of a couple of short (~6 hour) challenges and 4 hackathons (web, movile, game dev and embedded).
+<a rel="noreferrer noopener" aria-label="iTEC (opens in a new tab)" href="https://itec.ligaac.ro/" target="_blank">iTEC</a> is a contest dedicated to pupils and students with an interest in IT. This was its 13th edition; over 200 participants showed up. It consists of a couple of short (~6 hour) challenges and 4 hackathons (web, mobile, game dev and embedded).
 
 Together with Arin we took part in the embedded hackathon. We received:
 

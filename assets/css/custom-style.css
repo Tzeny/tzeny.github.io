@@ -10,6 +10,27 @@ blockquote {
 .btn a{
     color: white !important;
 }
+.blog-text {
+    height: 4.5em;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
+}
+.card.blog-post h4{
+    height: 1.2em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card.blog-post .card-body.center{
+    padding-bottom: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+}
+.card.blog-post .btn{
+    margin-top: 0.8rem;
+}
 /* .img-thumbnail {
     width: 10%;
 } */

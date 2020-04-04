@@ -9,6 +9,7 @@ guid: https://tzeny.com/?p=825
 thumbnail: 2019/11/220px-Nightfall_cover.jpg
 categories:
   - miscellaneous
+excerpt: An interesting short story written by Isaac Asimov that later became a novel. It explores what would happen to the people living on a planet that is exposed to starlight only once every 2049 years.
 ---
 <blockquote class="wp-block-quote">
   <p>

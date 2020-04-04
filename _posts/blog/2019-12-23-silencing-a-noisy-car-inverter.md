@@ -18,6 +18,7 @@ tags:
   - fan
   - inverter
   - silence
+excerpt: I bought a 300W continous / 600W peak 12V DC to 220V AC inverter for my car. It was pretty cheap, at around 25$. However it has one major drawback, a continuously on small noisy fan. 
 ---
 <figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
 
