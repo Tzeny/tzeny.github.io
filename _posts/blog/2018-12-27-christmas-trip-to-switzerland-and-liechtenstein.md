@@ -4,7 +4,7 @@ title: Christmas trip to Switzerland and Liechtenstein
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=423
 thumbnail: 2018/12/IMG_20181224_173851-360x210.jpg
 categories:

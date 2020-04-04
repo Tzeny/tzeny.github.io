@@ -4,7 +4,7 @@ title: 'Nightfall – Isaac Asimov'
 base: Blog
 base_url: /blog
 author: teny96@gmail.com
-layout: post
+layout: blog_post
 guid: https://tzeny.com/?p=825
 thumbnail: 2019/11/220px-Nightfall_cover.jpg
 categories:

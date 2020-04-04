@@ -4,7 +4,7 @@ title: 'Building a proxmox server – Tesla'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=247
 thumbnail: 2017/12/IMG_20171118_172650-360x210.jpg
 categories:

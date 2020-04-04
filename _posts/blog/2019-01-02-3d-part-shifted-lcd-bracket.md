@@ -4,7 +4,7 @@ title: '3D part: Shifted LCD Bracket'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=513
 thumbnail: 2019/01/IMG_20190101_120545-360x210.jpg
 categories:

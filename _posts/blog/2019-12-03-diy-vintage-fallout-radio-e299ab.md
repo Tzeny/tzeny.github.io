@@ -4,8 +4,8 @@ title: DIY Vintage Fallout Radio ♫
 base: Blog
 base_url: /blog
 author: Tzeny
-excerpt: Learn how to build your very own vintage Fallout style radio.
-layout: post
+excerpt: My Secret Santa match is a work mate who is a yuge fan of the Fallout series. I remembered talking with him about how cool it would be to place a Bluetooth speaker inside of an old radio enclosure and listen to Galaxy News radio. 
+layout: blog_post
 guid: https://tzeny.com/?p=835
 thumbnail: 2019/12/radio_live.jpg
 categories:
@@ -22,10 +22,7 @@ tags:
   - radio
   - vintage
 ---
-<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-
-<div class="wp-block-embed__wrapper">
-</div></figure> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Nl0GyLE6BlM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 With Christmas (and hopefully a good shower of snow) just around the corner, it was time for one of my favorite events of the year: Secret Santa.
 

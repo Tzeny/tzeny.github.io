@@ -4,7 +4,7 @@ title: 'Clock Vision – face recognition clocking system'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=303
 thumbnail: 2018/05/32267096_1532091176901185_2366736973932003328_n-360x210.jpg
 categories:

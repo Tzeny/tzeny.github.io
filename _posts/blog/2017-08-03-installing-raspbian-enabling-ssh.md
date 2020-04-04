@@ -4,7 +4,7 @@ title: Installing Raspbian and enabling SSH
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=76
 thumbnail: 2017/08/IMG_20170803_133231-360x210.jpg
 categories:

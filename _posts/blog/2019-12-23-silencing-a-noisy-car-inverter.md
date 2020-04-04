@@ -4,7 +4,7 @@ title: Silencing a noisy car inverter
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: https://tzeny.com/?p=893
 thumbnail: 2019/12/body9.jpg
 categories:

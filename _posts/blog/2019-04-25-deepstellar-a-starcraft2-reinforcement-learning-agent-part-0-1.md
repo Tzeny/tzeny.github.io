@@ -4,7 +4,7 @@ title: 'DeepStellar – a StarCraft2 Reinforcement Learning agent part 0.1'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=557
 inline_featured_image:
   - "0"

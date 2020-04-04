@@ -4,7 +4,7 @@ title: 'Building my Homelab – part 2'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=182
 thumbnail: 2017/09/IMG_20170917_152652_1-360x210.jpg
 categories:

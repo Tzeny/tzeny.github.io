@@ -4,7 +4,7 @@ title: Formatting and partitioning a drive under Ubuntu
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=195
 thumbnail: 2017/09/partition_8-360x210.jpg
 categories:

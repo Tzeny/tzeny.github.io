@@ -4,7 +4,7 @@ title: 'A quick look at my current car computer – AIA v0.2'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://timisoarath.ro/?p=29
 thumbnail: 2017/07/IMG_20170730_214102.jpg
 categories:

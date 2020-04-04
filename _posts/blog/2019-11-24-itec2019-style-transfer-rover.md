@@ -4,7 +4,7 @@ title: 'iTec2019 – Style transfer rover'
 base: Blog
 base_url: /blog
 author: teny96@gmail.com
-layout: post
+layout: blog_post
 guid: https://tzeny.com/?p=782
 thumbnail: 2019/11/top8.jpeg
 categories:

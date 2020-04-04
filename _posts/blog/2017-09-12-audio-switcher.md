@@ -4,7 +4,7 @@ title: Audio switcher
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=131
 thumbnail: 2017/09/final-360x210.jpg
 categories:

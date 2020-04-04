@@ -5,7 +5,7 @@ base: Blog
 base_url: /blog
 author: Tzeny
 excerpt: A short trek to the Custura Peak in the Retezat Mountains
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=372
 thumbnail: 2018/12/2018-09-22_14-16-52_030-360x210.jpg
 categories:

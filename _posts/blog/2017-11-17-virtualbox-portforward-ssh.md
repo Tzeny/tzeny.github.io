@@ -4,7 +4,7 @@ title: VirtualBox connect to VM via SSH / Portforwarding in VirtualBox
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: http://192.168.0.110:8000/?p=225
 thumbnail: 2017/11/final-360x210.jpg
 categories:

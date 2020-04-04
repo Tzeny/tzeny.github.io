@@ -19,6 +19,10 @@ def modify_file_content(file_content):
         if 'permalink' in line:
             continue
 
+        if 'layout: post' in line:
+            new_file_lines.append('layout: blog_post\n')
+            continue
+
         if 'date: ' in line:
             print(f'Appending base line')
             new_file_lines.append('base: Blog\n')

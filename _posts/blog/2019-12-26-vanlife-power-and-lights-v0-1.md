@@ -4,7 +4,7 @@ title: 'VanLife – Power and lights v0.1'
 base: Blog
 base_url: /blog
 author: Tzeny
-layout: post
+layout: blog_post
 guid: https://tzeny.com/?p=910
 thumbnail: 2019/12/Sketch.jpg
 categories:
