@@ -130,10 +130,10 @@ This Christmas I visited Switzerland and Liechtenstein. I used the chance to vis
   </div>
 </div></div> 
 
-<link rel="stylesheet" href="http://tzeny.com/wp-content/plugins/osm/js/OL/6.1.1/css/ol.css" type="text/css" />
+<!-- <link rel="stylesheet" href="http://tzeny.com/wp-content/plugins/osm/js/OL/6.1.1/css/ol.css" type="text/css" />
 
 <link rel="stylesheet" href="http://tzeny.com/wp-content/plugins/osm/css/osm_map_v3.css" type="text/css" />
 
-<link rel="stylesheet" href="http://tzeny.com/wp-content/plugins/osm/css/osm_map.css" type="text/css" />
+<link rel="stylesheet" href="http://tzeny.com/wp-content/plugins/osm/css/osm_map.css" type="text/css" /> -->
 
 <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
