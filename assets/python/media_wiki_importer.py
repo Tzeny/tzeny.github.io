@@ -77,7 +77,7 @@ def modify_file_content(file_content, file_path):
                 caption = caption.replace('thumb|','')
 
                 # new_line = new_line.replace(img_src_regex_match.group(0), f"![{caption}]({src})")
-                new_image_s = '{%% include figure_caption.html url="%s" description="%s" %%}' % (src, caption)
+                new_image_s = '{%% include figure_caption.html url="%s" description="%s" %%}' % (src, caption.replace('|', ','))
                 new_line = new_line.replace(img_src_regex_match[0], new_image_s)
                 print(f'Found image tag with src {img_src_regex_match[2]}, replacing with {new_line}')
             elif 'wikilink' in str(img_src_regex_match[0]).lower() and 'file:' not in str(img_src_regex_match[0]).lower():

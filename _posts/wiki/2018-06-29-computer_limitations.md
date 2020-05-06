@@ -18,7 +18,7 @@ Source: [<https://tzeny.ddns.net:4430/Tzeny/fastai_numerical-linear-algebra/blob
 Floats
 ------
 
-{% include figure_caption.html url="/assets/img/wiki/Float_scale_gap.png" description="800px|Gaps between floating point numbers depending on the interval in which the numbers reside" %} Floating point numbers have a maximum and a minimum: 1.79 \* 10308and as small as 2.23 \* 10−308.
+{% include figure_caption.html url="/assets/img/wiki/Float_scale_gap.png" description="800px,Gaps between floating point numbers depending on the interval in which the numbers reside" %} Floating point numbers have a maximum and a minimum: 1.79 \* 10308and as small as 2.23 \* 10−308.
 
 There are uneven gaps between numbers.
 

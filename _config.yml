@@ -114,6 +114,7 @@ instagram_username: tzeny15
 # dribbble_username: johndoe
 flickr_username: 186474581@N04
 
+future: false
 #for comments using disqus
 # disqus_shortname: sujay-kundu
 
@@ -171,6 +172,24 @@ compress_html:
 # collections:
 #  - products
 
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category:
+      tags:
+    posts:
+      base: Blog
+      base_url: /blog
+      author: Tzeny
+      layout: blog_post
+      thumbnail: 2019/12/Sketch.jpg
+      categories: 
+        - misc
+      tags:
+        - tag 
+
 # Gallery
 defaults:
   -
@@ -190,6 +209,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-algolia
   - jekyll-menus
+  - jekyll-spaceship
 
 
 # Exclude from processing.

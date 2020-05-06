@@ -26,7 +26,7 @@ Unstructured data
 
 Examples: images, sound, text
 
-{% include figure_caption.html url="/assets/img/wiki/Sound-plot.png" description="border|400px" %}
+{% include figure_caption.html url="/assets/img/wiki/Sound-plot.png" description="border,400px" %}
 
 On the left we have a spectogram of the sound, created using a Fast Fourier Transform.
 

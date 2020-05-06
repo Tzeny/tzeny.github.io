@@ -51,7 +51,7 @@ Precision and recall
 
 {% include figure_caption.html url="/assets/img/wiki/Precisionrecall.png" description="Precision vs recall" %}
 
-{% include figure_caption.html url="/assets/img/wiki/Confusion-Matrix.png" description="200px|Confusion Matrix" %}
+{% include figure_caption.html url="/assets/img/wiki/Confusion-Matrix.png" description="200px,Confusion Matrix" %}
 
 $\\text{Precision} = \\frac{\\text{True positives}}{\\text{True positives} + \\text{False positives}} = \\frac{\\text{True positives}}{\\text{Predicted positive}}$ (of all our true predictions, how many are true?)
 
@@ -62,7 +62,7 @@ $\\text{Accuracy} = \\frac{\\text{True positives} + \\text{True negatives}}{\\te
 -   increased threshold -> higher precision, lower recall (lower number of false positives)
 -   decreased threshold -> lower precision, higher recall (lower number of false negatives)
 
-{% include figure_caption.html url="/assets/img/wiki/Precision-recall.png" description="200px|Precision vs recall" %}
+{% include figure_caption.html url="/assets/img/wiki/Precision-recall.png" description="200px,Precision vs recall" %}
 
 ### F1 score
 

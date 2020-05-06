@@ -13,7 +13,7 @@ Visualization can help debug CNN models. There are a couple of types of visualiz
 Activation Maximization1
 ==========================
 
-{% include figure_caption.html url="/assets/img/wiki/Activation_maximization.png" description="200px|Activation maximization of class 0 on MNIST dataset" %}
+{% include figure_caption.html url="/assets/img/wiki/Activation_maximization.png" description="200px,Activation maximization of class 0 on MNIST dataset" %}
 
 In a CNN, each Conv layer has several learned template matching filters that maximize their output when a similar template pattern is found in the input image. First Conv layer is easy to interpret; simply visualize the weights as an image. To see what the Conv layer is doing, a simple option is to apply the filter over raw input pixels. Subsequent Conv filters operate over the outputs of previous Conv filters (which indicate the presence or absence of some templates), making them hard to interpret.
 
@@ -30,7 +30,7 @@ For the next 2 types of visualization we will use ImageNet and Ouzels as an exam
 Saliency Maps3
 ================
 
-{% include figure_caption.html url="/assets/img/wiki/Ouzel_saliency_map.png" description="450px|Ouzel saliency maps" %} Suppose that all the training images of bird class contains a tree with leaves. How do we know whether the CNN is using bird-related pixels, as opposed to some other features such as the tree or leaves in the image? This actually happens more often than you think and you should be especially suspicious if you have a small training set.
+{% include figure_caption.html url="/assets/img/wiki/Ouzel_saliency_map.png" description="450px,Ouzel saliency maps" %} Suppose that all the training images of bird class contains a tree with leaves. How do we know whether the CNN is using bird-related pixels, as opposed to some other features such as the tree or leaves in the image? This actually happens more often than you think and you should be especially suspicious if you have a small training set.
 
 Saliency maps was first introduced in the paper: Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps
 
@@ -43,7 +43,7 @@ $\\frac{dOutput}{dInput}$
 Class Activation Maps5
 ========================
 
-{% include figure_caption.html url="/assets/img/wiki/Ouzel_cam.png" description="450px|Ouzel Class Activation maps" %} Class activation maps or grad-CAM is another way of visualizing attention over input. Instead of using gradients with respect to output (see saliency), grad-CAM uses penultimate (pre Dense layer) Conv layer output. The intuition is to use the nearest Conv layer to utilize spatial information that gets completely lost in Dense layers.
+{% include figure_caption.html url="/assets/img/wiki/Ouzel_cam.png" description="450px,Ouzel Class Activation maps" %} Class activation maps or grad-CAM is another way of visualizing attention over input. Instead of using gradients with respect to output (see saliency), grad-CAM uses penultimate (pre Dense layer) Conv layer output. The intuition is to use the nearest Conv layer to utilize spatial information that gets completely lost in Dense layers.
 
 In keras-vis, we use grad-CAM as its considered more general than Class Activation maps.
 

@@ -21,7 +21,7 @@ To train our NN we will set an optimization objective. In this case it will be m
 
 $J(\\theta)=\\frac{1}{m}\\sum_{i=1}^mD(h_\\theta(\\theta_i\*x_i+b),L_i)$where D is the cross entropy function, and L is a matrix of hot encoded labels
 
-{% include figure_caption.html url="/assets/img/wiki/Basic_nn.png" description="border|600px|Example of a NN architecture" %}
+{% include figure_caption.html url="/assets/img/wiki/Basic_nn.png" description="border,600px,Example of a NN architecture" %}
 
 ### Data preprocessing
 
@@ -59,7 +59,7 @@ One hot encoding transforms categorical features to a format that works better w
 
 Imagine we have 7 samples belonging to 4 categories, OHE will output a 4x1 vector (represented below as a row of the table) for each of them.
 
-{% include figure_caption.html url="/assets/img/wiki/One-hot-encoding.png" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/One-hot-encoding.png" description="border,200px" %}
 
 Hyperparameter optimization2
 ------------------------------
@@ -113,31 +113,31 @@ Activation functions
 
 step(x) = x > 0
 
-{% include figure_caption.html url="/assets/img/wiki/Step-function.png" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/Step-function.png" description="border,200px" %}
 
 ### Sigmoid
 
 $sigmoid(x) = \\frac{1}{1-\\exp{(-x)}}$
 
-{% include figure_caption.html url="/assets/img/wiki/Sigmoid.gif" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/Sigmoid.gif" description="border,200px" %}
 
 ### Hyperbolic Tangent(tanh)
 
 output(x) = tanh(x)
 
-{% include figure_caption.html url="/assets/img/wiki/Tanh.gif" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/Tanh.gif" description="border,200px" %}
 
 ### ReLU(rectified linear unit)
 
 relu(x) = max(0,x)
 
-{% include figure_caption.html url="/assets/img/wiki/Relu-activation.png" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/Relu-activation.png" description="border,200px" %}
 
 ### Softplus
 
 softplus(x) = log(1 + exp(x))
 
-{% include figure_caption.html url="/assets/img/wiki/Rectifier_and_softplus_functions.svg" description="border|200px" %}
+{% include figure_caption.html url="/assets/img/wiki/Rectifier_and_softplus_functions.svg" description="border,200px" %}
 
 ### Softmax
 

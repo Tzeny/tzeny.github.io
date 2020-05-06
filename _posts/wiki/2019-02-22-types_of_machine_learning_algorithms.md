@@ -119,7 +119,7 @@ Finding similar movies to movie i: find movies j where ||x^i - x^j|| is as small
 
 ##### Mean normalization
 
-{% include figure_caption.html url="/assets/img/wiki/Mean_normalization.png" description="border|500px" %}
+{% include figure_caption.html url="/assets/img/wiki/Mean_normalization.png" description="border,500px" %}
 
 ### Anomaly Detection
 
@@ -190,7 +190,7 @@ Motivation:
 
 #### PCA - Principal Component Analysis
 
-{% include figure_caption.html url="/assets/img/wiki/Fig_pca_principal_component_analysis.png" description="frameless|PCA dimensionality reduction" %}
+{% include figure_caption.html url="/assets/img/wiki/Fig_pca_principal_component_analysis.png" description="frameless,PCA dimensionality reduction" %}
 
 It can:
 
@@ -213,7 +213,7 @@ We should use it only when necessary (data is taking up too much space, algorith
 
 #### K-Means algorithm
 
-{% include figure_caption.html url="/assets/img/wiki/K-means_convergence.gif" description="border|K-means algorithm converging" %} Is an iterative algorithm that uses a number of centroids: m to try and make sense of the data.
+{% include figure_caption.html url="/assets/img/wiki/K-means_convergence.gif" description="border,K-means algorithm converging" %} Is an iterative algorithm that uses a number of centroids: m to try and make sense of the data.
 
 randomly initialize K cluster centroids:*μ*1, *μ*2...*μ**K* ∈ *R**n*
 

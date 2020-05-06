@@ -8,7 +8,7 @@ categories:
 hidden: true
 ---
 
-{% include figure_caption.html url="/assets/img/wiki/Linear_algebra_axioms.png" description="600px|Linear Algebra Axioms" %} Linear algebra is the branch of mathematics concerning linear equations.
+{% include figure_caption.html url="/assets/img/wiki/Linear_algebra_axioms.png" description="600px,Linear Algebra Axioms" %} Linear algebra is the branch of mathematics concerning linear equations.
 
 Based on this course: [Essence of linear algebra by 3Blue1Brown](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1)
 
