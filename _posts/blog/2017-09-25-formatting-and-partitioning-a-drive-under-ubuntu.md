@@ -28,33 +28,33 @@ I started by adding a second drive to my Ubuntu VM.
 
 <div class="rl-gallery-container" id="rl-gallery-container-11" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-11" data-gallery_no="11"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_-1.jpg" title="Click the settings button" data-rl_title="Click the settings button" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_-1-300x163.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Click the settings button</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive.jpg" title="Go to the Storage section" data-rl_title="Go to the Storage section" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive-300x198.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Go to the Storage section</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_2.jpg" title="Click the add drive button" data-rl_title="Click the add drive button" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_2-300x198.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Click the add drive button</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_-1.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_-1-300x163.jpg" caption="Click the settings button" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_3.jpg" title="Leave the default" data-rl_title="Leave the default" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_3-283x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Leave the default</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_4.jpg" title="Leave it to dynamic, so as not the use up all the space unless it is required" data-rl_title="Leave it to dynamic, so as not the use up all the space unless it is required" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_4-283x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Leave it to dynamic, so as not the use up all the space unless it is required</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_5.jpg" title="Select the size; you can leave the default location" data-rl_title="Select the size; you can leave the default location" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_5-283x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Select the size; you can leave the default location</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive-300x198.jpg" caption="Go to the Storage section" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/add_drive_6.jpg" title="If everything worked you should now see the second drive" data-rl_title="If everything worked you should now see the second drive" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-11">![My helpful screenshot](/assets/img/posts/2017/09/add_drive_6-300x198.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">If everything worked you should now see the second drive</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_2.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_2-300x198.jpg" caption="Click the add drive button" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_3.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_3-283x300.jpg" caption="Leave the default" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_4.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_4-283x300.jpg" caption="Leave it to dynamic, so as not the use up all the space unless it is required" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_5.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_5-283x300.jpg" caption="Select the size; you can leave the default location" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/add_drive_6.jpg" thumbnail_image="/assets/img/posts/2017/09/add_drive_6-300x198.jpg" caption="If everything worked you should now see the second drive" set_name="set_1" %}</div> </div>
 
 ## 2. Format and partitioning
 
@@ -70,7 +70,9 @@ The following command will list all available drives.
 
 If all went well you should see 2 entries:
 
-<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_1.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/partition_1-300x181.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_1.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/partition_1-300x181.jpg" description="" %}/a>
 
 You should now identify the new drive. In my case it is /dev/sdb
 
@@ -84,25 +86,25 @@ Now, to format the drive:
 
 <div class="rl-gallery-container" id="rl-gallery-container-12" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-12" data-gallery_no="12"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_2-1.jpg" title="Choose GPT, as it is a newer scheme" data-rl_title="Choose GPT, as it is a newer scheme" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-12">![My helpful screenshot](/assets/img/posts/2017/09/partition_2-1-300x180.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Choose GPT, as it is a newer scheme</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_3.jpg" title="Select New" data-rl_title="Select New" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-12">![My helpful screenshot](/assets/img/posts/2017/09/partition_3-300x180.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Select New</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_4.jpg" title="Enter the size of the partition; the default is max; if you want multiple partitions enter a smaller size" data-rl_title="Enter the size of the partition; the default is max; if you want multiple partitions enter a smaller size" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-12">![My helpful screenshot](/assets/img/posts/2017/09/partition_4-300x180.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Enter the size of the partition; the default is max; if you want multiple partitions enter a smaller size</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_2-1.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_2-1-300x180.jpg" caption="Choose GPT, as it is a newer scheme" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_5.jpg" title="Select Write" data-rl_title="Select Write" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-12">![My helpful screenshot](/assets/img/posts/2017/09/partition_5-300x180.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Select Write</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_6.jpg" title="Type yes; afterwards you can quit" data-rl_title="Type yes; afterwards you can quit" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-12">![My helpful screenshot](/assets/img/posts/2017/09/partition_6-300x180.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Type yes; afterwards you can quit</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_3.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_3-300x180.jpg" caption="Select New" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_4.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_4-300x180.jpg" caption="Enter the size of the partition; the default is max; if you want multiple partitions enter a smaller size" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_5.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_5-300x180.jpg" caption="Select Write" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_6.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_6-300x180.jpg" caption="Type yes; afterwards you can quit" set_name="set_1" %}</div> </div>
 
 To check the results of our work again type
 
@@ -112,7 +114,9 @@ To check the results of our work again type
   </div>
 </div>
 
-<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_7.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/partition_7-300x180.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_7.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/partition_7-300x180.jpg" description="" %}/a>
 
 ## 3. Creating the filesystem
 
@@ -136,7 +140,9 @@ In our case we will use:
   </div>
 </div>
 
-<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_8.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/partition_8-300x180.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_8.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/partition_8-300x180.jpg" description="" %}/a>
 
 And we are done 🙂
 

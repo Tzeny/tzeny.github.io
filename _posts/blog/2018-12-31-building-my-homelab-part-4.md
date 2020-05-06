@@ -16,9 +16,9 @@ tags:
 ---
 I changed my networking setup and switched from Proxmox to Ubuntu, moving most of my services to containers.
 
-**Part 3:** [**Building my homelab – part 3**](https://tzeny.com/2017/11/30/building-my-homelab-part-3/)<figure class="wp-block-image">
+**Part 3:** [**Building my homelab – part 3**](https://tzeny.com/2017/11/30/building-my-homelab-part-3/)
 
-![My helpful screenshot](/assets/img/posts/2019/01/IMG_20181231_213214-768x1024.jpg) </figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20181231_213214-768x1024.jpg" description="" %} 
 
 ## Networking
 
@@ -36,9 +36,9 @@ The CPU is a low power quad core, which I figured would be more than enough for 
 
 After installing and configuring pfSense I had some issues with it after a couple of weeks: I could no longer access the web interface and I had rare, random internet failures. 
 
-Although it was interesting playing around with it, I reverted back to my wireless router, as it offers all the functionality that I need. In the future I plan on trying pfSense again, but with a different hardware configuration.<figure class="wp-block-image">
+Although it was interesting playing around with it, I reverted back to my wireless router, as it offers all the functionality that I need. In the future I plan on trying pfSense again, but with a different hardware configuration.
 
-![My helpful screenshot](/assets/img/posts/2018/12/IMG_20181231_213356-1024x768.jpg) <figcaption>Here you can see Farcaster, the pfSense machine and a black gigabit ethernet switch</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2018/12/IMG_20181231_213356-1024x768.jpg" description="Here you can see Farcaster, the pfSense machine and a black gigabit ethernet switch" %} 
 
 The other addition to the Homelab is a 5 port ethernet gigabit switch. It connects all the computers (only Tesla and my laptop) to the network, and is really useful when transferring files between my laptop and Tesla. 
 
@@ -65,9 +65,9 @@ Software used:
 
 I added an old 120 Gb SSD to Tesla, which now acts as the OS drive, speeding everything up.
 
-I installed Ubuntu 18.04 Desktop edition as I had planned to use Gnome together with [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/), but when I used it like that the maximum resolution was that of the attached display; I ended up using [TightVNC](https://www.tightvnc.com/) and [Xfce](https://www.xfce.org/) instead, as shown in [Digital Ocean’s tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04).<figure class="wp-block-image">
+I installed Ubuntu 18.04 Desktop edition as I had planned to use Gnome together with [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/), but when I used it like that the maximum resolution was that of the attached display; I ended up using [TightVNC](https://www.tightvnc.com/) and [Xfce](https://www.xfce.org/) instead, as shown in [Digital Ocean’s tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04).
 
-![My helpful screenshot](/assets/img/posts/2018/12/homelab.png) <figcaption>Sketch of my current network architecture</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2018/12/homelab.png" description="Sketch of my current network architecture" %} 
 
 ### MediaWiki
 

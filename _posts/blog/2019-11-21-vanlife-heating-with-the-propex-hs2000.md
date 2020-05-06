@@ -31,21 +31,21 @@ Here are a couple of pictures of the most important bits: the heater itself and 
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-30" data-gallery_id="734"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-30" data-gallery_no="30"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/propex_heater_1-e1574323183851.jpg" title="Main propex heater" data-rl_title="Main propex heater" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-30">![My helpful screenshot](/assets/img/posts/2019/11/propex_heater_1-e1574323183851-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Main propex heater</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/propex_heater_0-e1574323206840.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-30">![My helpful screenshot](/assets/img/posts/2019/11/propex_heater_0-e1574323206840-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/propex_heater_1-e1574323183851.jpg" thumbnail_image="/assets/img/posts/2019/11/propex_heater_1-e1574323183851-225x300.jpg" caption="Main propex heater" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/thermostat_0.jpg" title="Digital thermostat" data-rl_title="Digital thermostat" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-30">![My helpful screenshot](/assets/img/posts/2019/11/thermostat_0-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Digital thermostat</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/thermostat_1.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-30">![My helpful screenshot](/assets/img/posts/2019/11/thermostat_1-300x225.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/propex_heater_0-e1574323206840.jpg" thumbnail_image="/assets/img/posts/2019/11/propex_heater_0-e1574323206840-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/thermostat_0.jpg" thumbnail_image="/assets/img/posts/2019/11/thermostat_0-300x225.jpg" caption="Digital thermostat" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/thermostat_1.jpg" thumbnail_image="/assets/img/posts/2019/11/thermostat_1-300x225.jpg" caption="" set_name="set_1" %}
 </div></div></div> 
 
 ## Buying one
@@ -79,69 +79,69 @@ Contents:
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-31" data-gallery_id="740"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-31" data-gallery_no="31"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_0.jpg" title="The PropexHS2000 box and the fitting kit box" data-rl_title="The PropexHS2000 box and the fitting kit box" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_0-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The PropexHS2000 box and the fitting kit box</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_1-e1574323727236.jpg" title="Top of the box filled with the air vents, mounting hardware, thermostat and user manual" data-rl_title="Top of the box filled with the air vents, mounting hardware, thermostat and user manual" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_1-e1574323727236-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Top of the box filled with the air vents, mounting hardware, thermostat and user manual</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_0.jpg" thumbnail_image="/assets/img/posts/2019/11/box_0-300x225.jpg" caption="The PropexHS2000 box and the fitting kit box" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_2-e1574323753662.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_2-e1574323753662-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_3-e1574323760563.jpg" title="The gray duct is for the exhaust, while the black one tucked away on the side if for the inlet" data-rl_title="The gray duct is for the exhaust, while the black one tucked away on the side if for the inlet" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_3-e1574323760563-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The gray duct is for the exhaust, while the black one tucked away on the side if for the inlet</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_1-e1574323727236.jpg" thumbnail_image="/assets/img/posts/2019/11/box_1-e1574323727236-225x300.jpg" caption="Top of the box filled with the air vents, mounting hardware, thermostat and user manual" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_4-e1574323780193.jpg" title="Heater package in a smaller cardboard enclosure" data-rl_title="Heater package in a smaller cardboard enclosure" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_4-e1574323780193-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Heater package in a smaller cardboard enclosure</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/box_5-e1574323787399.jpg" title="Bottom of the box containing the air ducting and electrical wires and conectors" data-rl_title="Bottom of the box containing the air ducting and electrical wires and conectors" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/box_5-e1574323787399-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Bottom of the box containing the air ducting and electrical wires and conectors</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_2-e1574323753662.jpg" thumbnail_image="/assets/img/posts/2019/11/box_2-e1574323753662-225x300.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085227.jpg" title="Mounting accessory bag" data-rl_title="Mounting accessory bag" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085227-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Mounting accessory bag</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085318.jpg" title="Note the mounting brackets in the top left of the image; they do not come attached by default" data-rl_title="Note the mounting brackets in the top left of the image; they do not come attached by default" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085318-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Note the mounting brackets in the top left of the image; they do not come attached by default</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_3-e1574323760563.jpg" thumbnail_image="/assets/img/posts/2019/11/box_3-e1574323760563-225x300.jpg" caption="The gray duct is for the exhaust, while the black one tucked away on the side if for the inlet" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085650-e1574323935472.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085650-e1574323935472-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085856-e1574323948632.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085856-e1574323948632-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_4-e1574323780193.jpg" thumbnail_image="/assets/img/posts/2019/11/box_4-e1574323780193-225x300.jpg" caption="Heater package in a smaller cardboard enclosure" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085901-e1574323957521.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085901-e1574323957521-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085950-e1574323970208.jpg" title="Ducts and air vents" data-rl_title="Ducts and air vents" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085950-e1574323970208-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Ducts and air vents</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/box_5-e1574323787399.jpg" thumbnail_image="/assets/img/posts/2019/11/box_5-e1574323787399-225x300.jpg" caption="Bottom of the box containing the air ducting and electrical wires and conectors" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_085955.jpg" title="Outside end of the inlet pipe, note the screw" data-rl_title="Outside end of the inlet pipe, note the screw" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_085955-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Outside end of the inlet pipe, note the screw</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090026.jpg" title="All of the contents of the box" data-rl_title="All of the contents of the box" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090026-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">All of the contents of the box</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085227.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085227-300x225.jpg" caption="Mounting accessory bag" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090137.jpg" title="Note the small brown wire which is cut at both ends; it's supposed to be like that" data-rl_title="Note the small brown wire which is cut at both ends; it's supposed to be like that" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090137-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Note the small brown wire which is cut at both ends; it's supposed to be like that</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090123.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-31">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090123-300x225.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085318.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085318-300x225.jpg" caption="Note the mounting brackets in the top left of the image; they do not come attached by default" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085650-e1574323935472.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085650-e1574323935472-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085856-e1574323948632.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085856-e1574323948632-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085901-e1574323957521.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085901-e1574323957521-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085950-e1574323970208.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085950-e1574323970208-225x300.jpg" caption="Ducts and air vents" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_085955.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_085955-300x225.jpg" caption="Outside end of the inlet pipe, note the screw" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090026.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090026-300x225.jpg" caption="All of the contents of the box" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090137.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090137-300x225.jpg" caption="Note the small brown wire which is cut at both ends; it's supposed to be like that" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090123.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090123-300x225.jpg" caption="" set_name="set_1" %}
 </div></div></div> 
 
 ### Fitting kit
@@ -161,37 +161,37 @@ Contents:
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-32" data-gallery_id="759"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-32" data-gallery_no="32"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090633-e1574324283390.jpg" title="Fitting kit box" data-rl_title="Fitting kit box" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090633-e1574324283390-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Fitting kit box</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090640-e1574324298265.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090640-e1574324298265-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090633-e1574324283390.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090633-e1574324283390-225x300.jpg" caption="Fitting kit box" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090710-e1574324291107.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090710-e1574324291107-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090718-e1574324475124.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090718-e1574324475124-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090640-e1574324298265.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090640-e1574324298265-225x300.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090716-e1574324451251.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090716-e1574324451251-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090714-e1574324316970.jpg" title="Gas bottle indicator; I'm curious to see if it works on LPG bottles" data-rl_title="Gas bottle indicator; I'm curious to see if it works on LPG bottles" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090714-e1574324316970-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Gas bottle indicator; I'm curious to see if it works on LPG bottles</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090710-e1574324291107.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090710-e1574324291107-225x300.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090722.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090722-300x225.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/IMG_20191121_090720.jpg" title="A small, but important addition to the fitting kit, courtesy of JustKampers" data-rl_title="A small, but important addition to the fitting kit, courtesy of JustKampers" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-32">![My helpful screenshot](/assets/img/posts/2019/11/IMG_20191121_090720-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">A small, but important addition to the fitting kit, courtesy of JustKampers</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090718-e1574324475124.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090718-e1574324475124-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090716-e1574324451251.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090716-e1574324451251-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090714-e1574324316970.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090714-e1574324316970-225x300.jpg" caption="Gas bottle indicator; I'm curious to see if it works on LPG bottles" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090722.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090722-300x225.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/IMG_20191121_090720.jpg" thumbnail_image="/assets/img/posts/2019/11/IMG_20191121_090720-300x225.jpg" caption="A small, but important addition to the fitting kit, courtesy of JustKampers" set_name="set_1" %}
 </div></div></div> 
 
 ## Installation

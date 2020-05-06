@@ -34,3 +34,38 @@ blockquote {
 /* .img-thumbnail {
     width: 10%;
 } */
+
+/* lightbox 2 */
+/* .lb-image, .lb-dataContainer {
+max-width: 100%;
+height: auto !important;
+width: 100%;
+} */
+
+/* .lb-outerContainer {
+    max-width: 100%;
+    height: auto !important;
+}
+*/
+.lightbox2-image-thumbnail {
+    max-width: 20%;
+    margin: 2%;
+}
+.lightbox2-image-caption {
+    position: absolute;
+    left: 10%;
+    top: 5vw;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    width: 160px; 
+    height: 1.2em; 
+    white-space: nowrap;
+}
+.lightbox2-image {
+    position: relative;
+}
+
+.youtube-iframe {
+    width:100%;
+    height: 50vw;
+}

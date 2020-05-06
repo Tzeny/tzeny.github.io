@@ -29,7 +29,9 @@ My solution was this:
 
 A bracket that has the base shifted by 20 mm. This is how my LCD looks with a shifted bracket (left) and a normal one (right):<figure class="wp-block-image"><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG\_20190101\_120545.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
 
-![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120545-1024x768.jpg) </a></figure> 
+
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120545-1024x768.jpg" description="" %}</a></figure> 
 
 ## Design
 

@@ -26,17 +26,17 @@ This is the end result:
 
 <div class="rl-gallery-container" id="rl-gallery-container-5" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-5" data-gallery_no="5"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170914_221530.jpg" title="The computer housing the NAS" data-rl_title="The computer housing the NAS" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-5">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170914_221530-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The computer housing the NAS</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/hidra_network.jpg" title="This is how Windows sees our NAS, as a Network Share location" data-rl_title="This is how Windows sees our NAS, as a Network Share location" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-5">![My helpful screenshot](/assets/img/posts/2017/09/hidra_network-300x172.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is how Windows sees our NAS, as a Network Share location</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/hidra_phone.jpg" title="This is how our Phone sees our NAS" data-rl_title="This is how our Phone sees our NAS" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-5">![My helpful screenshot](/assets/img/posts/2017/09/hidra_phone-169x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is how our Phone sees our NAS</span></span></a>
-</div></div> </div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170914_221530.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170914_221530-300x225.jpg" caption="The computer housing the NAS" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/hidra_network.jpg" thumbnail_image="/assets/img/posts/2017/09/hidra_network-300x172.jpg" caption="This is how Windows sees our NAS, as a Network Share location" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/hidra_phone.jpg" thumbnail_image="/assets/img/posts/2017/09/hidra_phone-169x300.jpg" caption="This is how our Phone sees our NAS" set_name="set_1" %}</div> </div>
 
 Our goal here is to create a Network storage location, accessible for anyone on the network, no matter what device they are using. I tested mine with Windows and Android, but it should work with Linux as well.
 
@@ -67,7 +67,9 @@ There’s not much to it. Just make sure your computer is powered on and is conn
 
 In my case I also did a slight modification of the design. Because I had a HDD laying about, I decided I want to add it to the NAS. But, this was a problem since there was no room in the case for an extra drive. So, after a bit of tinkering I managed to fix it inside the CD Rom bay. Note that this is a 2.5” drive.
 
-<figure id="attachment_147" aria-describedby="caption-attachment-147" style="width: 300px" class="wp-caption alignnone"><a href="https://tzeny.com/wp-content/uploads/2017/09/IMG\_20170914\_221559.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170914_221559-300x225.jpg)</a><figcaption id="caption-attachment-147" class="wp-caption-text">A 1 TB drive mounted inside the CD Rom bay</figcaption></figure>
+<figure id="attachment_147" aria-describedby="caption-attachment-147" style="width: 300px" class="wp-caption alignnone"><a href="https://tzeny.com/wp-content/uploads/2017/09/IMG\_20170914\_221559.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/IMG_20170914_221559-300x225.jpg" description="" %}/a><figcaption id="caption-attachment-147" class="wp-caption-text">A 1 TB drive mounted inside the CD Rom bay</figcaption></figure>
 
 ## Software
 
@@ -156,17 +158,17 @@ Open the File Explorer and go to the network tab. There you should see your mach
 
 <div class="rl-gallery-container" id="rl-gallery-container-6" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-6" data-gallery_no="6"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/hidra_network_2.jpg" title="Your computer should appear on your network now" data-rl_title="Your computer should appear on your network now" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-6">![My helpful screenshot](/assets/img/posts/2017/09/hidra_network_2-300x144.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Your computer should appear on your network now</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/hidra_network_3.jpg" title="Login with your username and Samba password" data-rl_title="Login with your username and Samba password" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-6">![My helpful screenshot](/assets/img/posts/2017/09/hidra_network_3-300x236.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Login with your username and Samba password</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/hidra_network.jpg" title="This is how Windows sees our NAS, as a Network Share location" data-rl_title="This is how Windows sees our NAS, as a Network Share location" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-6">![My helpful screenshot](/assets/img/posts/2017/09/hidra_network-300x172.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is how Windows sees our NAS, as a Network Share location</span></span></a>
-</div></div> </div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/hidra_network_2.jpg" thumbnail_image="/assets/img/posts/2017/09/hidra_network_2-300x144.jpg" caption="Your computer should appear on your network now" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/hidra_network_3.jpg" thumbnail_image="/assets/img/posts/2017/09/hidra_network_3-300x236.jpg" caption="Login with your username and Samba password" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/hidra_network.jpg" thumbnail_image="/assets/img/posts/2017/09/hidra_network-300x172.jpg" caption="This is how Windows sees our NAS, as a Network Share location" set_name="set_1" %}</div> </div>
 
 ### 2. Android
 
@@ -176,21 +178,21 @@ Note: you should be on the same network as the server for this to work
 
 <div class="rl-gallery-container" id="rl-gallery-container-7" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-7" data-gallery_no="7"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/nas_android_1.jpg" title="First press the big blue + in the bottom right" data-rl_title="First press the big blue + in the bottom right" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-7">![My helpful screenshot](/assets/img/posts/2017/09/nas_android_1-169x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">First press the big blue + in the bottom right</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/nas_android_2.jpg" title="Now fill in your server information; use the password you set for Samba" data-rl_title="Now fill in your server information; use the password you set for Samba" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-7">![My helpful screenshot](/assets/img/posts/2017/09/nas_android_2-169x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Now fill in your server information; use the password you set for Samba</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/nas_android_3.jpg" title="Now your server should appear" data-rl_title="Now your server should appear" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-7">![My helpful screenshot](/assets/img/posts/2017/09/nas_android_3-169x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Now your server should appear</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/nas_android_1.jpg" thumbnail_image="/assets/img/posts/2017/09/nas_android_1-169x300.jpg" caption="First press the big blue + in the bottom right" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/nas_android_4.jpg" title="And if you click on it you will see your files and folders" data-rl_title="And if you click on it you will see your files and folders" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-7">![My helpful screenshot](/assets/img/posts/2017/09/nas_android_4-169x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">And if you click on it you will see your files and folders</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/nas_android_2.jpg" thumbnail_image="/assets/img/posts/2017/09/nas_android_2-169x300.jpg" caption="Now fill in your server information; use the password you set for Samba" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/nas_android_3.jpg" thumbnail_image="/assets/img/posts/2017/09/nas_android_3-169x300.jpg" caption="Now your server should appear" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/nas_android_4.jpg" thumbnail_image="/assets/img/posts/2017/09/nas_android_4-169x300.jpg" caption="And if you click on it you will see your files and folders" set_name="set_1" %}</div> </div>
 
 ## Ideas for the future
 

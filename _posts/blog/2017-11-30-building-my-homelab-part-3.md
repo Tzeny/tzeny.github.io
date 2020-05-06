@@ -36,33 +36,33 @@ The main change is the addition of Tesla, a server powered by an Intel i5-2400S 
 
 <div class="rl-gallery-container" id="rl-gallery-container-17" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-17" data-gallery_no="17"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/Front.jpg" title="This is how it looks now, the LEDs are off because I need to buy a new power wire" data-rl_title="This is how it looks now, the LEDs are off because I need to buy a new power wire" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/Front-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is how it looks now, the LEDs are off because I need to buy a new power wire</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/front-open.jpg" title="This is a view with the doors open; top shelf: raspberry pi and LED psu, then networking shelf, then server shelf and UPS area" data-rl_title="This is a view with the doors open; top shelf: raspberry pi and LED psu, then networking shelf, then server shelf and UPS area" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/front-open-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is a view with the doors open; top shelf: raspberry pi and LED psu, then networking shelf, then server shelf and UPS area</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/IMG_20171126_174841.jpg" title="My plan for how the homelab should be structured; I made it by using SketchUp to create an accurate schematic of the furniture and then print it out" data-rl_title="My plan for how the homelab should be structured; I made it by using SketchUp to create an accurate schematic of the furniture and then print it out" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/IMG_20171126_174841-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">My plan for how the homelab should be structured; I made it by using SketchUp to create an accurate schematic of the furniture and then print it out</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/Front.jpg" thumbnail_image="/assets/img/posts/2017/11/Front-225x300.jpg" caption="This is how it looks now, the LEDs are off because I need to buy a new power wire" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/tesla.jpg" title="Tesla, my new powerhouse; it's powered by an Intel i5 2400s, as 8 GB of RAM; storage: 1TB ZFS Raid 1, 600 GB WD Black; 2 x GIgabyte Lan" data-rl_title="Tesla, my new powerhouse; it's powered by an Intel i5 2400s, as 8 GB of RAM; storage: 1TB ZFS Raid 1, 600 GB WD Black; 2 x GIgabyte Lan" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/tesla-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Tesla, my new powerhouse; it's powered by an Intel i5 2400s, as 8 GB of RAM; storage: 1TB ZFS Raid 1, 600 GB WD Black; 2 x GIgabyte Lan</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/old-hidra.jpg" title="Old Hydra sever, leaving it offline now so that it won't uselessly drain power" data-rl_title="Old Hydra sever, leaving it offline now so that it won't uselessly drain power" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/old-hidra-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Old Hydra sever, leaving it offline now so that it won't uselessly drain power</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/cable-management.jpg" title="The cable ties I got from AliExpress, cheap and did the job nicely" data-rl_title="The cable ties I got from AliExpress, cheap and did the job nicely" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/cable-management-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The cable ties I got from AliExpress, cheap and did the job nicely</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/front-open.jpg" thumbnail_image="/assets/img/posts/2017/11/front-open-225x300.jpg" caption="This is a view with the doors open; top shelf: raspberry pi and LED psu, then networking shelf, then server shelf and UPS area" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/WebGUI.jpg" title="This is the Proxmox GUI of Tesla; not too much happening yet" data-rl_title="This is the Proxmox GUI of Tesla; not too much happening yet" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-17">![My helpful screenshot](/assets/img/posts/2017/11/WebGUI-300x164.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the Proxmox GUI of Tesla; not too much happening yet</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/IMG_20171126_174841.jpg" thumbnail_image="/assets/img/posts/2017/11/IMG_20171126_174841-225x300.jpg" caption="My plan for how the homelab should be structured; I made it by using SketchUp to create an accurate schematic of the furniture and then print it out" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/tesla.jpg" thumbnail_image="/assets/img/posts/2017/11/tesla-300x225.jpg" caption="Tesla, my new powerhouse; it's powered by an Intel i5 2400s, as 8 GB of RAM; storage: 1TB ZFS Raid 1, 600 GB WD Black; 2 x GIgabyte Lan" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/old-hidra.jpg" thumbnail_image="/assets/img/posts/2017/11/old-hidra-300x225.jpg" caption="Old Hydra sever, leaving it offline now so that it won't uselessly drain power" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/cable-management.jpg" thumbnail_image="/assets/img/posts/2017/11/cable-management-300x225.jpg" caption="The cable ties I got from AliExpress, cheap and did the job nicely" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/WebGUI.jpg" thumbnail_image="/assets/img/posts/2017/11/WebGUI-300x164.jpg" caption="This is the Proxmox GUI of Tesla; not too much happening yet" set_name="set_1" %}</div> </div>
 
 ## Main changes:
 

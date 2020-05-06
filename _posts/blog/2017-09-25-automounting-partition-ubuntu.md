@@ -48,7 +48,9 @@ Next, type:
 
 And identify the partition you want to mount.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_7.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/partition_7-300x180.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_7.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/partition_7-300x180.jpg" description="" %}/a>
 
 In my case the partition is /dev/sdb1.
 
@@ -97,13 +99,13 @@ Tells fstab to:
 
 <div class="rl-gallery-container" id="rl-gallery-container-13" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-13" data-gallery_no="13"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_1-1.jpg" title="This is the original file, just move the cursor to the bottom" data-rl_title="This is the original file, just move the cursor to the bottom" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-13">![My helpful screenshot](/assets/img/posts/2017/09/partition_1-1-300x179.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the original file, just move the cursor to the bottom</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/partition_2-2.jpg" title="And append a line telling fstab to mount our drive" data-rl_title="And append a line telling fstab to mount our drive" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-13">![My helpful screenshot](/assets/img/posts/2017/09/partition_2-2-300x149.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">And append a line telling fstab to mount our drive</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_1-1.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_1-1-300x179.jpg" caption="This is the original file, just move the cursor to the bottom" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/partition_2-2.jpg" thumbnail_image="/assets/img/posts/2017/09/partition_2-2-300x149.jpg" caption="And append a line telling fstab to mount our drive" set_name="set_1" %}</div> </div>
 
 Now reboot, and type:
 
@@ -115,6 +117,8 @@ Now reboot, and type:
 
 This should show you all of the mounted devices, including the one you just added.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_3-1.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/09/partition_3-1-300x179.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/09/partition\_3-1.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/09/partition_3-1-300x179.jpg" description="" %}/a>
 
 And as you can see our drive is mounted.

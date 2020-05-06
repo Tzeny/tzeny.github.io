@@ -30,17 +30,17 @@ It all started sometime in July, when I found out I couldn’t keep living alone
 
 So I started thinking about renting a place; but it seemed exceedingly expensive, and, moreover, pointless, as I don’t intend on spending the rest of my life in Timisoara, and my parents already have a house in Lugoj.
 
-So I came up with a brilliant solution, if I say so myself: I’m gonna sleep in my office, and if I’m not allowed to do that, I’ll just sleep in Bessie (my ’91 Mercedes W124). <figure class="wp-block-image size-large">
+So I came up with a brilliant solution, if I say so myself: I’m gonna sleep in my office, and if I’m not allowed to do that, I’ll just sleep in Bessie (my ’91 Mercedes W124). 
 
-![My helpful screenshot](/assets/img/posts/2019/11/bessie-1024x768.jpg) <figcaption>Bessie during the EuroTrip</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/11/bessie-1024x768.jpg" description="Bessie during the EuroTrip" %} 
 
 Bessie seems spacious enough. We have showers, a fridge and a microwave at our office, so I had most essentials laid down. All I needed was a place to sleep.
 
 ## 3rd of August – a long dusk
 
-My hypothesis of sleeping in Bessie had to be tested, so on the 3rd of august I took a flexible mattress I had lying around, 2 pillows, and a blanket, rolled down the left side chair of my car, and tucked in for the night.<figure class="wp-block-image size-large">
+My hypothesis of sleeping in Bessie had to be tested, so on the 3rd of august I took a flexible mattress I had lying around, 2 pillows, and a blanket, rolled down the left side chair of my car, and tucked in for the night.
 
-![My helpful screenshot](/assets/img/posts/2019/11/image-1024x560.jpg) <figcaption>The view from the front of my house, just before falling asleep in Bessie</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/11/image-1024x560.jpg" description="The view from the front of my house, just before falling asleep in Bessie" %} 
 
 I should say that at this point, my mother was still very much against the idea; but what can you do, when you feel a calling, you have to follow it. 
 
@@ -50,9 +50,9 @@ It was hard falling asleep. Something akin to when I first slept alone in a tent
 
 ### VanLife
 
-Clearly, not my best night. This make me consider an alternative, that I’ve never taken into account before: living in a van, or as people call it, VanLife :D. I have a friend in the states who traveled around in a smaller van. Maybe she was the inspiration? Maybe I saw people online and forgot about it? I don’t know, but the thought appeared, the box was opened, and I think it would take me years to close it if I wanted to. <figure class="wp-block-image">
+Clearly, not my best night. This make me consider an alternative, that I’ve never taken into account before: living in a van, or as people call it, VanLife :D. I have a friend in the states who traveled around in a smaller van. Maybe she was the inspiration? Maybe I saw people online and forgot about it? I don’t know, but the thought appeared, the box was opened, and I think it would take me years to close it if I wanted to. 
 
-![Image result for van life fireplace](https://i.pinimg.com/originals/43/6c/ba/436cbafd1a2156760c0cf08d397471a4.jpg) <figcaption>Random Van Life picture from the internet</figcaption></figure> 
+{% include figure_caption.html url="https://i.pinimg.com/originals/43/6c/ba/436cbafd1a2156760c0cf08d397471a4.jpg" description="Random Van Life picture from the internet" %} 
 
 Pictures like the one above captured my imagination. At some point in August I also asked and was told, no, I can’t sleep in my office building; go figure. 
 
@@ -71,13 +71,13 @@ After a lot of scouting, and worries, and a mechanic visit, I bought her, my bea
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-24" data-gallery_id="660"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-24" data-gallery_no="24"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/rusty_sideways.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-24">![My helpful screenshot](/assets/img/posts/2019/11/rusty_sideways-300x225.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/rusty_back.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-24">![My helpful screenshot](/assets/img/posts/2019/11/rusty_back-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/rusty_sideways.jpg" thumbnail_image="/assets/img/posts/2019/11/rusty_sideways-300x225.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/rusty_back.jpg" thumbnail_image="/assets/img/posts/2019/11/rusty_back-225x300.jpg" caption="" set_name="set_1" %}
 </div>
 
 <div class="rl-gallery-description">
@@ -101,21 +101,21 @@ Everything went much better next week, after I bought proper protection gear, bo
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-25" data-gallery_id="658"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-25" data-gallery_no="25"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/arin_derusting.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-25">![My helpful screenshot](/assets/img/posts/2019/11/arin_derusting-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/previous_occupant.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-25">![My helpful screenshot](/assets/img/posts/2019/11/previous_occupant-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/arin_derusting.jpg" thumbnail_image="/assets/img/posts/2019/11/arin_derusting-225x300.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/tzeny_derusting.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-25">![My helpful screenshot](/assets/img/posts/2019/11/tzeny_derusting-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/derusting_tools.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-25">![My helpful screenshot](/assets/img/posts/2019/11/derusting_tools-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/previous_occupant.jpg" thumbnail_image="/assets/img/posts/2019/11/previous_occupant-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/tzeny_derusting.jpg" thumbnail_image="/assets/img/posts/2019/11/tzeny_derusting-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/derusting_tools.jpg" thumbnail_image="/assets/img/posts/2019/11/derusting_tools-225x300.jpg" caption="" set_name="set_1" %}
 </div>
 
 <div class="rl-gallery-description">
@@ -127,17 +127,17 @@ It took several weeks to clean out all the rust and spray paint over it, but it 
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-26" data-gallery_id="656"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-26" data-gallery_no="26"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/whell_hub_rust.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-26">![My helpful screenshot](/assets/img/posts/2019/11/whell_hub_rust-150x150.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/wheel_hub_clean.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-26">![My helpful screenshot](/assets/img/posts/2019/11/wheel_hub_clean-150x150.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/whell_hub_rust.jpg" thumbnail_image="/assets/img/posts/2019/11/whell_hub_rust-150x150.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/base_coat.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-26">![My helpful screenshot](/assets/img/posts/2019/11/base_coat-150x150.jpg)</a>
-  </div>
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/wheel_hub_clean.jpg" thumbnail_image="/assets/img/posts/2019/11/wheel_hub_clean-150x150.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/base_coat.jpg" thumbnail_image="/assets/img/posts/2019/11/base_coat-150x150.jpg" caption="" set_name="set_1" %}
 </div>
 
 <div class="rl-gallery-description">
@@ -150,9 +150,9 @@ The 11th night of October was the first night I spent sleeping in Rusty. 71 days
 
 A blanket made with duck feather, thick, Christmas socks Jules Verne and the sound of the street outside were my companions, as I lied down to sleep.
 
-<figure class="wp-block-image size-large">
 
-![My helpful screenshot](/assets/img/posts/2019/11/first_night-1024x768.jpg) <figcaption>My first night as a van dweller</figcaption></figure> 
+
+{% include figure_caption.html url="/assets/img/posts/2019/11/first_night-1024x768.jpg" description="My first night as a van dweller" %} 
 
 Since then I’ve also slept under the blanket wrapped in my sleeping bag, and bought a new sleeping bag who’s comfort temperature is -2°C. 
 
@@ -171,21 +171,21 @@ I went out and bought wood, and with the help of my parents cut it down into 4.5
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-27" data-gallery_id="662"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-27" data-gallery_no="27"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/skeleton_0.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-27">![My helpful screenshot](/assets/img/posts/2019/11/skeleton_0-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/skeleton_2.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-27">![My helpful screenshot](/assets/img/posts/2019/11/skeleton_2-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/skeleton_0.jpg" thumbnail_image="/assets/img/posts/2019/11/skeleton_0-225x300.jpg" caption="" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/skeleton_3.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-27">![My helpful screenshot](/assets/img/posts/2019/11/skeleton_3-225x300.jpg)</a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/skeleton_1.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-27">![My helpful screenshot](/assets/img/posts/2019/11/skeleton_1-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/skeleton_2.jpg" thumbnail_image="/assets/img/posts/2019/11/skeleton_2-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/skeleton_3.jpg" thumbnail_image="/assets/img/posts/2019/11/skeleton_3-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/skeleton_1.jpg" thumbnail_image="/assets/img/posts/2019/11/skeleton_1-225x300.jpg" caption="" set_name="set_1" %}
 </div>
 
 <div class="rl-gallery-description">
@@ -202,9 +202,9 @@ That’s when I came across this new (I think) idea of wool insulation. It is a 
 
 I first found a well known supplier in the states, <a rel="noreferrer noopener" href="https://havelockwool.com/" target="_blank">https://havelockwool.com/</a>. But upon talking to them I realized I needed to find someone closer to home, as shipping would be “absurdly expensive” from the States. 
 
-After looking around on the internet, I found a Romanian supplier: <a href="https://lanaterm.com/ro/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://lanaterm.com/</a>. They offer 3 types of products: 2 types of thermal insulation and 1 kind of noise insulation. <figure class="wp-block-image size-large">
+After looking around on the internet, I found a Romanian supplier: <a href="https://lanaterm.com/ro/" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://lanaterm.com/</a>. They offer 3 types of products: 2 types of thermal insulation and 1 kind of noise insulation. 
 
-![My helpful screenshot](/assets/img/posts/2019/11/lana.svg) </figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/11/lana.svg" description="" %} 
 
 **Tip:** an advantage of wool thermal insulation is that it also has a high  Noise Reduction Coefficient of 0.95 – 1 (<a href="https://lanaterm.com/images/Lanaterm_Polar_english.pdf" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://lanaterm.com/images/Lanaterm_Polar_english.pdf</a>).
 
@@ -215,37 +215,37 @@ They were respectful and quick to respond to queries. I ended up going to their 
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-28" data-gallery_id="664"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-28" data-gallery_no="28"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_8.jpg" title="4 out of the 6 wool insulation bags" data-rl_title="4 out of the 6 wool insulation bags" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_8-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">4 out of the 6 wool insulation bags</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/instulation_0.jpg" title="Floor insulation, check" data-rl_title="Floor insulation, check" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/instulation_0-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Floor insulation, check</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_8.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_8-300x225.jpg" caption="4 out of the 6 wool insulation bags" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_3.jpg" title="And OSB board on top of the wool, painted with mahogany paint" data-rl_title="And OSB board on top of the wool, painted with mahogany paint" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_3-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">And OSB board on top of the wool, painted with mahogany paint</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_2.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_2-300x225.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/instulation_0.jpg" thumbnail_image="/assets/img/posts/2019/11/instulation_0-300x225.jpg" caption="Floor insulation, check" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_1.jpg" title="Pull thread through hard to reach holes, then tie insulation to the loose end and pull it through" data-rl_title="Pull thread through hard to reach holes, then tie insulation to the loose end and pull it through" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_1-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Pull thread through hard to reach holes, then tie insulation to the loose end and pull it through</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_5.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_5-225x300.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_3.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_3-300x225.jpg" caption="And OSB board on top of the wool, painted with mahogany paint" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_7.jpg" title="Future window cutout" data-rl_title="Future window cutout" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_7-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Future window cutout</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/insulation_4.jpg" title="Wall insulation secured with insulation net" data-rl_title="Wall insulation secured with insulation net" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-28">![My helpful screenshot](/assets/img/posts/2019/11/insulation_4-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Wall insulation secured with insulation net</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_2.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_2-300x225.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_1.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_1-225x300.jpg" caption="Pull thread through hard to reach holes, then tie insulation to the loose end and pull it through" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_5.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_5-225x300.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_7.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_7-225x300.jpg" caption="Future window cutout" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/insulation_4.jpg" thumbnail_image="/assets/img/posts/2019/11/insulation_4-300x225.jpg" caption="Wall insulation secured with insulation net" set_name="set_1" %}
 </div></div></div> 
 
 **Tip:** when stuffing holes, use a thread with a weight attached to it; drop it through the hole; after it comes through tie the loose end around a strand of insulation and pull it through, whilst also pushing from the other end
@@ -269,29 +269,29 @@ For the answer to this question, I turned to lots of YouTube videos of other van
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-29" data-gallery_id="666"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-29" data-gallery_no="29"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3d_0.jpg" title="At first I imagined a bike garage" data-rl_title="At first I imagined a bike garage" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3d_0-300x172.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">At first I imagined a bike garage</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3d_0_1.jpg" title="Slideable, couchable bed" data-rl_title="Slideable, couchable bed" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3d_0_1-277x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Slideable, couchable bed</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3d_0.jpg" thumbnail_image="/assets/img/posts/2019/11/3d_0-300x172.jpg" caption="At first I imagined a bike garage" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3D_1.jpg" title="But then I settled for a towing ball mounted bike rack, leading to a lower height bed" data-rl_title="But then I settled for a towing ball mounted bike rack, leading to a lower height bed" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3D_1-270x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">But then I settled for a towing ball mounted bike rack, leading to a lower height bed</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3D_2.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3D_2-300x226.jpg)</a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3d_0_1.jpg" thumbnail_image="/assets/img/posts/2019/11/3d_0_1-277x300.jpg" caption="Slideable, couchable bed" set_name="set_1" %}
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3d_3.jpg" title="Pull up shower + toilet" data-rl_title="Pull up shower + toilet" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3d_3-237x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Pull up shower + toilet</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/11/3d_4.jpg" title="Plant storage" data-rl_title="Plant storage" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-29">![My helpful screenshot](/assets/img/posts/2019/11/3d_4-300x240.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Plant storage</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3D_1.jpg" thumbnail_image="/assets/img/posts/2019/11/3D_1-270x300.jpg" caption="But then I settled for a towing ball mounted bike rack, leading to a lower height bed" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3D_2.jpg" thumbnail_image="/assets/img/posts/2019/11/3D_2-300x226.jpg" caption="" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3d_3.jpg" thumbnail_image="/assets/img/posts/2019/11/3d_3-237x300.jpg" caption="Pull up shower + toilet" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/11/3d_4.jpg" thumbnail_image="/assets/img/posts/2019/11/3d_4-300x240.jpg" caption="Plant storage" set_name="set_1" %}
 </div></div></div> 
 
 For heating I plan on using a LPG powered Propex HS2000 (<a href="https://www.propexheatsource.co.uk/heaters/hs2000" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">https://www.propexheatsource.co.uk/heaters/hs2000</a>) gas heater. It comes with a digital thermostat. 

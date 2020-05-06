@@ -86,9 +86,9 @@ All A2C architectures have 2 heads:
   * Actor – responsible for choosing an action, in our case the actor outputs both an action\_id distribution, and 4 continuous values used as arguments for some of the actions (for example the 331/Move\_screen command requires a point (x,y) on the screen as argument)
   * Critic – responsible for deciding how good the actor’s actions are
 
-There are some inputs that have variable sizes, so we are not feeding them to the network just yet.<figure class="wp-block-image">
+There are some inputs that have variable sizes, so we are not feeding them to the network just yet.
 
-![My helpful screenshot](/assets/img/posts/2019/04/Architecture-2.svg) <figcaption>Figure 2. Architecture of our 2 head neural network</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/04/Architecture-2.svg" description="Figure 2. Architecture of our 2 head neural network" %} 
 
 The idea is to run the model for a number of time steps (10 in our case), and then train both the actor and critic. 
 

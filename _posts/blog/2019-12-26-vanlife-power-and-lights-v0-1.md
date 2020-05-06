@@ -39,17 +39,17 @@ Parts list:
 
 What I wanted was a module that would take 12V DC power on one side, and provide 220V AC outlets, and 5V DC power output for the ceiling LEDs. Both the outlets and the LEDs should have power switches and obvious on/off indicators.
 
-These being said, here is my current setup:<figure class="wp-block-image size-large">
+These being said, here is my current setup:
 
-![My helpful screenshot](/assets/img/posts/2019/12/Sketch-1024x877.jpg) </figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/12/Sketch-1024x877.jpg" description="" %} 
 
-I was lucky that Rusty already has a 2 battery system, which means that I can drain the consumer battery and then easily start the car to recharge it.<figure class="wp-block-image size-large">
+I was lucky that Rusty already has a 2 battery system, which means that I can drain the consumer battery and then easily start the car to recharge it.
 
-![My helpful screenshot](/assets/img/posts/2019/12/whole_thing-1024x768.jpg) <figcaption>Testing the whole thing, without the fan on the inverter; spotlight powered by inverter, LED strip powered by 5V converter; notice the red LED indicating that 5V power is switched on; the inverter has a power LED + the fan’s LEDs</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/12/whole_thing-1024x768.jpg" description="Testing the whole thing, without the fan on the inverter; spotlight powered by inverter, LED strip powered by 5V converter; notice the red LED indicating that 5V power is switched on; the inverter has a power LED + the fan’s LEDs" %} 
 
-I used hot glue to secure the LED strip to Rusty’s roof. This is the result:<figure class="wp-block-image size-large">
+I used hot glue to secure the LED strip to Rusty’s roof. This is the result:
 
-![My helpful screenshot](/assets/img/posts/2019/12/rusty_light-1024x768.jpg) <figcaption>The single LED strip, laid out; next to the window on the left is the mounted power plank, with both the 5V converter board (red LED) and inverter (blue fan) turned on</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/12/rusty_light-1024x768.jpg" description="The single LED strip, laid out; next to the window on the left is the mounted power plank, with both the 5V converter board (red LED) and inverter (blue fan) turned on" %} 
 
 The inverter was really useful, as I could power my 10W hot glue gun, without needing an extension cord and shore power.
 
@@ -68,22 +68,22 @@ The 3 connectors on the bottom side are there to help me connect additional 12V 
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-42" data-gallery_id="918"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-42" data-gallery_no="42"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/12/PowerDistribution1.jpg" title="Finished power distribution board" data-rl_title="Finished power distribution board" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-42">![My helpful screenshot](/assets/img/posts/2019/12/PowerDistribution1-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Finished power distribution board</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/12/PowerDistribution2.jpg" title="Note: I added solder above the terminal used to make the 2 long parallel connections" data-rl_title="Note: I added solder above the terminal used to make the 2 long parallel connections" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-42">![My helpful screenshot](/assets/img/posts/2019/12/PowerDistribution2-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Note: I added solder above the terminal used to make the 2 long parallel connections</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/12/PowerDistribution1.jpg" thumbnail_image="/assets/img/posts/2019/12/PowerDistribution1-300x225.jpg" caption="Finished power distribution board" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/12/PowerDistribution2.jpg" thumbnail_image="/assets/img/posts/2019/12/PowerDistribution2-300x225.jpg" caption="Note: I added solder above the terminal used to make the 2 long parallel connections" set_name="set_1" %}
 </div></div></div> 
 
 **Note: always reinforce high amp rails with solder**
 
 ### 12V DC – 220V AC 300W inverter
 
-I modded my inverter by replacing its small, noisy fan with a 120mm PC Fan. Learn how to do it here: <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/" target="_blank">https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/</a>.<figure class="wp-block-image size-medium">
+I modded my inverter by replacing its small, noisy fan with a 120mm PC Fan. Learn how to do it here: <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/" target="_blank">https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/</a>.
 
-![My helpful screenshot](/assets/img/posts/2019/12/body9-300x225.jpg) <figcaption>Bonus: LED light on</figcaption></figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/12/body9-300x225.jpg" description="Bonus: LED light on" %} 
 
 I fixed it on the board using 3D printed L brackets: <a rel="noreferrer noopener" aria-label=" (opens in a new tab)" href="https://www.thingiverse.com/thing:2226" target="_blank">https://www.thingiverse.com/thing:2226</a>. I cut its supplied wires and fixed them into some screw on terminals on a small PCB used for power delivery.
 
@@ -98,13 +98,13 @@ This converter is based around this kind of conversion board: <a rel="noreferrer
 <div class="wp-block-responsive-lightbox-gallery">
   <div class="rl-gallery-container rl-loading" id="rl-gallery-container-43" data-gallery_id="921"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-43" data-gallery_no="43"> 
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/12/5vconverter1.jpg" title="Board layout without switch and indicator LED" data-rl_title="Board layout without switch and indicator LED" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-43">![My helpful screenshot](/assets/img/posts/2019/12/5vconverter1-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Board layout without switch and indicator LED</span></span></a>
-  </div>
   
-  <div class="rl-gallery-item">
-    <a href="https://tzeny.com/wp-content/uploads/2019/12/5vconverter2.jpg" title="Switch added between 12V in and the converter board; LED soldered in series with a 220 Ohm resistor to output" data-rl_title="Switch added between 12V in and the converter board; LED soldered in series with a 220 Ohm resistor to output" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-43">![My helpful screenshot](/assets/img/posts/2019/12/5vconverter2-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Switch added between 12V in and the converter board; LED soldered in series with a 220 Ohm resistor to output</span></span></a>
-  </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/12/5vconverter1.jpg" thumbnail_image="/assets/img/posts/2019/12/5vconverter1-300x225.jpg" caption="Board layout without switch and indicator LED" set_name="set_1" %}
+  
+  
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2019/12/5vconverter2.jpg" thumbnail_image="/assets/img/posts/2019/12/5vconverter2-300x225.jpg" caption="Switch added between 12V in and the converter board; LED soldered in series with a 220 Ohm resistor to output" set_name="set_1" %}
 </div></div></div> 
 
 The switch turns off the power delivery to the inputs of the board; it was mounted to the top of the wooden plank for easy access. 
@@ -113,12 +113,12 @@ The switch turns off the power delivery to the inputs of the board; it was mount
 
 ### Schuko outlet
 
-This is just a basic 3 output schuko outlet that I took apart in order to screw its bottom half to the board with 2 wood screws; I kept the wire at the original 3M length and coiled it underneath the inverter, securing it with zipties.<figure class="wp-block-image size-large">
+This is just a basic 3 output schuko outlet that I took apart in order to screw its bottom half to the board with 2 wood screws; I kept the wire at the original 3M length and coiled it underneath the inverter, securing it with zipties.
 
-![My helpful screenshot](/assets/img/posts/2019/12/outlet-1024x768.jpg) </figure> 
+{% include figure_caption.html url="/assets/img/posts/2019/12/outlet-1024x768.jpg" description="" %} 
 
 ## Mounting it
 
-I used 2 long wood screws to mount it inside Rusty, where it now powers my ceiling light strips.<figure class="wp-block-image size-large">
+I used 2 long wood screws to mount it inside Rusty, where it now powers my ceiling light strips.
 
-![My helpful screenshot](/assets/img/posts/2019/12/mount.jpg) </figure>
+{% include figure_caption.html url="/assets/img/posts/2019/12/mount.jpg" description="" %}

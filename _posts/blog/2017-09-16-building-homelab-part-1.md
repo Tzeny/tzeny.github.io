@@ -40,33 +40,33 @@ Note: This series of posts will mostly be a build log, not necessarily a tutoria
 
 <div class="rl-gallery-container" id="rl-gallery-container-8" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-8" data-gallery_no="8"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203452.jpg" title="This is the main body; the big bottom PC is there as a glorified paperweight right now" data-rl_title="This is the main body; the big bottom PC is there as a glorified paperweight right now" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203452-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the main body; the big bottom PC is there as a glorified paperweight right now</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203327.jpg" title="And this is how it looks with its doors closed; thinking about a way to make a dust filtration mechanism" data-rl_title="And this is how it looks with its doors closed; thinking about a way to make a dust filtration mechanism" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203327-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">And this is how it looks with its doors closed; thinking about a way to make a dust filtration mechanism</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203357.jpg" title="This is an old desk I had; it has served me well, and now it will the base for my new project" data-rl_title="This is an old desk I had; it has served me well, and now it will the base for my new project" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203357-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is an old desk I had; it has served me well, and now it will the base for my new project</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203452.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203452-225x300.jpg" caption="This is the main body; the big bottom PC is there as a glorified paperweight right now" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203409.jpg" title="This book holds it all together; becuase of a missing desk foot" data-rl_title="This book holds it all together; becuase of a missing desk foot" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203409-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This book holds it all together; becuase of a missing desk foot</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203430.jpg" title="These are the shelves inside the min body" data-rl_title="These are the shelves inside the min body" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203430-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">These are the shelves inside the min body</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_203441.jpg" title="These lateral shelves might be used for temporary or light weight devices" data-rl_title="These lateral shelves might be used for temporary or light weight devices" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_203441-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">These lateral shelves might be used for temporary or light weight devices</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203327.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203327-225x300.jpg" caption="And this is how it looks with its doors closed; thinking about a way to make a dust filtration mechanism" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/IMG_20170915_204053.jpg" title="This last minute addition will act as a secondary base" data-rl_title="This last minute addition will act as a secondary base" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-8">![My helpful screenshot](/assets/img/posts/2017/09/IMG_20170915_204053-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This last minute addition will act as a secondary base</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203357.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203357-225x300.jpg" caption="This is an old desk I had; it has served me well, and now it will the base for my new project" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203409.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203409-300x225.jpg" caption="This book holds it all together; becuase of a missing desk foot" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203430.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203430-225x300.jpg" caption="These are the shelves inside the min body" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_203441.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_203441-225x300.jpg" caption="These lateral shelves might be used for temporary or light weight devices" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/IMG_20170915_204053.jpg" thumbnail_image="/assets/img/posts/2017/09/IMG_20170915_204053-225x300.jpg" caption="This last minute addition will act as a secondary base" set_name="set_1" %}</div> </div>
 
 ## 2. Planning
 
@@ -74,13 +74,13 @@ In order to be able to effectively make use of all the space, I decided to creat
 
 <div class="rl-gallery-container" id="rl-gallery-container-9" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-9" data-gallery_no="9"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/sketch_1.jpg" title="Front view" data-rl_title="Front view" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-9">![My helpful screenshot](/assets/img/posts/2017/09/sketch_1-236x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Front view</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/09/sketch_2.jpg" title="Top right corner view" data-rl_title="Top right corner view" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-9">![My helpful screenshot](/assets/img/posts/2017/09/sketch_2-209x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Top right corner view</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/sketch_1.jpg" thumbnail_image="/assets/img/posts/2017/09/sketch_1-236x300.jpg" caption="Front view" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/09/sketch_2.jpg" thumbnail_image="/assets/img/posts/2017/09/sketch_2-209x300.jpg" caption="Top right corner view" set_name="set_1" %}</div> </div>
 
 This might change as I make modifications to the homelab, but this is the baseline.
 

@@ -52,53 +52,53 @@ I ordered everything during the week and it arrived, one package at a time durin
 
 <div class="rl-gallery-container" id="rl-gallery-container-18" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-18" data-gallery_no="18"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_165053.jpg" title="Some of the boxes are mislabeled, as everything except the cooler is second part" data-rl_title="Some of the boxes are mislabeled, as everything except the cooler is second part" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-18">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_165053-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Some of the boxes are mislabeled, as everything except the cooler is second part</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_165432.jpg" title="CPU and motherboard" data-rl_title="CPU and motherboard" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-18">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_165432-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">CPU and motherboard</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_165439.jpg" title="Close up of the CPU" data-rl_title="Close up of the CPU" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-18">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_165439-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Close up of the CPU</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_165053.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_165053-225x300.jpg" caption="Some of the boxes are mislabeled, as everything except the cooler is second part" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_171003.jpg" title="I choose this cooler because it has a big fan(120mm), meaning it will be quieter than others" data-rl_title="I choose this cooler because it has a big fan(120mm), meaning it will be quieter than others" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-18">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_171003-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">I choose this cooler because it has a big fan(120mm), meaning it will be quieter than others</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_165432.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_165432-300x225.jpg" caption="CPU and motherboard" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_165439.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_165439-300x225.jpg" caption="Close up of the CPU" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_171003.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_171003-300x225.jpg" caption="I choose this cooler because it has a big fan(120mm), meaning it will be quieter than others" set_name="set_1" %}</div> </div>
 
 ### 2. Putting it all together
 
 <div class="rl-gallery-container" id="rl-gallery-container-19" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-19" data-gallery_no="19"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_171600.jpg" title="First step is mounting the CPU; I used the motherboard box as a stand; then I mounted the heatsink" data-rl_title="First step is mounting the CPU; I used the motherboard box as a stand; then I mounted the heatsink" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_171600-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">First step is mounting the CPU; I used the motherboard box as a stand; then I mounted the heatsink</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_171746.jpg" title="Next I attached the fan" data-rl_title="Next I attached the fan" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_171746-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Next I attached the fan</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_171830.jpg" title="Inserted the RAM" data-rl_title="Inserted the RAM" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_171830-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Inserted the RAM</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_171600.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_171600-300x225.jpg" caption="First step is mounting the CPU; I used the motherboard box as a stand; then I mounted the heatsink" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_172650.jpg" title="I connected it like this to be able to easily debug problems" data-rl_title="I connected it like this to be able to easily debug problems" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_172650-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">I connected it like this to be able to easily debug problems</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_173238.jpg" title="This is the original BIOS of the motherbaord" data-rl_title="This is the original BIOS of the motherbaord" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_173238-225x300.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the original BIOS of the motherbaord</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/23798289_1369997706443867_591928934_o.jpg" title="And this is the BIOS after the update" data-rl_title="And this is the BIOS after the update" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/23798289_1369997706443867_591928934_o-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">And this is the BIOS after the update</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_171746.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_171746-225x300.jpg" caption="Next I attached the fan" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171118_174754.jpg" title="The end result" data-rl_title="The end result" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-19">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171118_174754-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The end result</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_171830.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_171830-225x300.jpg" caption="Inserted the RAM" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_172650.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_172650-300x225.jpg" caption="I connected it like this to be able to easily debug problems" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_173238.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_173238-225x300.jpg" caption="This is the original BIOS of the motherbaord" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/23798289_1369997706443867_591928934_o.jpg" thumbnail_image="/assets/img/posts/2017/12/23798289_1369997706443867_591928934_o-300x225.jpg" caption="And this is the BIOS after the update" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171118_174754.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171118_174754-300x225.jpg" caption="The end result" set_name="set_1" %}</div> </div>
 
 ## Software
 
@@ -106,7 +106,9 @@ I ordered everything during the week and it arrived, one package at a time durin
 
 After everything was running nicely, I flashed Proxmox onto an USB drive, connected the server (Tesla) to my LAN and installed Proxmox. I had a small hitch with the networking but after I solved that I was greeted by the web interface.
 
-<figure id="attachment_244" aria-describedby="caption-attachment-244" style="width: 300px" class="wp-caption alignnone"><a href="https://tzeny.com/wp-content/uploads/2017/11/WebGUI.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/11/WebGUI-300x164.jpg)</a><figcaption id="caption-attachment-244" class="wp-caption-text">This is the Proxmox GUI of Tesla; not too much happening yet</figcaption></figure>
+<figure id="attachment_244" aria-describedby="caption-attachment-244" style="width: 300px" class="wp-caption alignnone"><a href="https://tzeny.com/wp-content/uploads/2017/11/WebGUI.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/11/WebGUI-300x164.jpg" description="" %}/a><figcaption id="caption-attachment-244" class="wp-caption-text">This is the Proxmox GUI of Tesla; not too much happening yet</figcaption></figure>
 
 ### 2. ZFS Raid
 
@@ -128,10 +130,10 @@ I have a server which idles at around 50W (my UPS can keep this and my networkin
 
 <div class="rl-gallery-container" id="rl-gallery-container-20" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-20" data-gallery_no="20"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171203_135509.jpg" title="All the components inside of the case" data-rl_title="All the components inside of the case" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-20">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171203_135509-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">All the components inside of the case</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/12/IMG_20171203_135536.jpg" title="The 2 1TB drives in the upper part, and the 600 GB WD Black in the lower part" data-rl_title="The 2 1TB drives in the upper part, and the 600 GB WD Black in the lower part" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-20">![My helpful screenshot](/assets/img/posts/2017/12/IMG_20171203_135536-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The 2 1TB drives in the upper part, and the 600 GB WD Black in the lower part</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171203_135509.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171203_135509-300x225.jpg" caption="All the components inside of the case" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/12/IMG_20171203_135536.jpg" thumbnail_image="/assets/img/posts/2017/12/IMG_20171203_135536-300x225.jpg" caption="The 2 1TB drives in the upper part, and the 600 GB WD Black in the lower part" set_name="set_1" %}</div> </div>

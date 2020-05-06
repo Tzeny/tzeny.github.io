@@ -26,21 +26,21 @@ This is the end result:
 
 <div class="rl-gallery-container" id="rl-gallery-container-1" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-1" data-gallery_no="1"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214102.jpg" title="Front view, turned off" data-rl_title="Front view, turned off" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-1">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170730_214102-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Front view, turned off</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214125.jpg" title="The brains behind AIA, a Raspberry Pi 3" data-rl_title="The brains behind AIA, a Raspberry Pi 3" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-1">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170730_214125-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">The brains behind AIA, a Raspberry Pi 3</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214218.jpg" title="Standard Raspbian with PIXEL desktop" data-rl_title="Standard Raspbian with PIXEL desktop" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-1">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170730_214218-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Standard Raspbian with PIXEL desktop</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/07/IMG_20170730_214102.jpg" thumbnail_image="/assets/img/posts/2017/07/IMG_20170730_214102-300x225.jpg" caption="Front view, turned off" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214318.jpg" title="Kodi player, showing the music folders on a USB memory stick" data-rl_title="Kodi player, showing the music folders on a USB memory stick" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-1">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170730_214318-300x225.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Kodi player, showing the music folders on a USB memory stick</span></span></a>
-</div></div> </div>
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/07/IMG_20170730_214125.jpg" thumbnail_image="/assets/img/posts/2017/07/IMG_20170730_214125-300x225.jpg" caption="The brains behind AIA, a Raspberry Pi 3" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/07/IMG_20170730_214218.jpg" thumbnail_image="/assets/img/posts/2017/07/IMG_20170730_214218-300x225.jpg" caption="Standard Raspbian with PIXEL desktop" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/07/IMG_20170730_214318.jpg" thumbnail_image="/assets/img/posts/2017/07/IMG_20170730_214318-300x225.jpg" caption="Kodi player, showing the music folders on a USB memory stick" set_name="set_1" %}</div> </div>
 
 Parts used:
 
@@ -60,7 +60,9 @@ The cardboard box was the original car computer that I built for another trip la
 
 [RT Android for Raspberry Pi 3](https://rtandroid.embedded.rwth-aachen.de/downloads/raspberry-pi/)
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/android.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/android-300x225.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/android.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/android-300x225.jpg" description="" %}/a>
 
 ## 1. Hardware
 
@@ -68,19 +70,25 @@ The cardboard box was the original car computer that I built for another trip la
 
 The first thing I did cut a large viewport into my plastic casing (which I unfortunately have no original photos of), so that the LCD screen could be viewed.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_192150.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170715_192150-287x300.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_192150.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/IMG_20170715_192150-287x300.jpg" description="" %}/a>
 
  
 
 Afterwards I installed the screen. But, since only 2 of the screw holes were a match I had to glue in 2 more on the other side. Epoxi for the win here.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/holes.png" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/holes-300x225.png)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/holes.png" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/holes-300x225.png" description="" %}/a>
 
 ### b. Raspberry
 
 Then, I had to think about mounting the Raspberry. Considering this is just an alpha build of AIA (that’s the computer’s name), v0.2 to be specific, I though I would take the simple route of mounting the Rasberry in a case and putting that behind the LCD. More cutting ensued.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_201749.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title=""><img class="alignnone wp-image-39 size-medium" src="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_201749-300x225.jpg" alt="" width="300" height="225" srcset="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_201749-300x225.jpg 300w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_201749-768x576.jpg 768w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_201749-1024x768.jpg 1024w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_201749.jpg 1200w" sizes="(min-width: 960px) 75vw, 100vw" /></a> <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_213541.jpg" data-rel="lightbox-image-4" data-rl\_title="" data-rl\_caption="" title=""><img class="alignnone wp-image-40 size-medium" src="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_213541-300x225.jpg" alt="" width="300" height="225" srcset="https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_213541-300x225.jpg 300w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_213541-768x576.jpg 768w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_213541-1024x768.jpg 1024w, https://tzeny.com/wp-content/uploads/2017/07/IMG_20170715_213541.jpg 1200w" sizes="(min-width: 960px) 75vw, 100vw" /></a> <a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_224431.jpg" data-rel="lightbox-image-5" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170715_224431-300x225.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_201749.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/IMG_20170715_224431-300x225.jpg" description="" %}/a>
 
 The last step was adding a coat of black paint.
 
@@ -116,13 +124,17 @@ And after that you have Kodi. But, in my case at least, the touch screen wasn’
 
 And that’s it. Now you should be able to open Kodi and browse for music, pictures and more.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_224317.jpg" data-rel="lightbox-image-6" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/IMG_20170715_224317-300x225.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/IMG\_20170715\_224317.jpg" data-rel="lightbox-image-6" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/IMG_20170715_224317-300x225.jpg" description="" %}/a>
 
 ### c. Matchbox Keyboard
 
 Another useful piece of software I highly recommend is matchbox keyboard. This is how it looks and it is an invaluable piece of software on a touch only Raspberry.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/07/keyboard.jpg" data-rel="lightbox-image-7" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/07/keyboard-300x175.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/07/keyboard.jpg" data-rel="lightbox-image-7" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/07/keyboard-300x175.jpg" description="" %}/a>
 
 All you need to do to install it is type:
 

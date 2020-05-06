@@ -1,0 +1,5 @@
+<div>
+    {% for image in include.images_list %}
+        <a class="example-image-link" href="{{image[0]}}" data-lightbox="{{include.set_name}}" data-title="{{image[2]}}"><img class="example-image" src="{{image[1]}}" alt=""/></a>
+    {% endfor %}
+</div>

@@ -17,7 +17,9 @@ tags:
 ---
 Yesterday I decided that I would like to be able to access my home computer that I use as a NAS from anywhere in the world. The easiest and most secure way to do this is by using a VPN. So, what is a VPN? A Virtual Private Network extends a Private Network across a public network (like the internet), enabling users to send and receive data like their devices were connected directly to the Private Network. In my case, this means I can access my windows share without having to open it to the whole internet.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/without-vpn.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title=""><img class="alignnone wp-image-92 size-medium" src="https://tzeny.com/wp-content/uploads/2017/08/without-vpn-300x160.jpg" alt="" width="300" height="160" srcset="https://tzeny.com/wp-content/uploads/2017/08/without-vpn-300x160.jpg 300w, https://tzeny.com/wp-content/uploads/2017/08/without-vpn-768x410.jpg 768w, https://tzeny.com/wp-content/uploads/2017/08/without-vpn-1024x547.jpg 1024w, https://tzeny.com/wp-content/uploads/2017/08/without-vpn.jpg 1200w" sizes="(min-width: 960px) 75vw, 100vw" /></a> <a href="https://tzeny.com/wp-content/uploads/2017/08/with-vpn.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/with-vpn-300x168.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/without-vpn.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/with-vpn-300x168.jpg" description="" %}/a>
 
 The 2 pictures show the difference between a normal connection and a VPN tuneel.
 
@@ -90,49 +92,49 @@ This will start the install process. The pictures below include the steps which 
 
 <div class="rl-gallery-container" id="rl-gallery-container-2" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-2" data-gallery_no="2"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-0.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-0-300x171.jpg)</a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-0-1.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-0-1-300x171.jpg)</a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-0-2.jpg" title="" data-rl_title="" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-0-2-300x171.jpg)</a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-0.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-0-300x171.jpg" caption="" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-1.jpg" title="Network settings. Note the IP on the top, this will be your Raspberry's IP" data-rl_title="Network settings. Note the IP on the top, this will be your Raspberry's IP" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-1-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Network settings. Note the IP on the top, this will be your Raspberry's IP</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-2.jpg" title="Choose the VPN user" data-rl_title="Choose the VPN user" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-2-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Choose the VPN user</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-4.jpg" title="Enable unattended upgrades" data-rl_title="Enable unattended upgrades" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-4-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Enable unattended upgrades</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-0-1.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-0-1-300x171.jpg" caption="" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-6.jpg" title="OpenVPN port; note this down; you can change it if you like" data-rl_title="OpenVPN port; note this down; you can change it if you like" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-6-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">OpenVPN port; note this down; you can change it if you like</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-7.jpg" title="Encryption level; default one is ok" data-rl_title="Encryption level; default one is ok" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-7-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Encryption level; default one is ok</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-8.jpg" title="Generating keys, this will take a long time" data-rl_title="Generating keys, this will take a long time" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-8-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Generating keys, this will take a long time</span></span></a>
-</div>
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-0-2.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-0-2-300x171.jpg" caption="" set_name="set_1" %}
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-9.jpg" title="You can leave this as is; or if you will later use DNS you can select the 2nd one" data-rl_title="You can leave this as is; or if you will later use DNS you can select the 2nd one" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-9-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">You can leave this as is; or if you will later use DNS you can select the 2nd one</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/08/screen-10.jpg" title="Choose DNS provider; default is ok" data-rl_title="Choose DNS provider; default is ok" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-2">![My helpful screenshot](/assets/img/posts/2017/08/screen-10-300x171.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Choose DNS provider; default is ok</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-1.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-1-300x171.jpg" caption="Network settings. Note the IP on the top, this will be your Raspberry's IP" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-2.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-2-300x171.jpg" caption="Choose the VPN user" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-4.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-4-300x171.jpg" caption="Enable unattended upgrades" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-6.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-6-300x171.jpg" caption="OpenVPN port; note this down; you can change it if you like" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-7.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-7-300x171.jpg" caption="Encryption level; default one is ok" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-8.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-8-300x171.jpg" caption="Generating keys, this will take a long time" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-9.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-9-300x171.jpg" caption="You can leave this as is; or if you will later use DNS you can select the 2nd one" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/08/screen-10.jpg" thumbnail_image="/assets/img/posts/2017/08/screen-10-300x171.jpg" caption="Choose DNS provider; default is ok" set_name="set_1" %}</div> </div>
 
 And you’re done. Now you need to run the following command:
 
@@ -144,7 +146,9 @@ And you’re done. Now you need to run the following command:
 
 You will be prompted to pick a name and a password for the new user. Pick a secure password.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/add-user.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/add-user-300x171.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/add-user.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/add-user-300x171.jpg" description="" %}/a>
 
 Use WinSCP (or similar) to copy the file <user>.ovpn from /home/pi/ovpns to your desktop.
 
@@ -154,7 +158,9 @@ Install OpenVPN client from here: <https://openvpn.net/index.php/open-source/dow
 
 And a little icon should appear in your taskbar. Right click on it and select Import… and choose the <user>.ovpn file.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/import.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/import.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/import.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/import.jpg" description="" %}/a>
 
 The final step is port forwarding the port that you set up for the VPN server. You can follow any one of the tutorials here: <https://portforward.com/>  
 Just use your Raspberry’s IP and your port.

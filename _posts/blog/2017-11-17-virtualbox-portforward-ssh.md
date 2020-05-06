@@ -50,13 +50,13 @@ or 
 
 <div class="rl-gallery-container" id="rl-gallery-container-14" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-14" data-gallery_no="14"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/ip-1.jpg" title="This is the output of ifconfig, look for the lines not belonging to lo (loopback)" data-rl_title="This is the output of ifconfig, look for the lines not belonging to lo (loopback)" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-14">![My helpful screenshot](/assets/img/posts/2017/11/ip-1-300x252.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the output of ifconfig, look for the lines not belonging to lo (loopback)</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/ip-2.jpg" title="This is the output of ip a, look for the lines not belonging to lo (loopback adapter)" data-rl_title="This is the output of ip a, look for the lines not belonging to lo (loopback adapter)" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-14">![My helpful screenshot](/assets/img/posts/2017/11/ip-2-300x252.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">This is the output of ip a, look for the lines not belonging to lo (loopback adapter)</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/ip-1.jpg" thumbnail_image="/assets/img/posts/2017/11/ip-1-300x252.jpg" caption="This is the output of ifconfig, look for the lines not belonging to lo (loopback)" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/ip-2.jpg" thumbnail_image="/assets/img/posts/2017/11/ip-2-300x252.jpg" caption="This is the output of ip a, look for the lines not belonging to lo (loopback adapter)" set_name="set_1" %}</div> </div>
 
 ## 
 
@@ -66,13 +66,13 @@ In VirtualBox, select your VM and click Settings. Go to Network -> Adapter 1 -> 
 
 <div class="rl-gallery-container" id="rl-gallery-container-15" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-15" data-gallery_no="15"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/port-forward.jpg" title="Open the Settings menu, then the Networking one, then the Portforwarding One" data-rl_title="Open the Settings menu, then the Networking one, then the Portforwarding One" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-15">![My helpful screenshot](/assets/img/posts/2017/11/port-forward-300x226.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Open the Settings menu, then the Networking one, then the Portforwarding One</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/port-forward-2.jpg" title="Next add a new rule, with the ports set as shown; replace Guest IP with your own" data-rl_title="Next add a new rule, with the ports set as shown; replace Guest IP with your own" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-15">![My helpful screenshot](/assets/img/posts/2017/11/port-forward-2-300x160.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Next add a new rule, with the ports set as shown; replace Guest IP with your own</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/port-forward.jpg" thumbnail_image="/assets/img/posts/2017/11/port-forward-300x226.jpg" caption="Open the Settings menu, then the Networking one, then the Portforwarding One" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/port-forward-2.jpg" thumbnail_image="/assets/img/posts/2017/11/port-forward-2-300x160.jpg" caption="Next add a new rule, with the ports set as shown; replace Guest IP with your own" set_name="set_1" %}</div> </div>
 
 ## 
 
@@ -82,13 +82,13 @@ Open up PuTTY and connect to 127.0.1.1:22. Login and voila, you should now be co
 
 <div class="rl-gallery-container" id="rl-gallery-container-16" data-gallery_id="0"> <div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-16" data-gallery_no="16"> 
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/putty.jpg" title="Fill in 127.0.1.1 as the IP" data-rl_title="Fill in 127.0.1.1 as the IP" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-16">![My helpful screenshot](/assets/img/posts/2017/11/putty-300x290.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Fill in 127.0.1.1 as the IP</span></span></a>
-</div>
 
-<div class="rl-gallery-item">
-  <a href="https://tzeny.com/wp-content/uploads/2017/11/final.jpg" title="Login and you are now connected to your VM" data-rl_title="Login and you are now connected to your VM" class="rl-gallery-link" data-rl_caption="" data-rel="lightbox-gallery-16">![My helpful screenshot](/assets/img/posts/2017/11/final-300x160.jpg)<span class="rl-gallery-caption"><span class="rl-gallery-item-title">Login and you are now connected to your VM</span></span></a>
-</div></div> </div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/putty.jpg" thumbnail_image="/assets/img/posts/2017/11/putty-300x290.jpg" caption="Fill in 127.0.1.1 as the IP" set_name="set_1" %}
+
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2017/11/final.jpg" thumbnail_image="/assets/img/posts/2017/11/final-300x160.jpg" caption="Login and you are now connected to your VM" set_name="set_1" %}</div> </div>
 
  
 

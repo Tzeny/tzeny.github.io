@@ -19,7 +19,9 @@ tags:
 ---
 In this tutorial I will show you how to install Raspbian and enable SSH on your Raspberry Pi without using a screen or keyboard. After you are done you will have a Raspberry Pi connected to your router, which you can access using your PC.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/IMG\_20170803\_133231.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title=""><img class="alignnone wp-image-80 size-medium" src="https://tzeny.com/wp-content/uploads/2017/08/IMG_20170803_133231-300x225.jpg" alt="" width="300" height="225" srcset="https://tzeny.com/wp-content/uploads/2017/08/IMG_20170803_133231-300x225.jpg 300w, https://tzeny.com/wp-content/uploads/2017/08/IMG_20170803_133231-768x576.jpg 768w, https://tzeny.com/wp-content/uploads/2017/08/IMG_20170803_133231-1024x768.jpg 1024w, https://tzeny.com/wp-content/uploads/2017/08/IMG_20170803_133231.jpg 1200w" sizes="(min-width: 960px) 75vw, 100vw" /></a> <a href="https://tzeny.com/wp-content/uploads/2017/08/end.jpg" data-rel="lightbox-image-1" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/end-300x163.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/IMG\_20170803\_133231.jpg" data-rel="lightbox-image-0" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/end-300x163.jpg" description="" %}/a>
 
 This is how my setup looks. So let’s get to it.
 
@@ -52,7 +54,9 @@ Open Win32DiskImager and select your image, and your SD card, then press Write.
 
  
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/write.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/write-300x209.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/write.jpg" data-rel="lightbox-image-2" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/write-300x209.jpg" description="" %}/a>
 
 A popup will appear, press Yes and wait for the operation to complete.
 
@@ -62,7 +66,9 @@ Wait for it to complete then press Ok.
 
 Open file explorer, and navigate to the drive labeled ‘boot’.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/boot.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/boot-300x164.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/boot.jpg" data-rel="lightbox-image-3" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/boot-300x164.jpg" description="" %}/a>
 
 Create a file named ‘ssh’ (no extension).
 
@@ -80,7 +86,9 @@ Navigate to your router’s IP address (usually 192.168.0.1 or 192.168.1.1) and 
 
 Pick DHCP clients list.
 
-<a href="https://tzeny.com/wp-content/uploads/2017/08/dhcp.jpg" data-rel="lightbox-image-4" data-rl\_title="" data-rl\_caption="" title="">![My helpful screenshot](/assets/img/posts/2017/08/dhcp-119x300.jpg)</a>
+<a href="https://tzeny.com/wp-content/uploads/2017/08/dhcp.jpg" data-rel="lightbox-image-4" data-rl\_title="" data-rl\_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2017/08/dhcp-119x300.jpg" description="" %}/a>
 
 There you will see one named Raspberry (depending on your router the placement of the menu will vary).
 

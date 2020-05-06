@@ -35,31 +35,49 @@ Status right now:
 
 <ul class="blocks-gallery-grid">
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120524-768x1024.jpg" data-rel="lightbox-image-0" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120524-768x1024.jpg)</a><figcaption class="blocks-gallery-item__caption">Overview of the printer</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120524-768x1024.jpg" data-rel="lightbox-image-0" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120524-768x1024.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">Overview of the printer</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120528-768x1024.jpg" data-rel="lightbox-image-1" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120528-768x1024.jpg)</a><figcaption class="blocks-gallery-item__caption">I have finally done some much needed cable management</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120528-768x1024.jpg" data-rel="lightbox-image-1" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120528-768x1024.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">I have finally done some much needed cable management</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120531-768x1024.jpg" data-rel="lightbox-image-2" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120531-768x1024.jpg)</a><figcaption class="blocks-gallery-item__caption">The LCD has been mounted to the top of the printer frame</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120531-768x1024.jpg" data-rel="lightbox-image-2" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120531-768x1024.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">The LCD has been mounted to the top of the printer frame</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120540-768x1024.jpg" data-rel="lightbox-image-3" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120540-768x1024.jpg)</a><figcaption class="blocks-gallery-item__caption">I’ve designed a slightly shifted LCD bracket for this</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120540-768x1024.jpg" data-rel="lightbox-image-3" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120540-768x1024.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">I’ve designed a slightly shifted LCD bracket for this</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120545-1024x768.jpg" data-rel="lightbox-image-4" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120545-1024x768.jpg)</a><figcaption class="blocks-gallery-item__caption">The shifted right bracket can be better seen from this angle</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120545-1024x768.jpg" data-rel="lightbox-image-4" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120545-1024x768.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">The shifted right bracket can be better seen from this angle</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120549-1024x768.jpg" data-rel="lightbox-image-5" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120549-1024x768.jpg)</a><figcaption class="blocks-gallery-item__caption">The spool holder received and updated after a small accident</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120549-1024x768.jpg" data-rel="lightbox-image-5" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120549-1024x768.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">The spool holder received and updated after a small accident</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120552-1024x768.jpg" data-rel="lightbox-image-6" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120552-1024x768.jpg)</a><figcaption class="blocks-gallery-item__caption">The RPi Octoprint server in its pink case; it was mounted to the top of the frame, but that obstructed full movement on the Z axis</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120552-1024x768.jpg" data-rel="lightbox-image-6" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120552-1024x768.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">The RPi Octoprint server in its pink case; it was mounted to the top of the frame, but that obstructed full movement on the Z axis</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120606-1024x768.jpg" data-rel="lightbox-image-7" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/IMG_20190101_120606-1024x768.jpg)</a><figcaption class="blocks-gallery-item__caption">I have added plastic buffers, to keep the printer from sliding around; this has significantly reduced the noise generated by the printer</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/IMG_20190101_120606-1024x768.jpg" data-rel="lightbox-image-7" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/IMG_20190101_120606-1024x768.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">I have added plastic buffers, to keep the printer from sliding around; this has significantly reduced the noise generated by the printer</figcaption></figure>
   </li>
   <li class="blocks-gallery-item">
-    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/octoprint-1024x955.jpg" data-rel="lightbox-image-8" data-rl_title="" data-rl_caption="" title="">![My helpful screenshot](/assets/img/posts/2019/01/octoprint-1024x955.jpg)</a><figcaption class="blocks-gallery-item__caption">A screenshot of the OctoPrint server</figcaption></figure>
+    <figure><a href="https://tzeny.com/wp-content/uploads/2019/01/octoprint-1024x955.jpg" data-rel="lightbox-image-8" data-rl_title="" data-rl_caption="" title="">
+
+{% include figure_caption.html url="/assets/img/posts/2019/01/octoprint-1024x955.jpg" description="" %}/a><figcaption class="blocks-gallery-item__caption">A screenshot of the OctoPrint server</figcaption></figure>
   </li>
 </ul></figure> 
 
