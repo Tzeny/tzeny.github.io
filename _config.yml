@@ -104,7 +104,7 @@ author_project_details:
 
 # social links
 twitter_username: Tzeny25
-github_username:  Tzeny
+# github_username:  Tzeny
 facebook_username: tenescu.andrei
 linkedin_username: tenescu-andrei-0ba631122
 # behance_username: johndoe
@@ -113,6 +113,7 @@ instagram_username: tzeny15
 # telegram_username: johndoe
 # dribbble_username: johndoe
 flickr_username: 186474581@N04
+astrobin_username: Tzeny
 
 future: false
 #for comments using disqus

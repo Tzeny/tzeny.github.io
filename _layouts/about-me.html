@@ -12,7 +12,7 @@ layout: default
                 </a>
                 <h1 class="profile-name"> {{ site.title }}</h1>
                  <p class="profile-bio"> {{ site.subtitle }}</p>
-                    {% if site.github_username %}
+                {% if site.github_username %}
                   {%- include github_follow_button.html -%}
                 {% endif %}
 
@@ -65,6 +65,11 @@ layout: default
                     {% if site.flickr_username %}
                     <a class="social-link" href="https://www.flickr.com/photos/{{ site.flickr_username }}">
                         <i class="fab fa-flickr"></i>
+                    </a>
+                    {% endif %}
+                    {% if site.astrobin_username %}
+                    <a class="social-link" href="https://www.astrobin.com/users/{{ site.astrobin_username }}/">
+                        <i class="fas fa-grin-stars"></i>
                     </a>
                     {% endif %}
                 </p>
@@ -126,7 +131,7 @@ layout: default
                         <div class="col-md-3">
                             <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{project.project_thumbnail}}" class="project-img" />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-9">
                             <h4 class="experience-title"> {{ project.project_title }}</h4>
                             <h6 class="experience-info"> {{ project.project_info}}</h6>
                             <p class="experience-desc"> {{ project.project_description }} </p>
@@ -146,10 +151,10 @@ layout: default
                 {% for exp in site.author_work_experiences %}
                 {% if exp.visibility == true %}
                 <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{ exp.company_logo }}" class="company-logo" />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <h4 class="experience-title"> {{ exp.designation }}</h4>
                             <h6 class="experience-info"> {{ exp.company_name}}</h6>
                             <p class="experience-desc"> {{ exp.description }} </p>
@@ -170,10 +175,10 @@ layout: default
                 {% for detail in site.author_education_details %}
                 {% if detail.visibility == true %}
                 <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <img src="{{site.url}}{{site.baseurl}}/assets/img/about_me/{{ detail.college_logo}}" class="company-logo" />
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-10">
                             <h4 class="experience-title"> {{detail.college_degree }}</h4>
                             <h6 class="experience-info">{{detail.college_name}}</h6>
                             <p class="experience-desc"> {{detail.description}} </p>

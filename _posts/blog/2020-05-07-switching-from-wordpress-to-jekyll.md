@@ -125,6 +125,10 @@ Of course, they need further processing, to fix the links between them, properyl
 
 As with the wordpress import, it took some time for me to write proper scripts to do this. They can be found [here](https://github.com/Tzeny/tzeny.github.io/tree/master/assets/python).
 
+## Other sites
+
+Jekyll also provides guides for importing your site from other platforms: [https://import.jekyllrb.com/](https://import.jekyllrb.com/).
+
 ## Putting it all together
 
 Next I separated the blog and wiki into distinct subfolders inside _posts. I hid the Wiki posts (hidden: true in the Front Matter), so that I could use the pagination plugin only with the blog posts. 
