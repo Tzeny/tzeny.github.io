@@ -5,7 +5,7 @@ date: 2020-05-10 02:18 +0300
 base: Blog
 base_url: "/blog"
 author: Tzeny
-thumbnail: 2019/12/Sketch.jpg
+thumbnail: 2020/05/dss_moon_2.jpg
 categories:
 - astrostuff
 tags:
@@ -13,6 +13,7 @@ tags:
 - journey
 - learning
 - amateur
+excerpt:  In december 2019 I realized just how exciting photography could be; soon after I got my second hand Sony NEX 5T I felt I wanted to get into astrophotography. And I found a fully fledged telescope, with a motorized mount for 375 EUR (410 USD).
 ---
 
 # December 2019 - end of January 2019 - Getting a taste of what's out there
@@ -50,5 +51,25 @@ It arrived at my house on Wednesday, and after careful inspection and assembly e
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/scope_1.jpg" thumbnail_image="/assets/img/posts/2020/05/scope_1_thumb.jpg" caption="" set_name="set_1" %}
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/scope_2.jpg" thumbnail_image="/assets/img/posts/2020/05/scope_2_thumb.jpg" caption="" set_name="set_1" %}
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/scope_3.jpg" thumbnail_image="/assets/img/posts/2020/05/scope_3_thumb.jpg" caption="" set_name="set_1" %}
+
+</div>
+
+Now, as was to be expected astronomy's curse struck and the sky insisted on staying overcast up until the next Tuesday, when I finally had a chance to test it out. However, I was unaware the scope had a 2" extension tube, which acted as a macro tube and prevented my from focusing on any distant objects, like let's say the moon. 
+
+After taking it all inside, asking a friend and searching the internet I managed to find about the extension tube, and remove it. After testing the scope during daytime, and adjusting the finder I was ready.
+
+## 03rd of May - Sleeping schedule
+
+Since I like routine when it comes to things like sleep I decided I needed a new sleeping routine, but you can read all about that here: [Polyphasic sleep]({% post_url /blog/2020-05-10-polyphasic-sleep%}).
+ 
+# 07th of May - Harvest supermoon
+
+After many a worry, I was ready to capture the supermoon in her full glory. This was an amazing night, as I got to not only view the moon in a way I never had before, but I also took pictures of it, and also calibration frames (biases, darks, flats and flat darks) and learned to combine them in [Deep Sky Stacker](http://deepskystacker.free.fr/english/index.html). I also tried [AutoStakkert!](https://www.autostakkert.com/) and [RegiStax6](https://www.astronomie.be/registax/), but I couldn't get very good results with them. I think they'll be very useful for shooting planets though.
+
+<div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/harvest_moon_0.png" thumbnail_image="/assets/img/posts/2020/05/harvest_moon_0_thumb.jpg" caption="Stacked image generated with DSS" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/harvest_moon_1.png" thumbnail_image="/assets/img/posts/2020/05/harvest_moon_1_thumb.jpg" caption="Base light frame without stacking" set_name="set_1" %}
 
 </div>
