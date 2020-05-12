@@ -5,10 +5,12 @@ import os
 import sys
 import tempfile
 import shutil
+from tqdm import tqdm
 
 from PIL import Image, ExifTags
 
-MAX_SIZE = (500, 500) 
+THUMBNAIL_SIZE = (500, 500) 
+MAX_IMAGE_SIZE = (2000, 2000)
 
 def yes_or_no(question):
     reply = str(input(question+' (y/n)[Y]: ')).lower().strip()
@@ -111,16 +113,29 @@ if __name__ == '__main__':
 
         square_thumbs = yes_or_no('Crop thumbnails to generate square thumbnails')
 
+        pbar = tqdm(total=len(files))
         for f, t in zip(files, thumbnails):
             rotate_inplace(f)
 
             image = Image.open(f).convert('RGB') # we can't save transparent thumbnails
-            image.thumbnail(MAX_SIZE) 
+            image.thumbnail(THUMBNAIL_SIZE) 
             
             image.save(t) 
 
             if square_thumbs:
                 crop_to_square_inplace(t)
+
+            if image.width < THUMBNAIL_SIZE[0]:
+                image = Image.open(t).resize(THUMBNAIL_SIZE)
+                
+                image.save(t) 
+
+            # resize images down
+            image = Image.open(f).convert('RGB') # we can't save transparent thumbnails
+            image.thumbnail(MAX_IMAGE_SIZE) 
+            
+            image.save(f) 
+            pbar.update(1)
 
         print(f'Move files to {output_folder}?')
         for f, t in zip(files, thumbnails):

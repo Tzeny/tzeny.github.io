@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: An amateur astro(nomer|photographer)'s log
+title: An amateur astro(nomer/photographer)'s log
 date: 2020-05-10 02:18 +0300
 base: Blog
 base_url: "/blog"
@@ -15,6 +15,52 @@ tags:
 - amateur
 excerpt:  In december 2019 I realized just how exciting photography could be; soon after I got my second hand Sony NEX 5T I felt I wanted to get into astrophotography. And I found a fully fledged telescope, with a motorized mount for 375 EUR (410 USD).
 ---
+
+- [Summary](#summary)
+  - [Moon](#moon)
+  - [Stars](#stars)
+  - [Planets](#planets)
+- [December 2019 - end of January 2019 - Getting a taste of what's out there](#december-2019---end-of-january-2019---getting-a-taste-of-whats-out-there)
+- [End of April - Stepping up: BlackDiamond N 150/750 Explorer mounted on a NEQ-3 mount, with RA and DEC motors](#end-of-april---stepping-up-blackdiamond-n-150750-explorer-mounted-on-a-neq-3-mount-with-ra-and-dec-motors)
+  - [03rd of May - Sleeping schedule](#03rd-of-may---sleeping-schedule)
+- [07th of May - Harvest supermoon](#07th-of-may---harvest-supermoon)
+- [10th of May - tracking motors powered by USB](#10th-of-may---tracking-motors-powered-by-usb)
+- [11th of May - Saturn and Jupiter from my bedroom](#11th-of-may---saturn-and-jupiter-from-my-bedroom)
+
+# Summary
+
+## Moon
+<div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/first_moon.jpg" thumbnail_image="/assets/img/posts/2020/05/first_moon_thumb.jpg" caption="My first moonshot, using the Sony kit lens" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/moon.jpg" thumbnail_image="/assets/img/posts/2020/05/moon_thumb.jpg" caption="Next attempt, this time with the telephoto lens and teleconverter" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/harvest_moon_0.png" thumbnail_image="/assets/img/posts/2020/05/harvest_moon_0_thumb.jpg" caption="Stacked image generated with DSS" set_name="set_1" %}
+
+</div>
+
+## Stars
+
+<div> 
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/stars_pano_0.png" thumbnail_image="/assets/img/posts/2020/05/stars_pano_0_thumb.jpg" caption="Starscape at Vidraru dam, close to the Transafagarasan road, original stiched panorama" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/stars_pano_1.png" thumbnail_image="/assets/img/posts/2020/05/stars_pano_1_thumb.jpg" caption="Processed and cropped version" set_name="set_1" %}
+
+</div>
+
+## Planets
+
+<div> 
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_0.png" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_0_thumb.jpg" caption="BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light" set_name="set_1" %}
+
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_2.jpg" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_2_thumb.jpg" caption="BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light" set_name="set_1" %}
+
+
+</div>
 
 # December 2019 - end of January 2019 - Getting a taste of what's out there
 
@@ -71,5 +117,40 @@ After many a worry, I was ready to capture the supermoon in her full glory. This
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/harvest_moon_0.png" thumbnail_image="/assets/img/posts/2020/05/harvest_moon_0_thumb.jpg" caption="Stacked image generated with DSS" set_name="set_1" %}
 
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/harvest_moon_1.png" thumbnail_image="/assets/img/posts/2020/05/harvest_moon_1_thumb.jpg" caption="Base light frame without stacking" set_name="set_1" %}
+
+</div>
+
+# 10th of May - tracking motors powered by USB
+
+The motors on my NEQ 3 mount are powered by a bulky battery bank. The control module requires 6V input power. I realized I could use a step up converter and an USB cable to power it from a 10Ah USB battery bank, which can be charged and is easier to carry around.
+
+Interestingly enough I found I couldn't use a USB extension cord to power the controller, only that original short length of cable, but fortunately the motors have long enough cables.
+
+<div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/telescope_motors_usb_0.JPG" thumbnail_image="/assets/img/posts/2020/05/telescope_motors_usb_0_thumb.jpg" caption="Motor controller (middle) with old battery pack (top) and RA/DEC motors (bottom top/bot)" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/telescope_motors_usb_1.JPG" thumbnail_image="/assets/img/posts/2020/05/telescope_motors_usb_1_thumb.jpg" caption="Motor controller (middle) with new usb power pack (top) and RA/DEC motors (bottom top/bot)" set_name="set_1" %}
+
+</div>
+
+# 11th of May - Saturn and Jupiter from my bedroom
+
+On the 10th of May I realized that I could see Saturn and Jupiter trailing behind the Moon from my bedroom. I was very excited, but it was already very late so I decided to leave it to today. And oh boy was it worth it. 
+Unfortunately the details I could see with my eyes didn't come out in the photos as I would've liked, but I will continue trying. 
+
+I also took my mount to be calibrated and oiled today. The nice man doing it will also test its tracking **fingers crossed**.
+
+<div>
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_0.png" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_0_thumb.jpg" caption="BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_1.png" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_1_thumb.jpg" caption="BlackDiamond N 150/750 Explorer + 2x barlow + 10mm eyepiece + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_2.jpg" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_2_thumb.jpg" caption="BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_3.JPG" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_3_thumb.jpg" caption="Telescope looking out my balcony" set_name="set_1" %}
+
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_4.JPG" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_4_thumb.jpg" caption="Trained on the moon" set_name="set_1" %}
 
 </div>

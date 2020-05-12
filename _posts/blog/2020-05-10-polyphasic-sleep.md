@@ -22,7 +22,8 @@ excerpt: One man's quest to stay awake consistently during the night whilst stil
   - [Day 6/7](#day-67)
   - [Day 7/7](#day-77)
   - [Day 8/7](#day-87)
-- [11th May 2020 - v0.2](#11th-may-2020---v02)
+- [~~11th~~ 13th May 2020 - v0.2](#s11ths-13th-may-2020---v02)
+  - [Day 1](#day-1)
 
 # 03rd May 2020 - v0.1
 
@@ -107,8 +108,15 @@ I let myself sleep until after 09:00.
 Calisthenics were nice. Honestly, they were a very useful/used lifeline in all of this.
 
 
-# 11th May 2020 - v0.2
+# ~~11th~~ 13th May 2020 - v0.2
 
 Well, v0.1 is clearly not working properly. The hardest / worst part being the sleep from 22:00 to 00:00. My next idea involves increasing that period, but I am not sure what will happen. I will keep this post updated as I try more schedules.
 
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/polyphasic_sleep_1.png" thumbnail_image="/assets/img/posts/2020/05/polyphasic_sleep_1_thumb.jpg" caption="" set_name="set_1" %}
+
+So, v0.1 failed hard yesterday when I couldn't even remember turning off the 00:30 alarm.
+
+## Day 1
+
+Went to sleep at ~21:40, and managed to get a good sleep till 01:00. Still no dreams, but I feel quite all right, if a bit sleepy.
+
