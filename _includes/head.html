@@ -6,7 +6,7 @@
    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
-    <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
+    <!-- <meta content="{{ site.share.fb_appid }}" property="fb:app_id"> -->
     <meta content="{{ site.title }}" property="og:site_name">
     {% if page.noindex %}
       <meta name="robots" content="noindex">
@@ -38,6 +38,8 @@
       <meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image">
     {% elsif page.thumbnail %}
       <meta content="{{ site.url }}/assets/img/posts/{{ page.thumbnail }}" property="og:image">
+    {% elsif page.gallery_thumbnail %}
+      <meta content="{{ site.url }}/{{ page.gallery_thumbnail }}" property="og:image">
     {% endif %}
 
     {% if page.categories %}
