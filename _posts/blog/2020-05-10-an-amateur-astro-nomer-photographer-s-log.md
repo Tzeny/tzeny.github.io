@@ -151,6 +151,6 @@ I also took my mount to be calibrated and oiled today. The nice man doing it wil
 
 {% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_3.JPG" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_3_thumb.jpg" caption="Telescope looking out my balcony" set_name="set_1" %}
 
-{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_4.JPG" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_4_thumb.jpg" caption="Trained on the moon" set_name="set_1" %}
+{% include lightbox2_image.html original_image="/assets/img/posts/2020/05/saturn_jupiter_4.JPG" thumbnail_image="/assets/img/posts/2020/05/saturn_jupiter_4_thumb.jpg" caption="Trained on the moon; we can see a lensflare caused by the moon xD" set_name="set_1" %}
 
 </div>
