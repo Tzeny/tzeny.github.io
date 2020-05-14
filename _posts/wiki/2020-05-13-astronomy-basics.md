@@ -61,7 +61,7 @@ The **absolute magnitude** ($M$) describes the intrinsic luminosity emitted by a
 
 ## Parallax, $p$ or $\pi$
 
-Parallax from Ancient Greek παράλλαξις (parallaxis), meaning 'alternation' is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines. Due to foreshortening, nearby objects show a larger parallax than farther objects when observed from different positions, so parallax can be used to determine distances.
+Parallax (from Ancient Greek παράλλαξις (parallaxis)), meaning 'alternation' is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines. Due to foreshortening, nearby objects show a larger parallax than farther objects when observed from different positions, so parallax can be used to determine distances.
 
 To measure large distances, such as the distance of a planet or a star from Earth, astronomers use the principle of parallax. Here, the term parallax is the semi-angle of inclination between two sight-lines to the star, as observed when Earth is on opposite sides of the Sun in its orbit.
 
