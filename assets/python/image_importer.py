@@ -125,7 +125,7 @@ if __name__ == '__main__':
             if square_thumbs:
                 crop_to_square_inplace(t)
 
-            if image.width < THUMBNAIL_SIZE[0]:
+            if image.width < THUMBNAIL_SIZE[0] or image.height < THUMBNAIL_SIZE[1]:
                 image = Image.open(t).resize(THUMBNAIL_SIZE)
                 
                 image.save(t) 

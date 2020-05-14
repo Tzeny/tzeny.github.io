@@ -16,6 +16,10 @@ blockquote>:first-child {
     margin-top: 0;
 }
 
+table, th, td {
+    border: solid 2px lightgrey;
+}
+
 .btn a{
     color: white !important;
 }
