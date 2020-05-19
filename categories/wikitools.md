@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: wiki_post
 title: wikitools
 permalink: /wiki/categories/wikitools
 ---
-
-<h5> Posts by Category : {{ page.title }} </h5>
 
 <div class="card">
 {% for post in site.categories.wikitools %}
