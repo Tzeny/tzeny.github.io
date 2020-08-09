@@ -21,7 +21,7 @@ Examples: Pleiades (M45), Hyades (Collinder 50)
 
 ## Globular clusters
 
-A group of tens of thousands up to mullions of stars. They contain some of the youngest stars in our Universe. They are found outside the galactic plane, in the galactic halo.
+A group of tens of thousands up to millions of stars. They contain some of the youngest stars in our Universe. They are found outside the galactic plane, in the galactic halo.
 
 Examples: M13, M79
 
