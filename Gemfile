@@ -24,7 +24,7 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap', '~> 1.4.0'
     gem 'jekyll-algolia', '~> 1.6'
     gem 'jekyll-menus', '~> 0.6.1'
-    gem 'jekyll-admin', '~> 0.9.0'
+    # gem 'jekyll-admin'
     gem 'jekyll-compose'
     gem 'jekyll-spaceship', '~> 0.4.3'
 end
