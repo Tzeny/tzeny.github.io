@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MNIST classifier">
+<meta name="keywords" content="MNIST classifier, Tzeny's demesne, wikiprojects">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="MNIST classifier" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/07/01/mnist_classifier/" property="og:url">
+<meta content="2018-07-01T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikiprojects" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="MNIST classifier">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/07/01/mnist_classifier/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/07/01/mnist_classifier/">MNIST classifier</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">MNIST classifier</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>After finishing the<a href="/2018/07/01/iris_classifier/">Iris classifier</a>, and part of <a href="http://www.example.com">link title Andrew Ng’s ML course</a>, in which he talks about creating a Neural Network classifier to classify hand written digits I decided to try and write my own hand written digit classifier using Keras.</p>
+<h2 id="git">Git</h2>
+<p><a href="https://github.com/Tzeny/mnist-classfier"></a><a href="https://github.com/Tzeny/mnist-classfier">https://github.com/Tzeny/mnist-classfier</a></p>
+<h2 id="dataset">Dataset</h2>
+<p>To train and test the model I used the <a href="http://yann.lecun.com/exdb/mnist/">MNIST dataset</a>. If you are using Keras you can automatically download and import it1:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
+
+<span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="p">.</span><span class="n">load_data</span><span class="p">()</span>
+</code></pre></div></div>
+<p>I used the above method.</p>
+<h2 id="convolutional-version">Convolutional version</h2>
+<p>Unfortunately I did not use the same random seed for these experiments so take the results here with a grain of salt :(</p>
+<table>
+<thead><tr>
+<th>
+<p>Architecture</p>
+</th>
+<th>
+<p>Accuracy on test set</p>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<p>2 conv layers w dropout</p>
+</td>
+<td>
+<p>98.66%, 98.71%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 conv layers w dropout w 2 dense</p>
+</td>
+<td>
+<p>98.67 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2 conv layers w/o dropout</p>
+</td>
+<td>
+<p>98.60%, 98.59 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 conv layer w dropout</p>
+</td>
+<td>
+<p>97.65 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv layer w dropout</p>
+</td>
+<td>
+<p>98.8 % , 98.36 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 conv layer w dropout</p>
+</td>
+<td>
+<p>98.95 % , 98.99 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 conv layer w dropout w 2 dense rmsprop</p>
+</td>
+<td>
+<p>98.82 % , 98.72 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 conv layer w dropout w 2 dense sgd</p>
+</td>
+<td>
+<p>99 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 conv layer w/o dropout w 2 dense sgd</p>
+</td>
+<td>
+<p>99.0 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 conv layer dense drop dense drop dense sgd</p>
+</td>
+<td>
+<p>99.11 %, 99.0 %, 99.11 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv layer dense drop dense drop dense sgd</p>
+</td>
+<td>
+<p>99.14 %, 98.92 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv layer dense drop dense drop dense sgd (with activations right after conv layers)</p>
+</td>
+<td>
+<p>99.36 %, 99.28 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv w act dsn dr dsn dr dsn sgd (w batch normalization)</p>
+</td>
+<td>
+<p>99.58 %, 99.39 %, 99.33 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization)</p>
+</td>
+<td>
+<p>99.35 %, 98.94 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l2 regularization)</p>
+</td>
+<td>
+<p>97.34 %, 98.68 %</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4 conv w act dsn dr dsn dr dsn dr sgd (w batch normalization + l1 regularization)</p>
+</td>
+<td>
+<p>87.51 %, 79.44 %</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Source code for CNN version: <a href="https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb"></a><a href="https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb">https://tzeny.ddns.net:4430/Tzeny/udemy-zero-to-deep-learning/blob/master/course/MnistConv.ipynb</a></p>
+<h2 id="preprocessing-the-dataset">Preprocessing the dataset</h2>
+<p>When you import the dataset, x_train is a 3D matrix of shape (60000,28,28) and x_test is a 3D matrix of shape (10000,28,28). I reshaped them into 2D matrices of shapes (60000, 784) and (10000, 784) respectively.</p>
+<p>Next we need to take the labels in the y_train and y_test vectors and map them to binary class matrices. For this we will use the to_categorial function from Keras2:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#dataset:
+#   x_train 60000 28x28 uint8_encoded images
+#   y_train 60000   [0-9] labels
+#   x_test  10000 28x28 uint_8 encoded images
+#   y_test  60000   [0-9] labels
+</span>
+<span class="c1">#reshape our dataset to make it processable by the NN
+</span><span class="n">x_train</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="p">(</span><span class="mi">60000</span><span class="p">,</span><span class="mi">784</span><span class="p">))</span>
+<span class="n">x_test</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
+
+<span class="c1">#create a vector with 10 rows for each value in y_train in y_test, to be used by our activation layer
+</span><span class="n">y_train_labels</span> <span class="o">=</span> <span class="n">keras</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">y_test_labels</span> <span class="o">=</span> <span class="n">keras</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="full-code">Full code</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="kn">import</span> <span class="nn">keras</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers.core</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span><span class="p">,</span> <span class="n">Dropout</span>
+<span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">plot_model</span>
+<span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>
+
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+
+<span class="n">max_epoch</span><span class="o">=</span><span class="mi">50</span>
+<span class="n">optimizer</span><span class="o">=</span><span class="s">'adam'</span>
+<span class="n">dropout_ratio</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">neurons_in_layers</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="c1">#will be used to give all
+</span><span class="n">date</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%Y-%m-%d-%H:%M'</span><span class="p">)</span>
+
+<span class="c1">#load dataset
+</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">mnist</span><span class="p">.</span><span class="n">load_data</span><span class="p">()</span>
+
+<span class="c1">#dataset:
+#   x_train 60000 28x28 uint8_encoded images
+#   y_train 60000   [0-9] labels
+#   x_test  10000 28x28 uint_8 encoded images
+#   y_test  60000   [0-9] labels
+</span>
+<span class="c1">#reshape our dataset to make it processable by the NN
+</span><span class="n">x_train</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="p">(</span><span class="mi">60000</span><span class="p">,</span><span class="mi">784</span><span class="p">))</span>
+<span class="n">x_test</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">784</span><span class="p">))</span>
+
+<span class="c1">#create a vector with 10 rows for each value in y_train in y_test, to be used by our activation layer
+</span><span class="n">y_train_labels</span> <span class="o">=</span> <span class="n">keras</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">y_test_labels</span> <span class="o">=</span> <span class="n">keras</span><span class="p">.</span><span class="n">utils</span><span class="p">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="n">neurons_in_layers</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">784</span><span class="p">,)),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="n">neurons_in_layers</span><span class="p">),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="n">neurons_in_layers</span><span class="p">),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="n">neurons_in_layers</span><span class="p">),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="n">neurons_in_layers</span><span class="p">),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'relu'</span><span class="p">),</span>
+    <span class="n">Dropout</span><span class="p">(</span><span class="n">dropout_ratio</span><span class="p">),</span>
+    <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+    <span class="n">Activation</span><span class="p">(</span><span class="s">'softmax'</span><span class="p">),</span>
+<span class="p">])</span>
+
+<span class="n">model</span><span class="p">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">'categorical_crossentropy'</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s">'accuracy'</span><span class="p">])</span>
+
+<span class="n">plot_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">to_file</span><span class="o">=</span><span class="s">"models-png/"</span> <span class="o">+</span> <span class="n">date</span> <span class="o">+</span> <span class="s">'_model.png'</span><span class="p">,</span>  <span class="n">show_shapes</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train_labels</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test_labels</span><span class="p">),</span> <span class="n">epochs</span><span class="o">=</span><span class="n">max_epoch</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#save model
+</span><span class="n">model</span><span class="p">.</span><span class="n">save_weights</span><span class="p">(</span><span class="s">"models/"</span> <span class="o">+</span> <span class="n">optimizer</span> <span class="o">+</span> <span class="s">"_opt-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_epoch</span><span class="p">)</span> <span class="o">+</span> <span class="s">"_eps-"</span> <span class="o">+</span> <span class="n">date</span> <span class="o">+</span> <span class="s">".h5"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Saved model to disk"</span><span class="p">)</span>
+
+<span class="c1">#plot data
+</span>
+<span class="c1"># list all data in history
+</span><span class="k">print</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="p">.</span><span class="n">keys</span><span class="p">())</span>
+
+<span class="c1"># summarize history for accuracy
+</span><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="p">[</span><span class="s">'acc'</span><span class="p">])</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="p">[</span><span class="s">'val_acc'</span><span class="p">])</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="p">[</span><span class="s">'loss'</span><span class="p">])</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">history</span><span class="p">.</span><span class="n">history</span><span class="p">[</span><span class="s">'val_loss'</span><span class="p">])</span>
+
+<span class="c1"># plot 3 so that we can better see our model's accuracy
+</span><span class="n">plt</span><span class="p">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'g'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'orange'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'r'</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">'--'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">'model - accuracy and loss'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'accuracy/loss'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'epoch'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">([</span><span class="s">'train_acc'</span><span class="p">,</span> <span class="s">'test_acc'</span><span class="p">,</span> <span class="s">'train_loss'</span><span class="p">,</span> <span class="s">'val_loss'</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s">'upper left'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">+</span> <span class="s">"_opt-"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_epoch</span><span class="p">)</span> <span class="o">+</span> <span class="s">"_eps-"</span> <span class="o">+</span> <span class="n">date</span> <span class="o">+</span><span class="s">'_score.png'</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s">'tight'</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Saved plot to disk"</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="displaying-the-result">Displaying the result</h2>
+<p>In order to display the result I took an online piece of code3 and modified it to plot training accuracy, test set accuracy, training loss and test loss and then save them to a file.</p>
+<figure class="image"> <img src="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-12-48_score.png" alt=" opt-50 eps-2018-06-09-12-48 score.png" style="max-width: 100%;"><figcaption> opt-50 eps-2018-06-09-12-48 score.png</figcaption></figure><p>Model used to get above results</p>
+<figure class="image"> <img src="/assets/img/wiki/2018-06-09-12-48_model.png" alt=" model.png" style="max-width: 100%;"><figcaption> model.png</figcaption></figure><h2 id="try-other-architectures">Try other architectures</h2>
+<p>The problem with this is that it has started overfitting the test set.</p>
+<figure class="image"> <img src="/assets/img/wiki/Adam_opt-50_eps-2018-06-09-13-28_score.png" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><figure class="image"> <img src="/assets/img/wiki/2018-06-09-13-28_model.png" alt=" model.png" style="max-width: 100%;"><figcaption> model.png</figcaption></figure><ol>
+<li><p><a href="https://keras.io/datasets/">https://keras.io/datasets/</a></p></li>
+<li><p><a href="https://keras.io/utils/#to_categorical">https://keras.io/utils/#to_categorical</a></p></li>
+<li><p><a href="https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/">https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

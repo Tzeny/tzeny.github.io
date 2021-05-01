@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Building my homelab – part 4">
+<meta name="keywords" content="Building my homelab – part 4, Tzeny's demesne, engineering">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Building my homelab – part 4" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/12/31/building-my-homelab-part-4/" property="og:url">
+<meta content="2018-12-31T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="https://tzeny.com/assets/img/posts/2019/01/IMG_20181231_213214-360x210.jpg" property="og:image">
+<meta content="engineering" property="article:section">
+<meta content="docker" property="article:tag">
+<meta content="server" property="article:tag">
+<meta content="xfce" property="article:tag">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Building my homelab – part 4">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/12/31/building-my-homelab-part-4/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/12/31/building-my-homelab-part-4/">Building my homelab – part 4</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container"><div class="col-lg-8 offset-md-2">
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h4 class="post-meta"></h4>
+<p class="post-summary">Posted by : <img src="https://tzeny.com/assets/img/profile.png" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Tzeny</span> </span> at <time datetime="2018-12-31 00:00:00 +0000" itemprop="datePublished">Dec 31, 2018</time></p>
+<span class="disqus-comment-count" data-disqus-identifier="/2018/12/31/building-my-homelab-part-4/"></span><div class="post-categories"> Category : <a href="/blog/categories/engineering">engineering</a>
+</div>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>I changed my networking setup and switched from Proxmox to Ubuntu, moving most of my services to containers.</p>
+<p><strong>Part 3:</strong> <a href="https://tzeny.com/2017/11/30/building-my-homelab-part-3/"><strong>Building my homelab – part 3</strong></a></p>
+<figure class="image"> <img src="/assets/img/posts/2019/01/IMG_20181231_213214-768x1024.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><h2 id="networking">Networking</h2>
+<p>Parts used:</p>
+<ul>
+<li>
+<a href="https://www.asus.com/Motherboards/N3150ME/">N3150M-E Asus motherboard</a> with an integrated <a href="https://ark.intel.com/products/87258/Intel-Celeron-Processor-N3150-2M-Cache-up-to-2-08-GHz-">Intel Celeron N3150</a>
+</li>
+<li>4GB of DDR3 RAM</li>
+<li>Old computer case and power supply</li>
+<li>2 x Gigabit PCI 1x network cards</li>
+<li>5 port Gigabit ethernet switch</li>
+</ul>
+<p>I wanted to try using a <a href="https://www.pfsense.org/">pfSense</a> machine as my router / firewall, and use my existing wireless router as an access point. So I bought a cheap Asus motherboard with an integrated Intel CPU supporting AES NI (a requirement for newer versions of pfSense) and built a system around it.</p>
+<p>The CPU is a low power quad core, which I figured would be more than enough for my needs.</p>
+<p>After installing and configuring pfSense I had some issues with it after a couple of weeks: I could no longer access the web interface and I had rare, random internet failures.</p>
+<p>Although it was interesting playing around with it, I reverted back to my wireless router, as it offers all the functionality that I need. In the future I plan on trying pfSense again, but with a different hardware configuration.</p>
+<figure class="image"> <img src="/assets/img/posts/2018/12/IMG_20181231_213356-1024x768.jpg" alt="Here you can see Farcaster, the pfSense machine and a black gigabit ethernet switch" style="max-width: 100%;"><figcaption>Here you can see Farcaster, the pfSense machine and a black gigabit ethernet switch</figcaption></figure><p>The other addition to the Homelab is a 5 port ethernet gigabit switch. It connects all the computers (only Tesla and my laptop) to the network, and is really useful when transferring files between my laptop and Tesla.</p>
+<p>Although I have a 300 mb/s symmetric internet connection, with my current router (a <a href="https://www.tp-link.com/au/products/details/TL-WR740N.html">TL-WR740N</a>) all I can get is 100 mb/s. That is part of the next upgrade.</p>
+<h2 id="tesla">Tesla</h2>
+<p>Parts used:</p>
+<ul><li>Old 120GB SSD</li></ul>
+<p>Software used:</p>
+<ul>
+<li><a href="https://www.ubuntu.com/download/desktop">Ubuntu 18.04 LTS</a></li>
+<li>
+<a href="https://www.docker.com/">Docker</a><ul>
+<li><a href="https://github.com/jwilder/nginx-proxy">Nginx Reverse Proxy</a></li>
+<li><a href="https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion">Let’s Encrypt Nginx Proxy Companion</a></li>
+<li><a href="https://hub.docker.com/_/mediawiki/">Media Wiki</a></li>
+<li><a href="https://hub.docker.com/_/mariadb/">MariaDB</a></li>
+<li><a href="https://hub.docker.com/r/sixeyed/samba/">Samba Server</a></li>
+<li><a href="https://github.com/kylemanna/docker-openvpn">OpenVPN</a></li>
+</ul>
+</li>
+<li><a href="https://blog.torproject.org/obfsproxy-next-step-censorship-arms-race">obfsproxy</a></li>
+<li><a href="https://www.tightvnc.com/">TightVNC</a></li>
+</ul>
+<p>I added an old 120 Gb SSD to Tesla, which now acts as the OS drive, speeding everything up.</p>
+<p>I installed Ubuntu 18.04 Desktop edition as I had planned to use Gnome together with <a href="https://www.realvnc.com/en/connect/download/viewer/">VNC Viewer</a>, but when I used it like that the maximum resolution was that of the attached display; I ended up using <a href="https://www.tightvnc.com/">TightVNC</a> and <a href="https://www.xfce.org/">Xfce</a> instead, as shown in <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04">Digital Ocean’s tutorial</a>.</p>
+<figure class="image"> <img src="/assets/img/posts/2018/12/homelab.png" alt="Sketch of my current network architecture" style="max-width: 100%;"><figcaption>Sketch of my current network architecture</figcaption></figure><h3 id="mediawiki">MediaWiki</h3>
+<p>I started looking into ML some time ago, and I decided to use a wiki in order to take notes. You can access it here if you want: <a href="https://tzeny.ddns.net/index.php/Main_Page">https://tzeny.ddns.net/</a></p>
+<p>MediaWiki is “a free and open source software wiki package written in PHP, originally for use on Wikipedia. It is now also used by several other projects of the non-profit Wikimedia Foundation and by many other wikis, including this website, the home of MediaWiki.<br> Use the links below to explore the site contents. You’ll find some content translated into other languages, but the primary documentation language is English.”</p>
+<p>I decided to use it since it is simple, yet powerful and also open source.</p>
+<p>The wiki itself consists of 2 parts: the PHP server, and the SQL database. They are hosted in separate containers, and linked together using a Docker network.</p>
+<p>The next step is adding SSL support. An easy way to do this is to follow<br> <a href="https://cloud.google.com/community/tutorials/nginx-reverse-proxy-docker">this guide</a> from Google. It details how to use Nginx as a reverse proxy with <a href="https://letsencrypt.org/">Let’s Encrypt</a> certificates that are auto renewed every month.</p>
+<h3 id="samba">Samba</h3>
+<p>I have a basic Samba server running which gives me easy access to the files on the RAID 1 array (which I use as a NAS).</p>
+<h3 id="vpn">VPN</h3>
+<p>For the VPN I used a <a href="https://github.com/kylemanna/docker-openvpn">Docker container</a> which supports both UDP and TCP and <a href="https://blog.torproject.org/obfsproxy-next-step-censorship-arms-race">obfsproxy</a>, which obfuscates the traffic so that Deep Packet Inspection cannot figure out which protocol is used and thus can not selectively block it.</p>
+<p>Generally I connect directly to the UDP container, but when that doesn’t work I use obfsproxy + OpenVPN TCP.</p>
+<p>This is a good tutorial explaining how to use obfsproxy and Open VPN: <a href="https://www.comparitech.com/blog/vpn-privacy/hide-openvpn-traffic-obfsproxy-on-windows-and-linux-ec2/">How to hide OpenVPN traffic using Obfsproxy on a Windows PC and Linux EC2 server</a>.</p>
+<h3 id="tightvnc">TightVNC</h3>
+<p>I use a TightVNC server to be able to launch long running visual processes. Here is a great guide on how to install it and Xfce in Ubunut: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-18-04">Digital Ocean guide</a>.</p>
+<h2 id="main-changes">Main changes</h2>
+<ul>
+<li>Tried pfSense, returned to router</li>
+<li>Gigabit ethernet switch</li>
+<li>Dockerized most servicies</li>
+<li>Switched to Ubuntu 18.04</li>
+<li>Added 120GB system drive to Tesla</li>
+<li>Got a new low power quad core Celeron server that is currently unused</li>
+</ul>
+</div>
+<div id="disqus_thread"></div></article><script> var disqus_config = function () { this.page.url = "https://tzeny.com/2018/12/31/building-my-homelab-part-4/"; /* Replace PAGE_URL with your page's canonical URL variable */ this.page.identifier = "/2018/12/31/building-my-homelab-part-4"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */ }; (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement('script'); s.src = 'https://.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript>
+</div></div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

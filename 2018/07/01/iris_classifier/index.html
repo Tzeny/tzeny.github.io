@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Iris classifier">
+<meta name="keywords" content="Iris classifier, Tzeny's demesne, wikiprojects">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Iris classifier" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/07/01/iris_classifier/" property="og:url">
+<meta content="2018-07-01T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikiprojects" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Iris classifier">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/07/01/iris_classifier/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/07/01/iris_classifier/">Iris classifier</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Iris classifier</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>This is my first Keras application. It attempts to classify the Iris dataset. Based of of an online tutorial1</p>
+<h2 id="git">Git</h2>
+<p><a href="https://github.com/Tzeny/iris-classifier"></a><a href="https://github.com/Tzeny/iris-classifier">https://github.com/Tzeny/iris-classifier</a></p>
+<h2 id="code">Code</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegressionCV</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers.core</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
+<span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">np_utils</span>
+<span class="kn">from</span> <span class="nn">keras.utils</span> <span class="kn">import</span> <span class="n">plot_model</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">max_epoch</span><span class="o">=</span><span class="mi">200</span>
+<span class="n">date</span> <span class="o">=</span> <span class="n">time</span><span class="p">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'%Y-%m-%d-%H:%M'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">one_hot_encode_object_array</span><span class="p">(</span><span class="n">arr</span><span class="p">):</span>
+    <span class="s">'''One hot encode a numpy array of objects (e.g. strings)'''</span>
+    <span class="n">uniques</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">unique</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np_utils</span><span class="p">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">ids</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">uniques</span><span class="p">))</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="n">sns</span><span class="p">.</span><span class="n">load_dataset</span><span class="p">(</span><span class="s">"iris"</span><span class="p">)</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="n">train_X</span><span class="p">,</span> <span class="n">test_X</span><span class="p">,</span> <span class="n">train_y</span><span class="p">,</span> <span class="n">test_y</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">train_size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">train_y_ohe</span> <span class="o">=</span> <span class="n">one_hot_encode_object_array</span><span class="p">(</span><span class="n">train_y</span><span class="p">)</span>
+<span class="n">test_y_ohe</span> <span class="o">=</span> <span class="n">one_hot_encode_object_array</span><span class="p">(</span><span class="n">test_y</span><span class="p">)</span>
+
+<span class="n">global_scores</span> <span class="o">=</span> 
+<span class="n">global_loss</span> <span class="o">=</span> 
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,)))</span>
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s">'sigmoid'</span><span class="p">))</span>
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">model</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s">'softmax'</span><span class="p">))</span>
+<span class="n">model</span><span class="p">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">'categorical_crossentropy'</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s">'adam'</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s">'accuracy'</span><span class="p">])</span>
+
+<span class="n">plot_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">to_file</span><span class="o">=</span><span class="n">date</span><span class="o">+</span><span class="s">'_model.png'</span><span class="p">,</span>  <span class="n">show_shapes</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="n">highest_score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1">#train one epoch and evaluate the model
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">max_epoch</span><span class="p">):</span>
+    <span class="n">model</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_X</span><span class="p">,</span> <span class="n">train_y_ohe</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">scores</span>  <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_X</span><span class="p">,</span> <span class="n">test_y_ohe</span><span class="p">)</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">metrics_names</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"%s: %.2f%%"</span> <span class="o">%</span> <span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="n">metrics_names1</span><span class="p">,</span> <span class="n">scores1</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">scores1</span><span class="o">*</span><span class="mi">100</span> <span class="o">&gt;</span> <span class="n">highest_score</span><span class="p">:</span>
+        <span class="n">highest_score</span> <span class="o">=</span> <span class="n">scores1</span><span class="o">*</span><span class="mi">100</span>
+    <span class="n">global_scores</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">scores1</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">global_loss</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">scores0</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"Best score: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">highest_score</span><span class="p">))</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="n">l</span> <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">max_epoch</span><span class="p">)]</span>
+
+<span class="c1">#plt.plot(x)
+</span>
+<span class="n">line_up</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">global_scores</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Accuracy'</span><span class="p">)</span>
+<span class="n">line_down</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">global_loss</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Loss'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="o">=</span><span class="p">[</span><span class="n">line_up</span><span class="p">,</span> <span class="n">line_down</span><span class="p">])</span>
+
+<span class="c1">#plt.plot(x, global_scores, global_loss)
+</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Epoch'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">text</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">'Max epochs '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">max_epoch</span><span class="p">)</span> <span class="o">+</span> <span class="s">';'</span> <span class="o">+</span> <span class="n">date</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">date</span><span class="o">+</span><span class="s">'_score.png'</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s">'tight'</span><span class="p">)</span>
+</code></pre></div></div>
+<p>I used code from this article2 to make the program correctly display accuracy.</p>
+<p>Using the above code I trained to model for 200 epochs, and plotted on a graph the accuracy and loss obtained by evaluating the model at each epoch.</p>
+<figure class="image"> <img src="/assets/img/wiki/2018-06-05-19-00_score.png" alt=" score.png" style="max-width: 100%;"><figcaption> score.png</figcaption></figure><p>This is the model:</p>
+<figure class="image"> <img src="/assets/img/wiki/2018-06-05-19-00_model.png" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><ol>
+<li><p><a href="http://blog.fastforwardlabs.com/2016/02/24/hello-world-in-keras-or-scikit-learn-versus.html">http://blog.fastforwardlabs.com/2016/02/24/hello-world-in-keras-or-scikit-learn-versus.html</a></p></li>
+<li><p><a href="https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/">https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

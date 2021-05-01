@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Formatting and partitioning a drive under Ubuntu">
+<meta name="keywords" content="Formatting and partitioning a drive under Ubuntu, Tzeny's demesne, software">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Formatting and partitioning a drive under Ubuntu" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/" property="og:url">
+<meta content="2017-09-25T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="https://tzeny.com/assets/img/posts/2017/09/partition_8-360x210.jpg" property="og:image">
+<meta content="software" property="article:section">
+<meta content="ext4" property="article:tag">
+<meta content="formatting" property="article:tag">
+<meta content="gpt" property="article:tag">
+<meta content="partitioning" property="article:tag">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Formatting and partitioning a drive under Ubuntu">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/">Formatting and partitioning a drive under Ubuntu</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container"><div class="col-lg-8 offset-md-2">
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h4 class="post-meta"></h4>
+<p class="post-summary">Posted by : <img src="https://tzeny.com/assets/img/profile.png" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Tzeny</span> </span> at <time datetime="2017-09-25 00:00:00 +0000" itemprop="datePublished">Sep 25, 2017</time></p>
+<span class="disqus-comment-count" data-disqus-identifier="/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/"></span><div class="post-categories"> Category : <a href="/blog/categories/software">software</a>
+</div>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>Today we will take a new drive in Ubuntu, and format and partition it. I will be doing this under a VM, because it is easy to add or delete drives.</p>
+<p>Software used:</p>
+<ul>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox 5.1.28</a></li>
+<li><a href="https://www.ubuntu.com/download">Ubuntu 17.04</a></li>
+</ul>
+<h2 id="1-adding-a-second-drive">1. Adding a second drive</h2>
+<p>I started by adding a second drive to my Ubuntu VM.</p>
+<div class="rl-gallery-container" id="rl-gallery-container-11" data-gallery_id="0"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-11" data-gallery_no="11"> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_-1.jpg" data-lightbox="set_1" data-title="Click the settings button"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_-1-300x163.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive.jpg" data-lightbox="set_1" data-title="Go to the Storage section"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive-300x198.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_2.jpg" data-lightbox="set_1" data-title="Click the add drive button"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_2-300x198.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_3.jpg" data-lightbox="set_1" data-title="Leave the default"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_3-283x300.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_4.jpg" data-lightbox="set_1" data-title="Leave it to dynamic, so as not the use up all the space unless it is required"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_4-283x300.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_5.jpg" data-lightbox="set_1" data-title="Select the size; you can leave the default location"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_5-283x300.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/add_drive_6.jpg" data-lightbox="set_1" data-title="If everything worked you should now see the second drive"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/add_drive_6-300x198.jpg" alt=""></a>
+</div></div>
+<h2 id="2-format-and-partitioning">2. Format and partitioning</h2>
+<p>Now that we’ve added the drive, we can boot into Ubuntu.</p>
+<p>The following command will list all available drives.</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer">  <span class="kw2">sudo</span> <span class="kw2">fdisk</span> <span class="re5">-l</span>
+</div></div>
+<p>If all went well you should see 2 entries:</p>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/09/partition_1.jpg” data-rel=”lightbox-image-0” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/partition_1-300x181.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<p>You should now identify the new drive. In my case it is /dev/sdb</p>
+<p>Now, to format the drive:</p>
+<div class="codecolorer-container text default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="text codecolorer">  sudo cfdisk /dev/sdb</div></div>
+<div class="rl-gallery-container" id="rl-gallery-container-12" data-gallery_id="0"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-12" data-gallery_no="12"> <a class="lightbox2-image" href="/assets/img/posts/2017/09/partition_2-1.jpg" data-lightbox="set_1" data-title="Choose GPT, as it is a newer scheme"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/partition_2-1-300x180.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/partition_3.jpg" data-lightbox="set_1" data-title="Select New"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/partition_3-300x180.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/partition_4.jpg" data-lightbox="set_1" data-title="Enter the size of the partition; the default is max; if you want multiple partitions enter a smaller size"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/partition_4-300x180.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/partition_5.jpg" data-lightbox="set_1" data-title="Select Write"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/partition_5-300x180.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/partition_6.jpg" data-lightbox="set_1" data-title="Type yes; afterwards you can quit"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/partition_6-300x180.jpg" alt=""></a>
+</div></div>
+<p>To check the results of our work again type</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer">  <span class="kw2">sudo</span> <span class="kw2">fdisk</span> <span class="re5">-l</span>
+</div></div>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/09/partition_7.jpg” data-rel=”lightbox-image-1” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/partition_7-300x180.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<h2 id="3-creating-the-filesystem">3. Creating the filesystem</h2>
+<p>We will use the ext4 filesystem (the most common Linux filesystem today; if you want to learn more go here: <a href="https://opensource.com/article/17/5/introduction-ext4-filesystem">https://opensource.com/article/17/5/introduction-ext4-filesystem</a>):</p>
+<p>On the new drive (/dev/sdb in my case) you should see a partition (/dev/sdb1 in my case). Now we only need to format it. For this you can use the mkfs utility. To see all possible formatting options type</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer">  mkfs</div></div>
+<p>and press tab tab.</p>
+<p>In our case we will use:</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer">  <span class="kw2">sudo</span> mkfs.ext4 <span class="sy0">/</span>dev<span class="sy0">/</span>sdb1</div></div>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/09/partition_8.jpg” data-rel=”lightbox-image-2” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/partition_8-300x180.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<p>And we are done 🙂</p>
+<p>##</p>
+<h2 id="automounting">Automounting</h2>
+<p>If you want the new partition to be mounted at boot time, you can follow my tutorial <a href="https://tzeny.com/2017/09/25/automounting-partition-ubuntu/">here</a>.</p>
+</div>
+<div id="disqus_thread"></div></article><script> var disqus_config = function () { this.page.url = "https://tzeny.com/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu/"; /* Replace PAGE_URL with your page's canonical URL variable */ this.page.identifier = "/2017/09/25/formatting-and-partitioning-a-drive-under-ubuntu"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */ }; (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement('script'); s.src = 'https://.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript>
+</div></div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

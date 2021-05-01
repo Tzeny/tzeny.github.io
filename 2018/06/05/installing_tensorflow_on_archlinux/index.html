@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Installing Tensorflow on ArchLinux">
+<meta name="keywords" content="Installing Tensorflow on ArchLinux, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Installing Tensorflow on ArchLinux" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/06/05/installing_tensorflow_on_archlinux/" property="og:url">
+<meta content="2018-06-05T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Installing Tensorflow on ArchLinux">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/06/05/installing_tensorflow_on_archlinux/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/06/05/installing_tensorflow_on_archlinux/">Installing Tensorflow on ArchLinux</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Installing Tensorflow on ArchLinux</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>Based on this guide1</p>
+<h2 id="installing-packages">Installing packages</h2>
+<p>Important note: You should start by installing Bumblebee and making sure it works: (<a href="https://wiki.archlinux.org/index.php/Bumblebee">Arch Linux Wiki Bumblebee</a></p>
+<p>My package versions:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia 396.24-7
+python-numpy 1.14.3-1
+swig 3.0.12-1
+cudnn 7.1.4-1
+cuda 9.0.176-4
+python 3.6.5-3
+python-virtualenv 15.1.0-3
+</code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pacman <span class="nt">-S</span> nvidia python-numpy swig cudnn cuda python3 python-virtualenv
+</code></pre></div></div>
+<p>Then reboot. This should install all necessary packages.</p>
+<p>In my case I also had to downgrade CUDA to version 9.x. I used this <a href="https://aur.archlinux.org/packages/downgrade/">AUR Package</a>.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>downgrade cuda
+</code></pre></div></div>
+<p>(and select the highest version 9.0.x)</p>
+<h2 id="virtualenv">Virtualenv</h2>
+<p>My PIP packages:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>absl-py<span class="o">==</span>0.2.2
+<span class="nv">astor</span><span class="o">==</span>0.6.2
+<span class="nv">bleach</span><span class="o">==</span>1.5.0
+<span class="nv">gast</span><span class="o">==</span>0.2.0
+<span class="nv">grpcio</span><span class="o">==</span>1.12.1
+<span class="nv">html5lib</span><span class="o">==</span>0.9999999
+<span class="nv">Markdown</span><span class="o">==</span>2.6.11
+<span class="nv">numpy</span><span class="o">==</span>1.14.3
+<span class="nv">protobuf</span><span class="o">==</span>3.5.2.post1
+<span class="nv">six</span><span class="o">==</span>1.11.0
+<span class="nv">tensorboard</span><span class="o">==</span>1.8.0
+tensorflow-gpu<span class="o">==</span>1.8.0
+<span class="nv">termcolor</span><span class="o">==</span>1.1.0
+<span class="nv">Werkzeug</span><span class="o">==</span>0.14.1
+</code></pre></div></div>
+<p>Next create a new Python3 virtualenv.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv <span class="nt">-p</span> python3 tensorflow-env
+<span class="nb">source </span>tensorflow/bin/activate
+</code></pre></div></div>
+<p>We’ll need to update PIP and install the latest tensorflow-gpu package</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pip
+
+pip <span class="nb">install</span> <span class="nt">--upgrade</span> tensorflow-gpu
+</code></pre></div></div>
+<h2 id="validating-our-installation">Validating our installation</h2>
+<p>Based on this guide2</p>
+<p>To validate our installation we’ll use the following Python file</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+
+<span class="n">hello</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">constant</span><span class="p">(</span><span class="s">'Hello, TensorFlow!'</span><span class="p">)</span>
+
+<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="p">.</span><span class="n">Session</span><span class="p">()</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">sess</span><span class="p">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">))</span>
+</code></pre></div></div>
+<p>I saved it to test.py, and ran it using the command:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>optirun python test.py
+</code></pre></div></div>
+<p>(optirun is required to turn on the GPU)</p>
+<p>The output should be something similar to this:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2018-06-05 09:44:13.468281: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-06-05 09:44:13.545180: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node <span class="nb">read </span>from SysFS had negative value <span class="o">(</span><span class="nt">-1</span><span class="o">)</span>, but there must be at least one NUMA node, so returning NUMA node zero
+2018-06-05 09:44:13.545552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1356] Found device 0 with properties:
+name: GeForce GTX 1050 Ti major: 6 minor: 1 memoryClockRate<span class="o">(</span>GHz<span class="o">)</span>: 1.62
+pciBusID: 0000:01:00.0
+totalMemory: 3.95GiB freeMemory: 3.89GiB
+2018-06-05 09:44:13.545566: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1435] Adding visible gpu devices: 0
+2018-06-05 09:44:13.733866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:923] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-06-05 09:44:13.733913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:929]      0
+2018-06-05 09:44:13.733919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:942] 0:   N
+2018-06-05 09:44:13.734069: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1053] Created TensorFlow device <span class="o">(</span>/job:localhost/replica:0/task:0/device:GPU:0 with 3623 MB memory<span class="o">)</span> -&gt; physical GPU <span class="o">(</span>device: 0, name: GeForce GTX 1050 Ti, pci bus <span class="nb">id</span>: 0000:01:00.0, compute capability: 6.1<span class="o">)</span>
+b<span class="s1">'Hello, TensorFlow!'</span>
+<span class="o">(</span>tensorflow<span class="o">)</span>
+</code></pre></div></div>
+<p>If you run it without optirun it will look like this (does not detect GPU):</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python test.py
+2018-06-05 09:11:15.197152: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-06-05 09:11:15.375056: E tensorflow/stream_executor/cuda/cuda_driver.cc:406] failed call to cuInit: CUDA_ERROR_UNKNOWN
+2018-06-05 09:11:15.375095: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:145] kernel driver does not appear to be running on this host <span class="o">(</span>saber<span class="o">)</span>: /proc/driver/nvidia/version does not exist
+b<span class="s1">'Hello, TensorFlow!'</span>
+<span class="o">(</span>tensorflow<span class="o">)</span>
+</code></pre></div></div>
+<ol>
+<li><p><a href="https://github.com/ddigiorg/AI-TensorFlow/blob/master/install/install-TF_2016-02-27.md">https://github.com/ddigiorg/AI-TensorFlow/blob/master/install/install-TF_2016-02-27.md</a></p></li>
+<li><p><a href="https://www.tensorflow.org/install/install_linux#ValidateYourInstallation">https://www.tensorflow.org/install/install_linux#ValidateYourInstallation</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

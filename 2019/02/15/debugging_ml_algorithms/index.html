@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Debugging ML algorithms">
+<meta name="keywords" content="Debugging ML algorithms, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Debugging ML algorithms" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/02/15/debugging_ml_algorithms/" property="og:url">
+<meta content="2019-02-15T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Debugging ML algorithms">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/02/15/debugging_ml_algorithms/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/02/15/debugging_ml_algorithms/">Debugging ML algorithms</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Debugging ML algorithms</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>I’ll use hypothesis and model interchangeably in the writing below.</p>
+<p>Some ideas to try out when debugging ML algorithms:</p>
+<ul>
+<li>Increase the size of the training set - fixes high variance</li>
+<li>Decrease number of features - fixes high variance</li>
+<li>Try getting more features - fixes high bias</li>
+<li>Add polynomial features - fixes high bias</li>
+<li>Increase lambda - fixes high bias</li>
+<li>Decrease lambda - fixes high variance</li>
+</ul>
+<h2 id="training-cross-validation-test">Training, cross validation, test</h2>
+<p>Split your training set into:</p>
+<ul>
+<li>training set 70%</li>
+<li>test set 30%</li>
+</ul>
+<p>Train on training set, check on test set.</p>
+<p>To evaluate different hypotheses:</p>
+<ul>
+<li>training set 60%</li>
+<li>cross validation set 20%</li>
+<li>test set 20%</li>
+</ul>
+<p>Train different hypotheses on training set, after that use the cross validation set to pick the best hypothesis, check on test set</p>
+<h2 id="bias-vs-variance">Bias vs Variance</h2>
+<p>If your training error and cross validation error are high, algorithm probably suffers from biasing (underfitting)</p>
+<p>If you cross validation error is much larger than your training error which is small, algorithm probably suffers from high variance (overfitting)</p>
+<p>In a High bias scenario, getting more training examples would not help. In a high variance scenario more training examples might help.</p>
+<h2 id="precision-and-recall">Precision and recall</h2>
+<figure class="image"> <img src="/assets/img/wiki/Precisionrecall.png" alt="Precision vs recall" style="max-width: 100%;"><figcaption>Precision vs recall</figcaption></figure><figure class="image"> <img src="/assets/img/wiki/Confusion-Matrix.png" alt="200px,Confusion Matrix" style="max-width: 100%;"><figcaption>200px,Confusion Matrix</figcaption></figure><p>$\text{Precision} = \frac{\text{True positives}}{\text{True positives} + \text{False positives}} = \frac{\text{True positives}}{\text{Predicted positive}}$ (of all our true predictions, how many are true?)</p>
+<p>$\text{Recall} = \frac{\text{True positives}}{\text{True positives} + \text{False negatives}} = \frac{\text{True positives}}{\text{Actual positive}}$ (of all the truths, how many did we predict?)</p>
+<p>$\text{Accuracy} = \frac{\text{True positives} + \text{True negatives}}{\text{Total number of examples}} = \frac{\text{Correct predictions}}{\text{Number of predictions}}$ (of all the examples, how many did we accurately classify?) If we modify our classifier’s threshold there are 2 possible scenarios:</p>
+<ul>
+<li>increased threshold -&gt; higher precision, lower recall (lower number of false positives)</li>
+<li>decreased threshold -&gt; lower precision, higher recall (lower number of false negatives)</li>
+</ul>
+<figure class="image"> <img src="/assets/img/wiki/Precision-recall.png" alt="200px,Precision vs recall" style="max-width: 100%;"><figcaption>200px,Precision vs recall</figcaption></figure><h3 id="f1-score">F1 score</h3>
+<p>To help choose the right algorithm based on precision and recall we can use the F1 score.</p>
+<p>$F1 = 2 * \frac{P * R}{P + R}$</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span><span class="n">classification_report</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The accuracy train score is {:0.3f}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">))</span> <span class="c1">#to print precision, recall and F1
+</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The accuracy test score is {:0.3f}"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_test_pred</span><span class="p">))</span>
+</code></pre></div></div>
+<h2 id="learning-rate">Learning Rate</h2>
+<p>Choosing a right learning rate (lambda)</p>
+<p>If we pick a small learning rate we risk overfitting, if we pick a high learning rate we risk underfitting.</p>
+<p>We should train our model with several different learning rates and then choose our cross validation error to pick the best one.</p>
+<h2 id="cross-entropy">Cross Entropy</h2>
+<p>S is the softmax output of the Neural Network for input xi. L is the hot encoded vector corresponding to label yi. <em>D</em>(<em>S</em>, <em>L</em>)= − ∑<em>i<strong>L</strong>i<strong>l</strong>o<strong>g*(*S</strong>i</em>)</p>
+<h2 id="how-to-improve-a-classifier">How to improve a classifier</h2>
+<ul>
+<li>Collect lots of data (for example “honeypot” project but doesn’t always work)</li>
+<li>Develop sophisticated features (for example: using email header data in spam emails)</li>
+<li>Develop algorithms to process your input in different ways (recognizing misspellings in spam).</li>
+</ul>
+<p>The recommended approach to solving machine learning problems is to:</p>
+<ul>
+<li>Start with a simple algorithm, implement it quickly, and test it early on your cross validation data.</li>
+<li>Plot learning curves to decide if more data, more features, etc. are likely to help.</li>
+<li>Manually examine the errors on examples in the cross validation set and try to spot a trend where most of the errors were made.</li>
+</ul>
+<p>Get a number representing the performance of your algorithm (accuracy on the cross validation set for instance).</p>
+<h2 id="learning-curve">Learning curve</h2>
+<figure class="image"> <img src="/assets/img/wiki/Learning-curve.png" alt="Score on training/test sets versus number of examples" style="max-width: 100%;"><figcaption>Score on training/test sets versus number of examples</figcaption></figure><p>A learning curve can be a useful tool in determining whether we should spend more time improving the model or collecting additional data. We split our training set into n sets (first set having 1/n% of the examples in the training set, second have 2/n% etc.), we train our algorithm on each of them, and then plot it’s accuracy on the test set.</p>
+<p>If the score on the test set keeps getting better we need more training examples. If it plateaus we need to improve our algorithm.</p>
+<h2 id="adjusting-the-learning-rate-during-training1">Adjusting the learning rate during training1</h2>
+<figure class="image"> <img src="/assets/img/wiki/Learning_rate_optimization.jpeg" alt="Comparing Performances of Different Learning Rate Schedules and Adaptive Learning Algorithms" style="max-width: 100%;"><figcaption>Comparing Performances of Different Learning Rate Schedules and Adaptive Learning Algorithms</figcaption></figure><p>We can either use:</p>
+<ul>
+<li>learning rate schedules - modifying the learning rate in a fixed way at every n steps</li>
+<li>adaptive learning rate algorithms - such as<a href="/2019/03/07/neural_networks/">AdaGrad</a>,<a href="/2019/03/07/neural_networks/">AdaDelta</a>,<a href="/2019/03/07/neural_networks/">Adam</a>
+</li>
+</ul>
+<p>Adaptive learning rate algorithms should do a better job since they are not problem specific like tuning the learning rate decay manually would be.</p>
+<h2 id="learning-rate-and-number-of-epochs">Learning rate and number of epochs</h2>
+<figure class="image"> <img src="/assets/img/wiki/Lr_epoch.png" alt="Examples of too high/low learning rates and examples of training for too many/few epochs" style="max-width: 100%;"><figcaption>Examples of too high/low learning rates and examples of training for too many/few epochs</figcaption></figure><p>If you set your learning rate too high, you model will have a validation loss » training loss.</p>
+<p>If you set it too low, training loss &lt; validation loss; set it higher or train for more epochs.</p>
+<p>If you do not train for enough epochs, training loss &lt; validation loss.</p>
+<ol><li><a href="https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1">https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1</a></li></ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

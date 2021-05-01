@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Making your own 35$ VPN">
+<meta name="keywords" content="Making your own 35$ VPN, Tzeny's demesne, software">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Making your own 35$ VPN" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2017/08/03/making-your-own-vpn/" property="og:url">
+<meta content="2017-08-03T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="https://tzeny.com/assets/img/posts/2017/08/with-vpn-360x210.jpg" property="og:image">
+<meta content="software" property="article:section">
+<meta content="own" property="article:tag">
+<meta content="raspberry" property="article:tag">
+<meta content="raspbian" property="article:tag">
+<meta content="vpn" property="article:tag">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Making your own 35$ VPN">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2017/08/03/making-your-own-vpn/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2017/08/03/making-your-own-vpn/">Making your own 35$ VPN</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container"><div class="col-lg-8 offset-md-2">
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h4 class="post-meta"></h4>
+<p class="post-summary">Posted by : <img src="https://tzeny.com/assets/img/profile.png" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Tzeny</span> </span> at <time datetime="2017-08-03 00:00:00 +0000" itemprop="datePublished">Aug 3, 2017</time></p>
+<span class="disqus-comment-count" data-disqus-identifier="/2017/08/03/making-your-own-vpn/"></span><div class="post-categories"> Category : <a href="/blog/categories/software">software</a>
+</div>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>Yesterday I decided that I would like to be able to access my home computer that I use as a NAS from anywhere in the world. The easiest and most secure way to do this is by using a VPN. So, what is a VPN? A Virtual Private Network extends a Private Network across a public network (like the internet), enabling users to send and receive data like their devices were connected directly to the Private Network. In my case, this means I can access my windows share without having to open it to the whole internet.</p>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/08/without-vpn.jpg” data-rel=”lightbox-image-0” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/08/with-vpn-300x168.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<p>The 2 pictures show the difference between a normal connection and a VPN tuneel.</p>
+<p>In the first case, the computer connects through the internet to the router. But it cannot access the NAS directly. The router must have a port forwarding rule allowing you to reach the NAS, where a strong authentication mechanism must be present, to deter hackers. This is because the port is always open, and anyone on the internet could access it. If at a later date I add something else I would like to access, I must open another port and so on.</p>
+<p>Compare this to the second picture. When you connect to the VPN server running on the Raspberry, you basically become part of the network. This means that you can access the NAS directly. It will become discoverable in you Network directory (if you are using Windows). You still need to create a port forwarding rule for the VPN server, but that’s the only rule you need. Everything else can stay protected behind the router’s firewall.</p>
+<h2 id="vpn-advantages">VPN advantages</h2>
+<p> </p>
+<h2 id="encryption">Encryption</h2>
+<p>All the traffic between you and the server is encrypted after a connection is established. This means that no one can listen in on you, preventing Man In The Middle Attacks. A common example is unsecured or suspicious networks. If you connect to an untrusted network, you can then connect to your VPN and all your traffic will be secured.</p>
+<h2 id="compression">Compression</h2>
+<p>Open VPN server has the option of compressing traffic, reducing bandwidth use.</p>
+<h2 id="bypassing-web-censorship">Bypassing web censorship</h2>
+<p>If you are connected to a network or proxy that blocks certain websites, you can use a VPN to bypass the proxy. Because when you are connected to the VPN, your traffic will be exiting via your home router, you will be able to access any content available from your home.</p>
+<p>Parts used:</p>
+<ul><li><a href="https://tzeny.com/2017/08/03/installing-raspbian-enabling-ssh/" target="_blank" rel="noopener noreferrer">Raspberry Pi 2 with Raspbian</a></li></ul>
+<p>Software used:</p>
+<ul>
+<li><a href="http://www.pivpn.io/">PiVPN</a></li>
+<li><a href="https://openvpn.net/index.php/open-source/downloads.html">OpenVPN Client</a></li>
+</ul>
+<p> </p>
+<h1 id="setup">Setup</h1>
+<p> </p>
+<h2 id="preparing-the-raspberry-pi">Preparing the Raspberry Pi</h2>
+<p>For this to work, you need to have a Raspberry with Raspbian installed, connected to your network with a static IP address assigned to it. If you don’t already have that, follow my tutorial here:</p>
+<p><a href="https://tzeny.com/2017/08/03/installing-raspbian-enabling-ssh/" target="_blank" rel="noopener noreferrer">Installing Raspbian and enabling SSH</a></p>
+<h3 id="changing-your-password">Changing your password</h3>
+<p>After you are connected to your Raspberry via SSH, the first step should be to change the default password for user pi. Type the following command to change the password:</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer"> <span class="kw2">passwd</span>
+</div></div>
+<p>The current password is ‘raspberry’.</p>
+<h2 id="installing-pivpn">Installing PiVPN</h2>
+<p> </p>
+<p>Now we are ready to install the VPN server. We will be using PiVPN. To get things started run the following command:</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer"> curl &lt;span class=\"re5\"&gt;-L&lt;/span&gt; https:&lt;span class=\"sy0\"&gt;//&lt;/span&gt;install.pivpn.io &lt;span class=\"sy0\"&gt;|&lt;/span&gt; &lt;span class=\"kw2\"&gt;bash&lt;/span&gt;</div></div>
+<p>This will start the install process. The pictures below include the steps which require interaction. I have not included the steps that only require you to click ok.</p>
+<div class="rl-gallery-container" id="rl-gallery-container-2" data-gallery_id="0"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-2" data-gallery_no="2"> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-0.jpg" data-lightbox="set_1" data-title=""><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-0-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-0-1.jpg" data-lightbox="set_1" data-title=""><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-0-1-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-0-2.jpg" data-lightbox="set_1" data-title=""><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-0-2-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-1.jpg" data-lightbox="set_1" data-title="Network settings. Note the IP on the top, this will be your Raspberry's IP"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-1-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-2.jpg" data-lightbox="set_1" data-title="Choose the VPN user"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-2-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-4.jpg" data-lightbox="set_1" data-title="Enable unattended upgrades"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-4-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-6.jpg" data-lightbox="set_1" data-title="OpenVPN port; note this down; you can change it if you like"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-6-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-7.jpg" data-lightbox="set_1" data-title="Encryption level; default one is ok"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-7-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-8.jpg" data-lightbox="set_1" data-title="Generating keys, this will take a long time"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-8-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-9.jpg" data-lightbox="set_1" data-title="You can leave this as is; or if you will later use DNS you can select the 2nd one"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-9-300x171.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/08/screen-10.jpg" data-lightbox="set_1" data-title="Choose DNS provider; default is ok"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/08/screen-10-300x171.jpg" alt=""></a>
+</div></div>
+<p>And you’re done. Now you need to run the following command:</p>
+<div class="codecolorer-container bash default" style="overflow:auto;white-space:nowrap;width:435px;"><div class="bash codecolorer"> pivpn add</div></div>
+<p>You will be prompted to pick a name and a password for the new user. Pick a secure password.</p>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/08/add-user.jpg” data-rel=”lightbox-image-2” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/08/add-user-300x171.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<p>Use WinSCP (or similar) to copy the file <user>.ovpn from /home/pi/ovpns to your desktop.</user></p>
+<h2 id="install-and-configure-openvpn-client">Install and configure OpenVPN client</h2>
+<p>Install OpenVPN client from here: <a href="https://openvpn.net/index.php/open-source/downloads.html">https://openvpn.net/index.php/open-source/downloads.html</a></p>
+<p>And a little icon should appear in your taskbar. Right click on it and select Import… and choose the <user>.ovpn file.</user></p>
+<p>&lt;a href=”https://tzeny.com/wp-content/uploads/2017/08/import.jpg” data-rel=”lightbox-image-3” data-rl_title=”” data-rl_caption=”” title=””&gt;</p>
+<figure class="image"> <img src="/assets/img/posts/2017/08/import.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>/a&gt;</p>
+<p>The final step is port forwarding the port that you set up for the VPN server. You can follow any one of the tutorials here: <a href="https://portforward.com/">https://portforward.com/</a><br> Just use your Raspberry’s IP and your port.</p>
+<p>Now when you click connect you should have a secure VPN connection. This works from anywhere in the world. And when you are connected you can access the computers in your network like you were connected too.</p>
+<p>If you do not have a static IP you need to configure a DNS server. A tutorial is coming soon.</p>
+</div>
+<div id="disqus_thread"></div></article><script> var disqus_config = function () { this.page.url = "https://tzeny.com/2017/08/03/making-your-own-vpn/"; /* Replace PAGE_URL with your page's canonical URL variable */ this.page.identifier = "/2017/08/03/making-your-own-vpn"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */ }; (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement('script'); s.src = 'https://.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript>
+</div></div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

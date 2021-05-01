@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Audio switcher">
+<meta name="keywords" content="Audio switcher, Tzeny's demesne, hardware">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Audio switcher" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2017/09/12/audio-switcher/" property="og:url">
+<meta content="2017-09-12T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="https://tzeny.com/assets/img/posts/2017/09/final-360x210.jpg" property="og:image">
+<meta content="hardware" property="article:section">
+<meta content="3.5" property="article:tag">
+<meta content="audio" property="article:tag">
+<meta content="box" property="article:tag">
+<meta content="jack" property="article:tag">
+<meta content="switch" property="article:tag">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Audio switcher">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2017/09/12/audio-switcher/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2017/09/12/audio-switcher/">Audio switcher</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container"><div class="col-lg-8 offset-md-2">
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h4 class="post-meta"></h4>
+<p class="post-summary">Posted by : <img src="https://tzeny.com/assets/img/profile.png" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Tzeny</span> </span> at <time datetime="2017-09-12 00:00:00 +0000" itemprop="datePublished">Sep 12, 2017</time></p>
+<span class="disqus-comment-count" data-disqus-identifier="/2017/09/12/audio-switcher/"></span><div class="post-categories"> Category : <a href="/blog/categories/hardware">hardware</a>
+</div>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>So, since I got an old audio station on my desk, I wanted to be able to connect both the desk PC and another device (phone, laptop etc.) to the station without too much hassle. The best way to do this was a 3.5 mm audio switcher. Since after searching online I came up empty handed I decided to build one myself. This is the final result:</p>
+<div class="rl-gallery-container" id="rl-gallery-container-3" data-gallery_id="0"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-3" data-gallery_no="3"> <a class="lightbox2-image" href="/assets/img/posts/2017/09/final_3.jpg" data-lightbox="set_1" data-title="Audio switcher front"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/final_3-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/final_2.jpg" data-lightbox="set_1" data-title="Audio switcher back"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/final_2-300x225.jpg" alt=""></a>
+</div></div>
+<p>Parts used:</p>
+<ul>
+<li>Old toy plastic box</li>
+<li>2 pole 3 way switch</li>
+<li>3 x 3.5 mm female stereo jacks</li>
+<li>some colored wires</li>
+</ul>
+<p>Tools used:</p>
+<ul>
+<li>Electric screwdriver and bit</li>
+<li><a href="https://easyeda.com/">Easy PDA</a></li>
+</ul>
+<figure id="attachment_137" aria-describedby="caption-attachment-137" style="width: 300px" class="wp-caption alignnone"><figure class="image"> <img src="/assets/img/posts/2017/09/pieces-300x225.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure>figcaption id="caption-attachment-137" class="wp-caption-text"&gt;The PCBs were not used in the end&lt;/figcaption&gt;</figure><h2 id="1-preparing-the-plastic-box">1. Preparing the plastic box</h2>
+<p>First up, I had to come up with a way to mount everything inside the box. I decided to do this before doing any soldering, just to make sure everything worked. To this end, I used an electric screwdriver with a bit the same size as my switch. Fortunately, the bit was also perfect for the 3.5 mm jack holes.</p>
+<div class="rl-gallery-container" id="rl-gallery-container-4" data-gallery_id="0"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-4" data-gallery_no="4"> <a class="lightbox2-image" href="/assets/img/posts/2017/09/hole_1.jpg" data-lightbox="set_1" data-title="The bit and the hole created by it; I had to smooth the hole a bit afterwards"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/hole_1-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2017/09/hole_2.jpg" data-lightbox="set_1" data-title="The switch fitted through the hole, it will be secured by a washer and nut"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2017/09/hole_2-300x225.jpg" alt=""></a>
+</div></div>
+<h2 id="2-connections">2. Connections</h2>
+<p>So, now satisfied that everything fitted in the box, I needed to make all the required connections. To this end I used <a href="https://easyeda.com/">Easy PDA</a>, an online tool that lets you easily create sketches and PCB layouts (not needed for this project).</p>
+<figure id="attachment_132" aria-describedby="caption-attachment-132" style="width: 300px" class="wp-caption alignnone"><figure class="image"> <img src="/assets/img/posts/2017/09/sketch-300x159.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure>figcaption id="caption-attachment-132" class="wp-caption-text"&gt;Green wire – GND Grey wire – left channel Red wire – right channel&lt;/figcaption&gt;</figure><p>The unconnected pins are used to determine if a jack is inserted or not, which was not necessary for our build.</p>
+<p>Next up, I had to solder everything together. The jacks were a bit of a pain, as the plastic around the connection pins melted sometimes while I was soldering, but eventually I got everything connected.</p>
+<figure id="attachment_140" aria-describedby="caption-attachment-140" style="width: 300px" class="wp-caption alignnone"><figure class="image"> <img src="/assets/img/posts/2017/09/connections-300x225.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure>figcaption id="caption-attachment-140" class="wp-caption-text"&gt;Everything is finally wired up&lt;/figcaption&gt;</figure><p>I also took this opportunity to do a quick check, just to make sure everything worked. First using a multimeter to check for shorts, then plugging it into the station and testing it with my phone.</p>
+<h2 id="3-putting-it-all-together">3. Putting it all together</h2>
+<p>So, now with everything connected, I just had to put it all in the box and fit the jacks and switch through their respective holes.</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/box_1-300x225.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>I also did another check now, just to make sure. But quickly, I realized I had a problem. The jacks were very easy pushed inside. I thought I could solve this with glue but I was wrong. So, what to do? Lego to the rescue!</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/box_2-300x225.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>A lego brick was the perfect width and length to keep everything stable. It was a tight fit, but that was very good in this case.</p>
+<h2 id="4-final-touches">4. Final touches</h2>
+<p>As a final touch, I marked the Output and Input on the back, and added some black marker lines to indicate which input the switch was connected to. In the end it looked better than expected.</p>
+<figure class="image"> <img src="/assets/img/posts/2017/09/final_2-300x225.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><p>Using some double tape, I fixed it on my desk, where it has been doing its job for the pas few months.</p>
+</div>
+<div id="disqus_thread"></div></article><script> var disqus_config = function () { this.page.url = "https://tzeny.com/2017/09/12/audio-switcher/"; /* Replace PAGE_URL with your page's canonical URL variable */ this.page.identifier = "/2017/09/12/audio-switcher"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */ }; (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement('script'); s.src = 'https://.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript>
+</div></div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
