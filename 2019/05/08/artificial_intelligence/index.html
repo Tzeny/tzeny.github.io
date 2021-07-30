@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Artificial Intelligence">
+<meta name="keywords" content="Artificial Intelligence, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Artificial Intelligence" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/05/08/artificial_intelligence/" property="og:url">
+<meta content="2019-05-08T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Artificial Intelligence">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/05/08/artificial_intelligence/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/05/08/artificial_intelligence/">Artificial Intelligence</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Artificial Intelligence</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>To keep things easy this page will act as an index for all AI related resources.</p>
+<h2 id="external-resources">External Resources</h2>
+<ul>
+<li><a href="https://machinelearningmastery.com">Machine Learning Tutorials</a></li>
+<li><a href="https://machinelearningmastery.com/start-here/#getstarted">Machine Learning Getting Started Ideas</a></li>
+<li><a href="https://medium.com/machine-learning-in-practice/my-curated-list-of-ai-and-machine-learning-resources-from-around-the-web-9a97823b8524">Machine Learning Resources</a></li>
+<li><a href="https://www.mastersindatascience.com/top-100-data-science-resources/">Top 100 Data Science Resources</a></li>
+<li><a href="https://github.com/llSourcell/learn_math_fast">Learn Math Fast</a></li>
+</ul>
+<p>News:</p>
+<ul><li><a href="https://inside.com/ai">Inside AI</a></li></ul>
+<p>Contests:</p>
+<ul><li><a href="https://www.kaggle.com/competitions">Kaggle Competitions</a></li></ul>
+<h3 id="articles">Articles</h3>
+<ul>
+<li>
+<a href="https://ai.googleblog.com/2018/06/improving-deep-learning-performance.html?m=1%7CImproving">Deep Learning Performance with AutoAugment</a><ul><li>Augmenting computer vision datasets by generating new images based on existing data in the set</li></ul>
+</li>
+<li>
+<a href="https://www.alexirpan.com/2018/02/14/rl-hard.html">Deep Reinforcement Learning Doesn’t Work Yet</a> - February 14th, 2018<ul><li>Examples of why RL is hard to put into practice, the state of the industry, DeepRL</li></ul>
+</li>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/2016/08/evolution-core-concepts-deep-learning-neural-networks/">The Evolution and Core Concepts of Deep Learning &amp; Neural Networks</a> - August 2016<ul><li>Good primer on NN</li></ul>
+</li>
+<li>
+<a href="https://blog.google/topics/ai/ai-principles/amp/">AI at Google: our principles</a><ul><li>Google’s principles for AI development</li></ul>
+</li>
+<li>
+<a href="https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html">Understanding the backward pass through Batch Normalization Layer</a><ul><li>Good explanation of how the derivative of the Batch Normalization layer is computed</li></ul>
+</li>
+<li>
+<a href="https://deeplearning4j.org/lstm.html">A Beginner’s Guide to Recurrent Networks and LSTMs</a><ul><li>Good explanation of LSTMs and GRUs, plus an intuition of backpropagation through time</li></ul>
+</li>
+<li>
+<a href="https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/">Optimization techniques comparison in Julia: SGD, Momentum, Adagrad, Adadelta, Adam</a><ul><li>Short explanations and performance comparison for SGD, SGD with momentum, AdaGrad, AdaDelta and Adam optimizers</li></ul>
+</li>
+<li>
+<a href="https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html">googlenet in keras</a><ul><li>An implementation of GoogLeNet in Keras</li></ul>
+</li>
+<li>
+<a href="https://towardsdatascience.com/learning-rate-schedules-and-adaptive-learning-rate-methods-for-deep-learning-2c8f433990d1">Learning Rate Schedules and Adaptive Learning Rate Methods for Deep Learning</a><ul><li>Compares different methods of adjusting the learning rate of a NN dynamically</li></ul>
+</li>
+<li>
+<a href="https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html">Building powerful image classification models using very little data</a><ul><li>Data augmentation in Keras; use VGG16 as a base for our image classifier</li></ul>
+</li>
+<li>
+<a href="http://blog.kaggle.com/2018/06/19/tales-from-my-first-year-inside-the-head-of-a-recent-kaggle-addict/">Profiling Top Kagglers: Martin Henze (AKA Heads or Tails), World’s First Kernels Grandmaster</a><ul><li>The journey to becoming a Kaggle Kernel grandmaster, with lots of tips</li></ul>
+</li>
+<li>
+<a href="https://rare-technologies.com/machine-learning-benchmarks-hardware-providers-gpu-part-2/">Machine learning mega-benchmark: GPU providers (part 2)</a><ul><li>Comparison of Cloud GPU compute providers</li></ul>
+</li>
+<li>
+<a href="https://thegradient.pub/learning-from-humans-what-is-inverse-reinforcement-learning/">Learning from humans: what is inverse reinforcement learning?</a><ul>
+<li>Inverse reinforcement learning: given a policy or a set of data about an expert performing a task, try to extract a reward function</li>
+<li>Apprenticeship learning: given an expert policy, use it as a baseline from which to improve</li>
+</ul>
+</li>
+<li>
+<a href="https://blog.openai.com/first-retro-contest-retrospective/">Retro Contest: Results</a><ul><li>Short presentation of the winners of a reinforcement learning contest (they attempted to generalize from previous knowledge)</li></ul>
+</li>
+<li>
+<a href="https://medium.com/impactai/cnns-from-different-viewpoints-fab7f52d159c">CNNs from different viewpoints</a><ul><li>Short post describing how to view CNNs as matrix multiplications or dense neural nets; informative</li></ul>
+</li>
+<li>1(https://eng.uber.com/deconstructing-lottery-tickets/)<ul><li>Using a binary mask to zero out many of the model’s weights leads to better accuracy</li></ul>
+</li>
+<li>2(https://eng.uber.com/coordconv/)<ul><li>Introducing coordinates to convolution filters to give CNNs a way to model the coordinate transform task (increased performance in RL, Object detection)</li></ul>
+</li>
+</ul>
+<h3 id="tutorials-and-guides">Tutorials and Guides</h3>
+<p>Tutorials:</p>
+<ul>
+<li><a href="https://www.tensorflow.org/tutorials/layers">A Guide to TF Layers: Building a Convolutional Neural Network</a></li>
+<li>
+<a href="https://www.kaggle.com/yassineghouzam/introduction-to-cnn-keras-0-997-top-6">Introduction to CNN Keras - Acc 0.997 (top 8%)</a><ul><li>A guide to a small but powerful CNN with a 99.671% accuracy on MNIST; uses data augmentation techniques</li></ul>
+</li>
+<li>
+<a href="https://www.tensorflow.org/tutorials/layers">A Guide to TF Layers: Building a Convolutional Neural Network</a><ul><li>Tutorial about building CNNs in Tensorflow</li></ul>
+</li>
+</ul>
+<p>Guides</p>
+<ul>
+<li>
+<a href="https://www.analyticsvidhya.com/blog/2016/10/tutorial-optimizing-neural-networks-using-keras-with-image-recognition-case-study/">Tutorial: Optimizing Neural Networks using Keras (with Image recognition case study</a><ul><li>Widen your net, deepen your net, add dropout layers, change activation function, change network arhitecture</li></ul>
+</li>
+<li><a href="https://arxiv.org/pdf/1603.07285v1.pdf">A guide to convolution arithmetic for deep learning</a></li>
+<li>
+<a href="http://timdettmers.com/2017/04/09/which-gpu-for-deep-learning/">Which GPU(s) to Get for Deep Learning</a><ul><li>Basically aim for a GTX 1080/1080Ti if you can afford it, if not go for a GTX 1070</li></ul>
+</li>
+<li>
+<a href="https://www.tensorflow.org/programmers_guide/estimators">TF Estimators</a><ul><li>Amongst other things you can convert Keras models to TF estimators</li></ul>
+</li>
+<li><a href="https://becominghuman.ai/understanding-and-coding-inception-module-in-keras-eb56e9056b4b">Understanding and Coding Inception Module in Keras</a></li>
+</ul>
+<h3 id="papers">Papers</h3>
+<ul>
+<li>
+<a href="https://arxiv.org/abs/1804.09401">Generative Temporal Models with Spatial Memory for Partially Observed Environments</a><ul>
+<li><a href="https://drive.google.com/file/d/1WLiyLRDUIMuOWtJEDIUxrTQCOOykeCE0/view">Videos of the agent in action</a></li>
+<li>Generative Temporal Model with Spatial Memory, an action-conditioned generative model that uses a scalable non-parametric memory to store spatial and visual information; DND memory</li>
+<li>The agent learns an environment then can predict how the environment will look like after a number of time steps (hundreds) and moves</li>
+</ul>
+</li>
+<li>
+<a href="https://arxiv.org/abs/1804.01118">Synthesizing Programs for Images using Reinforced Adversarial Learning</a><ul>
+<li><a href="https://www.youtube.com/watch?v=iSyvwAwa7vk&amp;feature=youtu.be">Video of demonstration</a></li>
+<li>Using GANs to train a RL one a cluster of machines; the algorithm learns to understand the creation of and recreate images it sees (drawing the digits of the MNIST dataset, characters from the POLIGLOT dataset) and even reconstruct 3D scenes</li>
+</ul>
+</li>
+<li>
+<a href="https://arxiv.org/abs/1806.01337">Backdrop: Stochastic Backpropagation</a><ul><li>Backdrop, a flexible and simple-to-implement method, intuitively described as dropout acting only along the backpropagation pipeline</li></ul>
+</li>
+<li>
+<a href="https://arxiv.org/abs/1301.3781">Efficient Estimation of Word Representations in Vector Space</a><ul><li>Study of the quality of vector representations of words derived by various models on a collection of syntactic and semantic language tasks</li></ul>
+</li>
+<li>
+<a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Szegedy_Rethinking_the_Inception_CVPR_2016_paper.pdf">Rethinking the Inception Architecture for Computer Vision</a><ul><li>Ideas for reducing computational complexity of CNNs, different Inception architectures</li></ul>
+</li>
+<li>
+<a href="https://pathak22.github.io/noreward-rl/">Curiosity-driven Exploration bySelf-supervised Prediction</a><ul><li>RL with intrinsic curiosity reward manages to learn how to play Mario without extrinsic rewards, is able to generalize knowledge well; uses an Intrinsic Curiosity Module</li></ul>
+</li>
+<li>
+<a href="https://arxiv.org/abs/1706.05350">L2 Regularization versus Batch and Weight Normalization</a><ul><li>These neural networks use L2 regularization, also called weight decay, ostensibly to prevent overfitting. However, we show that L2 regularization has no regularizing effect when combined with normalization</li></ul>
+</li>
+<li><a href="http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf">Understanding the difficulty of training deep feedforward neural networks</a></li>
+<li>
+<a href="https://arxiv.org/abs/1512.03385">Deep Residual Learning for Image Recognition</a><ul><li>ResNet architecture</li></ul>
+</li>
+<li>
+<a href="https://arxiv.org/abs/1605.07146">Wide Residual Networks</a><ul><li>Wide ResNet architecture</li></ul>
+</li>
+<li><a href="http://arxiv.org/abs/1502.03167">Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift</a></li>
+<li>
+<a href="https://arxiv.org/pdf/1805.11604.pdf">How Does Batch Normalization Help Optimization?</a><ul><li>An investigation into why Batch Normalization works. It is also compared to L losses. Apparently it works because it smoothens the optimization landscape; it doesn’t have a large impact on ICS.</li></ul>
+</li>
+<li>
+<a href="https://arxiv.org/pdf/1902.09592.pdf">Verification Of Non Linear Specifications For Neural Networks</a><ul><li>Mathematical tools for proving the robustness of a model against adversarial attacks</li></ul>
+</li>
+<li><a href="https://www.cc.gatech.edu/~hic/CS7616/Papers/Szegedy-et-al-2014.pdf">Going deeper with convolutions</a></li>
+<li><a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">ImageNet Classification with Deep Convolutional Neural Networks</a></li>
+<li><a href="https://arxiv.org/pdf/1206.5533v2.pdf">Practical Recommendations for Gradient-Based Training of Deep Architectures</a></li>
+<li><a href="https://arxiv.org/abs/1805.11535">CoupleNet: Paying Attention to Couples with Coupled Attention for Relationship Recommendation</a></li>
+<li><a href="https://arxiv.org/abs/1806.09055">DARTS: Differentiable Architecture Search</a></li>
+<li><a href="https://arxiv.org/abs/1806.08065">Learning Cognitive Models using Neural Networks</a></li>
+<li><a href="https://arxiv.org/pdf/1409.4842.pdf">Going deeper with convolutions</a></li>
+</ul>
+<h3 id="courses-and-books">Courses and Books</h3>
+<p>Courses:</p>
+<ul>
+<li>
+<a href="https://www.coursera.org/learn/machine-learning">Coursera Machine Learning</a> - taught by AndrewNG<ul>
+<li>ML course, presents the mathematics and concepts behind supervised and unsupervised learning algorithms, and has a good introduction to neural networks</li>
+<li>Great primer into machine learning</li>
+</ul>
+</li>
+<li>
+<a href="https://eu.udacity.com/course/deep-learning--ud730">Udacity Deep Learning</a><ul>
+<li>Tensorflow Deep Learning course</li>
+<li>Good course for introducing a number of advanced concepts, but I feel it doesn’t spend enough time on some of them</li>
+<li>Has a lot of good assignments in Tensorflow</li>
+</ul>
+</li>
+<li>
+<a href="https://www.udemy.com/zero-to-deep-learning/">Udemy Zero to Deep Learning</a><ul>
+<li>Keras Deep Learning course</li>
+<li>Good course with many interesting assigments; provides an intro to data preprocessing and augmentation as well</li>
+</ul>
+</li>
+</ul>
+<p>Books:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Artificial_Intelligence:_A_Modern_Approach%7CArtificial">Intelligence: A Modern Approach</a></li>
+<li><a href="https://www.manning.com/books/deep-learning-with-python">Deep Learning with Python</a></li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>
+<a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a> - <a href="https://colab.research.google.com">go there now</a>
+</li>
+<li><a href="https://github.com/yu4u/convnet-drawer">ConvNet Drawer</a></li>
+<li><a href="https://github.com/raghakot/keras-vis">Keras Visualization Toolkit</a></li>
+<li><a href="/2018/09/23/tensorboard/">Tensorboard</a></li>
+</ul>
+<h3 id="existing-work">Existing work</h3>
+<ul><li><a href="http://yann.lecun.com/exdb/lenet/">LeNet5</a></li></ul>
+<h2 id="internal-resources">Internal Resources</h2>
+<p>Learning ML</p>
+<ul>
+<li><a href="/2019/01/10/loss_and_accuracy/">Loss and Accuracy</a></li>
+<li>
+<a href="/2019/02/15/debugging_ml_algorithms/">Debugging ML algorithms</a><ul>
+<li><a href="/2019/02/15/debugging_ml_algorithms/">Bias vs Variance</a></li>
+<li><a href="/2019/02/15/debugging_ml_algorithms/">Precision, Recall and F1 score</a></li>
+<li><a href="/2019/02/15/debugging_ml_algorithms/">Cross Entropy</a></li>
+<li><a href="/2019/02/15/debugging_ml_algorithms/">Learning Curve</a></li>
+<li><a href="/2019/02/15/debugging_ml_algorithms/">Learning rate and number of epochs</a></li>
+</ul>
+</li>
+<li><p><a href="/2019/04/26/reinforcement_learning/">Reinforcement Learning</a></p></li>
+<li>
+<a href="/2019/03/07/neural_networks/">Neural Networks</a><ul>
+<li>
+<a href="/2019/03/07/neural_networks/">Basics</a><ul>
+<li><a href="/2019/03/07/neural_networks/">Simple Neural Network</a></li>
+<li><a href="/2019/03/07/neural_networks/">Data Preprocessing</a></li>
+<li><a href="/2019/03/07/neural_networks/">Weight Initialization</a></li>
+<li><a href="/2019/03/07/neural_networks/">One hot encoding</a></li>
+<li><a href="/2019/03/07/neural_networks/">Softmax</a></li>
+</ul>
+</li>
+<li>
+<a href="/2019/03/07/neural_networks/">Activation Functions</a><ul>
+<li><a href="/2019/03/07/neural_networks/">Step</a></li>
+<li><a href="/2019/03/07/neural_networks/">Sigmoid</a></li>
+<li><a href="/2019/03/07/neural_networks/">Tanh</a></li>
+<li><a href="/2019/03/07/neural_networks/">ReLU</a></li>
+<li><a href="/2019/03/07/neural_networks/">Softplus</a></li>
+<li><a href="/2019/03/07/neural_networks/">Softmax</a></li>
+<li>
+<a href="/2019/03/07/neural_networks/">Optimization</a><ul>
+<li><a href="/2019/03/07/neural_networks/">(Batch) Gradient Descent</a></li>
+<li><a href="/2019/03/07/neural_networks/">Stochastic Gradient Descent</a></li>
+<li><a href="/2019/03/07/neural_networks/">Convergence</a></li>
+<li><a href="/2019/03/07/neural_networks/">Online Learning</a></li>
+<li><a href="/2019/03/07/neural_networks/">Map Reduce and Parallelism</a></li>
+<li><a href="/2019/03/07/neural_networks/">SGD with Momentum</a></li>
+<li><a href="/2019/03/07/neural_networks/">AdaGrad</a></li>
+<li><a href="/2019/03/07/neural_networks/">AdaDelta</a></li>
+<li><a href="/2019/03/07/neural_networks/">RMSProp</a></li>
+<li><a href="/2019/03/07/neural_networks/">Adam</a></li>
+<li><a href="/2019/03/07/neural_networks/">Choosing the Best Optimizer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="/2019/03/07/neural_networks/">Regularization</a><ul>
+<li><a href="/2019/03/07/neural_networks/">Batch Normalization</a></li>
+<li><a href="/2019/03/07/neural_networks/">Local Response Normalization</a></li>
+</ul>
+</li>
+<li>
+<a href="/2019/03/07/neural_networks/">Embeddings</a><ul>
+<li><a href="/2019/03/07/neural_networks/">Skip Gram</a></li>
+<li><a href="/2019/03/07/neural_networks/">CBOW</a></li>
+</ul>
+</li>
+<li><a href="/2019/03/07/neural_networks/">Architectures</a></li>
+</ul>
+</li>
+<li>
+<a href="/2018/06/21/types_of_neural_networks/">Types of Neural Networks</a><ul>
+<li>
+<a href="/2018/06/21/types_of_neural_networks/">Recurrent Neural Network</a><ul>
+<li><a href="/2018/06/21/types_of_neural_networks/">LSTM</a></li>
+<li><a href="/2018/06/21/types_of_neural_networks/">GRU</a></li>
+</ul>
+</li>
+<li>
+<a href="/2018/06/21/types_of_neural_networks/">Convolutional Neural Networks</a><ul><li>
+<a href="/2019/01/30/cnn_visualizations/">CNN Visualizations</a><ul>
+<li><a href="/2019/01/30/cnn_visualizations/">Activation Maximization</a></li>
+<li><a href="/2019/01/30/cnn_visualizations/">Saliency Maps</a></li>
+<li><a href="/2019/01/30/cnn_visualizations/">Class Activation Maps</a></li>
+</ul>
+</li></ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="/2019/02/22/types_of_machine_learning_algorithms/">Types of Machine Learning Problems</a><ul>
+<li>
+<a href="/2019/02/22/types_of_machine_learning_algorithms/">Supervised Learning</a><ul>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Regression problems</a></li>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Classification problems</a></li>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Support Vector Machines</a></li>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Natural Language Processing</a></li>
+</ul>
+</li>
+<li>
+<a href="/2019/02/22/types_of_machine_learning_algorithms/">Unsupervised Learning</a><ul>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Anomaly Detection</a></li>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Clustering</a></li>
+</ul>
+</li>
+<li><a href="/2019/02/22/types_of_machine_learning_algorithms/">Reinforcement Learning</a></li>
+</ul>
+</li>
+<li>
+<a href="/2018/06/18/machine_learning_advice/">Machine Learning Advice</a><ul>
+<li><a href="/2018/06/18/machine_learning_advice/">Dataset Management</a></li>
+<li><a href="/2018/06/18/machine_learning_advice/">Pipeline</a></li>
+<li><a href="/2018/06/18/machine_learning_advice/">Ceiling Analysis</a></li>
+<li><a href="/2018/06/18/machine_learning_advice/">Increasing Your Dataset Size</a></li>
+</ul>
+</li>
+</ul>
+<p>Tools:</p>
+<ul><li><a href="/2018/09/23/tensorboard/">Tensorboard</a></li></ul>
+<p>Projects</p>
+<ul>
+<li><a href="/2018/07/01/iris_classifier/">Iris classifier</a></li>
+<li><a href="/2018/07/01/mnist_classifier/">MNIST classifier</a></li>
+</ul>
+<p>Discussion:</p>
+<ul>
+<li><p><a href="/2019/01/08/artificial_intelligence_explained/">Artificial Intelligence Explained</a></p></li>
+<li><p><a href="/2018/06/05/tensorflow_vs_keras/">Tensorflow vs Keras</a></p></li>
+</ul>
+<p>Guides:</p>
+<ul>
+<li><a href="/2018/06/05/installing_tensorflow_on_archlinux/">Installing Tensorflow on ArchLinux</a></li>
+<li><a href="/2018/06/05/installing_keras_on_archlinux/">Installing Keras on ArchLinux</a></li>
+<li><a href="/2018/06/13/installing_jupyter_notebook_with_a_virtualenv_kernel/">Installing Jupyter notebook with a virtualenv kernel</a></li>
+</ul>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

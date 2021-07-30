@@ -1,0 +1,1393 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://tzeny.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://tzeny.com/" rel="alternate" type="text/html" /><updated>2021-07-30T07:04:52+00:00</updated><id>https://tzeny.com/feed.xml</id><title type="html">Tzeny’s demesne</title><subtitle>A small corner of the internet dedicated to tutorials, resources and galleries created by me</subtitle><author><name>Andrei Tenescu</name></author><entry><title type="html">Deep sky objects</title><link href="https://tzeny.com/2020/05/19/deep-sky-objects/" rel="alternate" type="text/html" title="Deep sky objects" /><published>2020-05-19T17:00:00+00:00</published><updated>2020-05-19T17:00:00+00:00</updated><id>https://tzeny.com/2020/05/19/deep-sky-objects</id><content type="html" xml:base="https://tzeny.com/2020/05/19/deep-sky-objects/">&lt;h1 id=&quot;star-clusters&quot;&gt;Star clusters&lt;/h1&gt;
+
+&lt;p&gt;A group of stars with higher than average star density for that particular region of space. In the part of the Galaxy where our Sun is situated the star density is relatively low.&lt;/p&gt;
+
+&lt;h2 id=&quot;open-clusters&quot;&gt;Open clusters&lt;/h2&gt;
+
+&lt;p&gt;Groups between 10 and a couple of hundred stars situated in the same region of the sky; they have irregular shapes, with the stars interacting gravitationally with one another. Over time they become even looser, and can eject stars.&lt;/p&gt;
+
+&lt;p&gt;Examples: Pleiades (M45), Hyades (Collinder 50)&lt;/p&gt;
+
+&lt;h2 id=&quot;globular-clusters&quot;&gt;Globular clusters&lt;/h2&gt;
+
+&lt;p&gt;A group of tens of thousands up to millions of stars. They contain some of the youngest stars in our Universe. They are found outside the galactic plane, in the galactic halo.&lt;/p&gt;
+
+&lt;p&gt;Examples: M13, M79&lt;/p&gt;</content><author><name>Andrei Tenescu</name></author><summary type="html">Star clusters</summary></entry><entry><title type="html">Astronomy basics</title><link href="https://tzeny.com/2020/05/13/astronomy-basics/" rel="alternate" type="text/html" title="Astronomy basics" /><published>2020-05-13T06:46:00+00:00</published><updated>2020-05-13T06:46:00+00:00</updated><id>https://tzeny.com/2020/05/13/astronomy-basics</id><content type="html" xml:base="https://tzeny.com/2020/05/13/astronomy-basics/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#celestial-sphere&quot;&gt;Celestial sphere&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#equatorial-coordinate-system&quot;&gt;Equatorial coordinate system&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#magnitude&quot;&gt;Magnitude&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#distances&quot;&gt;Distances&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#parallax-math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmipmimrowannotation-encoding%22applicationx-tex%22pannotationsemanticsmathp-or-math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmi%cf%80mimrowannotation-encoding%22applicationx-tex%22piannotationsemanticsmath%cf%80&quot;&gt;Parallax, $p$ or $\pi$&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#parsec-math-xmlns%22httpwwww3org1998mathmathml%22semanticsmrowmipmimicmimrowannotation-encoding%22applicationx-tex%22pcannotationsemanticsmathpc&quot;&gt;Parsec, $pc$&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#atmospheric-effects&quot;&gt;Atmospheric effects&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#transparency-and-seeing&quot;&gt;Transparency and seeing&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#light-pollution-1&quot;&gt;Light pollution [1]&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;celestial-sphere&quot;&gt;Celestial sphere&lt;/h1&gt;
+
+&lt;p&gt;The celestial sphere is the geometrical space of all the points situated at the same distance from the Earth. Since the stars are very distant, they appear to occupy positions on the surface of this sphere.&lt;/p&gt;
+
+&lt;p&gt;We can plot the sun’s annual trajectory in the sky on it, the resulting line is called the ecliptic.&lt;/p&gt;
+
+&lt;h2 id=&quot;equatorial-coordinate-system&quot;&gt;Equatorial coordinate system&lt;/h2&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/wiki/2020/05/astronomy_basics_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/wiki/2020/05/astronomy_basics_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/wiki/2020/05/astronomy_basics_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Approximating angles of the celestial sphere&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/wiki/2020/05/astronomy_basics_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;Around the celestial sphere’s equator we measure &lt;strong&gt;Right Asension&lt;/strong&gt; in hours (one hour = 15°). The intersection between the ecliptic, the celestial equator and the projection the Greenwhich meridian is called the vernal point, denoted by $\gamma$. $\gamma$ is considered to lie at RA 0&lt;sup&gt;h&lt;/sup&gt;, and going east &lt;strong&gt;RA&lt;/strong&gt; increases by one hour for every 15° traveled.&lt;/p&gt;
+
+&lt;p&gt;Earth’s latitude circles are projected onto the celestial sphere and called &lt;strong&gt;Declination&lt;/strong&gt; circles. We have 90° of positive &lt;strong&gt;DEC&lt;/strong&gt; north of the Equator and 90° of negative &lt;strong&gt;DEC&lt;/strong&gt; south of the Equator.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: stars with an angular DEC distance from the pole that’s lower than the observer absolute latitude are circumpolar, meaning they never rise or set.&lt;/p&gt;
+
+&lt;h1 id=&quot;magnitude&quot;&gt;Magnitude&lt;/h1&gt;
+
+&lt;p&gt;In a clear night, without moonlight, with our naked eye we can see from 2500 to 3000 stars. About the same number are hidden away below the horizon. However there are infinitely more celestial bodies than these.&lt;/p&gt;
+
+&lt;p&gt;An object’s apparent brightness to a sensor is said to be its &lt;strong&gt;apparent magnitude&lt;/strong&gt;. This is based on how the object is observed from Earth, meaning it depends on the distance, its luminosity and the extinction. The higher the value, the fainter an object is. Visual magnitude is usually denoted by $m$ or $m_v$.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;absolute magnitude&lt;/strong&gt; ($M$) describes the intrinsic luminosity emitted by an object and is defined to be equal to the apparent magnitude that the object would have if it were placed at a certain distance from Earth, 10 parsecs for stars.&lt;/p&gt;
+
+&lt;h1 id=&quot;distances&quot;&gt;Distances&lt;/h1&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/wiki/2020/05/astronomy_basics_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Stars parallax angle&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/wiki/2020/05/astronomy_basics_2_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/wiki/2020/05/astronomy_basics_3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Parsec definition&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/wiki/2020/05/astronomy_basics_3_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;parallax-p-or-pi&quot;&gt;Parallax, $p$ or $\pi$&lt;/h2&gt;
+
+&lt;p&gt;Parallax (from Ancient Greek παράλλαξις (parallaxis)), meaning ‘alternation’ is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines. Due to foreshortening, nearby objects show a larger parallax than farther objects when observed from different positions, so parallax can be used to determine distances.&lt;/p&gt;
+
+&lt;p&gt;To measure large distances, such as the distance of a planet or a star from Earth, astronomers use the principle of parallax. Here, the term parallax is the semi-angle of inclination between two sight-lines to the star, as observed when Earth is on opposite sides of the Sun in its orbit.&lt;/p&gt;
+
+&lt;h2 id=&quot;parsec-pc&quot;&gt;Parsec, $pc$&lt;/h2&gt;
+
+&lt;p&gt;One parsec is the distance from Earth to a point whose parallax p = 1” (arcsecond).&lt;/p&gt;
+
+&lt;p&gt;For small angles, the distance to an object: $d_{(pc)}=\frac{1}{p_{(arcsecond)}}$.&lt;/p&gt;
+
+&lt;p&gt;$~1pc = 3.26ly$&lt;/p&gt;
+
+&lt;p&gt;Note: we can only measure parallaxes $p &amp;gt; 0.001” (~1000pc)$, because of atmospheric distortion.&lt;/p&gt;
+
+&lt;h1 id=&quot;atmospheric-effects&quot;&gt;Atmospheric effects&lt;/h1&gt;
+
+&lt;h2 id=&quot;transparency-and-seeing&quot;&gt;Transparency and seeing&lt;/h2&gt;
+
+&lt;p&gt;Transparency defines the clarity of the atmosphere, and affects the quality of images obtained through a telescope and of astrophotos. It’s determined by your altitude, weather conditions, dust particles floating around etc.&lt;/p&gt;
+
+&lt;p&gt;It is measured on the Antoniadi scale:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;I&lt;/strong&gt;  Perfect seeing without a quiver of turbulence at all.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;II&lt;/strong&gt;  Slight shimmers; moments of stillness last several seconds.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;III&lt;/strong&gt;  Average seeing; larger air tremors blur the view.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IV&lt;/strong&gt;  Poor views with a constant and disturbing swell.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;V&lt;/strong&gt;  Bad views with severe undulations; so unstable that even quick sketches are out of the question.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;light-pollution-1&quot;&gt;Light pollution [1]&lt;/h2&gt;
+
+&lt;p&gt;Light pollution is measured using the Bortle scale.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;header&quot;&gt;
+&lt;th&gt;&lt;p&gt;Class&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;p&gt;Title&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;p&gt;NELM&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;p&gt;Approx.&lt;br /&gt;
+SQM&lt;a href=&quot;#fn1&quot; class=&quot;footnoteRef&quot; id=&quot;fnref1&quot;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;small&gt;mag/arcsec&lt;sup&gt;2&lt;/sup&gt;&lt;/small&gt;&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;p&gt;Description&lt;/p&gt;&lt;/th&gt;
+&lt;th&gt;&lt;p&gt;Color&lt;/p&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;p&gt;1&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Excellent&lt;br /&gt;
+dark-sky site&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;7.6–8.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;21.7–22.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the &lt;a href=&quot;zodiacal_light&quot; title=&quot;wikilink&quot;&gt;zodiacal light&lt;/a&gt; is visible and colorful&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;gegenschein&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;gegenschein&lt;/a&gt; is visible&lt;/li&gt;
+&lt;li&gt;the zodiacal band is visible&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;airglow&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;airglow&lt;/a&gt; is readily visible&lt;/li&gt;
+&lt;li&gt;the &lt;a href=&quot;Scorpius&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;Scorpius&lt;/a&gt; and &lt;a href=&quot;Sagittarius_(constellation)&quot; title=&quot;wikilink&quot;&gt;Sagittarius&lt;/a&gt; regions of the &lt;a href=&quot;Milky_Way&quot; title=&quot;wikilink&quot;&gt;Milky Way&lt;/a&gt; cast obvious shadows&lt;/li&gt;
+&lt;li&gt;many constellations, particularly fainter ones, are barely recognizable amid the large number of stars&lt;/li&gt;
+&lt;li&gt;many &lt;a href=&quot;Messier_objects&quot; title=&quot;wikilink&quot;&gt;Messier&lt;/a&gt; and &lt;a href=&quot;globular_clusters&quot; title=&quot;wikilink&quot;&gt;globular clusters&lt;/a&gt; are naked-eye objects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;Messier_33&quot; title=&quot;wikilink&quot;&gt;M33&lt;/a&gt; is a direct vision &lt;a href=&quot;naked_eye&quot; title=&quot;wikilink&quot;&gt;naked-eye&lt;/a&gt; object&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;limiting_magnitude&quot; title=&quot;wikilink&quot;&gt;limiting magnitude&lt;/a&gt; with  &lt;a href=&quot;reflecting_telescope&quot; title=&quot;wikilink&quot;&gt;reflector&lt;/a&gt; is 17.5 (with effort)&lt;/li&gt;
+&lt;li&gt;Venus and Jupiter affect dark adaptation&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Black&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;p&gt;2&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Typical truly&lt;br /&gt;
+dark site&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;7.1–7.5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;21.5–21.7&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the zodiacal light is distinctly yellowish and bright enough to cast shadows at dusk and dawn&lt;/li&gt;
+&lt;li&gt;airglow may be weakly visible near horizon&lt;/li&gt;
+&lt;li&gt;clouds are only visible as dark holes against the sky&lt;/li&gt;
+&lt;li&gt;surroundings are barely visible silhouetted against the sky&lt;/li&gt;
+&lt;li&gt;the summer Milky Way is highly structured&lt;/li&gt;
+&lt;li&gt;many Messier objects and globular clusters are naked-eye objects&lt;/li&gt;
+&lt;li&gt;M33 is easily seen with naked eye&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 16.5&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Gray&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;p&gt;3&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Rural sky&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;6.6–7.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;21.3–21.5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the zodiacal light is striking in spring and autumn, and color is still visible&lt;/li&gt;
+&lt;li&gt;some light pollution evident at the horizon&lt;/li&gt;
+&lt;li&gt;clouds are illuminated near the horizon, dark overhead&lt;/li&gt;
+&lt;li&gt;nearer surroundings are vaguely visible&lt;/li&gt;
+&lt;li&gt;the summer Milky Way still appears complex&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;Messier_15&quot; title=&quot;wikilink&quot;&gt;M15&lt;/a&gt;, &lt;a href=&quot;Messier_4&quot; title=&quot;wikilink&quot;&gt;M4&lt;/a&gt;, &lt;a href=&quot;Messier_5&quot; title=&quot;wikilink&quot;&gt;M5&lt;/a&gt;, and &lt;a href=&quot;Messier_22&quot; title=&quot;wikilink&quot;&gt;M22&lt;/a&gt; are naked-eye objects&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;Messier_33&quot; title=&quot;wikilink&quot;&gt;M33&lt;/a&gt; is easily visible with &lt;a href=&quot;averted_vision&quot; title=&quot;wikilink&quot;&gt;averted vision&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 16&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Blue&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;p&gt;4&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Rural/suburban&lt;br /&gt;
+transition&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;6.1–6.5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;20.4–21.3&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the zodiacal light is still visible, but does not extend halfway to the &lt;a href=&quot;zenith&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;zenith&lt;/a&gt; at dusk or dawn&lt;/li&gt;
+&lt;li&gt;light pollution domes visible in several directions&lt;/li&gt;
+&lt;li&gt;clouds are illuminated in the directions of the light sources, dark overhead&lt;/li&gt;
+&lt;li&gt;surroundings are clearly visible, even at a distance&lt;/li&gt;
+&lt;li&gt;the Milky Way well above the horizon is still impressive, but lacks detail&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;Messier_33&quot; title=&quot;wikilink&quot;&gt;M33&lt;/a&gt; is a difficult averted vision object, only visible when high in the sky&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 15.5&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Green/Yellow&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;p&gt;5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Suburban sky&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;5.6–6.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;19.1–20.4&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;only hints of zodiacal light are seen on the best nights in autumn and spring&lt;/li&gt;
+&lt;li&gt;light pollution is visible in most, if not all, directions&lt;/li&gt;
+&lt;li&gt;clouds are noticeably brighter than the sky&lt;/li&gt;
+&lt;li&gt;the Milky Way is very weak or invisible near the horizon, and looks washed out overhead&lt;/li&gt;
+&lt;li&gt;when it is half moon (first/last quarter) in a dark location the sky appears like this, but with the difference that the sky appears dark blue&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 15&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Orange&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;p&gt;6&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Bright&lt;br /&gt;
+suburban sky&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;5.1–5.5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;18.0–19.1&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the zodiacal light is invisible&lt;/li&gt;
+&lt;li&gt;light pollution makes the sky within 35° of the horizon glow grayish white&lt;/li&gt;
+&lt;li&gt;clouds anywhere in the sky appear fairly bright&lt;/li&gt;
+&lt;li&gt;even high clouds (cirrus) appear brighter than the sky background&lt;/li&gt;
+&lt;li&gt;surroundings are easily visible&lt;/li&gt;
+&lt;li&gt;the Milky Way is only visible near the zenith&lt;/li&gt;
+&lt;li&gt;M33 is not visible, &lt;a href=&quot;Messier_31&quot; title=&quot;wikilink&quot;&gt;M31&lt;/a&gt; is modestly apparent&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 14.5&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Red&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;p&gt;7&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Suburban/urban&lt;br /&gt;
+transition&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;4.6–5.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;18.0–19.1&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;light pollution makes the entire sky light gray&lt;/li&gt;
+&lt;li&gt;strong light sources are evident in all directions&lt;/li&gt;
+&lt;li&gt;clouds are brightly lit&lt;/li&gt;
+&lt;li&gt;the Milky Way is nearly or totally invisible&lt;/li&gt;
+&lt;li&gt;M31 and &lt;a href=&quot;Messier_44&quot; title=&quot;wikilink&quot;&gt;M44&lt;/a&gt; may be glimpsed, but with no detail&lt;/li&gt;
+&lt;li&gt;through a &lt;a href=&quot;telescope&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;telescope&lt;/a&gt;, the brightest Messier objects are pale ghosts of their true selves&lt;/li&gt;
+&lt;li&gt;when it is full moon in a dark location the sky appears like this, but with the difference that the sky appears blue&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 14&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Red&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;even&quot;&gt;
+&lt;td&gt;&lt;p&gt;8&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;City sky&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;4.1–4.5&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&amp;lt;18.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;the sky is light gray or orange – one can easily read&lt;/li&gt;
+&lt;li&gt;stars forming familiar &lt;a href=&quot;constellation&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;constellation&lt;/a&gt; patterns may be weak or invisible&lt;/li&gt;
+&lt;li&gt;M31 and M44 are barely glimpsed by an experienced observer on good nights&lt;/li&gt;
+&lt;li&gt;even with a telescope, only bright Messier objects can be detected&lt;/li&gt;
+&lt;li&gt;limiting magnitude with 12.5&amp;quot; reflector is 13&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;White&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;odd&quot;&gt;
+&lt;td&gt;&lt;p&gt;9&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;Inner-city sky&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;4.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;&amp;lt;18.0&lt;/p&gt;&lt;/td&gt;
+&lt;td&gt;&lt;ul&gt;
+&lt;li&gt;The sky is brilliantly lit&lt;/li&gt;
+&lt;li&gt;many stars forming constellations are invisible and many fainter constellations are invisible&lt;/li&gt;
+&lt;li&gt;aside from the &lt;a href=&quot;Pleiades&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;Pleiades&lt;/a&gt;, no Messier object is visible to the naked eye&lt;/li&gt;
+&lt;li&gt;the only objects to observe are the &lt;a href=&quot;Moon&quot; class=&quot;uri&quot; title=&quot;wikilink&quot;&gt;Moon&lt;/a&gt;, the &lt;a href=&quot;planet&quot; title=&quot;wikilink&quot;&gt;planets&lt;/a&gt;, and a few of the brightest &lt;a href=&quot;star_cluster&quot; title=&quot;wikilink&quot;&gt;star clusters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/td&gt;
+&lt;td&gt;&lt;p&gt;White&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Bortle_scale&quot;&gt;Bortle Scale - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Andrei Tenescu</name></author><summary type="html">Celestial sphere Equatorial coordinate system Magnitude Distances Parallax, $p$ or $\pi$ Parsec, $pc$ Atmospheric effects Transparency and seeing Light pollution [1]</summary></entry><entry><title type="html">An amateur astro(nomer/photographer)’s log</title><link href="https://tzeny.com/2020/05/09/an-amateur-astro-nomer-photographer-s-log/" rel="alternate" type="text/html" title="An amateur astro(nomer/photographer)'s log" /><published>2020-05-09T23:18:00+00:00</published><updated>2020-05-09T23:18:00+00:00</updated><id>https://tzeny.com/2020/05/09/an-amateur-astro-nomer-photographer-s-log</id><content type="html" xml:base="https://tzeny.com/2020/05/09/an-amateur-astro-nomer-photographer-s-log/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#summary&quot;&gt;Summary&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#moon&quot;&gt;Moon&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#stars&quot;&gt;Stars&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#planets&quot;&gt;Planets&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#december-2019---end-of-january-2019---getting-a-taste-of-whats-out-there&quot;&gt;December 2019 - end of January 2019 - Getting a taste of what’s out there&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#end-of-april---stepping-up-blackdiamond-n-150750-explorer-mounted-on-a-neq-3-mount-with-ra-and-dec-motors&quot;&gt;End of April - Stepping up: BlackDiamond N 150/750 Explorer mounted on a NEQ-3 mount, with RA and DEC motors&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#03rd-of-may---sleeping-schedule&quot;&gt;03rd of May - Sleeping schedule&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#07th-of-may---harvest-supermoon&quot;&gt;07th of May - Harvest supermoon&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#10th-of-may---tracking-motors-powered-by-usb&quot;&gt;10th of May - tracking motors powered by USB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#11th-of-may---saturn-and-jupiter-from-my-bedroom&quot;&gt;11th of May - Saturn and Jupiter from my bedroom&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;h2 id=&quot;moon&quot;&gt;Moon&lt;/h2&gt;
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/first_moon.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;My first moonshot, using the Sony kit lens&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/first_moon_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/moon.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Next attempt, this time with the telephoto lens and teleconverter&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/moon_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/harvest_moon_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Stacked image generated with DSS&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/harvest_moon_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;stars&quot;&gt;Stars&lt;/h2&gt;
+
+&lt;div&gt; 
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/stars_pano_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Starscape at Vidraru dam, close to the Transafagarasan road, original stiched panorama&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/stars_pano_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/stars_pano_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Processed and cropped version&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/stars_pano_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;planets&quot;&gt;Planets&lt;/h2&gt;
+
+&lt;div&gt; 
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_2_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;h1 id=&quot;december-2019---end-of-january-2019---getting-a-taste-of-whats-out-there&quot;&gt;December 2019 - end of January 2019 - Getting a taste of what’s out there&lt;/h1&gt;
+
+&lt;p&gt;So, how did this start? In december 2019 I realized just how exciting photography could be; soon after I got my second hand Sony NEX 5T I felt I wanted to get into astrophotography. And I started by taking pictures of the moon with an old Tokina SZ-X 70-300mm telephoto lens combined with a Yashica 2x teleconverter. That was nice, and I got some ok shots.&lt;/p&gt;
+
+&lt;p&gt;Although the kit lens isn’t much too good for Solar System or deep sky objects, it can be pretty good for capturing wide field nature shots including the stars. The sky is trully full of stars, and wonder, and hope, and darkness. And looking up at it is, is really beautiful, and humbling. It makes our ego drain away, leaving but our soul standing there, gazing.&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/first_moon.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;My first moonshot, using the Sony kit lens&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/first_moon_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/moon.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Next attempt, this time with the telephoto lens and teleconverter&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/moon_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/stars_pano_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Starscape at Vidraru dam, close to the Transafagarasan road, original stiched panorama&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/stars_pano_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/stars_pano_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Processed and cropped version&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/stars_pano_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;h1 id=&quot;end-of-april---stepping-up-blackdiamond-n-150750-explorer-mounted-on-a-neq-3-mount-with-ra-and-dec-motors&quot;&gt;End of April - Stepping up: BlackDiamond N 150/750 Explorer mounted on a NEQ-3 mount, with RA and DEC motors&lt;/h1&gt;
+
+&lt;p&gt;I tried to find deep sky objects using my flimsy camera tripod (which I got as a gift from a family friend, proving invaluable for normal photography), but failed miserably. It was incredibly shake, especially using the Tokina telephoto lens.&lt;/p&gt;
+
+&lt;p&gt;So, I started looking online to buy a second hand telescope mount. After a couple of days, I struck gold. And in much larger quantities than expected. I wrote to a guy selling a telescope mount, but he didn’t answer, so I kept looking. And I found a fully fledged telescope, with a motorized mount for 375 EUR (410 USD). It was a very sweet deal, and I called him telling him I was interested. I asked an astronomer friend if the scope seemed ok, and he said yes. Next came a very intense couple of hours, in which the seller did not respond to my confirmation of his offer as he was busy with work. But in the evening he confirmed the price. And he also offered me a smaller refractor as a bonus (he was selling it for 20 EUR (22 USD)).&lt;/p&gt;
+
+&lt;p&gt;This all happened on a Wednesday. He asked if I was ok with receiving the package after the weekend, and I said sure. He used this time to package it nicely. Unfortunately due to a misunderstanding with the courier he only managed to ship it out on Tuesday.&lt;/p&gt;
+
+&lt;p&gt;It arrived at my house on Wednesday, and after careful inspection and assembly everything seemed ok, except for a missing screw for the DEC motor gear. And finally, I was greeted with this wonderful sight:&lt;/p&gt;
+
+&lt;div&gt; 
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/scope_0.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/scope_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/scope_1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/scope_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/scope_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/scope_2_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/scope_3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/scope_3_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;p&gt;Now, as was to be expected astronomy’s curse struck and the sky insisted on staying overcast up until the next Tuesday, when I finally had a chance to test it out. However, I was unaware the scope had a 2” extension tube, which acted as a macro tube and prevented my from focusing on any distant objects, like let’s say the moon.&lt;/p&gt;
+
+&lt;p&gt;After taking it all inside, asking a friend and searching the internet I managed to find about the extension tube, and remove it. After testing the scope during daytime, and adjusting the finder I was ready.&lt;/p&gt;
+
+&lt;h2 id=&quot;03rd-of-may---sleeping-schedule&quot;&gt;03rd of May - Sleeping schedule&lt;/h2&gt;
+
+&lt;p&gt;Since I like routine when it comes to things like sleep I decided I needed a new sleeping routine, but you can read all about that here: &lt;a href=&quot;/2020/05/09/polyphasic-sleep/&quot;&gt;Polyphasic sleep&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;07th-of-may---harvest-supermoon&quot;&gt;07th of May - Harvest supermoon&lt;/h1&gt;
+
+&lt;p&gt;After many a worry, I was ready to capture the supermoon in her full glory. This was an amazing night, as I got to not only view the moon in a way I never had before, but I also took pictures of it, and also calibration frames (biases, darks, flats and flat darks) and learned to combine them in &lt;a href=&quot;http://deepskystacker.free.fr/english/index.html&quot;&gt;Deep Sky Stacker&lt;/a&gt;. I also tried &lt;a href=&quot;https://www.autostakkert.com/&quot;&gt;AutoStakkert!&lt;/a&gt; and &lt;a href=&quot;https://www.astronomie.be/registax/&quot;&gt;RegiStax6&lt;/a&gt;, but I couldn’t get very good results with them. I think they’ll be very useful for shooting planets though.&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/harvest_moon_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Stacked image generated with DSS&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/harvest_moon_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/harvest_moon_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Base light frame without stacking&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/harvest_moon_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;h1 id=&quot;10th-of-may---tracking-motors-powered-by-usb&quot;&gt;10th of May - tracking motors powered by USB&lt;/h1&gt;
+
+&lt;p&gt;The motors on my NEQ 3 mount are powered by a bulky battery bank. The control module requires 6V input power. I realized I could use a step up converter and an USB cable to power it from a 10Ah USB battery bank, which can be charged and is easier to carry around.&lt;/p&gt;
+
+&lt;p&gt;Interestingly enough I found I couldn’t use a USB extension cord to power the controller, only that original short length of cable, but fortunately the motors have long enough cables.&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/telescope_motors_usb_0.JPG&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Motor controller (middle) with old battery pack (top) and RA/DEC motors (bottom top/bot)&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/telescope_motors_usb_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/telescope_motors_usb_1.JPG&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Motor controller (middle) with new usb power pack (top) and RA/DEC motors (bottom top/bot)&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/telescope_motors_usb_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+&lt;h1 id=&quot;11th-of-may---saturn-and-jupiter-from-my-bedroom&quot;&gt;11th of May - Saturn and Jupiter from my bedroom&lt;/h1&gt;
+
+&lt;p&gt;On the 10th of May I realized that I could see Saturn and Jupiter trailing behind the Moon from my bedroom. I was very excited, but it was already very late so I decided to leave it to today. And oh boy was it worth it. 
+Unfortunately the details I could see with my eyes didn’t come out in the photos as I would’ve liked, but I will continue trying.&lt;/p&gt;
+
+&lt;p&gt;I also took my mount to be calibrated and oiled today. The nice man doing it will also test its tracking &lt;strong&gt;fingers crossed&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;BlackDiamond N 150/750 Explorer + 2x barlow + 10mm eyepiece + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;BlackDiamond N 150/750 Explorer + 2x barlow + Sony Nex 5T, 10 biases/darks/flats/flat/darks 1 light&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_2_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_3.JPG&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Telescope looking out my balcony&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_3_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/saturn_jupiter_4.JPG&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Trained on the moon; we can see a lensflare caused by the moon xD&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/saturn_jupiter_4_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+
+&lt;/div&gt;</content><author><name>Tzeny</name></author><category term="journal" /><category term="journey" /><category term="learning" /><category term="amateur" /><summary type="html">In december 2019 I realized just how exciting photography could be; soon after I got my second hand Sony NEX 5T I felt I wanted to get into astrophotography. And I found a fully fledged telescope, with a motorized mount for 375 EUR (410 USD).</summary></entry><entry><title type="html">Polyphasic sleep</title><link href="https://tzeny.com/2020/05/09/polyphasic-sleep/" rel="alternate" type="text/html" title="Polyphasic sleep" /><published>2020-05-09T23:17:00+00:00</published><updated>2020-05-09T23:17:00+00:00</updated><id>https://tzeny.com/2020/05/09/polyphasic-sleep</id><content type="html" xml:base="https://tzeny.com/2020/05/09/polyphasic-sleep/">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#03rd-may-2020---v01&quot;&gt;03rd May 2020 - v0.1&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-17&quot;&gt;Day 1/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-27&quot;&gt;Day 2/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-37&quot;&gt;Day 3/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-47&quot;&gt;Day 4/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-57&quot;&gt;Day 5/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-67&quot;&gt;Day 6/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-77&quot;&gt;Day 7/7&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-87&quot;&gt;Day 8/7&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#s11ths-13th-may-2020---v02&quot;&gt;&lt;del&gt;11th&lt;/del&gt; 13th May 2020 - v0.2&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#day-1&quot;&gt;Day 1&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;03rd-may-2020---v01&quot;&gt;03rd May 2020 - v0.1&lt;/h1&gt;
+
+&lt;p&gt;In order to be able to properly pursue my new found &lt;a href=&quot;/2020/05/09/an-amateur-astro-nomer-photographer-s-log/}&quot;&gt;astronomy hobby&lt;/a&gt; I decided to try a new sleep schedule, which would allow me to look up at the sky every night. And if the clouds should come I could use that time for other projects (like writing for the blog, as I am doing now).&lt;/p&gt;
+
+&lt;p&gt;I had a couple of constraints that I built around:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;be up at least 4 hours in the astro dark period (~23:00 - ~04:00)&lt;/li&gt;
+  &lt;li&gt;be up early in the morning&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With this in mind I got to work and came up with my first schedule idea:&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/polyphasic_sleep_0.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/polyphasic_sleep_0_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I realized however that to properly test this idea I needed 2 things: discipline and time, because I couldn’t just expect my body to adapt to this new change overnight. So I decided to do 7 days of “sleep trials”.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-17&quot;&gt;Day 1/7&lt;/h2&gt;
+
+&lt;p&gt;Managed to actually sleep from 22:00 to 00:00 and wake up without an alarm. I decided the PC was off limits during these dark hours. However, I soon discovered my body was not used to being awake at these late hours. I felt dizzy, and tired. Not once I heard a ringing in my ears. Spent most of the time not going back to sleep and listening to &lt;a href=&quot;https://travisbagwell.com/#books&quot;&gt;Awaken Online: Dominion&lt;/a&gt; (I really enjoy the series). I also typed a letter to a friend.&lt;/p&gt;
+
+&lt;p&gt;I slept from ~04:00 to 07:14. Woke up tired, still hearing the ringing every now and then. Fortunately, morning calisthenics woke me up.&lt;/p&gt;
+
+&lt;p&gt;I slept in the afternoon, but I still felt tired waking up.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-27&quot;&gt;Day 2/7&lt;/h2&gt;
+
+&lt;p&gt;I couldn’t sleep from 22:00 to 00:00.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is H A R D. It’s messing with my emotions. Or rather, it’s lowering my defenses.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I spend another night listening to Awaken Online, I felt cold and dizzy. I started to realize just how hard the task of finding a proper sleep schedule is. But it is worth it. No great things come like that &lt;em&gt;snaps fingers&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;During the day I felt dizzy. I felt short bouts of anxiety. But they were more like the prelude leading up to anxiety, because they vanished as soon as they came. It was hard getting out of bed before 07:30.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-37&quot;&gt;Day 3/7&lt;/h2&gt;
+
+&lt;p&gt;I slept very little from 22:00 to 00:00. But when I woke up the sky was clear. I had some user problems with the big scope, but even with the little one I managed to catch beautiful glimpses of the moon’s craters. After this I stayed up until 04:20 to listen to Awaken Online.&lt;/p&gt;
+
+&lt;p&gt;When I woke up in the morning I felt really dizzy and decided to sleep in until 08:00. It’s interesting, there’s some anxiety present when I try to force myself to sleep.&lt;/p&gt;
+
+&lt;p&gt;I dreamed during the afternoon sleep. It was hard to be productive.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-47&quot;&gt;Day 4/7&lt;/h2&gt;
+
+&lt;p&gt;Again I couldn’t sleep from 22:00 to 00:00.&lt;/p&gt;
+
+&lt;p&gt;I slept ok from ~04:00 to ~07:30, but I couldn’t get out of bed before 07:30.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I feel a sinking feeling. I think it’s tiredness.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I was woken up by a courier during the afternoon nap. I had a dream that I remembered.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-57&quot;&gt;Day 5/7&lt;/h2&gt;
+
+&lt;p&gt;I managed to sleep from ~22:30 to ~00:30, but it was hard waking up. I felt tired, and the thought of going through 2 hard wakeups / day wasn’t encouraging. I wrote about my experience [switching to Jekyll from WordPress and MediaWiki]((/2020/05/06/switching-from-wordpress-to-jekyll/).&lt;/p&gt;
+
+&lt;p&gt;I felt better in the morning, and I also felt very hungry.&lt;/p&gt;
+
+&lt;p&gt;I tested the big scope during the day, it worked like a charm.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-67&quot;&gt;Day 6/7&lt;/h2&gt;
+
+&lt;p&gt;I couldn’t sleep from 22:00 to 00:00. (This seems to be an annoying recurring theme). I took some wonderful pictures of the moon, and stacked them to create something beautiful.&lt;/p&gt;
+
+&lt;p&gt;I could felt the lack of midnight sleep during the day.&lt;/p&gt;
+
+&lt;p&gt;After the afternoon nap I felt very tired, probably due to the growing number of missed sleep hours.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-77&quot;&gt;Day 7/7&lt;/h2&gt;
+
+&lt;p&gt;Again I couldn’t sleep from 22:00 to 00:00. Listening to some Awaken Online. I suspect I couldn’t sleep because at that time I wasn’t really tired and my mind was keeping me awake.&lt;/p&gt;
+
+&lt;p&gt;Sleep till ~12:00 the next day, recovering some sleep hours.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Honestly, no regrets. I H A V E  T O figure out how to sleep from 10 to 12.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;day-87&quot;&gt;Day 8/7&lt;/h2&gt;
+
+&lt;p&gt;I managed to sleep to 00:00. I tried to move all activities that I performed in bed (like listening to audiobooks or reading) somewhere else. I saw Jupiter through my binoculars (90% sure). I felt very excited and happy to realize I have a chance at seeing it from my room.&lt;/p&gt;
+
+&lt;p&gt;I let myself sleep until after 09:00.&lt;/p&gt;
+
+&lt;p&gt;Calisthenics were nice. Honestly, they were a very useful/used lifeline in all of this.&lt;/p&gt;
+
+&lt;h1 id=&quot;11th-13th-may-2020---v02&quot;&gt;&lt;del&gt;11th&lt;/del&gt; 13th May 2020 - v0.2&lt;/h1&gt;
+
+&lt;p&gt;Well, v0.1 is clearly not working properly. The hardest / worst part being the sleep from 22:00 to 00:00. My next idea involves increasing that period, but I am not sure what will happen. I will keep this post updated as I try more schedules.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2020/05/polyphasic_sleep_1.png&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2020/05/polyphasic_sleep_1_thumb.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So, v0.1 failed hard yesterday when I couldn’t even remember turning off the 00:30 alarm.&lt;/p&gt;
+
+&lt;h2 id=&quot;day-1&quot;&gt;Day 1&lt;/h2&gt;
+
+&lt;p&gt;Went to sleep at ~21:40, and managed to get a good sleep till 01:00. Still no dreams, but I feel quite all right, if a bit sleepy.&lt;/p&gt;</content><author><name>Tzeny</name></author><category term="tag" /><summary type="html">One man's quest to stay awake consistently during the night whilst still waking up early. What could go wrong?</summary></entry><entry><title type="html">Switching from Wordpress + MediaWiki to Jekyll</title><link href="https://tzeny.com/2020/05/06/switching-from-wordpress-to-jekyll/" rel="alternate" type="text/html" title="Switching from Wordpress + MediaWiki to Jekyll" /><published>2020-05-06T22:20:00+00:00</published><updated>2020-05-06T22:20:00+00:00</updated><id>https://tzeny.com/2020/05/06/switching-from-wordpress-to-jekyll</id><content type="html" xml:base="https://tzeny.com/2020/05/06/switching-from-wordpress-to-jekyll/">&lt;p&gt;&lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; was a great place for me to start my blog. It was easy to use, and had a beautiful post editor. However, issues arose around hosting it, mainly due to performance. So I decided to convert my blog to a static site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; and host it using &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt; (free for small sites). And oh boy, was it not easy. But let’s start at the beggining.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.mediawiki.org/wiki/MediaWiki&quot;&gt;MediaWiki&lt;/a&gt; is a great tool for collaborative wiki creation. However, I had stopped updating my wiki, and all I wanted was to preserve it for posterity.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-had&quot;&gt;What I had&lt;/h1&gt;
+&lt;h2 id=&quot;wordpress&quot;&gt;Wordpress&lt;/h2&gt;
+
+&lt;p&gt;I had my blog running on a cheap online host, but it was struggling to keep up. Then I decided, “hey, I can host it at home”. I combined dynamic dns (I don’t have the option of buying a static IP from my internet provider unfortunately), with an nginx reverse proxy running on a DigitalOcean droplet in order to redirect the domain tzeny.com to my dynamic dns address.&lt;/p&gt;
+
+&lt;p&gt;This however introduced a lot of headaches and potential failure points:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;dynamic dns reliability + cost&lt;/li&gt;
+  &lt;li&gt;nginx proxy crashed from time to time&lt;/li&gt;
+  &lt;li&gt;DigitalOcean cost&lt;/li&gt;
+  &lt;li&gt;HTTPS certificate for tzeny.com&lt;/li&gt;
+  &lt;li&gt;Wordpress updates could fail bringing down the blog&lt;/li&gt;
+  &lt;li&gt;I only had on site backup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mediawiki&quot;&gt;MediaWiki&lt;/h2&gt;
+
+&lt;p&gt;During my time spend getting aquianted with Machine Learning and Artificial Intelligence I decided to create a personal wiki to host all my notes. It was a very fun process, and MediaWiki made it easy to get started.&lt;/p&gt;
+
+&lt;p&gt;However, as with Wordpress it introduces unwanted complexity in the hosting process.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I had to run it locally&lt;/li&gt;
+  &lt;li&gt;when I eventually migrated to the reverse proxy it was hard to configure a subdomain for it&lt;/li&gt;
+  &lt;li&gt;needed additional php and database containers running&lt;/li&gt;
+  &lt;li&gt;I only had on site backup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;distractions&quot;&gt;Distractions&lt;/h2&gt;
+
+&lt;p&gt;I didn’t want to have to wonder “hey, will my blog run today”. I wanted to share my thoughts/tutorials/notes online. I wanted to write a piece and not have to worry if I could still read it two months down the line.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-wanted&quot;&gt;What I wanted&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;a write and forget platform, that wouldn’t require me to perform any maintenance&lt;/li&gt;
+  &lt;li&gt;free/cheap hosting; I wanted high availability that was very hard to obtain using a home server&lt;/li&gt;
+  &lt;li&gt;a way to import all my existing work into this new platform&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;how-i-did-it&quot;&gt;How I did it&lt;/h1&gt;
+&lt;p&gt;Whilist keeping these requirements in mind I stumbled across jekyll. It seemed perfect, if only I could import everything I already have into it. This turned out to be a challenge, as I had to use different importers for both WordPress and MediaWiki.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-base&quot;&gt;The base&lt;/h2&gt;
+&lt;p&gt;After looking through a number of themes I decided to use the &lt;a href=&quot;https://github.com/sujaykundu777/devlopr-jekyll&quot;&gt;devlopr&lt;/a&gt; theme as a starting point. It was customizable, had a large number of features built in (Google Analytics support, dark theme, easily customizable About Me page just to name a few) and it seemed well structured code wise.&lt;/p&gt;
+
+&lt;h2 id=&quot;wordpress-import&quot;&gt;Wordpress import&lt;/h2&gt;
+&lt;p&gt;First I used this &lt;a href=&quot;https://github.com/benbalter/wordpress-to-jekyll-exporter&quot;&gt;wordpress-to-jekyll-exporter&lt;/a&gt; to export my posts to .md format. I also copied over all of my assets over into the jekyll project.&lt;/p&gt;
+
+&lt;p&gt;Then the fun began. I wrote a markdown importer into Python to further process the .md files to fix the asset links, galleries and other doodads that were not properly imported from Wordpress.&lt;/p&gt;
+
+&lt;p&gt;For example the following code represents a wordpress gallery block:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-container&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-container-1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-gallery_id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery rl-basicgrid-gallery &quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-gallery_no=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
+
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214102.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Front view, turned off&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Front view, turned off&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_caption=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lightbox-gallery-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214102-300x225.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;225&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Front view, turned off&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214125.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The brains behind AIA, a Raspberry Pi 3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The brains behind AIA, a Raspberry Pi 3&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_caption=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lightbox-gallery-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214125-300x225.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;225&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;The brains behind AIA, a Raspberry Pi 3&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214218.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Standard Raspbian with PIXEL desktop&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Standard Raspbian with PIXEL desktop&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_caption=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lightbox-gallery-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214218-300x225.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;225&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Standard Raspbian with PIXEL desktop&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214318.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Kodi player, showing the music folders on a USB memory stick&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Kodi player, showing the music folders on a USB memory stick&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-link&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rl_caption=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;lightbox-gallery-1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://tzeny.com/wp-content/uploads/2017/07/IMG_20170730_214318-300x225.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;225&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-caption&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-item-title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Kodi player, showing the music folders on a USB memory stick&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After conversion to proper jekyll/liquid syntax, using an include to make it easy to customize the galleries in the future:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-container&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-container-1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-gallery_id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery rl-basicgrid-gallery &quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rl-gallery-1&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-gallery_no=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt; 
+
+
+
+{% include lightbox2_image.html original_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214102.jpg&quot; thumbnail_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214102-300x225.jpg&quot; caption=&quot;Front view, turned off&quot; set_name=&quot;set_1&quot; %}
+
+
+
+{% include lightbox2_image.html original_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214125.jpg&quot; thumbnail_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214125-300x225.jpg&quot; caption=&quot;The brains behind AIA, a Raspberry Pi 3&quot; set_name=&quot;set_1&quot; %}
+
+
+
+{% include lightbox2_image.html original_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214218.jpg&quot; thumbnail_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214218-300x225.jpg&quot; caption=&quot;Standard Raspbian with PIXEL desktop&quot; set_name=&quot;set_1&quot; %}
+
+
+
+{% include lightbox2_image.html original_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214318.jpg&quot; thumbnail_image=&quot;/assets/img/posts/2017/07/IMG_20170730_214318-300x225.jpg&quot; caption=&quot;Kodi player, showing the music folders on a USB memory stick&quot; set_name=&quot;set_1&quot; %}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;(I know, I know, there’s still some extra stuff in there, but for now it doesn’t affect functionality and I wanted to get back to writing, so I’ll be leaving the problem of 100% correct formatting to future me)&lt;/p&gt;
+
+&lt;p&gt;It took some time for me to write proper scripts to do this. They can be found &lt;a href=&quot;https://github.com/Tzeny/tzeny.github.io/tree/master/assets/python&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;mediawiki-import&quot;&gt;MediaWiki import&lt;/h2&gt;
+
+&lt;p&gt;Next I used this &lt;a href=&quot;https://github.com/philipashlock/mediawiki-to-markdown&quot;&gt;mediawiki-to-markdown&lt;/a&gt; converter to export my wiki as .md files. I also copied all the images in the wiki over to the jekyll project.&lt;/p&gt;
+
+&lt;p&gt;Of course, they need further processing, to fix the links between them, properyly include images and create the categories. Some meta pages (for example category pages) I had to create by hand.&lt;/p&gt;
+
+&lt;p&gt;As with the wordpress import, it took some time for me to write proper scripts to do this. They can be found &lt;a href=&quot;https://github.com/Tzeny/tzeny.github.io/tree/master/assets/python&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;other-sites&quot;&gt;Other sites&lt;/h2&gt;
+
+&lt;p&gt;Jekyll also provides guides for importing your site from other platforms: &lt;a href=&quot;https://import.jekyllrb.com/&quot;&gt;https://import.jekyllrb.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h2&gt;
+
+&lt;p&gt;Next I separated the blog and wiki into distinct subfolders inside _posts. I hid the Wiki posts (hidden: true in the Front Matter), so that I could use the pagination plugin only with the blog posts.&lt;/p&gt;
+
+&lt;p&gt;I had to change the theme quite a bit to have all my blog posts under https://tzeny.com/blog and all my wiki entries under https://tzeny.com/wiki.&lt;/p&gt;
+
+&lt;h2 id=&quot;hosting&quot;&gt;Hosting&lt;/h2&gt;
+
+&lt;p&gt;I chose netlify over &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHubPages&lt;/a&gt; as they let me use and plugins and theme I want, have paid hosting options should this website ever grow beyond their free plan and offer their own DNS service for private domains for free.&lt;/p&gt;
+
+&lt;p&gt;Funnily enough, I also tried GitHubPages, and now my site is forever (or at least until I delete and recreate the repo) live at both &lt;a href=&quot;https://tzeny.com&quot;&gt;https://tzeny.com&lt;/a&gt; and &lt;a href=&quot;https://tzeny.github.io/&quot;&gt;https://tzeny.github.io/&lt;/a&gt;. Yay for redundancy?&lt;/p&gt;
+
+&lt;h1 id=&quot;what-i-have&quot;&gt;What I have&lt;/h1&gt;
+
+&lt;p&gt;And now, after a couple of months since I first started looking into consolidating my blog and wiki into an easy to maintain resource I have this website, my very own online &lt;a href=&quot;https://en.wikipedia.org/wiki/Demesne&quot;&gt;demesne&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And I am so happy I can focus on creating content, and not on hosting it. (and the ocassional css fix xD)&lt;/p&gt;</content><author><name>Tzeny</name></author><category term="blog" /><category term="jekyll" /><category term="wordpress" /><category term="markdown" /><category term="netlify" /><category term="github pages" /><category term="import" /><category term="conversion" /><summary type="html">Wordpress was a great place for me to start my blog. It was easy to use, and had a beautiful post editor. However, issues arose around hosting it, mainly due to performance. So I decided to convert my blog to a static site using jekyll and host it using Netlify (free for small sites). And oh boy, was it not easy. But let’s start at the beggining.</summary></entry><entry><title type="html">VanLife – Power and lights v0.1</title><link href="https://tzeny.com/2019/12/26/vanlife-power-and-lights-v0-1/" rel="alternate" type="text/html" title="VanLife – Power and lights v0.1" /><published>2019-12-26T00:00:00+00:00</published><updated>2019-12-26T00:00:00+00:00</updated><id>https://tzeny.com/2019/12/26/vanlife-power-and-lights-v0-1</id><content type="html" xml:base="https://tzeny.com/2019/12/26/vanlife-power-and-lights-v0-1/">&lt;p&gt;After living without AC power, with only handheld LED lamps and my phone light for 2.5 months in Rusty, I decided enough is enough and installed some lights and a 300W inverter.&lt;/p&gt;
+
+&lt;p&gt;The inverter is temporary, as in the end I’ll need a much beefier inverter (~2000W continuous should suffice). And I’d like to find a better way of attaching the lights instead of hot glue, as I don’t really like its opaqueness when it hardens.&lt;/p&gt;
+
+&lt;p&gt;Future additions: more fuses, battery level indicator.&lt;/p&gt;
+
+&lt;p&gt;Parts list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;300W (600W peaks) DC to AC inverter – 25 USD&lt;/li&gt;
+  &lt;li&gt;Warm light copper wire 22m LED strip – 12 USD&lt;/li&gt;
+  &lt;li&gt;Schuko outlets – 0 USD&lt;/li&gt;
+  &lt;li&gt;12V – 5V conversion board – 0 USD&lt;/li&gt;
+  &lt;li&gt;small electrical switch – 0 USD&lt;/li&gt;
+  &lt;li&gt;misc electrical components and wires – 0 USD&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;overall-setup&quot;&gt;Overall setup&lt;/h2&gt;
+
+&lt;p&gt;What I wanted was a module that would take 12V DC power on one side, and provide 220V AC outlets, and 5V DC power output for the ceiling LEDs. Both the outlets and the LEDs should have power switches and obvious on/off indicators.&lt;/p&gt;
+
+&lt;p&gt;These being said, here is my current setup:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/Sketch-1024x877.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I was lucky that Rusty already has a 2 battery system, which means that I can drain the consumer battery and then easily start the car to recharge it.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/whole_thing-1024x768.jpg&quot; alt=&quot;Testing the whole thing, without the fan on the inverter; spotlight powered by inverter, LED strip powered by 5V converter; notice the red LED indicating that 5V power is switched on; the inverter has a power LED + the fan’s LEDs&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;Testing the whole thing, without the fan on the inverter; spotlight powered by inverter, LED strip powered by 5V converter; notice the red LED indicating that 5V power is switched on; the inverter has a power LED + the fan’s LEDs&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I used hot glue to secure the LED strip to Rusty’s roof. This is the result:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/rusty_light-1024x768.jpg&quot; alt=&quot;The single LED strip, laid out; next to the window on the left is the mounted power plank, with both the 5V converter board (red LED) and inverter (blue fan) turned on&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;The single LED strip, laid out; next to the window on the left is the mounted power plank, with both the 5V converter board (red LED) and inverter (blue fan) turned on&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The inverter was really useful, as I could power my 10W hot glue gun, without needing an extension cord and shore power.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-it&quot;&gt;Building it&lt;/h2&gt;
+
+&lt;p&gt;I decided to place all the components on a 1500mm x 200mm(?) x 20mm board. That way it would be easy to screw in components later on.&lt;/p&gt;
+
+&lt;h3 id=&quot;power-delivery-board&quot;&gt;Power delivery board&lt;/h3&gt;
+
+&lt;p&gt;This is a small PCB designed to take it 12V power via screw terminals and split it to wires leading to the inverter and the 5V converter.&lt;/p&gt;
+
+&lt;p&gt;The 3 connectors on the bottom side are there to help me connect additional 12V devices / modules easily (like the &lt;a href=&quot;https://tzeny.com/2019/11/21/vanlife-heating-with-the-propex-hs2000/&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot;Propex heater (opens in a new tab)&quot;&gt;Propex heater&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: always color code your negative / positive terminals.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-42&quot; data-gallery_id=&quot;918&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-42&quot; data-gallery_no=&quot;42&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/PowerDistribution1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Finished power distribution board&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/PowerDistribution1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/PowerDistribution2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Note: I added solder above the terminal used to make the 2 long parallel connections&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/PowerDistribution2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: always reinforce high amp rails with solder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12v-dc--220v-ac-300w-inverter&quot;&gt;12V DC – 220V AC 300W inverter&lt;/h3&gt;
+
+&lt;p&gt;I modded my inverter by replacing its small, noisy fan with a 120mm PC Fan. Learn how to do it here: &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot; href=&quot;https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/&quot; target=&quot;_blank&quot;&gt;https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/body9-300x225.jpg&quot; alt=&quot;Bonus: LED light on&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;Bonus: LED light on&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;I fixed it on the board using 3D printed L brackets: &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot; href=&quot;https://www.thingiverse.com/thing:2226&quot; target=&quot;_blank&quot;&gt;https://www.thingiverse.com/thing:2226&lt;/a&gt;. I cut its supplied wires and fixed them into some screw on terminals on a small PCB used for power delivery.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, this inverter comes with an inbuilt power switch on the output side.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: this inverter has a build in 40A fuse; you should add one in line if you haven’t already&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;12v--5v-3a-converter&quot;&gt;12V – 5V 3A converter&lt;/h3&gt;
+
+&lt;p&gt;This converter is based around this kind of conversion board: &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot; href=&quot;https://www.openimpulse.com/blog/products-page/product-category/mp1584en-mini-dc-dc-step-module/&quot; target=&quot;_blank&quot;&gt;https://www.openimpulse.com/blog/products-page/product-category/mp1584en-mini-dc-dc-step-module/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-43&quot; data-gallery_id=&quot;921&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-43&quot; data-gallery_no=&quot;43&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/5vconverter1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Board layout without switch and indicator LED&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/5vconverter1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/5vconverter2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Switch added between 12V in and the converter board; LED soldered in series with a 220 Ohm resistor to output&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/5vconverter2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The switch turns off the power delivery to the inputs of the board; it was mounted to the top of the wooden plank for easy access.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; This board should also have a small fuse but I didn’t have one on hand.&lt;/p&gt;
+
+&lt;h3 id=&quot;schuko-outlet&quot;&gt;Schuko outlet&lt;/h3&gt;
+
+&lt;p&gt;This is just a basic 3 output schuko outlet that I took apart in order to screw its bottom half to the board with 2 wood screws; I kept the wire at the original 3M length and coiled it underneath the inverter, securing it with zipties.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/outlet-1024x768.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;mounting-it&quot;&gt;Mounting it&lt;/h2&gt;
+
+&lt;p&gt;I used 2 long wood screws to mount it inside Rusty, where it now powers my ceiling light strips.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/mount.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;</content><author><name>Tzeny</name></author><category term="12V" /><category term="220V" /><category term="5V" /><category term="ac" /><category term="dc" /><category term="LED" /><category term="lights" /><category term="power" /><summary type="html">After living without AC power, with only handheld LED lamps and my phone light for 2.5 months in Rusty, I decided enough is enough and installed some lights and a 300W inverter.</summary></entry><entry><title type="html">Silencing a noisy car inverter</title><link href="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/" rel="alternate" type="text/html" title="Silencing a noisy car inverter" /><published>2019-12-23T00:00:00+00:00</published><updated>2019-12-23T00:00:00+00:00</updated><id>https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter</id><content type="html" xml:base="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/">&lt;figure class=&quot;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&quot;&gt;
+
+&lt;div class=&quot;wp-block-embed__wrapper&quot;&gt;
+&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;I bought a 300W continous / 600W peak 12V DC to 220V AC inverter for my car. It was pretty cheap, at around 25$. However it has one major drawback, a continuously on small noisy fan.&lt;/p&gt;
+
+&lt;p&gt;So I decided to cut open its top part and add a 120mm PC fan on top.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: be careful when working with the inverter’s insides as it has live 220V exposed pins and components&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;parts-list&quot;&gt;Parts list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generic 12V DC to 220V AC inverter – 25$&lt;/li&gt;
+  &lt;li&gt;120 mm PC Fan (bonus: it has blue LED lights and a temperature sensor) – 0$ (had one laying around)&lt;/li&gt;
+  &lt;li&gt;120mm PC Fan grill and dust cover – 0$ (had some laying around)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;tools-list&quot;&gt;Tools list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Angle grinder (I initially tried a small multitool but the aluminum body is pretty thick)&lt;/li&gt;
+  &lt;li&gt;Hot glue gun&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;the-build-process&quot;&gt;The build process&lt;/h2&gt;
+
+&lt;p&gt;Idea: Add a fan on top of the inverter, cutting small section (or maybe a large section) of the top part of to allow cool air to get in. The fan will be covered by a dust filter, and blow air into the inverter. The air will exit through the lateral holes already present in the inverter.&lt;/p&gt;
+
+&lt;p&gt;Upon opening it I discovered its internal fan was powered by a 12V header, which is just perfect as 120mm PC fans are also powered by a 12V input, and are significantly quieter (mine was basically indistinguishable from background noise) whilst being able to move the same amount of air (in this case, size does matter).&lt;/p&gt;
+
+&lt;p&gt;As a bonus, the one I had also has blue LEDs that can be toggled and a temperature sensor, which I taped to a piece of metal in direct contact with some how ICs.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-41&quot; data-gallery_id=&quot;895&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-41&quot; data-gallery_no=&quot;41&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;This is how the inverter looks like, with 3D printed non conductive L brackets attached&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;This is the part we'll have to remove in order to allow the air from the fan to cool the insides of the inverter&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body3-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body4.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;To take it apart we have to remove the 2 top screws from each end&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body4.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body5.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Opening it reveals the header and cables used to power its internal fan; voltage: ~12V&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body5-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body6.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;The top part after being cut with the angle grinder&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body6-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/bodywelp-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Fan's temperature sensor was attached to this metal piece that holds some hot ICs flat against the side of the case for heat dissipation&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/bodywelp-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/bodywelp2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;I used the hole of the old fan to pass the power and sensor wires of the new fan&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/bodywelp2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body7.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;First I glued in place the black fan guard, then clipped in the fan&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body7-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body8.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Finally I screwed in a dust filter on the fan&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body8-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/body9.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Bonus: LED light on&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/body9-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The result&lt;/h2&gt;
+
+&lt;p&gt;A quiet 300W inverter, that you can easily sleep next to. It will be useful for charging my phone or laptop overnight in &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;Rusty (opens in a new tab)&quot; href=&quot;https://tzeny.com/2019/11/14/van-life-the-story-so-far/&quot; target=&quot;_blank&quot;&gt;Rusty&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Since the inverter draws about 0.30A in standby, I decided to leave the fan’s LEDs always on as a power indicator (since it can’t be easily heard).&lt;/p&gt;</content><author><name>Tzeny</name></author><category term="12V" /><category term="220V" /><category term="ac" /><category term="dc" /><category term="fan" /><category term="inverter" /><category term="silence" /><summary type="html">I bought a 300W continous / 600W peak 12V DC to 220V AC inverter for my car. It was pretty cheap, at around 25$. However it has one major drawback, a continuously on small noisy fan.</summary></entry><entry><title type="html">DIY Vintage Fallout Radio ♫</title><link href="https://tzeny.com/2019/12/03/diy-vintage-fallout-radio-e299ab/" rel="alternate" type="text/html" title="DIY Vintage Fallout Radio ♫" /><published>2019-12-03T00:00:00+00:00</published><updated>2019-12-03T00:00:00+00:00</updated><id>https://tzeny.com/2019/12/03/diy-vintage-fallout-radio-e299ab</id><content type="html" xml:base="https://tzeny.com/2019/12/03/diy-vintage-fallout-radio-e299ab/">&lt;iframe class=&quot;youtube-iframe&quot; src=&quot;https://www.youtube-nocookie.com/embed/Nl0GyLE6BlM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;With Christmas (and hopefully a good shower of snow) just around the corner, it was time for one of my favorite events of the year: Secret Santa.&lt;/p&gt;
+
+&lt;p&gt;My Secret Santa match is a work mate who is a yuge fan of the Fallout series. I remembered talking with him about how cool it would be to place a Bluetooth speaker inside of an old radio enclosure and listen to Galaxy News radio.&lt;/p&gt;
+
+&lt;p&gt;But I decided to take it one step further. Why not get an old, functioning radio and add a Bluetooth module to it; that way we could still use it to listen to real life radio stations (even ones broadcasting on long and medium wave :o), and it would also add that vintage sound vibe to the Fallout music.&lt;/p&gt;
+
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Loewe T304 radio, manufactured in 1976 – 12$&lt;/li&gt;
+  &lt;li&gt;12V – 24V TP3110 Bluetooth audio amplifier board – 10$&lt;/li&gt;
+  &lt;li&gt;220V AC – 12V DC transformer – 0$ (had one laying around; a DC to DC booster would’ve been better)&lt;/li&gt;
+  &lt;li&gt;3 position double rocker switch – 0$ (had one laying around)&lt;/li&gt;
+  &lt;li&gt;Wires&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Heat shrink tubing&lt;/p&gt;
+
+    &lt;p&gt;&lt;strong&gt;Note: be very careful when working with the insides of the radio and the AC – DC transformer as there are exposed AC high voltage pins&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-35&quot; data-gallery_id=&quot;836&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-35&quot; data-gallery_no=&quot;35&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio_1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Loewe T304 radio front&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio_1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio_3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Loewe T304 radio back&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio_3-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Loewe T304 radio insides&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio_2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/bluetooth_amp.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;TPA 3110 Bluetooth amplifier&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/bluetooth_amp-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/ac_transformer.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;AC Transformer - be very careful when working with it, as it has exposed high voltage pins&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/ac_transformer-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What’s really cool about this radio is that it can also receive Long and Medium wave broadcasts. I managed to listen to a station in Spain that was emitting on long wave from my kitchen.&lt;/p&gt;
+
+&lt;p&gt;List of long wave radio stations in Europe: &lt;a href=&quot;https://www.asiawaves.net/longwave-radio.htm&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot;&gt;https://www.asiawaves.net/longwave-radio.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting it all together&lt;/h2&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/12/Capture-1024x679.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is the schematic of the end product.&lt;/p&gt;
+
+&lt;p&gt;Of course, I should’ve used the Radio’s build in AC – DC converter. But it only outputted 6V, and the Blutooth module needed at least 12V to run properly; this problem could’ve easily been solved by a DC – DC booster, but I didn’t have one on hand so I proceeded by using a AC – DC converter I had laying around from an old charger.&lt;/p&gt;
+
+&lt;p&gt;But, first things first.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note: always use heat shrink tubing, as it provides structural support for your wires in addition to electrical insulation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fixing-the-antenna&quot;&gt;Fixing the antenna&lt;/h3&gt;
+
+&lt;p&gt;The antenna was secured with a small screw at the base.&lt;/p&gt;
+
+&lt;p&gt;The antenna was also completely folded, and missing it’s head cap; I managed to push the first part out with a screwdriver, and the rest I pushed and pulled with a pliers. To my relief, the top had a small thread, and I put on a replacement cap from an antenna I had lying around. A good alternative would’ve been to use a small anti lock nut.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-36&quot; data-gallery_id=&quot;848&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-36&quot; data-gallery_no=&quot;36&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/antenna_3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Broken antenna base&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/antenna_3-300x205.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/antenna_1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/antenna_1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/antenna_2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Replacement antenna head&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/antenna_2-225x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-bluetooth-circuit&quot;&gt;The Bluetooth circuit&lt;/h3&gt;
+
+&lt;p&gt;Next, I had to solder together my AC – DC 12V transformer, the Bluetooth module and the rocker switch.&lt;/p&gt;
+
+&lt;p&gt;Note: a single rocker switch would have been sufficient in this case, as the speaker is always connected to the radio PCB’s ground through the third wire in the middle.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-37&quot; data-gallery_id=&quot;852&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-37&quot; data-gallery_no=&quot;37&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;The insides of the radio, unaltered&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;I soldered my converters' inputs to the inputs coil of the radio's transformer&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/3.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;AC-DC converter soldered and working&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/3-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/4.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;I made a small plastic shield, as the AC-DC converter will be tightly squeezed in this particular spot, and I was weary of shorts&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/4-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/5.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Next I connected the double rocker switch and the Bluetooth module; note the heat shrink tubing&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/5-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/6.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Finally, it was time to wire it all up&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/6-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;first-integration-test&quot;&gt;First integration test&lt;figure class=&quot;wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio&quot;&gt;&lt;/figure&gt;&lt;/h3&gt;
+
+&lt;div class=&quot;wp-block-embed__wrapper&quot;&gt;
+&lt;/div&gt;
+&lt;p&gt;&amp;lt;/figure&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;I was ecstatic to see it working :D.&lt;/p&gt;
+
+&lt;h3 id=&quot;closing-it-all-up&quot;&gt;Closing it all up&lt;/h3&gt;
+
+&lt;p&gt;To close it up, I had to find a place for the Bluetooth board and the converter. Fortunately the radio has a battery bay that is not connected to anything. Its wires broke off sometime in the past, as it’s datasheet suggests it is meant to be powered by 4 x 1.5V batteries.&lt;/p&gt;
+
+&lt;p&gt;I used my small Dremel style multi tool to make the necessary cuts and holes for the rocker switch and Bluetooth volume knob.&lt;/p&gt;
+
+&lt;p&gt;I also tried desoldering the SMT indicator LED used by the Bluetooth board to try to use an old red LED instead. For some reason it worked at first, but then it prevented the Bluetooth board from starting after it was mounted, so I ditched it.&lt;/p&gt;
+
+&lt;p&gt;I also had to cut the plastic shield in half to properly fit the transformer.&lt;/p&gt;
+
+&lt;p&gt;For the volume knob I had to make an indent, as the plastic was to thick compared to the length of the thread.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-38&quot; data-gallery_id=&quot;864&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-38&quot; data-gallery_no=&quot;38&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/1-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;First I cut just a part of the battery bay cover&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/1-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/2-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Then I realized I need to cut all of it out; if you look closely you can see the indent I had to make for the Bluetooth knob&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/2-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/3-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;The indicator LED before it stopped working&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/3-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/4-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Bluetooth board and rocker switch mounted...&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/4-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/5-1.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;... and secured&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/5-1-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-end&quot;&gt;The end&lt;/h2&gt;
+
+&lt;p&gt;In the end (it doesn’t even matter) I closed it all up; together with 50 caps this will be the perfect cheap Christmas Present.&lt;/p&gt;
+
+&lt;p&gt;Two final touches have to be added: 2 stickers that came with the radio, one indicating the production date, and one showing the factory number.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-39&quot; data-gallery_id=&quot;871&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-39&quot; data-gallery_no=&quot;39&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio_live.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Listening to a live internet Fallout radio on a '70s radio&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio_live-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/bottom_open.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Opening the battery bay reveals the Bluetooth module and transformer PCBs&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/bottom_open-225x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/bottom_close.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;The back turned out ok; the unfilled hole is for the activity LED; it will be covered up by the factory number sticker&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/bottom_close.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;I also glued on the original production date sticker&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio2-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/radio.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;And I use the production number sticker to cover up the hole for the indicator LED&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/radio-300x225.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;appendix&quot;&gt;Appendix&lt;/h2&gt;
+
+&lt;p&gt;This is the radio’s manual, I found it online. I’ll be posting it here for backup’s sake.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-40&quot; data-gallery_id=&quot;876&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-40&quot; data-gallery_no=&quot;40&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/01-2.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/01-2-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/02.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/02-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/03.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/03-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/04.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/04-208x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/05.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/05-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/06.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/06-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/07.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/07-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/12/08.jpg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/12/08-207x300.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;List of long wave radio stations in Europe: &lt;a href=&quot;https://www.asiawaves.net/longwave-radio.htm&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot;&gt;https://www.asiawaves.net/longwave-radio.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;List of medium wave radio stations in Europe: &lt;a href=&quot;https://en.wikipedia.org/wiki/List_of_European_medium_wave_transmitters&quot; target=&quot;_blank&quot; rel=&quot;noreferrer noopener&quot; aria-label=&quot; (opens in a new tab)&quot;&gt;https://en.wikipedia.org/wiki/List_of_European_medium_wave_transmitters&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ideas-for-version-20&quot;&gt;Ideas for version 2.0&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nixie tube clock&lt;/li&gt;
+  &lt;li&gt;Stereo speakers&lt;/li&gt;
+  &lt;li&gt;Stereo VU meters&lt;/li&gt;
+  &lt;li&gt;Working Bluetooth indicator LED&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Tzeny</name></author><category term="antenna" /><category term="bluetooth" /><category term="diy" /><category term="fallout" /><category term="fixing" /><category term="long wave" /><category term="medium wave" /><category term="radio" /><category term="vintage" /><summary type="html">My Secret Santa match is a work mate who is a yuge fan of the Fallout series. I remembered talking with him about how cool it would be to place a Bluetooth speaker inside of an old radio enclosure and listen to Galaxy News radio.</summary></entry><entry><title type="html">Nightfall – Isaac Asimov</title><link href="https://tzeny.com/2019/11/28/nightfall-isaac-asimov/" rel="alternate" type="text/html" title="Nightfall – Isaac Asimov" /><published>2019-11-28T00:00:00+00:00</published><updated>2019-11-28T00:00:00+00:00</updated><id>https://tzeny.com/2019/11/28/nightfall-isaac-asimov</id><content type="html" xml:base="https://tzeny.com/2019/11/28/nightfall-isaac-asimov/">&lt;blockquote class=&quot;wp-block-quote&quot;&gt;
+  &lt;p&gt;
+    If the stars should appear one night in&lt;br /&gt; a thousand years, how would men believe&lt;br /&gt; and adore, and preserve for many&lt;br /&gt; generations the remembrance of the city&lt;br /&gt; of God?
+  &lt;/p&gt;
+  
+  &lt;cite&gt;Ralph Waldo Emerson&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;An interesting short story written by Isaac Asimov that later became a novel. It explores what would happen to the people living on a planet that is exposed to starlight only once every 2049 years.&lt;/p&gt;
+
+&lt;p&gt;Asimov describes the solar system in the novel and short story just enough to make it seem plausible.&lt;/p&gt;
+
+&lt;p&gt;This inspired 2 researchers in India to write a &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;paper (opens in a new tab)&quot; href=&quot;https://arxiv.org/pdf/1407.4895.pdf&quot; target=&quot;_blank&quot;&gt;paper&lt;/a&gt; exploring the possibility of this hypothetical system’s existence; they concluded that it was plausible for the system to exist for at least a couple hundred years.&lt;/p&gt;
+
+&lt;p&gt;More research is necessary, using modern solar system simulation techniques.&lt;/p&gt;</content><author><name>teny96@gmail.com</name></author><summary type="html">An interesting short story written by Isaac Asimov that later became a novel. It explores what would happen to the people living on a planet that is exposed to starlight only once every 2049 years.</summary></entry><entry><title type="html">iTec2019 – Style transfer rover</title><link href="https://tzeny.com/2019/11/24/itec2019-style-transfer-rover/" rel="alternate" type="text/html" title="iTec2019 – Style transfer rover" /><published>2019-11-24T00:00:00+00:00</published><updated>2019-11-24T00:00:00+00:00</updated><id>https://tzeny.com/2019/11/24/itec2019-style-transfer-rover</id><content type="html" xml:base="https://tzeny.com/2019/11/24/itec2019-style-transfer-rover/">&lt;p&gt;&lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;iTEC (opens in a new tab)&quot; href=&quot;https://itec.ligaac.ro/&quot; target=&quot;_blank&quot;&gt;iTEC&lt;/a&gt; is a contest dedicated to pupils and students with an interest in IT. This was its 13th edition; over 200 participants showed up. It consists of a couple of short (~6 hour) challenges and 4 hackathons (web, mobile, game dev and embedded).&lt;/p&gt;
+
+&lt;p&gt;Together with Arin we took part in the embedded hackathon. We received:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1 x 4WD robotics kit, similar to this &lt;a rel=&quot;noreferrer noopener&quot; href=&quot;https://www.amazon.com/Robot-Chassis-Motor-Arduino-Raspberry/dp/B07F759T89?ref_=nav_custrec_signin&amp;amp;&quot; target=&quot;_blank&quot;&gt;one&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1 x Raspberry Pi 3&lt;/li&gt;
+  &lt;li&gt;1 x &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;Intel NCS2 (opens in a new tab)&quot; href=&quot;https://software.intel.com/en-us/neural-compute-stick&quot; target=&quot;_blank&quot;&gt;Intel NCS2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;1 x Raspberry Pi Camera&lt;/li&gt;
+  &lt;li&gt;assorted accessories like H bridges, level converters, battery holders and screws&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;our-idea&quot;&gt;Our idea&lt;/h2&gt;
+
+&lt;p&gt;We wanted to build a rover that ran different style transfer Generative Adversarial networks on the NCS2. It would be remote controlled, with controls for rover movement and camera movement.&lt;/p&gt;
+
+&lt;p&gt;This will allow people to explore the real world through the eyes of Van Gogh, or an acid tripping person. And for those of you thinking we could’ve done it with a phone and a cloud computer, well, we could’ve but GLaDOS wanted to live.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-hard-how-behind-it&quot;&gt;The hard how behind it&lt;/h2&gt;
+
+&lt;p&gt;For the camera we used a 2 axis mount with &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;SG 90 (opens in a new tab)&quot; href=&quot;https://components101.com/servo-motor-basics-pinout-datasheet&quot; target=&quot;_blank&quot;&gt;SG 90&lt;/a&gt; servos.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/11/camera-1024x768.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We mounted it upside down because it looked cool, and it kind of resembled GLaDOS. We had some issues with the servo driver, and ended up switching to the &lt;strong&gt;pigpio&lt;/strong&gt; library instead of the standard &lt;strong&gt;RPi.GPIO&lt;/strong&gt; and it worked out pretty well.&lt;/p&gt;
+
+&lt;p&gt;The engines were wired together in 2 parallel groups (left and right) and used an H bridge powered by 4 AA batteries (later 8 AA batteries in parallel) to control them.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/11/engines-1024x768.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The brain of the whole machine is a Raspberry Pi 3, which controls the 4 motors and 2 camera servos through 3.3 to 5 bidirectional &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;logic level converters (opens in a new tab)&quot; href=&quot;https://www.addicore.com/Logic-Level-Converter-Bi-Directional-5V-to-3-3V-p/227.htm&quot; target=&quot;_blank&quot;&gt;logic level converters&lt;/a&gt;. Inference was performed on the Intel NCS 2.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/11/brains-768x1024.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To top it off we added a small &lt;a rel=&quot;noreferrer noopener&quot; aria-label=&quot;128 x 128 TFT Display (opens in a new tab)&quot; href=&quot;https://www.aliexpress.com/item/33014277663.html&quot; target=&quot;_blank&quot;&gt;128 x 128 TFT Display&lt;/a&gt; and a 10Ah power bank to power the Rasberry.&lt;/p&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-33&quot; data-gallery_id=&quot;788&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-33&quot; data-gallery_no=&quot;33&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top99.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top99-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top8.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top8-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top7.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top7-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top6.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top6-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top5.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Image processed to the 'mosaic' style&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top5-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top4.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top4-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top3.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top3-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top2.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top2-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/top.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/top-300x225.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-soft-how-behind-it&quot;&gt;The soft how behind it&lt;/h2&gt;
+
+&lt;p&gt;In true hackathon style we ran 3 servers on the Raspberry Pi.&lt;/p&gt;
+
+&lt;p&gt;One that ran the inference, created the video stream and provided a route allowing the client to request a model change.&lt;/p&gt;
+
+&lt;p&gt;One was a Flask REST API that allowed the client to control the motors and the camera servos.&lt;/p&gt;
+
+&lt;p&gt;And finally, a small Python 3 HTTP server that provided the frontend. Although initially we planned on using it from the laptop, I decided to turn it into a mobile ‘app’ with 2 joysticks.&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.03-1024x485.jpeg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The cyan joystick controls the motor, and the orange one controls the camera.&lt;/p&gt;
+
+&lt;p&gt;We found a number of network styles pretrained, and we also trained one of our own based on this image:&lt;/p&gt;
+
+&lt;figure class=&quot;image&quot;&gt;
+    &lt;img src=&quot;/assets/img/posts/2019/11/acid.resized.jpg&quot; alt=&quot;&quot; style=&quot;max-width: 100%;&quot; /&gt;
+    &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;the-results&quot;&gt;The results&lt;/h2&gt;
+
+&lt;div class=&quot;wp-block-responsive-lightbox-gallery&quot;&gt;
+  &lt;div class=&quot;rl-gallery-container rl-loading&quot; id=&quot;rl-gallery-container-34&quot; data-gallery_id=&quot;799&quot;&gt; &lt;div class=&quot;rl-gallery rl-basicgrid-gallery &quot; id=&quot;rl-gallery-34&quot; data-gallery_no=&quot;34&quot;&gt; 
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.04.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.04-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.041.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.041-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.03-1.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.03-1-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.054.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.054-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.043.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Camera covered, image generated from blackness&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.043-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.05.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Camera covered, image generated from blackness&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.05-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.051.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Camera covered, image generated from blackness&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/WhatsApp-Image-2019-11-24-at-14.25.051-300x142.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/hand.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/hand-225x300.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/welp.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/welp-225x300.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+  
+  
+
+&lt;a class=&quot;lightbox2-image&quot; href=&quot;/assets/img/posts/2019/11/muschi.jpeg&quot; data-lightbox=&quot;set_1&quot; data-title=&quot;Failing attempts at training a GAN; on the bright side it learned to color skin green&quot;&gt;&lt;img class=&quot;lightbox2-image-thumbnail&quot; src=&quot;/assets/img/posts/2019/11/muschi-225x300.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We managed to win second place using our little rover. A good hackathon indeed.&lt;/p&gt;</content><author><name>teny96@gmail.com</name></author><category term="gan" /><category term="intel" /><category term="ncs2" /><category term="openvino" /><category term="raspberry" /><category term="style transfer" /><summary type="html">iTEC is a contest dedicated to pupils and students with an interest in IT. This was its 13th edition; over 200 participants showed up. It consists of a couple of short (~6 hour) challenges and 4 hackathons (web, mobile, game dev and embedded).</summary></entry></feed>

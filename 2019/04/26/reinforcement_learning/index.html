@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reinforcement Learning">
+<meta name="keywords" content="Reinforcement Learning, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Reinforcement Learning" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/04/26/reinforcement_learning/" property="og:url">
+<meta content="2019-04-26T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Reinforcement Learning">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/04/26/reinforcement_learning/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/04/26/reinforcement_learning/">Reinforcement Learning</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Reinforcement Learning</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>Reinforcement learning is an important type of Machine Learning where an agent learn how to behave in a environment by performing actions and seeing the results.</p>
+<p>Inspired greatly by: <a href="https://medium.freecodecamp.org/an-introduction-to-reinforcement-learning-4339519de419">An introduction to Reinforcement Learning by Thomas Simonini</a></p>
+<p>The idea behind Reinforcement Learning is that an agent will learn from the environment by interacting with it and receiving rewards for performing actions.</p>
+<figure class="image"> <img src="/assets/img/wiki/Reinforcement_learning_overview.png" alt="Reinforcement learning process" style="max-width: 100%;"><figcaption>Reinforcement learning process</figcaption></figure><p>Let’s imagine an agent learning to play Super Mario Bros as a working example. The Reinforcement Learning (RL) process can be modeled as a loop that works like this:</p>
+<ul>
+<li>Our Agent receives state S0 from the Environment (In our case we receive the first frame of our game (state) from Super Mario Bros (environment))</li>
+<li>Based on that state S0, agent takes an action A0 (our agent will move right)</li>
+<li>Environment transitions to a new state S1 (new frame)</li>
+<li>Environment gives some reward R1 to the agent (not dead: +1)</li>
+</ul>
+<p>This RL loop outputs a sequence of state, action and reward. The goal of the agent is to maximize the expected cumulative reward.</p>
+<h4 id="reward">Reward</h4>
+<p>The cumulative reward at each time step t:</p>
+<p><em>G<strong>t* = *R</strong>t</em> + 1 + <em>R**t</em> + 2 + … equivalent to $G_{t}=\sum_{k=0}^{T} R_{t+k+1}$</p>
+<p>Rewards are discounted in time (with a factor gamma) to account for the fact that future rewards now are better than rewards in the future.</p>
+<p>$G_{t}=\sum_{k=0}^{\infty} \gamma^{k} R_{t+k+1} \text { where } \gamma \in[0,1)$</p>
+<h4 id="task-types">Task types</h4>
+<h5 id="episodic">Episodic</h5>
+<p>In this case, we have a starting point and an ending point (a terminal state). This creates an episode: a list of States, Actions, Rewards, and New States.</p>
+<p>For instance think about Super Mario Bros, an episode begin at the launch of a new Mario and ending: when you’re killed or you’re reach the end of the level.</p>
+<h5 id="continous">Continous</h5>
+<p>These are tasks that continue forever (no terminal state). In this case, the agent has to learn how to choose the best actions and simultaneously interacts with the environment.</p>
+<p>For instance, an agent that do automated stock trading. For this task, there is no starting point and terminal state. The agent keeps running until we decide to stop him.</p>
+<h4 id="learning-methods">Learning methods</h4>
+<h5 id="monte-carlo-learning-once--episode">Monte Carlo (learning once / episode)</h5>
+<figure class="image"> <img src="/assets/img/wiki/Rl_value_estimate.png" alt="Value update rules for Monte Carlo and TD Learning" style="max-width: 100%;"><figcaption>Value update rules for Monte Carlo and TD Learning</figcaption></figure><p>Monte Carlo When the episode ends (the agent reaches a “terminal state”), the agent looks at the total cumulative reward to see how well it did. In Monte Carlo approach, rewards are only received at the end of the game.</p>
+<p>Then, we start a new game with the added knowledge. The agent makes better decisions with each iteration.</p>
+<p><em>V</em>(<em>S<strong>t*) ← *V*(*S</strong>t</em>) + <em>α</em>[<em>G<strong>t*−*V*(*S</strong>t</em>)]</p>
+<p><em>V</em>(<em>S<strong>t*) − *m</strong>a<strong>x</strong>i<strong>m</strong>u<strong>m</strong>e<strong>x</strong>p<strong>e</strong>c<strong>t</strong>e<strong>d</strong>f<strong>u</strong>t<strong>u</strong>r<strong>e</strong>r<strong>e</strong>w<strong>a</strong>r<strong>d</strong>s<strong>t</strong>a<strong>r</strong>t<strong>i</strong>n<strong>g</strong>a<strong>t</strong>t<strong>h</strong>e<strong>l</strong>a<strong>s</strong>t<strong>s</strong>t<strong>a</strong>t**e</em></p>
+<h5 id="temporal-difference-learning-learning-at-each-timestep">Temporal Difference Learning (learning at each timestep)</h5>
+<p><em>V</em>(<em>S<strong>t*) ← *V*(*S</strong>t</em>) + <em>α</em>[<em>R<strong>t* + 1+*γ</strong>V</em>(<em>S<strong>t* + 1)−*V*(*S</strong>t</em>)]</p>
+<p>TD methods only wait until the next time step to update the value estimates. At time t+1 they immediately form a TD target using the observed reward Rt+1 and the current estimate V(St+1).</p>
+<h4 id="exploration-vs-exploitation">Exploration vs Exploitation</h4>
+<ul>
+<li>Exploration is finding more information about the environment.</li>
+<li>Exploitation is exploiting known information to maximize the reward.</li>
+</ul>
+<h5 id="epsilon-greedy-strategy">Epsilon greedy strategy</h5>
+<ul>
+<li>We specify an exploration rate “epsilon,” which we set to 1 in the beginning. This is the rate of steps that we’ll do randomly. In the beginning, this rate must be at its highest value, because we don’t know anything about the values in Q-table. This means we need to do a lot of exploration, by randomly choosing our actions.</li>
+<li>We generate a random number. If this number &gt; epsilon, then we will do “exploitation” (this means we use what we already know to select the best action at each step). Else, we’ll do exploration.</li>
+</ul>
+<h2 id="three-approaches-to-reinforcement-learning">Three approaches to Reinforcement Learning</h2>
+<h3 id="value-based">Value Based</h3>
+<p>In value-based RL, the goal is to optimize the value function V(s).</p>
+<p>The value function is a function that tells us the maximum expected future reward the agent will get at each state.</p>
+<p>The value of each state is the total amount of the reward an agent can expect to accumulate over the future, starting at that state.</p>
+<table><tbody><tr>
+<td>
+<p><em>v<strong>π*(*s*)=𝔼*π*[*R</strong>t</em> + 1+<em>γ<strong>R</strong>t</em> + 2+<em>γ</em>2<em>R**t</em> + 3+…</p>
+</td>
+<td>
+<p><em>S**t</em>=<em>s</em>]</p>
+</td>
+</tr></tbody></table>
+<p>The agent will use this value function to select which state to choose at each step. The agent takes the state with the biggest value.</p>
+<h3 id="policy-based">Policy Based</h3>
+<p>In policy-based RL, we want to directly optimize the policy function π(s) without using a value function.</p>
+<p>The policy is what defines the agent behavior at a given time.</p>
+<p><em>a</em> = <em>π</em>(<em>s</em>)</p>
+<p>We learn a policy function. This lets us map each state to the best corresponding action.</p>
+<p>We have two types of policy:</p>
+<ul>
+<li>Deterministic: a policy at a given state will always return the same action.</li>
+<li>Stochastic: output a distribution probability over actions.</li>
+</ul>
+<h3 id="model-based">Model Based</h3>
+<p>In model-based RL, we model the environment. This means we create a model of the behavior of the environment.</p>
+<p>The problem is each environment will need a different model representation.</p>
+<h2 id="value-based-reinforcement-learning-algorithms">Value based Reinforcement Learning algorithms</h2>
+<h3 id="q-learning">Q learning</h3>
+<p>We will create a table where we’ll calculate the maximum expected future reward, for each action at each state. In terms of computation, we can transform this grid into a table. This is called a Q-table (“Q” for “quality” of the action).</p>
+<h4 id="learning-the-action-value-function-q---function">Learning the Action Value Function (Q - function)</h4>
+<figure class="image"> <img src="/assets/img/wiki/Q_update.png" alt="Bellman equation for Q learning" style="max-width: 100%;"><figcaption>Bellman equation for Q learning</figcaption></figure><table><tbody><tr>
+<td>
+<p><em>Q<strong>π*(*s</strong>t</em>,<em>a<strong>t*) = *E*[*R</strong>t</em> + 1+<em>γ<strong>R</strong>t</em> + 2+<em>γ</em>2<em>R**t</em> + 3+…</p>
+</td>
+<td>
+<p><em>s<strong>t*,*a</strong>t</em>]</p>
+</td>
+</tr></tbody></table>
+<p>We can see this Q function as a reader that scrolls through the Q-table to find the line associated with our state, and the column associated with our action. It returns the Q value from the matching cell. This is the “expected future reward.”</p>
+<figure class="image"> <img src="/assets/img/wiki/Q_algorithm_pseudocode.png" alt=" algorithm pseudocode.png" style="max-width: 100%;"><figcaption> algorithm pseudocode.png</figcaption></figure><h3 id="deep-q-learning">Deep Q Learning</h3>
+<figure class="image"> <img src="/assets/img/wiki/Deep_q_update.png" alt="Bellman equation for Deep Q Learning" style="max-width: 100%;"><figcaption>Bellman equation for Deep Q Learning</figcaption></figure><p>Instead of using a Q-table, we’ll implement a Neural Network that takes a state and approximates Q-values for each action based on that state.</p>
+<p>The error (or TD error) is calculated by taking the difference between our Q_target (maximum possible value from the next state) and Q_value (our current prediction of the Q-value)</p>
+<p>Whilst training, we can choose to retain a replay memory M, with some capacity N, from which we will train the algorithm. This helps the network’s “memory”, and prevents it from only learning about what it has immediately done.</p>
+<h4 id="fixed-q-targets">Fixed Q targets</h4>
+<p>Using a separate network with a fixed parameter (let’s call it w-) for estimating the TD target. After T time steps w- &lt;- w (we update the fixed parameters).</p>
+<h4 id="double-dqns">Double DQNs</h4>
+<p>When we compute the Q target, we use two networks to decouple the action selection from the target Q value generation. We:</p>
+<ul>
+<li>use our DQN network to select what is the best action to take for the next state (the action with the highest Q value).</li>
+<li>use our target network to calculate the target Q value of taking that action at the next state.</li>
+</ul>
+<h4 id="dueling-dqn">Dueling DQN</h4>
+<figure class="image"> <img src="/assets/img/wiki/Dueling_dqn_update.png" alt="Dueling DQN Q calculation" style="max-width: 100%;"><figcaption>Dueling DQN Q calculation</figcaption></figure><p>So we can decompose Q(s,a) as the sum of:</p>
+<ul>
+<li>V(s): the value of being at that state</li>
+<li>A(s,a): the advantage of taking that action at that state (how much better is to take this action versus all other possible actions at that state).</li>
+</ul>
+<p><em>Q</em>(<em>s</em>, <em>a</em>)=<em>A</em>(<em>s</em>, <em>a</em>)+<em>V</em>(<em>s</em>)</p>
+<p>With DDQN, we want to separate the estimator of these two elements, using two new streams:</p>
+<ul>
+<li>one that estimates the state value V(s)</li>
+<li>one that estimates the advantage for each action A(s,a)</li>
+</ul>
+<h4 id="prioritized-experience-replay-1">Prioritized experience replay 1</h4>
+<figure class="image"> <img src="/assets/img/wiki/Prioritized_experience_replay.png" alt="Stochastic prioritization" style="max-width: 100%;"><figcaption>Stochastic prioritization</figcaption></figure><figure class="image"> <img src="/assets/img/wiki/Prioritized_experience_bias.png" alt="Stochastic prioritization bias reduction" style="max-width: 100%;"><figcaption>Stochastic prioritization bias reduction</figcaption></figure><p>Prioritized Experience Replay (PER) was introduced in 2015 by Tom Schaul. The idea is that some experiences may be more important than others for our training, but might occur less frequently.</p>
+<p>Because we sample the batch uniformly (selecting the experiences randomly) these rich experiences that occur rarely have practically no chance to be selected.</p>
+<p>We want to take in priority experience where there is a big difference between our prediction and the TD target, since it means that we have a lot to learn about it.</p>
+<table><tbody><tr>
+<td>
+<p>We add to each entry in our replay buffer a probability <em>p**t</em> = </p>
+</td>
+<td>
+<p><em>δ**t</em></p>
+</td>
+<td>
+<p> + <em>ϵ</em></p>
+</td>
+</tr></tbody></table>
+<p>But we can’t just do greedy prioritization, because it will lead to always training the same experiences (that have big priority), and thus over-fitting.</p>
+<p>So we introduce stochastic prioritization, which generates the probability of being chosen for a replay.</p>
+<p>But, because we use priority sampling, purely random sampling is abandoned. As a consequence, we introduce bias toward high-priority samples (more chances to be selected).</p>
+<p>To correct this bias, we use importance sampling weights (IS) that will adjust the updating by reducing the weights of the often seen samples.</p>
+<h2 id="policy-based-reinforcement-learning-algorithms">Policy based Reinforcement Learning algorithms</h2>
+<p>There are 2 types of policies:</p>
+<ul>
+<li>deterministic: given state s, <em>π</em>(<em>s</em>)=<em>a</em>
+</li>
+<li><table><tbody><tr>
+<td>
+<p>stochastic: given state s, <em>π</em>(<em>a</em></p>
+</td>
+<td>
+<p><em>s</em>)=<em>P</em>(<em>a**t</em></p>
+</td>
+<td>
+<p><em>s**t</em>) (Partially Observable Markov Decision Process (POMDP))</p>
+</td>
+</tr></tbody></table></li>
+</ul>
+<p>Stochastic policies are the most common type.</p>
+<p>Main advantages:</p>
+<ul>
+<li>convergence: because we follow the gradient to find the best parameters, we’re guaranteed to converge on a local maximum (worst case) or global maximum (best case)</li>
+<li>better in high dimensional action spaces: if we have a high number of continuous actions, policy based methods can model them better</li>
+<li>policy gradients can learn stochastic policies</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>they tend to converge on a local optima</li>
+<li>longer training times</li>
+</ul>
+<h3 id="objectivepolicy-score-function">Objective/Policy Score function</h3>
+<p><em>J</em>1(<em>θ</em>)=<em>E<strong>π*[*G*1=*R*1+*γ</strong>R</em>2+<em>γ</em>2<em>R</em>3+…] = <em>E**π</em>(<em>V</em>(<em>s</em>1))</p>
+<p>The idea is simple. If I always start in some state s1, what’s the total reward I’ll get from that start state until the end?</p>
+<p>In a continuous environment, we can use the average value, because we can’t rely on a specific start state.</p>
+<p>Each state value is now weighted (because some happen more than others) by the probability of the occurrence of the respected state.</p>
+<p>$J_{avgv}(\theta)=E_{\pi}(V(s))=\sum d(s) V(s){\ where \ }d(s)=\frac{N(s)}{\sum_{s^{\prime}} N\left(s^{\prime}\right)}\ (the frequency of the state)$</p>
+<p>Third, we can use the average reward per time step. The idea here is that we want to get the most reward per time step.</p>
+<p><em>J<strong>a</strong>v<strong>R*(*θ*)=*E</strong>π</em>(<em>r</em>)=∑<em>s<strong>d*(*s*)∑*a</strong>π<strong>θ*(*s*, *a*)*R</strong>s**a</em> (probability that I’m in state s) (probability that I take action a from that state under this policy) (immediate reward)</p>
+<h3 id="gradient-ascent">Gradient ascent</h3>
+<p>Our goal is to find the parameter θ that maximizes J(θ).</p>
+<p><em>J</em>(<em>θ</em>)=<em>E<strong>π*[*R*(𝒯)],  *w</strong>h<strong>e</strong>r<strong>e* 𝒯 = (*s</strong>i</em>, <em>a<strong>i*, *r</strong>i</em>) (expected given policy) (expected future reward)</p>
+<p>Which is the total summation of expected reward given policy.</p>
+<h2 id="hybrid-method">Hybrid method</h2>
+<h3 id="actor-critic-a2c">Actor Critic (A2C)</h3>
+<p>We’ll using two neural networks:</p>
+<ul>
+<li>a Critic that measures how good the action taken is (value-based)</li>
+<li>an Actor that controls how our agent behaves (policy-based)</li>
+</ul>
+<p>The Actor Critic model is a better score function than Monte Carlo. Instead of waiting until the end of the episode as we do in Monte Carlo REINFORCE, we make an update at each step (TD Learning).</p>
+<ol><li><a href="https://arxiv.org/abs/1511.05952">https://arxiv.org/abs/1511.05952</a></li></ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

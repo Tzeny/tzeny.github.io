@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Types of Machine Learning algorithms">
+<meta name="keywords" content="Types of Machine Learning algorithms, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Types of Machine Learning algorithms" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/02/22/types_of_machine_learning_algorithms/" property="og:url">
+<meta content="2019-02-22T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Types of Machine Learning algorithms">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/02/22/types_of_machine_learning_algorithms/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/02/22/types_of_machine_learning_algorithms/">Types of Machine Learning algorithms</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Types of Machine Learning algorithms</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>Based on the Coursera Machine Learning course1</p>
+<p>Some more detailed information: <a href="https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing"></a><a href="https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing">https://docs.google.com/document/d/11i46PW6rc0sYrQ8nQ5tqCtXwvR09TiOu8M3-M-K_PUQ/edit?usp=sharing</a></p>
+<h2 id="supervised-learning">Supervised Learning</h2>
+<h3 id="regression-problem">Regression problem</h3>
+<figure class="image"> <img src="/assets/img/wiki/Linear_regression.png" alt="thumb" style="max-width: 100%;"><figcaption>thumb</figcaption></figure><p>We choose a model class: y=f(x;W) - a model class f is a way of using some numerical parameters W, to map each input vector x into a predicted output y</p>
+<p>Univariate linear regression:</p>
+<ul>
+<li>Prediction: <em>h**θ</em>(<em>x</em>)=<em>θ</em>0 + <em>θ</em>1 * <em>x</em>
+</li>
+<li>Cost function: $J(\theta_0,\theta_1) = \sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2$</li>
+</ul>
+<p>Multivariate linear regression:</p>
+<ul>
+<li>Prediction: <em>h<strong>θ*(*x*)=*θ*0 * *x*0 + *θ*1 * *x*1 + … + *θ</strong>n</em> * <em>x**n</em>
+</li>
+<li>Cost function: $J(\theta_0,\theta_1) = \sum_{i=1}^m(h_\theta(x^{(i)})-y^{(i)})^2$</li>
+</ul>
+<h3 id="classification-problems">Classification problems</h3>
+<figure class="image"> <img src="/assets/img/wiki/Logistic-regression-example.jpg" alt="Logistic function" style="max-width: 100%;"><figcaption>Logistic function</figcaption></figure><p>Y={0,1} - binary classification; can have more values We end up creating a decision boundary; inside we predict y=1, outside we predict y=0</p>
+<p>Logistic regression with 2 outputs (binary classification):</p>
+<ul>
+<li>Prediction: $h_\theta(x)=g(\Theta^T*x)=\frac{1}{1+e^{-\Theta^T*x}}$ (sigmoid/logistic function)</li>
+<li>Cost: $J(\theta) = -\frac{1}{m}\sum_{i=1}^m(y^{(i)}*\log(h_\theta(x^{(i)}) + (1-y^{(i)})*\log(1-h_\theta(x^{(i)})) + \frac{\lambda}{2m}\sum_{j=1}^n\theta_j$</li>
+</ul>
+<figure class="image"> <img src="/assets/img/wiki/Logistic_cost.png" alt="border" style="max-width: 100%;"><figcaption>border</figcaption></figure><p>Logistic regression with n outputs (one vs all algorithm):</p>
+<figure class="image"> <img src="/assets/img/wiki/One_vs_all.png" alt="border" style="max-width: 100%;"><figcaption>border</figcaption></figure><p>If we have to distinguish between many similar classes (ex: dog breeds), the problem is called fine grained classification.</p>
+<h3 id="support-vector-machines">Support vector machines</h3>
+<p>They are learning algorithms used for binary classification of data. What a SVM does is represent examples as points in space separated by as wide a margin as possible. New examples are mapped in the same space and depending on which side of the boundary they fell are classified into 2 categories.</p>
+<p>It can use Kernels, which take a number of landmarks in space and use the distance between an example X and a landmark L as a feature in the hypothesis. There are multiple ways to compute the distance:</p>
+<ul><li><table><tbody><tr><td colspan="2">
+<p>Gaussian distance: $f1 = similarity(x,l) = \exp(-\frac{</p>
+</td></tr></tbody></table></li></ul>
+<figure class="image"> <img src="/assets/img/wiki/Gaussian_distribution.png" alt="Gaussian distribution for different parameters" style="max-width: 100%;"><figcaption>Gaussian distribution for different parameters</figcaption></figure><ul>
+<li>Polynomial kernel</li>
+<li>String kernel</li>
+<li>etc</li>
+</ul>
+<p>Usually when we train we use each of the train examples as a landmark.</p>
+<p>Cost function: $C\sum_{i=1}^m[y^{(i)}cost_1(\theta^T*f^{i})+(1-y^{(i)})cost_0(\theta^T*f^{i})] + \frac{1}{2}\sum_{j=1}^m \theta_j^2$</p>
+<p>Large C -&gt; lower bias, higher variance Small c -&gt; higher bias, lower variance</p>
+<p>Large<em>σ</em>2 -&gt; features fi vary more smoothly -&gt; higher bias, lower variance Small<em>σ</em>2 -&gt; features fi vary less smoothly -&gt; lower bias, higher variance</p>
+<h3 id="natural-language-processing">Natural Language Processing</h3>
+<p>Natural language processing is an area of computer science and artificial intelligence concerned with the interactions between computers and human languages, in particular how to program computers to process and analyze large amounts of natural language data.</p>
+<h2 id="unsupervised-learning">Unsupervised learning</h2>
+<p>We give our algorithm a set of unlabeled data and we ask it for example to find order in the data.</p>
+<h3 id="recommender-systems---content-based">Recommender systems - content based</h3>
+<p>nu - number of users nm - number of movies r(i,j) = 1 if user i has rated movie j y(i,j) = rating given by user i to movie j (defined only if r(i,j)==1) θ^j = parameter vector for user j x^i = feature vector for movie i m^j = number of movies rated by user j to learn θ^j</p>
+<p>For each user we learn a parameter vector θ^j of size nx1, and for each unrated movie i we predict user j will rate it (θ^j)’*x^i stars.</p>
+<h5 id="optimization-objective">Optimization objective</h5>
+<p>$\underset{\theta^{(1)},\theta^{(2)},… \theta^{(n_u)}}{min}\frac{1}{2}\sum_{j=1}^{n_u}\sum_{i:r(i,j)=1}({\theta^{(j)}}^T*x^{(i)}-y^{(i,j)})^2+\frac{\lambda}{2}\sum_{j=1}^{n_u}\sum_{k=1}^n(\theta_k^{(j)})^2$</p>
+<h5 id="gradient-descent-update">Gradient descent update</h5>
+<p><em>θ<strong>k*(*j*) := *θ</strong>k</em>(<em>j</em>) − <em>α</em>∑<em>i</em> : <em>r</em>(<em>i</em>, <em>j</em>)=1(<em>θ</em>(<em>j</em>)<em>T</em> * <em>x</em>(<em>i</em>) − <em>y</em>(<em>i</em>, <em>j</em>))<em>x**k</em>(<em>i</em>)for k=0</p>
+<p><em>θ<strong>k*(*j*) := *θ</strong>k</em>(<em>j</em>) − <em>α</em>(∑<em>i</em> : <em>r</em>(<em>i</em>, <em>j</em>)=1(<em>θ</em>(<em>j</em>)<em>T</em> * <em>x</em>(<em>i</em>) − <em>y</em>(<em>i</em>, <em>j</em>))<em>x<strong>k*(*i*) + *λ</strong>θ**k</em>(<em>j</em>))for k != 0</p>
+<h4 id="collaborative-filtering">Collaborative filtering</h4>
+<figure class="image"> <img src="/assets/img/wiki/Collaborative_filtering.png" alt="thumb" style="max-width: 100%;"><figcaption>thumb</figcaption></figure><p>The algorithm should learn a good set of features x^i on its own.</p>
+<p>$\underset{x^{(i)}}{min}\frac{1}{2}\sum_{j=1}^{n_u}\sum_{i:r(i,j)=1}({\theta^{(j)}}^T*x^{(i)}-y^{(i,j)})^2+\frac{\lambda}{2}\sum_{k=1}^n(x_k^{(i)})^2$</p>
+<p>Given θ^1, θ^2, … θ^nu learn x^1, x^2, …,x^nm</p>
+<p>$\underset{x^{(1)},x^{(2)},… x^{(n_m)}}{min}\frac{1}{2}\sum_{j=1}^{n_m}\sum_{i:r(i,j)=1}({\theta^{(j)}}^T*x^{(i)}-y^{(i,j)})^2+\frac{\lambda}{2}\sum_{i=1}^{n_m}\sum_{k=1}^n(x_k^{(i)})^2$</p>
+<p>Given a set of values for x^i we can estimate θ^j and vice versa.</p>
+<h5 id="algorithm">Algorithm</h5>
+<ol><li>Initializa x^1, x^2, …,x^nm and θ^1, θ^2, … θ^nu to random small values 2. Minimize J(x^1, x^2, …,x^nm; θ^1, θ^2, … θ^nu) using an optimization algorithm:</li></ol>
+<p><em>x<strong>k*(*i*) := *x</strong>k</em>(<em>i</em>) − <em>α</em>(∑<em>i</em> : <em>r</em>(<em>i</em>, <em>j</em>)=1(<em>θ</em>(<em>j</em>)<em>T</em> * <em>x</em>(<em>i</em>) − <em>y</em>(<em>i</em>, <em>j</em>))<em>x<strong>k*(*i*) + *λ</strong>x**k</em>(<em>i</em>))</p>
+<p><em>θ<strong>k*(*j*) := *θ</strong>k</em>(<em>j</em>) − <em>α</em>(∑<em>i</em> : <em>r</em>(<em>i</em>, <em>j</em>)=1(<em>θ</em>(<em>j</em>)<em>T</em> * <em>x</em>(<em>i</em>) − <em>y</em>(<em>i</em>, <em>j</em>))<em>x<strong>k*(*i*) + *λ</strong>θ**k</em>(<em>j</em>))</p>
+<p>For a user with parameters θ and a movie with (learned) features x predict rating θ^T*x.</p>
+<table><tbody><tr><td colspan="2">
+<p>Finding similar movies to movie i: find movies j where</p>
+</td></tr></tbody></table>
+<h5 id="mean-normalization">Mean normalization</h5>
+<figure class="image"> <img src="/assets/img/wiki/Mean_normalization.png" alt="border,500px" style="max-width: 100%;"><figcaption>border,500px</figcaption></figure><h3 id="anomaly-detection">Anomaly Detection</h3>
+<figure class="image"> <img src="/assets/img/wiki/Gaussian_distribution_ml.png" alt="2 feature vectors (red) and the resulting gauss distributions; with green we have anomalous features" style="max-width: 100%;"><figcaption>2 feature vectors (red) and the resulting gauss distributions; with green we have anomalous features</figcaption></figure><p>Given a set of features without labels, try to learn a way of finding out if new features are anomalous. Examples:</p>
+<ul>
+<li>given aircraft engine heat output and vibrations as features, and for new data points (new engines) determine the probability that they are defective</li>
+<li>given user’s actions on a website as features, determine the probability of an action being a fraud / suspicious</li>
+<li>given some metrics for computers in a cluster, determine the probability of something being wrong with one of the computers</li>
+</ul>
+<p>For this we can use the Gaussian distribution. We plot all features on the X axis, and we learn from them the parameters μ and σ^2. Then, we plot new examples onto the X axis and see how well they fit into the distribution. To find out μ and σ^ we use the following formulas:</p>
+<p>$\mu_j=\frac{1}{m}\sum_{i=1}^mx_j^{(i)}$ $\sigma_j^2=\frac{1}{m}\sum_{i=1}^m(x_j^{(i)} - \mu_j)^2$</p>
+<p>To compute the probability of a new example we use the following formula:</p>
+<p>$\text{anomaly if }p(x) &lt; \epsilon \text{ ; } p(x)=\prod_{j=1}^np(x;\mu_j,\sigma_j^2)=\prod_{j=1}^2\frac{1}{\sqrt{2\pi}\sigma_j}\exp{(-\frac{(x_j- \mu_j)^2}{2\sigma_j^2})}$</p>
+<p>This algorithm can be combined with supervised learning. Suppose we have 10000 good examples, and 20 anomalous ones. We can split them up as follows:</p>
+<ul>
+<li>training set: 6000 good examples</li>
+<li>cross validation set: 2000 good, 10 anomalous - we can use this to choose ε</li>
+<li>test set: 2000 good, 10 anomalous</li>
+</ul>
+<table>
+<thead><tr>
+<th>
+<p>Anomaly detection</p>
+</th>
+<th>
+<p>Supervised learning</p>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<p>Very small number of positive examples (y=1), large number of negative examples(y=0)</p>
+</td>
+<td>
+<p>Large number of both positive and negative examples</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Many different types of anomalies, hard to learn what anomaly looks like</p>
+</td>
+<td>
+<p>Enough positive examples so that the algorithm gets a sense of what positive examples look like</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Future anomalies may not resemble current ones</p>
+</td>
+<td>
+<p>Future positive examples will resemble those in the training set</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fraud detection</p>
+</td>
+<td>
+<p>Email spam classification</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Monitoring machines in a data center</p>
+</td>
+<td>
+<p>Weather prediction</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-gaussian-features">Non gaussian features</h4>
+<p>If we have features whose distribution is non gaussian we need to find ways to transform their distribution into a gaussian one (replace x with log(x), or sqrt(x)).</p>
+<h4 id="adding-new-features">Adding new features</h4>
+<p>We can combine features to generate new features, that quantify relationships between existing features. For example, when monitoring a server we might come up with the feature: cpu_usage/network_traffic.</p>
+<h4 id="multivariate-gaussian-distribution">Multivariate Gaussian distribution</h4>
+<figure class="image"> <img src="/assets/img/wiki/Multivariate_gaussian_distribution.png" alt="Multivariate gauss distributions" style="max-width: 100%;"><figcaption>Multivariate gauss distributions</figcaption></figure><p>To capture the relationships between features we can opt to use one multivariate gaussian distribution instead of several gaussian distributions.</p>
+<table><tbody><tr>
+<td>
+<p>$p(x;\mu,\Sigma)=\frac{1}{(2\pi)^\frac{n}{2}</p>
+</td>
+<td>
+<p>\Sigma</p>
+</td>
+<td>
+<p>^\frac{1}{2}}exp{(-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu))}$</p>
+</td>
+</tr></tbody></table>
+<p>Fitting the parameters:</p>
+<p>$\mu=\frac{1}{m}\sum_{i=1}^mx_j^{(i)}$ $\Sigma=\frac{1}{m}\sum_{i=1}^m(x^{(i)} - \mu)(x^{(i)} - \mu)^T$</p>
+<table>
+<thead><tr>
+<th>
+<p>Original model</p>
+</th>
+<th>
+<p>Multivariate Gaussian distribution</p>
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<p>Manually create features to capture anomalies where x1x2 might take unusual combinations</p>
+</td>
+<td>
+<p>Automatically captures correlations between values</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Computationally cheaper</p>
+</td>
+<td>
+<p>Computationally more expensive</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ok for small training set sizes (m n or Σ is non-invertible</p>
+</td>
+<td>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="clustering">Clustering</h3>
+<p>We give our algorithm a set of unlabeled data and ask it to find clusters of similar data points.</p>
+<p>Motivation:</p>
+<ul><li>Data compression: in the case of a large number of features (&gt;100 for ex), we can use clustering to find related features, and combine them into new features, thus reducing the number of features<ul>
+<li>For instance we may have a feature that represents length in cm, and one that represents length in inches; we can combine these 2 features into a new feature z without losing much informations</li>
+<li>We can use dimensionality reduction to visualize your data, turning large number of features into 2 or 3 combined features</li>
+</ul>
+</li></ul>
+<h4 id="pca---principal-component-analysis">PCA - Principal Component Analysis</h4>
+<figure class="image"> <img src="/assets/img/wiki/Fig_pca_principal_component_analysis.png" alt="frameless,PCA dimensionality reduction" style="max-width: 100%;"><figcaption>frameless,PCA dimensionality reduction</figcaption></figure><p>It can:</p>
+<ul>
+<li>Reduce disk space usage</li>
+<li>Speed up training time</li>
+<li>Help with visualisation</li>
+</ul>
+<p>A method to reduce N dimensional data to K dimensions (K &lt;= N)</p>
+<p>It tries to find surfaces / vectors on which to project data points such that it minimizes the squared error of projection</p>
+<p>To go from K back to N dimensions <em>X<strong>a</strong>p<strong>p</strong>r<strong>o</strong>x<strong>n* * 1(*i*) = *U</strong>r<strong>e</strong>d<strong>u</strong>c<strong>e</strong>n</em> * <em>k</em> * <em>z**k</em> * 1(<em>i</em>)</p>
+<p>Choosing K: [U,S,V] = svd(Sigma)</p>
+<p>Pick the smallest K for which: $\frac{\sum_{i=1}^KS_{ii}}{\sum_{i=1}^NS_{ii}} \geq 0.99\text{ (variance retained)}$</p>
+<p>We should use it only when necessary (data is taking up too much space, algorithm trains to slowly). It is not regularization! It is not linear regression!</p>
+<h4 id="k-means-algorithm">K-Means algorithm</h4>
+<figure class="image"> <img src="/assets/img/wiki/K-means_convergence.gif" alt="border,K-means algorithm converging" style="max-width: 100%;"><figcaption>border,K-means algorithm converging</figcaption></figure><p>Is an iterative algorithm that uses a number of centroids: m to try and make sense of the data.</p>
+<p>randomly initialize K cluster centroids:<em>μ</em>1, <em>μ</em>2…<em>μ<strong>K* ∈ *R</strong>n</em></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>repeat for n iterations{
+    #cluster assignment step which minimizes J with respect to c^(i), holding μk
+    for i=1 to m
+        c^(i) := index (from 1 to K) of closest cluster centroid
+
+    #move centroid step which minimizes J with respect to μk, holding c^(i)
+    for k=1 to K
+        μk := average of all points assigned to cluster K
+ }
+</code></pre></div></div>
+<p>If a cluster centroid ends up without any points assigned to it we can delete it (common) or randomly reinitialize it.</p>
+<table><tbody><tr><td colspan="2">
+<p>Cost function: $\frac{1}{m}\sum_{i=1}^m</p>
+</td></tr></tbody></table>
+<h5 id="random-initialization">Random initialization</h5>
+<p>To initialize our centroids we will pick K random points from the dataset, and set our μ centroids at their positions. To make sure K-means doesn’t reach a local optima, especially for a small K, we will run the algorithm more than once.</p>
+<h5 id="choosing-k">Choosing K</h5>
+<p>We can use the elbow method, where we look at a plot of J versus K and choose based on how sharply the line turns.</p>
+<p>You can choose depending on the downstream use of the data.</p>
+<h2 id="reinforcement-learning">Reinforcement learning</h2>
+<figure class="image"> <img src="/assets/img/wiki/Reinforcement-learning.jpg" alt="Reinforcement learning" style="max-width: 100%;"><figcaption>Reinforcement learning</figcaption></figure><p>Here we have an agent and an environment which the agent can interact with. Based on his interactions and our goal, we give him a score. His goal is to optimize that score.</p>
+<ol><li><a href="https://www.coursera.org/learn/machine-learning">https://www.coursera.org/learn/machine-learning</a></li></ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

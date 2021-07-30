@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Linear Algebra">
+<meta name="keywords" content="Linear Algebra, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Linear Algebra" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/07/03/linear_algebra/" property="og:url">
+<meta content="2018-07-03T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Linear Algebra">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/07/03/linear_algebra/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/07/03/linear_algebra/">Linear Algebra</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Linear Algebra</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<figure class="image"> <img src="/assets/img/wiki/Linear_algebra_axioms.png" alt="600px,Linear Algebra Axioms" style="max-width: 100%;"><figcaption>600px,Linear Algebra Axioms</figcaption></figure><p>Linear algebra is the branch of mathematics concerning linear equations.</p>
+<p>Based on this course: <a href="https://www.youtube.com/watch?v=kjBOesZCoqc&amp;list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&amp;index=1">Essence of linear algebra by 3Blue1Brown</a></p>
+<h2 id="vectors">Vectors</h2>
+<figure class="image"> <img src="/assets/img/wiki/Vector_sum_linear_algebra.gif" alt="Vector addition" style="max-width: 100%;"><figcaption>Vector addition</figcaption></figure><p>Vectors are nx1 dimensional matrices. They can be added together element wise, or multiplied with scalars (numbers). Graphically then can be represented as arrows from the origin of the coordinate system to the point defining them.</p>
+<p>Think of single vectors as line segments, think of multiple vectors as points.</p>
+<p>When adding 2 vectors, we move the second one so that it’s tail is at the top of the first one, then draw a line connecting the origin with the top of the second vector.</p>
+<h3 id="linear-combination-of-vectors">Linear combination of vectors</h3>
+<p>$a\vec{v}+b\vec{w}$</p>
+<p>If you keep a or b constant and vary the value of the other one, you will get a straight line.</p>
+<p>The set of vectors you can reach using any linear combination of n vectors is called the span of those vectors.</p>
+<p>If one of the vectors can be removed without reducing the span, we say the n vectors are linearly dependent(one of the vectors can be expressed as a linear combination of the others). If on the other hand each vector adds a new dimension to the span they are said to be linearly independent</p>
+<p>For 2D there are 3 posibilities:</p>
+<ul>
+<li>vectors are linearly dependent, and their span is a line</li>
+<li>vectors are linearly independent and their span is the whole 2D plane</li>
+<li>vectors are 0, their span is the point (0,0)</li>
+</ul>
+<h3 id="basis">Basis</h3>
+<p>A basis of a space is a set of linearly independent vectors whose span is that space.</p>
+<p>For the 2d coordinate system we use $\hat{i}$ and $\hat{j}$ as a basis.</p>
+<h4 id="changing-bases">Changing bases</h4>
+<figure class="image"> <img src="/assets/img/wiki/Basis_transformation_3blue_1brown.png" alt="Changing 2D basis" style="max-width: 100%;"><figcaption>Changing 2D basis</figcaption></figure><p>If we want to represent a vector with a different basis, we can use a linear transformation. That linear transformation would be a matrix with the new basis vectors as columns.</p>
+<p>To translate one of our vectors into a different basis we multiply our vector by the inverse of that basis’ transformation matrix.</p>
+<p>To apply a transformation in a different basis.</p>
+<p>$A^{-1} * M * A * \vec{v}$Apply transformation M described in basis B1 to vector v described in B2 with the base transformation matrix B2-&gt;B1 A.</p>
+<h3 id="eigenvectors">Eigenvectors</h3>
+<p>An eigen vector is a vector that remains on its span after a transformation. Its eigenvalue is the factor by which it gets stretched/squished.</p>
+<p>In 3D space, if we have a rotation transformation, finding its eigenvector = finding the axis of rotation.</p>
+<p>$A*\vec{v} = \lambda*\vec{v}$ where A is a transformation, v an eigenvector and lambda its eigenvalue</p>
+<p>To solve: $A*\vec{v} = (\lambda*I)*\vec{v} (A - \lambda*I)*\vec{v} = \vec{0} A - \lambda*I = \vec{0}$</p>
+<h4 id="eigenbasis">Eigenbasis</h4>
+<p>If all the vectors that form our basis are eigen vectors, it means our basis is an eigenbasis, represented by a diagonal matrix.</p>
+<p>This is nice because multiplying diagonal matrices is easy. So if we want to repeatedly apply a transformation, we can try to change its input to an eigenbasis, compute it there than change the result back to our basis.</p>
+<h2 id="linear-transformations--operations">Linear transformations / operations</h2>
+<figure class="image"> <img src="/assets/img/wiki/Polynomial_derivative.png" alt="Polynomial derivate operation represented as a matrix" style="max-width: 100%;"><figcaption>Polynomial derivate operation represented as a matrix</figcaption></figure><p>Formal definition:</p>
+<p>An operation L is linear if it has the following 2 properties:</p>
+<ul>
+<li>Additivity: $L(\vec{v}+\vec{w}) = L(\vec{v})+L(\vec{w})$</li>
+<li>Scaling: $L(c\vec{v})=cL(\vec{v})$</li>
+</ul>
+<p>We call it a transformation if it is applied to vectors, operation if it is applied to functions (ex: derivative).</p>
+<p>All lines must remain lines (no curbing). The origin has to be fixed. Imagine transformation as being applied to the whole plane.</p>
+<p>For example: if we take the vector $\vec{a} = 1*\hat{i}-2*\hat{j}$, after a linear transformation $transform(\vec{a}) = 1*transform(\hat{i})-2*transform(\hat{j})$</p>
+<p>Any 2D linear transformation can be quantified by 4 numbers:</p>
+<ul>
+<li>2 representing where $\hat{i}$ lands</li>
+<li>2 representing where $\hat{j}$ lands</li>
+</ul>
+<p>$\begin{bmatrix} i_x &amp; j_x \<br> i_y &amp; j_y \end{bmatrix}$</p>
+<p>Applying the transformation to a vector:</p>
+<p>$\begin{bmatrix} a &amp; b \<br> c &amp; d \end{bmatrix} * \begin{bmatrix} x \<br> y \end{bmatrix} = x*\begin{bmatrix} a \<br> c \end{bmatrix} +y* \begin{bmatrix} b \<br> d \end{bmatrix} = \begin{bmatrix} a*x + b*y \<br> c*x + d*y \end{bmatrix}$</p>
+<h3 id="matrix-multiplications-as-compositions">Matrix multiplications as compositions</h3>
+<p>If we have 2 matrices that we want to apply successively to transform a given vector, we can apply their composition to the vector to achieve the same result in one step.</p>
+<p>Example: let’s say we have a rotation and a shear we want to apply to a vector. We can calculate their composition and apply it to the vector.</p>
+<p>$\begin{bmatrix} 1 &amp; 1 \<br> 0 &amp; 1 \end{bmatrix} * \begin{bmatrix} 0 &amp; -1 \<br> 1 &amp; 0 \end{bmatrix} = \begin{bmatrix} 1 &amp; -1 \<br> 1 &amp; 0 \end{bmatrix}$</p>
+<p>shear * rotation = composition</p>
+<p>Note: we apply the transformations from right to left. The same way we compose functions g(f(x)).</p>
+<h3 id="space-orientation">Space orientation</h3>
+<p>At first $\hat{i}$ is to the right of $\hat{j}$. If after a transformation $\hat{i}$ is to the left $\hat{j}$, it means that the orientation of space has been inverted.</p>
+<h3 id="column-space">Column space</h3>
+<p>The column space of a matrix <em>A</em> is the set of all the possible outputs of $A\vec{v}$. It’s also called the span of the columns.</p>
+<h3 id="rank">Rank</h3>
+<p>The rank of a transformation is the number of dimensions at its output. If it squishes space into a line then it’s rank is 1, if it squishes space into a plane than it’s rank is 2. For a 2x2 matrix the max rank is 2.</p>
+<p>More precise definition: rank = number of dimensions in the column space.</p>
+<h3 id="null-spacekernel">Null space/Kernel</h3>
+<p>The null space or kernel of your matrix is the set of all vectors that, after the transformation land in the origin. (for a 2D matrix with rank 1, a whole line of vectors lands in the origin; for a 3D matrix with rank 1 a whole plane of vectors lands in the origin).</p>
+<p>In the case of equations($A*\vec{x}=\vec{v}$, if $\vec{v}$ is null, null space gives you all of the solutions for your equation.</p>
+<h3 id="determinants">Determinants</h3>
+<p>A determinant is a measure of how a transformation changes the area of the square determined by $\hat{i}$ and $\hat{j}$. In 3D space it tells us how much volumes are changing.</p>
+<p>If the determinant is 0, the transformation squishes everything into a smaller dimension.</p>
+<p>If the determinant is negative, it means the orientation of space has been inverted. For 3D space we can use the 3 finger rule: forefinger for i, thumb for k and middle finger for j. If you can do this after the transformation it means orientation has not changed.</p>
+<h3 id="inverse">Inverse</h3>
+<p><em>A</em>−1 is the transformation that, when applied after <em>A</em> gives the identity transformation <em>I</em>, that has ones on the main diagonal and zeroes everywhere else. <em>A</em>−1 * <em>A</em> = <em>I</em></p>
+<p>The inverse only exists if det(<em>A</em>) &gt; 0</p>
+<h3 id="non-square-matrices">Non Square Matrices</h3>
+<p>Non square matrices map inputs to outputs of different dimensions. For example a 3x2 matrix maps 2D vectors into 3D space.</p>
+<h3 id="dot-product">Dot product</h3>
+<p><em>A</em> ⋅ <em>B</em> = <em>s<strong>u</strong>m</em>(<em>A</em>.*<em>B</em>)</p>
+<p>We can remember this easily in the following form: $\hat{i}*\hat{j}=+1$</p>
+<p>Between 2 vectors:</p>
+<ul>
+<li>If they point in the same direction $\vec{v}\cdot \vec{w}&gt;0$</li>
+<li>If they are perpendicular $\vec{v}\cdot \vec{w}=0$</li>
+<li>If they point in opposite directions $\vec{v}\cdot \vec{w}&lt;0$</li>
+</ul>
+<h3 id="cross-product">Cross product</h3>
+<figure class="image"> <img src="/assets/img/wiki/Cross-product-3blue-1brown.png" alt="Cross product of 2 vectors" style="max-width: 100%;"><figcaption>Cross product of 2 vectors</figcaption></figure><h4 id="2d-space">2D space</h4>
+<p>The cross product $\vec{v}\times \vec{w}$ is equal to the area defined by the parallelogram with the sides resting on v and w. We have 3 cases:</p>
+<ul>
+<li>v is to the right of w, v x w &gt; 0</li>
+<li>v = w, v x w = 0</li>
+<li>v is to the left of w, v x w &lt; 0</li>
+</ul>
+<h4 id="3d-space">3D space</h4>
+<p>In the 3D space, the cross product is a vector of length = area of parallelogram and perpendicular to it (direction given by 3 finger rule)</p>
+<p>$\begin{bmatrix} v1 \<br> v2 \<br> v3 \end{bmatrix} \times \begin{bmatrix} w1 \<br> w2 \<br> w3 \end{bmatrix} = \det{( \begin{bmatrix} \hat{i} &amp; v1 &amp; w1 \<br> \hat{j} &amp; v2 &amp; w2 \<br> \hat{k} &amp; v3 &amp; w3 \end{bmatrix} )}$</p>
+<h3 id="duality">Duality</h3>
+<p>Every time we have a transformation that takes us to the number line, we can think of it as a vector; and applying the transformation is identical to doing a dot product with that vector.</p>
+<h2 id="matrices">Matrices</h2>
+<h3 id="orthogonal-matrices">Orthogonal matrices</h3>
+<p>In linear algebra, an orthogonal matrix is a square matrix whose columns and rows are orthogonal unit vectors (i.e., orthonormal vectors), i.e.</p>
+<p><em>Q<strong>T</strong>Q</em> = <em>Q<strong>Q</strong>T</em> = <em>I</em>, where <em>I</em> is the identity matrix.</p>
+<p>This leads to the equivalent characterization: a matrix Q is orthogonal if its transpose is equal to its inverse:</p>
+<p><em>Q**T</em> = <em>Q</em>−1.</p>
+<p>An orthogonal matrix Q is necessarily:</p>
+<ul>
+<li>Invertible (with inverse: 1 = <em>Q</em>−1 = <em>Q**T</em>
+</li>
+<li>Unitary 1 = <em>Q</em>−1 = <em>Q</em>*</li>
+<li>Normal 1 = <em>Q</em>* * <em>Q</em> = <em>Q</em> * <em>Q</em>* in the reals.</li>
+</ul>
+<p>The determinant of any orthogonal matrix is either +1 or −1. As a linear transformation, an orthogonal matrix preserves the dot product of vectors, and therefore acts as an isometry of Euclidean space, such as a rotation or reflection. In other words, it is a unitary transformation.</p>
+<h2 id="markov-chains">Markov chains</h2>
+<figure class="image"> <img src="/assets/img/wiki/Markov_health.jpg" alt="Example of a Markov chain" style="max-width: 100%;"><figcaption>Example of a Markov chain</figcaption></figure><p>Markov chains are expressed as stochastic matrices, with each entry <em>M<strong>i</strong>j</em> representing the probability of jumping from state i to state j. The row sum of such a matrix is always 1.</p>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

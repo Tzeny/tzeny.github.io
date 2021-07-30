@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Neural Networks">
+<meta name="keywords" content="Neural Networks, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Neural Networks" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/03/07/neural_networks/" property="og:url">
+<meta content="2019-03-07T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Neural Networks">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/03/07/neural_networks/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+<script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/03/07/neural_networks/">Neural Networks</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Neural Networks</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<figure class="image"> <img src="/assets/img/wiki/Deep-Neural-Network.jpg" alt="Neural network with 3 hidden layers" style="max-width: 100%;"><figcaption>Neural network with 3 hidden layers</figcaption></figure><p>Deep learning is a new way to teach machines by giving them lots of data, and having them process it in ways only humans could before. Compared to other machine learning techniques, deep learning systems profit more from complex models, huge amounts of data and a longer computation time.</p>
+<p>When I say deep learning I think of a multi-layered neural network.</p>
+<h2 id="basics">Basics</h2>
+<h3 id="simple-network">Simple network</h3>
+<p>To train our NN we will set an optimization objective. In this case it will be minimizing our cost function J.</p>
+<p>$J(\theta)=\frac{1}{m}\sum_{i=1}^mD(h_\theta(\theta_i*x_i+b),L_i)$where D is the cross entropy function, and L is a matrix of hot encoded labels</p>
+<figure class="image"> <img src="/assets/img/wiki/Basic_nn.png" alt="border,600px,Example of a NN architecture" style="max-width: 100%;"><figcaption>border,600px,Example of a NN architecture</figcaption></figure><h3 id="data-preprocessing">Data preprocessing</h3>
+<h4 id="standard-normalization">Standard normalization</h4>
+<p>We want our data to have μ(mean)=0 and σ(Xi)=σ(Xj) for any j!=i (variance).</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="n">ss</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'data_ss'</span><span class="p">]</span> <span class="o">=</span> <span class="n">ss</span><span class="p">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="o">/</span><span class="s">'data'</span><span class="o">|</span><span class="s">'data'</span><span class="p">]])</span>
+<span class="n">df</span><span class="p">.</span><span class="n">describe</span><span class="p">().</span><span class="nb">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+<h4 id="minmax-normalization">MinMax normalization</h4>
+<p>We’ll scale our data to fit on a scale from 0.0 to 1.0</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+
+<span class="n">mms</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">()</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'data_mms'</span><span class="p">]</span> <span class="o">=</span> <span class="n">mms</span><span class="p">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="o">/</span><span class="s">'data'</span><span class="o">|</span><span class="s">'data'</span><span class="p">]])</span>
+<span class="n">df</span><span class="p">.</span><span class="n">describe</span><span class="p">().</span><span class="nb">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></div>
+<h3 id="weight-initialization">Weight initialization</h3>
+<p>We’ll initialize our weights from a Gaussian distribution with μ=0 and standard deviation σ. If we pick a small σ, the algorithm will be more uncertain (your output predictions will be relatively equal at first), if we pick a large σ you algorithm will be more opinionated (your output predictions will have spikes).</p>
+<h3 id="one-hot-encoding">One hot encoding</h3>
+<p>One hot encoding transforms categorical features to a format that works better with classification and regression algorithms.1</p>
+<p>Imagine we have 7 samples belonging to 4 categories, OHE will output a 4x1 vector (represented below as a row of the table) for each of them.</p>
+<figure class="image"> <img src="/assets/img/wiki/One-hot-encoding.png" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h2 id="hyperparameter-optimization2">Hyperparameter optimization2</h2>
+<p>In our neural networks we have a number of hyperparameters we can tune (learning rate, batch size, optimizer type etc.). In order to tune this we usually have a master that controls many workers performing experiments (training the network with a certain combination of parameters for a number of epochs) and returning results.</p>
+<p>Steps:</p>
+<ul><li>decide on a value for the hyperparameters</li></ul>
+<p>We have a couple of ways to search for good hyperparameter combinations:</p>
+<ul>
+<li>random search</li>
+<li>grid search</li>
+<li>Bayesian optimization</li>
+</ul>
+<h3 id="random-search">Random search</h3>
+<p>Randomly chooses values for the parameters. Can outperform grid search when a small number of hyper parameters affects the final performance of the network.</p>
+<h3 id="grid-search">Grid search</h3>
+<p>Exhaustive searching through a manually defined parameter space, usually guided by a metric calculated on the cross validation set. Continuous parameters will need to be turned into discrete sets of values.</p>
+<h3 id="bayesian-search">Bayesian search</h3>
+<p>Bayesian optimization build a probabilistic model function that maps from the hyperparameter space to the objective on the cross validation set, which gets updated after each new observation. The aim is to find the minimum of that function. In practice is has been shown to be better than random / grid search.</p>
+<h3 id="gradient-based-optimization">Gradient based optimization</h3>
+<p>Try to compute the gradient with respect to the hyperparameters and use it to optimize them.</p>
+<h3 id="evolutionary-optimization">Evolutionary optimization</h3>
+<p><a href="/Evolutionary_algorithm" title="wikilink">Evolutionary algorithm</a></p>
+<p>Evolutionary optimization is a methodology for the global optimization of noisy black-box functions. In hyperparameter optimization, evolutionary optimization uses <a href="/evolutionary_algorithms" title="wikilink">evolutionary algorithms</a> to search the space of hyperparameters for a given algorithm.3 Evolutionary hyperparameter optimization follows a <a href="/Evolutionary_algorithm#Implementation" title="wikilink">process</a> inspired by the biological concept of <a href="/evolution" title="wikilink">evolution</a>:</p>
+<ol>
+<li>Create an initial population of random solutions (i.e., randomly generate tuples of hyperparameters, typically 100+)</li>
+<li>Evaluate the hyperparameters tuples and acquire their <a href="/fitness_function" title="wikilink">fitness function</a> (e.g., 10-fold <a href="/Cross-validation_(statistics)" title="wikilink">cross-validation</a> accuracy of the machine learning algorithm with those hyperparameters)</li>
+<li>Rank the hyperparameter tuples by their relative fitness</li>
+<li>Replace the worst-performing hyperparameter tuples with new hyperparameter tuples generated through <a href="/crossover_(genetic_algorithm)" title="wikilink">crossover</a> and <a href="/mutation_(genetic_algorithm)" title="wikilink">mutation</a>
+</li>
+<li>Repeat steps 2-4 until satisfactory algorithm performance is reached or algorithm performance is no longer improving</li>
+</ol>
+<p>Evolutionary optimization has been used in hyperparameter optimization for statistical machine learning algorithms4, <a href="/automated_machine_learning" title="wikilink">automated machine learning</a>56, <a href="/Deep_learning#Deep_neural_networks" title="wikilink">deep neural network</a> architecture search78, as well as training of the weights in deep neural networks9.</p>
+<h2 id="activation-functions">Activation functions</h2>
+<h3 id="step">Step</h3>
+<p>step(x) = x &gt; 0</p>
+<figure class="image"> <img src="/assets/img/wiki/Step-function.png" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h3 id="sigmoid">Sigmoid</h3>
+<p>$sigmoid(x) = \frac{1}{1-\exp{(-x)}}$</p>
+<figure class="image"> <img src="/assets/img/wiki/Sigmoid.gif" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h3 id="hyperbolic-tangenttanh">Hyperbolic Tangent(tanh)</h3>
+<p>output(x) = tanh(x)</p>
+<figure class="image"> <img src="/assets/img/wiki/Tanh.gif" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h3 id="relurectified-linear-unit">ReLU(rectified linear unit)</h3>
+<p>relu(x) = max(0,x)</p>
+<figure class="image"> <img src="/assets/img/wiki/Relu-activation.png" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h3 id="softplus">Softplus</h3>
+<p>softplus(x) = log(1 + exp(x))</p>
+<figure class="image"> <img src="/assets/img/wiki/Rectifier_and_softplus_functions.svg" alt="border,200px" style="max-width: 100%;"><figcaption>border,200px</figcaption></figure><h3 id="softmax">Softmax</h3>
+<figure class="image"> <img src="/assets/img/wiki/Softmax.png" alt="Multi class clasification with softmax" style="max-width: 100%;"><figcaption>Multi class clasification with softmax</figcaption></figure><p>In mathematics, the softmax function, or normalized exponential function, is a generalization of the logistic function that “squashes” a K-dimensional vector z of arbitrary real values to a K-dimensional vector σ(z) of real values, where each entry is in the range (0, 1), and all the entries add up to 1.10</p>
+<p>They are used after last layer of a neural network to turn a vector of values into a vector of probabilities in the range[0,1] with the total sum of the vector being 1.</p>
+<p>$\sigma(z)<em>j=\frac{e^{z_j}}{\sum</em>{k=1}^Ke^{z_k}}$</p>
+<h2 id="optimization11">Optimization11</h2>
+<figure class="image"> <img src="/assets/img/wiki/Optimizers.png" alt="Tricks employed by common optimization algorithms" style="max-width: 100%;"><figcaption>Tricks employed by common optimization algorithms</figcaption></figure><h3 id="batch-gradient-descent">(Batch) Gradient Descent</h3>
+<figure class="image"> <img src="/assets/img/wiki/Batch_vs_stochastic.jpg" alt="Stochastic and batch gradient descent" style="max-width: 100%;"><figcaption>Stochastic and batch gradient descent</figcaption></figure><p>m = number of training examples</p>
+<p>n = number of features</p>
+<p>Cost: $J_{train}(\theta)=\frac{1}{2m}\sum_{i=1}^mh_\theta(x^{(i)}-y^{(i)})^2$</p>
+<p><code class="highlighter-rouge">Repeat{</code> $\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{i=1}^mh_\theta(x^{(i)}-y^{(i)})x_j^{(i)}$<code class="highlighter-rouge">(j=0:n)</code> <code class="highlighter-rouge">}for </code></p>
+<h3 id="stochastic-gradient-descent">Stochastic Gradient Descent</h3>
+<p>$cost(\theta,(x^{(i)},y^{(i)})) = \frac{1}{2}h_\theta(x^{(i)}-y^{(i)})^2$</p>
+<p>Cost \(J_{train}(\\theta)=\\frac{1}{m}\\sum_{i=1}^mcost(\\theta,(x^{(i)},y^{(i)}))\)</p>
+<p><code class="highlighter-rouge"> Repeat{</code> <code class="highlighter-rouge">   for i=1:m{</code> <code class="highlighter-rouge">     </code><em>θ<strong>j* := *θ</strong>j</em> − <em>α<strong>h</strong>θ</em>(<em>x</em>(<em>i</em>) − <em>y</em>(<em>i</em>))<em>x**j</em>(<em>i</em>)<code class="highlighter-rouge">(j=0:n)</code> <code class="highlighter-rouge">   }</code> <code class="highlighter-rouge"> }for </code><code class="highlighter-rouge"> - usually 1-10</code></p>
+<h3 id="convergence">Convergence</h3>
+<figure class="image"> <img src="/assets/img/wiki/Stochastig_gradient_descent_convergence.png" alt="Stochastic gradient descent cost/nr of iterations top left - expected; top right - larger number of iterations used for average bottom left - algorithm not doing well bottom right - divergence" style="max-width: 100%;"><figcaption>Stochastic gradient descent cost/nr of iterations top left - expected; top right - larger number of iterations used for average bottom left - algorithm not doing well bottom right - divergence</figcaption></figure><p>Compute <em>o<strong>s</strong>t</em>(<em>θ</em>, (<em>x</em>(<em>i</em>), <em>y</em>(<em>i</em>))) before each update to θ. Every plot the cost average over the last iterations</p>
+<h3 id="mini-batch-gradient-descent">Mini batch gradient descent</h3>
+<p>Imagine b(number of examples in batch)=10, m=1000</p>
+<p><code class="highlighter-rouge">Repeat{</code> <code class="highlighter-rouge">  for i=1,11,21,...991{</code> <code class="highlighter-rouge">    </code>$\theta_j := \theta_j - \alpha \frac{1}{m}\sum_{k=i}^{i+9}h_\theta(x^{(i)}-y^{(i)})x_j^{(i)}$<code class="highlighter-rouge">(j=0:n)</code> <code class="highlighter-rouge">  }</code> <code class="highlighter-rouge">}for </code></p>
+<h3 id="online-learning">Online learning</h3>
+<p>For instance searches on a website, or purchases on a website.</p>
+<p><code class="highlighter-rouge"> Repeat{</code> <code class="highlighter-rouge">   Get(x,y)</code> <code class="highlighter-rouge">     Update θ</code> <code class="highlighter-rouge">     </code><em>θ<strong>j* := *θ</strong>j</em> − <em>α<strong>h</strong>θ</em>(<em>x</em> − <em>y</em>)<em>x**j</em><code class="highlighter-rouge">(j=0:n)</code> <code class="highlighter-rouge"> }forever</code></p>
+<p>Powerful as it can adapt to user preference changes in time.</p>
+<h3 id="map-reduce-and-parallelism">Map Reduce and Parallelism</h3>
+<p>We map the test test set into a number of chunks depending on how many machines/cpu cores we want to use, then we process each chunk in parallel, then add up the result on one of the machines/cpu cores.<figure class="image"> <img src="/assets/img/wiki/Map-reduce.png" alt="border" style="max-width: 100%;"> &lt;figcaption&gt;border&lt;/figcaption&gt;</figure></p>
+<h3 id="sgd-with-momentum">SGD with momentum</h3>
+<p>v is a k dimensional vector of the same dimensions as θ; it will be our gradient step</p>
+<p><em>v</em>0 = ∇<em>θ</em>0 * <em>L</em>(<em>θ</em>0, <em>X</em>, <em>y</em>);<em>θ</em> − <em>w<strong>e</strong>i<strong>g</strong>h<strong>t* *m</strong>a<strong>t</strong>r<strong>i</strong>x</em>, ∇<em>θ</em> − <em>g<strong>r</strong>a<strong>d</strong>i<strong>e</strong>n**t</em> <em>w</em>.<em>r</em>.<em>t</em>.<em>θ</em> Calculate gradient at step 0</p>
+<p><em>v<strong>t* = *β* * *v</strong>t</em> − 1 + (1 − <em>β</em>)*∇<em>θ<strong>t* − 1 * *L*(*θ</strong>t</em> − 1, <em>X</em>, <em>y</em>);<em>β</em> − <em>m<strong>o</strong>m<strong>e</strong>n<strong>t</strong>u**m</em>Calculate gradient at step t; we use a Weighed Moving Average</p>
+<p><em>θ<strong>t* = *θ</strong>t</em> − <em>α</em> * <em>v**t</em>Take a step</p>
+<p>Momentum defines how much of the step is determined by the previous gradient step, and how much by the current gradient. Usually momentum = 0.9</p>
+<h3 id="adagrad12">AdaGrad12</h3>
+<p>Authors present AdaGrad in the context of projected gradient method – they offer non-standard projection onto parameters space with the goal to optimize certain entity related to regret. Final AdaGrad update rule is given by the following formula:</p>
+<p><em>G<strong>k* = *G</strong>k</em> − 1 + ∇<em>J</em>(<em>θ**k</em> − 1)2</p>
+<p>$\theta^k = \theta^{k-1} - \frac{\alpha}{\sqrt{G^{k-1}}}*\nabla*J(\theta^{k-1})$</p>
+<p>where * and sqrt are element wise</p>
+<p>G is the historical gradient information. For each parameter we store sum of squares of its all historical gradients – this sum is later used to scale/adapt a learning rate. In contrast to SGD, AdaGrad learning rate is different for each of the parameters. It is greater for parameters where the historical gradients were small (so the sum is small) and the rate is small whenever historical gradients were relatively big.</p>
+<p>“Informally, our procedures give frequently occurring features very low learning rates and infrequent features high learning rates, where the intuition is that each time an infrequent feature is seen, the learner should “take notice.” Thus, the adaptation facilitates finding and identifying very predictive but comparatively rare features” – original paper</p>
+<p>In any case though learning rate descreases from iteration to iteration – to reach zero at infinity. That is btw considered a problem and solved by authors of AdaDelta algorithm.</p>
+<h3 id="adadelta13">AdaDelta13</h3>
+<p>Adadelta mixes two ideas though – first one is to scale learning rate based on historical gradient while taking into account only recent time window – not the whole history, like AdaGrad. And the second one is to use component that serves an acceleration term, that accumulates historical updates (similar to momentum).</p>
+<p>Adadelta update rule consists of the following steps:</p>
+<ul>
+<li>Compute gradient <em>g**t</em> at current time <em>t</em>
+</li>
+<li>Accumulate gradients: <em>E</em>[<em>g</em>2]<em>t</em> = <em>ρ</em> * <em>E</em>[<em>g</em>2]<em>t</em> − 1 + (1 − <em>ρ</em>)*<em>g**t</em>2 layout: wiki_post base: Wiki base_url: /wiki categories:</li>
+<li>wikimisc</li>
+<li>Accumulate updates(momentum like): <em>E</em>[<em>Δ<strong>x*2]*t* = *ρ</strong>E</em>[<em>Δ<strong>x*2]*t* − 1 + (1 − *ρ*)*Δ</strong>x**t</em>2 layout: wiki_post base: Wiki base_url: /wiki categories:</li>
+<li>wikimisc</li>
+</ul>
+<p>ρ is a decay constant (a parameter) and ϵ is there for numerical stability (usually very small number).</p>
+<p>We choose epsilon to be 10−6 – in original AdaDelta paper though epsilon is considered to be a parameter. We don’t go there now to limit hyper-parameter space (but in fact different results are reported for different values of epsilon in original paper)</p>
+<h3 id="rmsprop14">RMSProp14</h3>
+<p><em>v<strong>t* = ∇*θ</strong>t</em> − 1 * <em>L</em>(<em>θ**t</em> − 1, <em>X</em>, <em>y</em>)Calculate gradient step</p>
+<p>$E_t = \beta * E_{t-1} + (1-\beta)*v_t^2 ; \beta - momentum:\ number\ of\ steps\ remembered\ \frac{1}{1-\beta}(\beta=0.9 =&gt; 10\ steps), E - exponentially\ weighed\ moving\ average\ of\ the\ gradient\ squared$If my gradient is consistently small it will be a big number; if my gradient is volatile or consistently large it will be a big number</p>
+<p>$\theta_t = \theta_{t-1} - \alpha * \frac{v_t}{\sqrt{E_t}}$Take the step</p>
+<p>This means that if our gradient is consistently small we’ll take bigger jumps, and if it is volatile or too big we’ll take smaller jumps</p>
+<h3 id="adam15">Adam15</h3>
+<p><em>v<strong>t* = *β*1 * *v</strong>t</em> − 1 + (1 − <em>β</em>1)*∇<em>θ<strong>t* − 1 * *L*(*θ</strong>t</em> − 1, <em>X</em>, <em>y</em>),<em>β</em>1 − <em>f<strong>i</strong>r<strong>s</strong>t</em> <em>o<strong>r</strong>d<strong>e</strong>r</em> <em>m<strong>o</strong>m<strong>e</strong>n<strong>t</strong>u**m</em>Calculate gradient step with momentum</p>
+<p><em>E<strong>t* = *β*2 * *E</strong>t</em> − 1 + (1 − <em>β</em>2)*<em>v<strong>t*2; *β* − *s</strong>e<strong>c</strong>o<strong>n</strong>d</em> <em>o<strong>r</strong>d<strong>e</strong>r</em> <em>m<strong>o</strong>m<strong>e</strong>n<strong>t</strong>u<strong>m*, *E* − *e</strong>x<strong>p</strong>o<strong>n</strong>e<strong>n</strong>t<strong>i</strong>a<strong>l</strong>l<strong>y* *w</strong>e<strong>i</strong>g<strong>h</strong>e<strong>d* *m</strong>o<strong>v</strong>i<strong>n</strong>g</em> <em>a<strong>v</strong>e<strong>r</strong>a<strong>g</strong>e</em> <em>o<strong>f* *t</strong>h<strong>e* *g</strong>r<strong>a</strong>d<strong>i</strong>e<strong>n</strong>t</em> <em>s<strong>q</strong>u<strong>a</strong>r<strong>e</strong>d</em>If my gradient is consistently small it will be a big number; if my gradient is volatile or consistently large it will be a big number</p>
+<p>$\theta_t = \theta_{t-1} - \alpha * \frac{v_t}{\sqrt{E_t}}$Take the step</p>
+<p>This means that if our gradient is consistently small we’ll take bigger jumps, and if it is volatile or too big we’ll take smaller jumps + we’ll jump in the previous direction (RMSProp with momentum basically)</p>
+<h3 id="choosing-the-best-optimizer">Choosing the best optimizer</h3>
+<p>According to <a href="https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/">Optimization techniques comparison in Julia: SGD, Momentum, Adagrad, Adadelta, Adam</a></p>
+<p>All of the algorithms perform differently depending on the problem and parametrization. AdaGrad is the best with the shallow problem (softmax classifier), AdaDelta is somewhere between all others – never leads, never fails badly too. Momentum and classical SGD seem to be a good fit to any problem of the above – they both produce leading results often. Adam has his big moment minimizing error of network #3 (with a bit worse accuracy there).</p>
+<p>For all of the methods the most challenging part is how to choose proper parameters values. And there is no clear rule for that too, unfortunately. The one ‘solid’ conclusion that can be drawn here is “to choose whatever works best for your problem” – I’m afraid. Although starting with simple methods – classical SGD or momentum – might be enough very often following what the experiments show.</p>
+<p>Implementation-wise optimization techniques presented here do not differ between one another that much too, some of the algorithms expect a bit more computations and storage, but they all share the same linear complexity with respect to number of parameters – choosing simpler methods might win another vote then.</p>
+<h2 id="regularization">Regularization</h2>
+<figure class="image"> <img src="/assets/img/wiki/L1vsl2.png" alt="L1 vs L2 regularization" style="max-width: 100%;"><figcaption>L1 vs L2 regularization</figcaption></figure><p>We have 2 ways to regularize our network, L1 and L2. What these do is add another term to the cost function, which penalizes the network proportional to the values of the weights.</p>
+<h3 id="batch-normalization-16">Batch Normalization 16</h3>
+<p>Input: values of <em>x</em>(activation of a layer) over a minibatch <em>B</em> = {<em>x</em>1…<em>m</em>}</p>
+<p>Parameters to be learned: <em>γ</em>, <em>β</em></p>
+<p>$\mu_B = \frac{1}{m} \sum_{i=1}^{m}x_i$ mini batch mean</p>
+<p>$\sigma_B^2 = \frac{1}{m} \sum_{i=1}^{m}(x_i - \mu_B)^2$ mini batch variance</p>
+<p>$\hat{x_i} = \frac{x_i - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}$ normalization</p>
+<p>Finally</p>
+<p>$y_i = \gamma * \hat{x_i} + \beta \equiv BN_{\gamma, \beta}(x_i)$ scale and shift</p>
+<p><em>Important notes:</em></p>
+<p>The last step of batch normalization is the most important.</p>
+<p>We usually use a EWMA of <em>μ<strong>B* *a</strong>n<strong>d* *σ</strong>B</em>2 calculated across previous minibatches, with a momentum of 0.1</p>
+<h4 id="why-it-helps-17">Why it helps? 17</h4>
+<p>It reduces the bumpiness of the loss landscape, allowing us to use higher learning rates.</p>
+<figure class="image"> <img src="/assets/img/wiki/Batch_normalization_loss_landscape.png" alt="400px" style="max-width: 100%;"><figcaption>400px</figcaption></figure><p>Example:</p>
+<p>Imagine we’re predicting movie reviews, and we have <em>r<strong>a</strong>t<strong>i</strong>n**g</em> = <em>f</em>(<em>θ</em>, <em>X</em>); rating should be in the range [0,5], but f may produce values in the range [-1,1]; the scale and mean are of</p>
+<p>Let’s modify f: <em>r<strong>a</strong>t<strong>i</strong>n<strong>g* = *f*(*θ*, *X*)**γ* + *β*  *γ*, *β* − *l</strong>e<strong>a</strong>r<strong>n</strong>a<strong>b</strong>l<strong>e* *p</strong>a<strong>r</strong>a<strong>m</strong>e<strong>t</strong>e<strong>r</strong>s</em>; <em>γ</em> provides a direct gradient for scale, and <em>β</em> provides a direct gradient for mean</p>
+<p>Now it is easy for f to give an output in the range [0,5]</p>
+<h3 id="local-response-normalization18">Local Response Normalization18</h3>
+<figure class="image"> <img src="/assets/img/wiki/Lrn.gif" alt=" Original LRN formula" style="max-width: 100%;"><figcaption> Original LRN formula</figcaption></figure><p>With this answer I would like to summarize contributions of other authors and provide a single place explanation of the LRN (or contrastive normalization) technique for those, who just want to get aware of what it is and how it works.</p>
+<p>Motivation: ‘This sort of response normalization (LRN) implements a form of lateral inhibition inspired by the type found in real neurons, creating competition for big activities among neuron outputs computed using different kernels.’ <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">AlexNet 3.3</a>.</p>
+<p>In other words LRN allows to diminish responses that are uniformly large for the neighborhood and make large activation more pronounced within a neighborhood i.e. create higher contrast in activation map. <a href="https://prateekvjoshi.com/2016/04/05/what-is-local-response-normalization-in-convolutional-neural-networks/">prateekvjoshi.com</a> states that it is particulary useful with unbounded activation functions as RELU.</p>
+<p>Original Formula: For every particular position (x, y) and kernel i that corresponds to a single ‘pixel’ output we apply a ‘filter’, that incorporates information about outputs of other n kernels applied to the same position. This regularization is applied before activation function. This regularization, indeed, relies on the order of kernels which is, to my best knowledge, just an unfortunate coincidence.</p>
+<p>In practice (see <a href="http://caffe.berkeleyvision.org/tutorial/layers/lrn.html">Caffe</a>) 2 approaches can be used:</p>
+<ol>
+<li>WITHIN_CHANNEL. Normalize over local neighborhood of a single channel (corresponding to a single convolutional filter). In other words, divide response of a single channel of a single pixel according to output values of the same neuron for pixels nearby.</li>
+<li>ACROSS_CHANNELS. For a single pixel normalize values of every channel according to values of all channels for the same pixel</li>
+</ol>
+<p>Actual usage LRN was used more often during the days of early convets like LeNet-5. Current implementation of GoogLeNet (Inception) in Caffe often uses LRN in connection with pooling techniques, but it seems to be done for the sake of just having it. Neither original Inception/GoogLeNet (<a href="http://www.cc.gatech.edu/~hic/CS7616/Papers/Szegedy-et-al-2014.pdf">here</a>) nor any of the following versions mention LRN in any way. Also, TensorFlow implementation of Inception (provided and updated by the team of original authors) networks does not use LRN despite it being available.</p>
+<p>Conclusion: Applying LRN along with pooling layer would not hurt the performance of the network as long as hyper-parameter values are reasonable. Despite that, I am not aware of any recent justification for applying LRN/contrast normalization in a neural-network.</p>
+<h4 id="keras-implementation19">Keras implementation19</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">LRN</span><span class="p">(</span><span class="n">Layer</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">alpha</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">k</span> <span class="o">=</span> <span class="n">k</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">beta</span> <span class="o">=</span> <span class="n">beta</span>
+      <span class="bp">self</span><span class="p">.</span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
+      <span class="nb">super</span><span class="p">(</span><span class="n">LRN</span><span class="p">,</span> <span class="bp">self</span><span class="p">).</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
+      <span class="n">b</span><span class="p">,</span> <span class="n">ch</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">x</span><span class="p">.</span><span class="n">shape</span>
+      <span class="n">half_n</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">n</span> <span class="o">//</span> <span class="mi">2</span> <span class="c1"># half the local region
+</span>      <span class="n">input_sqr</span> <span class="o">=</span> <span class="n">T</span><span class="p">.</span><span class="n">sqr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># square the input
+</span>      <span class="n">extra_channels</span> <span class="o">=</span> <span class="n">T</span><span class="p">.</span><span class="n">alloc</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">ch</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">half_n</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="c1"># make an empty tensor with zero pads along channel dimension
+</span>      <span class="n">input_sqr</span> <span class="o">=</span> <span class="n">T</span><span class="p">.</span><span class="n">set_subtensor</span><span class="p">(</span><span class="n">extra_channels</span><span class="p">[:,</span> <span class="n">half_n</span><span class="p">:</span><span class="n">half_n</span><span class="o">+</span><span class="n">ch</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span><span class="n">input_sqr</span><span class="p">)</span> <span class="c1"># set the center to be the squared input
+</span>      <span class="n">scale</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">k</span> <span class="c1"># offset for the scale
+</span>      <span class="n">norm_alpha</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span> <span class="o">/</span> <span class="bp">self</span><span class="p">.</span><span class="n">n</span> <span class="c1"># normalized alpha
+</span>      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">n</span><span class="p">):</span>
+          <span class="n">scale</span> <span class="o">+=</span> <span class="n">norm_alpha</span> <span class="o">*</span> <span class="n">input_sqr</span><span class="p">[:,</span> <span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">ch</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span>
+      <span class="n">scale</span> <span class="o">=</span> <span class="n">scale</span> <span class="o">**</span> <span class="bp">self</span><span class="p">.</span><span class="n">beta</span>
+      <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">scale</span>
+      <span class="k">return</span> <span class="n">x</span>
+
+    <span class="k">def</span> <span class="nf">get_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="n">config</span> <span class="o">=</span> <span class="p">{</span><span class="s">"alpha"</span><span class="p">:</span> <span class="bp">self</span><span class="p">.</span><span class="n">alpha</span><span class="p">,</span>
+          <span class="s">"k"</span><span class="p">:</span> <span class="bp">self</span><span class="p">.</span><span class="n">k</span><span class="p">,</span>
+          <span class="s">"beta"</span><span class="p">:</span> <span class="bp">self</span><span class="p">.</span><span class="n">beta</span><span class="p">,</span>
+          <span class="s">"n"</span><span class="p">:</span> <span class="bp">self</span><span class="p">.</span><span class="n">n</span><span class="p">}</span>
+      <span class="n">base_config</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">LRN</span><span class="p">,</span> <span class="bp">self</span><span class="p">).</span><span class="n">get_config</span><span class="p">()</span>
+      <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">base_config</span><span class="p">.</span><span class="n">items</span><span class="p">())</span> <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">items</span><span class="p">()))</span>
+</code></pre></div></div>
+<h2 id="embeddings20">Embeddings20</h2>
+<p>How do we build a neural network for text processing? Words that appear very often, like ‘the’, don’t tell us very much, while rare words, like ‘retinopathy’ might tell us a lot about the text.</p>
+<ul>
+<li>We’d like to see important words often enough to understand their meaning</li>
+<li>We’d like to understand how words relate to each other</li>
+</ul>
+<p>For this we’d need to collect A LOT of labeled data, so much in fact, that we’re going to turn to unsupervised learning.</p>
+<p>The internet is full of texts that we can train on if we figure out what to learn from them. Powerful idea: similar words tend to occur in similar contexts.</p>
+<p>We’re going to turn each of our words into a small vector called an embedding. Our model should group semantically similar words together using their embedded representation, such as the distance between the embeddings of similar words is small.</p>
+<h4 id="skip-gram">Skip-gram</h4>
+<figure class="image"> <img src="/assets/img/wiki/Word2Vec-softmax-676x381.jpg" alt="Word2vec NN architecture" style="max-width: 100%;"><figcaption>Word2vec NN architecture</figcaption></figure><p>Skip-gram idea: we will train our algorithm to take a word and predict it’s context given the word. For instance, given ‘one’ the algorithm might say ‘two’, or ‘five’.</p>
+<ol>
+<li>Get a text corpus; I used the one from here: [mattmahoney.net/dc/ Data Compression Programs]</li>
+<li>Decide how big your vocabulary is gonna be; let’s say 50,000 words, and put your first 50,000 most repeated words into a dictionary which will map a word to its index; all other words will be mapped into an entry labeled ‘UNK’</li>
+<li>Convert your text corpus into a list of indices in the dictionary you just built</li>
+<li>Create a function to generate batches of training data and labels from your dictionary<ul><li>It will be parametrized with: batch_size, num_skips and skip_window</li></ul>
+<ol>
+<li>batch_size = how many examples to use for each optimizer pass</li>
+<li>num_skips = how many times to reuse an input to generate a label</li>
+<li>skip_window = how many nearby words to consider context</li>
+</ol>
+</li>
+<li>Train a skip-gram model</li>
+<li>Calculate word contexts by the distance between the 2 words’ embeddings</li>
+</ol>
+<p><code class="highlighter-rouge"> Example data generated with batch_size 8:</code> <code class="highlighter-rouge"> data: ['anarchism', 'originated', 'as', 'a', 'term', 'of', 'abuse', 'first']</code> <code class="highlighter-rouge"> with num_skips = 2 and skip_window = 1:</code> <code class="highlighter-rouge">   batch: ['originated', 'originated', 'as', 'as', 'a', 'a', 'term', 'term']</code> <code class="highlighter-rouge">   labels: ['as', 'anarchism', 'a', 'originated', 'as', 'term', 'of', 'a']</code> <code class="highlighter-rouge"> with num_skips = 4 and skip_window = 2:</code> <code class="highlighter-rouge">   batch: ['as', 'as', 'as', 'as', 'a', 'a', 'a', 'a']</code> <code class="highlighter-rouge">   labels: ['a', 'anarchism', 'term', 'originated', 'as', 'of', 'originated', 'term']</code></p>
+<p>End</p>
+<h4 id="cbow-continuous-bag-of-words">CBOW (Continuous bag of words)</h4>
+<figure class="image"> <img src="/assets/img/wiki/Cbow-and-skip-gram.png" alt="CBOW vs Skip-gram" style="max-width: 100%;"><figcaption>CBOW vs Skip-gram</figcaption></figure><p>We’re going to train our model to take a context and predict a word from it. Imagine we give it the words: ‘anarchism’, ‘originated’, x, ‘a’, ‘term’; it should predict x = ‘as’</p>
+<ol>
+<li>Get a text corpus; I used the one from here: [mattmahoney.net/dc/ Data Compression Programs]</li>
+<li>Decide how big your vocabulary is gonna be; let’s say 50,000 words, and put your first 50,000 most repeated words into a dictionary which will map a word to its index; all other words will be mapped into an entry labeled ‘UNK’</li>
+<li>Convert your text corpus into a list of indices in the dictionary you just built</li>
+<li>Create a function to generate batches of training data and labels from your dictionary<ul><li>It will be parametrized with: batch_size and R</li></ul>
+<ol>
+<li>batch_size = how many examples to use for each optimizer pass</li>
+<li>R = number of words to consider before the given word and after it; so, for R=2 we would take 2 words before the word and 2 words after it</li>
+</ol>
+</li>
+<li>Train a CBOW model, which takes 2*R inputs, averages them, and then tries to predict a word</li>
+<li>Give it a context and see what word it outputs</li>
+</ol>
+<p><code class="highlighter-rouge">   Example data generated with batch_size 8:</code> <code class="highlighter-rouge">   data: ['anarchism', 'originated', 'as', 'a', 'term', 'of', 'abuse', 'first', 'used', 'against', 'early', 'working', 'class', 'radicals', 'including', 'the']</code> <code class="highlighter-rouge">   with R= 1: </code> <code class="highlighter-rouge">       batch  0 :  ['anarchism', 'as']</code> <code class="highlighter-rouge">       batch  1 :  ['originated', 'a']</code> <code class="highlighter-rouge">       batch  2 :  ['as', 'term']</code> <code class="highlighter-rouge">       batch  3 :  ['a', 'of']</code> <code class="highlighter-rouge">       batch  4 :  ['term', 'abuse']</code> <code class="highlighter-rouge">       batch  5 :  ['of', 'first']</code> <code class="highlighter-rouge">       batch  6 :  ['abuse', 'used']</code> <code class="highlighter-rouge">       batch  7 :  ['first', 'against']</code> <code class="highlighter-rouge">       labels: ['originated', 'as', 'a', 'term', 'of', 'abuse', 'first', 'used']</code> <code class="highlighter-rouge">   with R= 2: </code> <code class="highlighter-rouge">       batch  0 :  ['anarchism', 'originated', 'a', 'term']</code> <code class="highlighter-rouge">       batch  1 :  ['originated', 'as', 'term', 'of']</code> <code class="highlighter-rouge">       batch  2 :  ['as', 'a', 'of', 'abuse']</code> <code class="highlighter-rouge">       batch  3 :  ['a', 'term', 'abuse', 'first']</code> <code class="highlighter-rouge">       batch  4 :  ['term', 'of', 'first', 'used']</code> <code class="highlighter-rouge">       batch  5 :  ['of', 'abuse', 'used', 'against']</code> <code class="highlighter-rouge">       batch  6 :  ['abuse', 'first', 'against', 'early']</code> <code class="highlighter-rouge">       batch  7 :  ['first', 'used', 'early', 'working']</code> <code class="highlighter-rouge">       labels: ['as', 'a', 'term', 'of', 'abuse', 'first', 'used', 'against']</code></p>
+<h2 id="architectures">Architectures</h2>
+<h3 id="resnet">ResNet</h3>
+<figure class="image"> <img src="/assets/img/wiki/Resnet.png" alt="Resnet architecture" style="max-width: 100%;"><figcaption>Resnet architecture</figcaption></figure><p>ResNets use feedforward identity connections</p>
+<h3 id="wide-resnet-21">Wide ResNet 21</h3>
+<figure class="image"> <img src="/assets/img/wiki/Wide_Res_Net.png" alt="Resnet architecture" style="max-width: 100%;"><figcaption>Resnet architecture</figcaption></figure><p>Wide ResNet uses wider blocks to make the networks easier to train to the same accuracy as the older ones.</p>
+<h3 id="unet">UNet</h3>
+<figure class="image"> <img src="/assets/img/wiki/Unet.jpg" alt="" style="max-width: 100%;"><figcaption></figcaption></figure><ol>
+<li><p><a href="https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science">https://www.quora.com/What-is-one-hot-encoding-and-when-is-it-used-in-data-science</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Hyperparameter_optimization">https://en.wikipedia.org/wiki/Hyperparameter_optimization</a></p></li>
+</ol>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<ol>
+<li><p><a href="https://en.wikipedia.org/wiki/Softmax_function">https://en.wikipedia.org/wiki/Softmax_function</a></p></li>
+<li><p><a href="https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/">https://int8.io/comparison-of-optimization-techniques-stochastic-gradient-descent-momentum-adagrad-and-adadelta/</a></p></li>
+<li><p><a href="http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf">http://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf</a></p></li>
+<li><p><a href="http://arxiv.org/abs/1212.5701">http://arxiv.org/abs/1212.5701</a></p></li>
+<li><p><a href="https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf">https://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf</a></p></li>
+<li><p><a href="http://arxiv.org/abs/1412.6980">http://arxiv.org/abs/1412.6980</a></p></li>
+<li><p><a href="https://arxiv.org/abs/1502.03167">https://arxiv.org/abs/1502.03167</a></p></li>
+<li><p><a href="https://arxiv.org/abs/1805.11604">https://arxiv.org/abs/1805.11604</a></p></li>
+<li><p><a href="https://stats.stackexchange.com/questions/145768/importance-of-local-response-normalization-in-cnn">https://stats.stackexchange.com/questions/145768/importance-of-local-response-normalization-in-cnn</a></p></li>
+<li><p><a href="https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html">https://joelouismarino.github.io/blog_posts/blog_googlenet_keras.html</a></p></li>
+<li><p><a href="https://classroom.udacity.com/courses/ud730/">https://classroom.udacity.com/courses/ud730/</a></p></li>
+<li><p><a href="https://arxiv.org/abs/1605.07146">https://arxiv.org/abs/1605.07146</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Silencing a noisy car inverter">
+<meta name="keywords" content="Silencing a noisy car inverter, Tzeny's demesne, engineering, hardware">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Silencing a noisy car inverter" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/" property="og:url">
+<meta content="2019-12-23T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="https://tzeny.com/assets/img/posts/2019/12/body9.jpg" property="og:image">
+<meta content="engineering" property="article:section">
+<meta content="12V" property="article:tag">
+<meta content="220V" property="article:tag">
+<meta content="ac" property="article:tag">
+<meta content="dc" property="article:tag">
+<meta content="fan" property="article:tag">
+<meta content="inverter" property="article:tag">
+<meta content="silence" property="article:tag">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Silencing a noisy car inverter">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2019/12/23/silencing-a-noisy-car-inverter/">Silencing a noisy car inverter</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container"><div class="col-lg-8 offset-md-2">
+<article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h4 class="post-meta"></h4>
+<p class="post-summary">Posted by : <img src="https://tzeny.com/assets/img/profile.png" class="author-profile-img"> <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Tzeny</span> </span> at <time datetime="2019-12-23 00:00:00 +0000" itemprop="datePublished">Dec 23, 2019</time></p>
+<span class="disqus-comment-count" data-disqus-identifier="/2019/12/23/silencing-a-noisy-car-inverter/"></span><div class="post-categories"> Category : <a href="/blog/categories/engineering">engineering</a>   <a href="/blog/categories/hardware">hardware</a>
+</div>
+</div>
+<div class="card-body" itemprop="articleBody">
+<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"></div></figure><p>I bought a 300W continous / 600W peak 12V DC to 220V AC inverter for my car. It was pretty cheap, at around 25$. However it has one major drawback, a continuously on small noisy fan.</p>
+<p>So I decided to cut open its top part and add a 120mm PC fan on top.</p>
+<p><strong>Note: be careful when working with the inverter’s insides as it has live 220V exposed pins and components</strong></p>
+<h3 id="parts-list">Parts list</h3>
+<ul>
+<li>Generic 12V DC to 220V AC inverter – 25$</li>
+<li>120 mm PC Fan (bonus: it has blue LED lights and a temperature sensor) – 0$ (had one laying around)</li>
+<li>120mm PC Fan grill and dust cover – 0$ (had some laying around)</li>
+</ul>
+<h3 id="tools-list">Tools list</h3>
+<ul>
+<li>Angle grinder (I initially tried a small multitool but the aluminum body is pretty thick)</li>
+<li>Hot glue gun</li>
+</ul>
+<h2 id="the-build-process">The build process</h2>
+<p>Idea: Add a fan on top of the inverter, cutting small section (or maybe a large section) of the top part of to allow cool air to get in. The fan will be covered by a dust filter, and blow air into the inverter. The air will exit through the lateral holes already present in the inverter.</p>
+<p>Upon opening it I discovered its internal fan was powered by a 12V header, which is just perfect as 120mm PC fans are also powered by a 12V input, and are significantly quieter (mine was basically indistinguishable from background noise) whilst being able to move the same amount of air (in this case, size does matter).</p>
+<p>As a bonus, the one I had also has blue LEDs that can be toggled and a temperature sensor, which I taped to a piece of metal in direct contact with some how ICs.</p>
+<div class="wp-block-responsive-lightbox-gallery"><div class="rl-gallery-container rl-loading" id="rl-gallery-container-41" data-gallery_id="895"><div class="rl-gallery rl-basicgrid-gallery " id="rl-gallery-41" data-gallery_no="41"> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body1.jpg" data-lightbox="set_1" data-title="This is how the inverter looks like, with 3D printed non conductive L brackets attached"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body1.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body2.jpg" data-lightbox="set_1" data-title=""><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body2-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body3.jpg" data-lightbox="set_1" data-title="This is the part we'll have to remove in order to allow the air from the fan to cool the insides of the inverter"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body3-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body4.jpg" data-lightbox="set_1" data-title="To take it apart we have to remove the 2 top screws from each end"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body4.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body5.jpg" data-lightbox="set_1" data-title="Opening it reveals the header and cables used to power its internal fan; voltage: ~12V"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body5-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body6.jpg" data-lightbox="set_1" data-title="The top part after being cut with the angle grinder"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body6-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/bodywelp-1.jpg" data-lightbox="set_1" data-title="Fan's temperature sensor was attached to this metal piece that holds some hot ICs flat against the side of the case for heat dissipation"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/bodywelp-1-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/bodywelp2.jpg" data-lightbox="set_1" data-title="I used the hole of the old fan to pass the power and sensor wires of the new fan"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/bodywelp2-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body7.jpg" data-lightbox="set_1" data-title="First I glued in place the black fan guard, then clipped in the fan"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body7-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body8.jpg" data-lightbox="set_1" data-title="Finally I screwed in a dust filter on the fan"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body8-300x225.jpg" alt=""></a> <a class="lightbox2-image" href="/assets/img/posts/2019/12/body9.jpg" data-lightbox="set_1" data-title="Bonus: LED light on"><img class="lightbox2-image-thumbnail" src="/assets/img/posts/2019/12/body9-300x225.jpg" alt=""></a>
+</div></div></div>
+<h2 id="the-result">The result</h2>
+<p>A quiet 300W inverter, that you can easily sleep next to. It will be useful for charging my phone or laptop overnight in <a rel="noreferrer noopener" aria-label="Rusty (opens in a new tab)" href="https://tzeny.com/2019/11/14/van-life-the-story-so-far/" target="_blank">Rusty</a>.</p>
+<p>Since the inverter draws about 0.30A in standby, I decided to leave the fan’s LEDs always on as a power indicator (since it can’t be easily heard).</p>
+</div>
+<div id="disqus_thread"></div></article><script> var disqus_config = function () { this.page.url = "https://tzeny.com/2019/12/23/silencing-a-noisy-car-inverter/"; /* Replace PAGE_URL with your page's canonical URL variable */ this.page.identifier = "/2019/12/23/silencing-a-noisy-car-inverter"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */ }; (function () { /* DON'T EDIT BELOW THIS LINE */ var d = document, s = d.createElement('script'); s.src = 'https://.disqus.com/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })(); </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a> </noscript>
+</div></div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>

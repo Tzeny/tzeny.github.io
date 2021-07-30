@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang=" en ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Tzeny's demesne - Engineering and travelling</title>
+<meta http-equip="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Types of Neural Networks">
+<meta name="keywords" content="Types of Neural Networks, Tzeny's demesne, wikimisc">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta content="Types of Neural Networks" property="og:title">
+<meta content="article" property="og:type">
+<meta content="A small corner of the internet dedicated to tutorials, resources and galleries created by me" property="og:description">
+<meta content="https://tzeny.com/2018/06/21/types_of_neural_networks/" property="og:url">
+<meta content="2018-06-21T00:00:00+00:00" property="article:published_time">
+<meta content="https://tzeny.com/about/" property="article:author">
+<meta content="wikimisc" property="article:section">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Types of Neural Networks">
+<meta content="Tzeny's demesne" property="og:site_name">
+<meta name="twitter:url" content="https://tzeny.com/2018/06/21/types_of_neural_networks/">
+<meta name="twitter:description" content="A small corner of the internet dedicated to tutorials, resources and galleries created by me">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom-style.css">
+<link rel="stylesheet" href="/assets/bower_components/lightgallery/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.0-beta.3/default/snipcart.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="/assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/lightbox2/dist/css/lightbox.min.css">
+<link rel="icon" href="https://tzeny.com/assets/img/favicon.ico" type="image/gif" sizes="16x16"> <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script> <script src="/assets/bower_components/jquery.easing/jquery.easing.min.js"></script> <script src="/assets/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <script src="/assets/bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script> <script src="/assets/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.2/picturefill.min.js"></script> <script src="/assets/bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script> <script src="/assets/bower_components/nanobar/nanobar.min.js"></script> <script src="/assets/bower_components/typewrite/dist/typewrite.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script> <script async defer src="https://buttons.github.io/buttons.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10302687-11"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-10302687-11'); </script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css"> <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+<header><div class="col-lg-12"><div class="row"><nav class="navbar navbar-expand-lg fixed-top navbar-dark " id="topNav"> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <a class="navbar-brand" href="/">Tzeny's demesne</a><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav">
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/about">About/Contact Me</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/blog">Blog</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="nav-item"> <a class="nav-link" href="https://tzeny.com/gallery">Galleries</a>
+</li>
+</ul></div>
+<ul class="nav justify-content-end"><li class="nav-item"> <input class="nav-link switch" id="theme-toggle" onclick="modeSwitcher() " type="checkbox" name="checkbox">
+</li></ul></nav></div></div></header><div class="col-lg-12">
+<div class="col-lg-12"><nav aria-label="breadcrumb" role="navigation"><ol class="breadcrumb">
+<li class="breadcrumb-item"> <a href="https://tzeny.com"><i class="fa fa-home" aria-hidden="true"></i></a>
+</li>
+<li class="breadcrumb-item"> <a href="https://tzeny.com/wiki">Wiki</a>
+</li>
+<li class="breadcrumb-item active" aria-current="page"><a href="/2018/06/21/types_of_neural_networks/">Types of Neural Networks</a></li>
+</ol></nav></div>
+<div class="row" id="blog-post-container">
+<div class="col-lg-3"><div class="card">
+<div class="card-header">Navigation</div>
+<div class="card-body text-dark"> <a href="/2019/05/15/main_page/">Main Page</a><br> <a href="/2018/06/21/data_engineering/">Data Engineering</a><br> <a href="/wiki/categories/wikiprojects">Category: Projects</a><br> <a href="/wiki/categories/wikitools">Category: Tools</a><br> <a href="/2019/02/28/mathematics/">Mathematics</a><br> <a href="/2018/06/29/algorithms/">Algorithms</a><br> <a href="/2019/01/21/learning/">Learning</a><br> <a href="/wiki/categories/wikiastronomy">Astronomy</a><br> <a href="/2019/05/15/mediawiki/">Media Wiki Tutorials</a><br> <a href="/2019/05/15/homelab/">Homelab</a>
+</div>
+<div class="card-header">Useful</div>
+<div class="card-body text-dark"> <a href="https://zbib.org/" target="_blank">Online Citation Generator</a><br> <a href="https://pandoc.org/try/" target="_blank">Pandoc format converter</a><br> <a href="/2018/06/25/examples/">Code Snippets</a><br> <a href="/2018/10/05/google_colaboratory/">Google Colaboratory</a><br> <a href="/2018/07/03/interesting_miscellaneous/">Interesting Misc</a>
+</div>
+</div></div>
+<div class="col-lg-9"><article class="card" itemscope itemtype="http://schema.org/BlogPosting"><div class="card-header">
+<h1 class="post-title" itemprop="name headline">Types of Neural Networks</h1>
+<h4 class="post-meta"></h4>
+</div>
+<div class="card-body" itemprop="articleBody">
+<p>We can split neural networks into 2 categories based on their graph representation:</p>
+<ul>
+<li>no cycles in the graph - vanilla network (ex: convolutional networks, classic deep networks) - stateless functions</li>
+<li>cycles in the graph - recurrent neural networks (ex: text generation, continuous data anallysis) have internal memory - stateful (turing complete) programs</li>
+</ul>
+<h2 id="feed-forward-neural-network">Feed-forward neural network</h2>
+<p>Most common type. It has an input layer, an output layer and a number of hidden layers (if &gt; 1 then it is a ‘deep’ network). They compute a series of transformations that show the similarities between cases. The activities of neurons are a nonlinear function of the activities of the neurons in the previous layer.</p>
+<h2 id="recurrent-neural-network">Recurrent neural network</h2>
+<figure class="image"> <img src="/assets/img/wiki/Rnn.gif" alt="Recurrent neural network operation" style="max-width: 100%;"><figcaption>Recurrent neural network operation</figcaption></figure><p>A RNN used shared parameters across time (instead of space as with a CNN), and they are useful for learning from and predicting sequences.</p>
+<p>There are 2 types:</p>
+<ul>
+<li>one to many: one input multiple outputs - we feed an input into the neural network, it gives an output, which we then feed back into the network; repeat this N times (ex: automatic image captioning)</li>
+<li>many to one: many inputs one output - we give the network a sequence of inputs and at the end it will have one output (ex: text sentiment analysis)</li>
+<li>many to many: many inputs - many outputs - we give the network a sequence of inputs and it will give back a sequence of outputs (ex: text translation)</li>
+<li>synchronous many to many: many inputs - many outputs ; for each input we also use the information from the previous state of the network to produce a result (ex: video frame classification)</li>
+</ul>
+<p>Have directed cycles in the connection graph. You may end up in the place you started. They are difficult to train and have complicated dynamics. They are more biologically realistic.</p>
+<p>They can be used to model sequences, and develop a memory (they ‘remember’ information in the hidden states. It is very hard to train them to do so.</p>
+<h3 id="memory-cell">Memory cell</h3>
+<p>Since RNNs suffer from the vanishing gradient problem, that is backpropagating through time leads quickly to the derivatives becoming 0. Memory cells solve this problem by storing the value of the current output of the network.</p>
+<h4 id="lstm---long-short-term-memory">LSTM - long short term memory</h4>
+<figure class="image"> <img src="/assets/img/wiki/Lstm-2.jpg" alt="A LSTM memory cell with continuous input, output and forget functions" style="max-width: 100%;"><figcaption>A LSTM memory cell with continuous input, output and forget functions</figcaption></figure><figure class="image"> <img src="/assets/img/wiki/Greff_lstm_diagram.png" alt="Peepehole LSTM memory cell" style="max-width: 100%;"><figcaption>Peepehole LSTM memory cell</figcaption></figure><p>We have 4 building blocks:</p>
+<ul>
+<li><ul><li>: element wise addition</li></ul></li>
+<li>x : element wise multiplication (used as gating, to allow a signal to be controlled by the output of the sigmoid function)</li>
+<li>σ : sigmoid function applied to input</li>
+<li>tanh : hyperbolic function applied to input</li>
+</ul>
+<p>A memory cell has 3 basic operations:</p>
+<ul>
+<li>write</li>
+<li>read</li>
+<li>forget</li>
+</ul>
+<p>Compact form of the equations for the forward pass of an LSTM unit with a forget gate.12</p>\[\\begin{align} f_t &amp;= \\sigma_g(W_{f} x_t + U_{f} h_{t-1} + b_f) \\\\ i_t &amp;= \\sigma_g(W_{i} x_t + U_{i} h_{t-1} + b_i) \\\\ o_t &amp;= \\sigma_g(W_{o} x_t + U_{o} h_{t-1} + b_o) \\\\ c_t &amp;= f_t \\circ c_{t-1} + i_t \\circ \\sigma_c(W_{c} x_t + U_{c} h_{t-1} + b_c) \\\\ h_t &amp;= o_t \\circ f_t(c_t) \\end{align}\]<p><em>f**t</em> above is in our case tanh</p>
+<p><em>W</em> are weights used to modify <em>x**t</em></p>
+<p><em>U</em> is the hidden state to state matrix, known as a transition matrix and similar to a Markov chain</p>
+<p><em>b</em> are biases</p>
+<p>Variables and functions</p>
+<ul>
+<li>
+<em>x**t</em>: input vector</li>
+<li>
+<em>h**t</em>: hidden layer vector</li>
+<li>
+<em>y**t</em>: output vector</li>
+<li>
+<em>W</em>, <em>U</em> and <em>b</em>: parameter matrices and vector</li>
+<li>
+<em>σ<strong>h* and *σ</strong>y</em>: activation functions</li>
+</ul>
+<p>It’s important to note that LSTMs’ memory cells give different roles to addition and multiplication in the transformation of input. The central plus sign in both diagrams is essentially the secret of LSTMs. Stupidly simple as it may seem, this basic change helps them preserve a constant error when it must be backpropagated at depth. Instead of determining the subsequent cell state by multiplying its current state with new input, they add the two, and that quite literally makes the difference. (The forget gate still relies on multiplication, of course.)3</p>
+<h4 id="gru---gated-recurrent-unit">GRU - gated recurrent unit</h4>
+<figure class="image"> <img src="/assets/img/wiki/Gru-memory-cell.png" alt="A GRU memory cell" style="max-width: 100%;"><figcaption>A GRU memory cell</figcaption></figure><figure class="image"> <img src="/assets/img/wiki/Lstm_gru.png" alt="A GRU memory cell" style="max-width: 100%;"><figcaption>A GRU memory cell</figcaption></figure><p>Initially, for <em>t</em> = 0, the output vector is <em>h</em>0 = 0.</p>\[\\begin{align} z_t &amp;= \\sigma_g(W_{z} x_t + U_{z} h_{t-1} + b_z) \\\\ r_t &amp;= \\sigma_g(W_{r} x_t + U_{r} h_{t-1} + b_r) \\\\ h_t &amp;= (1-z_t) \\circ h_{t-1} + z_t \\circ \\sigma_h(W_{h} x_t + U_{h} (r_t \\circ h_{t-1}) + b_h) \\end{align}\]<p>The last function applies EWMA to filter the output of the current layer based on the output of the last layers.</p>
+<p>Because this feedback loop occurs at every time step in the series, each hidden state contains traces not only of the previous hidden state, but also of all those that preceded h_t-1 for as long as memory can persist.</p>
+<h3 id="rolling-window">Rolling window</h3>
+<figure class="image"> <img src="/assets/img/wiki/Rnn-rolling-window.png" alt="Rolling window approach" style="max-width: 100%;"><figcaption>Rolling window approach</figcaption></figure><p>To optimally train a RNN we can use the rolling window approach. Instead of predicting the output based on one data point, we predict the output based on a sequence of inputs.</p>
+<h3 id="beam-search">Beam search</h3>
+<p>Let’s say we are trying to predict a sequence of words. We can try to predict N words at a time, and keep the most probable combination. But this is time consuming since each step of the prediction is exponentially larger than the last. For this we can use beam search, at each step of our prediction we prune the combinations that have a low likelihood.</p>
+<h3 id="applications">Applications</h3>
+<p>Ilya Sutskever trained one of these networks to predict the next character in a sequence (using data from Wikipedia). Generated text: “In 1974 Northern Denver had been overshadowed by CNL, and several Irish intelligence agencies in the Mediterranean region. However, on the Victoria, Kings Hebrew stated that Charles decided to escape during an alliance. The mansion house was completed in 1882, the second in its bridge are omitted, while closing is the proton reticulum composed below it aims, such that it is the blurring of appearing on any well-paid type of box printer.”</p>
+<p>Since they can predict sequences from singular inputs or other sequences, they can be used in many ways. For example you can put the output of a CNN as the input and have the RNN try to generate captions. Or use them to translate sequences of text from one language to another.</p>
+<p>But you need lots of training data and compute time.</p>
+<h3 id="advice">Advice</h3>
+<p>Here are a few ideas to keep in mind when manually optimizing hyperparameters for RNNs:</p>
+<ul>
+<li>Watch out for overfitting, which happens when a neural network essentially “memorizes” the training data. Overfitting means you get great performance on training data, but the network’s model is useless for out-of-sample prediction.</li>
+<li>Regularization helps: regularization methods include l1, l2, and dropout among others.</li>
+<li>So have a separate test set on which the network doesn’t train.</li>
+<li>The larger the network, the more powerful, but it’s also easier to overfit. Don’t want to try to learn a million parameters from 10,000 examples – parameters &gt; examples = trouble.</li>
+<li>More data is almost always better, because it helps fight overfitting.</li>
+<li>Train over multiple epochs (complete passes through the dataset).</li>
+<li>Evaluate test set performance at each epoch to know when to stop (early stopping).</li>
+<li>The learning rate is the single most important hyperparameter. Tune this using deeplearning4j-ui; see this graph</li>
+<li>In general, stacking layers can help.</li>
+<li>For LSTMs, use the softsign (not softmax) activation function over tanh (it’s faster and less prone to saturation (~0 gradients)).</li>
+<li>Updaters: RMSProp, AdaGrad or momentum (Nesterovs) are usually good choices. AdaGrad also decays the learning rate, which can help sometimes.</li>
+<li>Finally, remember data normalization, MSE loss function + identity activation function for regression, Xavier weight initialization</li>
+</ul>
+<h2 id="symmetrically-connected-neural-networks">Symmetrically connected neural networks</h2>
+<p>Like recurrent networks, but have the same weight in both directions(the connections are symmetric). They are easier to analyze than recurrent networks, but are more restricted in what they can do (they obey an energy function). If they have no hidden layers they are called Hopfield nets.</p>
+<p>Symmetrically connected neural networks with hidden layers</p>
+<p>They are called Boltzmann machines. More powerful than Hopfield nets, less powerful than recurrent networks. Beautifully simple learning algorithm.</p>
+<h2 id="convolutional-neural-networks">Convolutional Neural Networks</h2>
+<figure class="image"> <img src="/assets/img/wiki/Convolutional+Network.png" alt="A small convolutional network" style="max-width: 100%;"><figcaption>A small convolutional network</figcaption></figure><p>In machine learning, a convolutional neural network (CNN, or ConvNet) is a class of deep, feed-forward artificial neural networks, most commonly applied to analyzing visual imagery.</p>
+<p>CNNs use a variation of multilayer perceptrons designed to require minimal preprocessing. They are also known as shift invariant or space invariant artificial neural networks (SIANN), based on their shared-weights architecture and translation invariance characteristics.4</p>
+<p>In each layer of the network we take a convolution (let’s say a 5x5 convolution), and we run it across the image. Each layer of the image is known as a featuremap. By doing this we generate new feature maps. Next, we subsample those featuremaps and repeat the process. At the final layer we will have a large number of 1x1 feature maps that we feed into our neural network.</p>
+<p>Parameters:</p>
+<ul>
+<li>Kernel size - for ex 5x5</li>
+<li>Input depth - for ex RGB = 3</li>
+<li>Output depth</li>
+<li>Padding - what do you do at the edge of the image?<ul>
+<li>Valid - don’t go beyond the edge of the image</li>
+<li>Same - pad the image with 0s</li>
+</ul>
+</li>
+<li>Stride - the number of pixels by which you shift your kernel each turn</li>
+</ul>
+<p>For example your images input Tensor will have the shape: (N, H, W, C):</p>
+<ul>
+<li>N - number of images</li>
+<li>H - height of images</li>
+<li>W - width of images</li>
+<li>C - number of channels in each image</li>
+</ul>
+<p>Your kernels Tensor will have the shape: (Hf, Wf, Ci, Co):</p>
+<ul>
+<li>Height of filter patch</li>
+<li>Width of filter patch</li>
+<li>Number of input channels</li>
+<li>Number of output channels</li>
+</ul>
+<h3 id="subsampling">Subsampling</h3>
+<p>Subsampling can be acomplished using pooling, which can either be:</p>
+<ul>
+<li>mean pooling - each pixel in the subsampled feature map takes the value of the average of those in the polling section</li>
+<li>max pooling - each pixel in the subsamples feature map takes the value of the maximum of those in the polling section</li>
+</ul>
+<p>For pooling we can adjust:</p>
+<ul>
+<li>polling method</li>
+<li>polling size (the size of the square which gets compressed into 1 pixel into the new feature map)</li>
+</ul>
+<h3 id="1x1-convolutions">1x1 convolutions</h3>
+<p>We can add a 1x1 convolution between our feature maps and our kernels. It’s a cheap an inexpensive way to enhance our network.</p>
+<h3 id="inception-module">Inception module</h3>
+<figure class="image"> <img src="/assets/img/wiki/Inception-module.png" alt="Example of an inception module" style="max-width: 100%;"><figcaption>Example of an inception module</figcaption></figure><div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">input_img</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+<span class="n">tower_1</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="n">input_img</span><span class="p">)</span>
+<span class="n">tower_1</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="n">tower_1</span><span class="p">)</span>
+
+<span class="n">tower_2</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="n">input_img</span><span class="p">)</span>
+<span class="n">tower_2</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="n">tower_2</span><span class="p">)</span>
+
+<span class="n">tower_3</span> <span class="o">=</span> <span class="n">MaxPooling2D</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">strides</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">)(</span><span class="n">input_img</span><span class="p">)</span>
+<span class="n">tower_3</span> <span class="o">=</span> <span class="n">Conv2D</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> <span class="n">padding</span><span class="o">=</span><span class="s">'same'</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s">'relu'</span><span class="p">)(</span><span class="n">tower_3</span><span class="p">)</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">keras</span><span class="p">.</span><span class="n">layers</span><span class="p">.</span><span class="n">concatenate</span><span class="p">([</span><span class="n">tower_1</span><span class="p">,</span> <span class="n">tower_2</span><span class="p">,</span> <span class="n">tower_3</span><span class="p">],</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Since there are so many choices for valid kernels and polling parameters, why choose? The inception model combines multiple kernels/pollings into one feature map.</p>
+<p>1</p>
+<p>2</p>
+<ol>
+<li><p><a href="https://deeplearning4j.org/lstm.html">https://deeplearning4j.org/lstm.html</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Convolutional_neural_network">https://en.wikipedia.org/wiki/Convolutional_neural_network</a></p></li>
+</ol>
+</div>
+<div id="disqus_thread"></div></article></div>
+</div>
+</div>
+</div>
+<footer><p> Powered by<a href="https://github.com/sujaykundu777/devlopr-jekyll"> devlopr jekyll</a>. Subscribe via <a href="/feed.xml%20">RSS</a></p></footer><script> var options = { classname: 'my-class', id: 'my-id' }; var nanobar = new Nanobar( options ); nanobar.go( 30 ); nanobar.go( 76 ); nanobar.go(100); </script> <script src="/assets/js/mode-switcher.js"></script> <script src="/assets/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
